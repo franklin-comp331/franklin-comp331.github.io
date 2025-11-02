@@ -1,0 +1,8 @@
+project:
+  type: website
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo

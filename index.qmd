@@ -1,0 +1,37 @@
+---
+title: Home
+format: html
+---
+
+
+# AI-Assisted Software Engineering
+
+Welcome to the course! Use the links below to access key documents and lectures.
+
+## Course Documents
+
+- [Course Orientation](docs/course_orientation.ipynb)
+- [Syllabus](docs/syllabus.ipynb)
+- [Tool Setup Guide](docs/tool_setup.ipynb)
+
+## Lectures
+
+Lectures are available as Jupyter notebooks:
+
+
+- [Lecture 1](lectures/lecture01.ipynb)
+- [Lecture 2, Part 1](lectures/lecture02_part1.ipynb)
+- [Lecture 2, Part 2](lectures/lecture02_part2.ipynb)
+- [Lecture 3](lectures/lecture03.ipynb)
+- [Lecture 4](lectures/lecture04.ipynb)
+- [Lecture 5](lectures/lecture05.ipynb)
+- [Lecture 6](lectures/lecture06.ipynb)
+- [Lecture 7](lectures/lecture07.ipynb)
+- [Lecture 8](lectures/lecture08.ipynb)
+- [Lecture 9](lectures/lecture09.ipynb)
+- [Lecture 10](lectures/lecture10.ipynb)
+- [Lecture 11](lectures/lecture11.ipynb)
+- [Lecture 12](lectures/lecture12.ipynb)
+
+---
+For more information, see the [Quarto documentation](https://quarto.org/docs/presentations/revealjs/).
