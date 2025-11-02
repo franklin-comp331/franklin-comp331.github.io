@@ -1,4 +1,4 @@
-# AI-Assisted Software Engineering Lectures
+# AI-Assisted Software Engineering Course
 
 This repository contains a Quarto site built from Jupyter notebooks. It hosts a 12-week undergraduate course on AI-Assisted Software Engineering. The site uses reveal.js for slide-style presentations generated from the notebooks.
 
@@ -88,8 +88,6 @@ git checkout -b feature/update-lecture-03
 git commit -m "fix(lecture03): correct example for API design"
 ```
 
-If you'd like, enable a remote on GitHub and push the branch.
-
 ## Helpful tips
 
 - If notebooks have heavy outputs or large attachments you want to omit, clear cell outputs before committing (Jupyter: Kernel → Restart & Clear Output).
@@ -100,13 +98,16 @@ If you'd like, enable a remote on GitHub and push the branch.
 - Quarto docs (presentations): https://quarto.org/docs/presentations/revealjs/
 - `uv` (recommended): https://astral.sh
 
-## Next improvements (optional)
+## Dependencies
 
-- Add `requirements.txt` or `pyproject.toml` extras for lecture dependencies.
-- Add a short `CONTRIBUTING.md` describing preferred commit style and review flow.
-- Add CI to validate `quarto render` runs successfully on each PR.
+This repository includes a minimal `requirements.txt` listing common packages used when editing or running the notebooks locally. The project also contains `pyproject.toml` (for packaging metadata); currently `pyproject.toml` does not declare runtime dependencies.
 
----
+To install the packages from `requirements.txt` into your active virtual environment:
 
-If you'd like I can also add a `requirements.txt` (or tighten `pyproject.toml`) with the minimal packages used by the notebooks and then commit that change.
+```bash
+uv pip install -r requirements.txt
+# or, without uv: python -m pip install -r requirements.txt
+```
+
+If you'd prefer to manage dependencies via `pyproject.toml`/Poetry or another tool, that's also fine—`requirements.txt` is provided for convenience and quick setup.
 
