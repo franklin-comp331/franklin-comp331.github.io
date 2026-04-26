@@ -71,3 +71,6 @@ node_modules/
 
 # Ignore site_libs if regenerated
 site_libs/
+
+/.quarto/
+**/*.quarto_ipynb
