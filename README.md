@@ -4,7 +4,7 @@ This repository contains a Quarto site built from Jupyter notebooks. It hosts CO
 
 ## Quick overview
 
-- Project root contains the Quarto config files (`_quarto.yml`, `quarto.yml`) and a top-level `index.qmd`.
+- Project root contains the Quarto config file (`_quarto.yml`) and a top-level `index.qmd`.
 - Notebooks for the course are in `lectures/` (one notebook per week).
 - Assignments are in `assignments/` and docs in `docs/`.
 - Site output (generated) lives in `_site/` and is ignored by the repo via `.gitignore`.
@@ -65,6 +65,23 @@ jupyter lab
 ```
 
 - Edit notebooks in `lectures/` or `assignments/`. After editing, use `quarto render` to rebuild the site.
+
+## Publishing
+
+This site is published with GitHub Actions to GitHub Pages.
+
+- Pushes to `main` run `.github/workflows/publish.yml`.
+- The workflow installs Quarto and Python dependencies, runs `quarto render`, and publishes `_site/` to the `gh-pages` branch.
+- GitHub Pages should be configured to deploy from the `gh-pages` branch.
+- Published site URL: https://t-morgan.github.io/ai-assisted-software-engineering/
+
+The local `origin` remote should point to:
+
+```bash
+git@github.com:t-morgan/ai-assisted-software-engineering.git
+```
+
+If your local checkout still uses the old misspelled repository URL, update it before pushing.
 
 ## Project structure
 
