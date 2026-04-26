@@ -1,7 +1,0 @@
-format:
-  revealjs:
-    theme: default
-    slide-number: true
-    toc: true
-    self-contained: true
-    # Add more revealjs options for lectures here if needed

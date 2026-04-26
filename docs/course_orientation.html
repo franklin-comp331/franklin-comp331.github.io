@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>COMP 331: AI-Assisted Software Engineering Orientation – COMP 331: AI-Assisted Software Engineering</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4897d45d2f75ed4f519693be625836c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">COMP 331: AI-Assisted Software Engineering</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-docs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Docs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-docs">    
+        <li>
+    <a class="dropdown-item" href="../docs/course_orientation.html">
+ <span class="dropdown-text">Course Orientation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../docs/syllabus.html">
+ <span class="dropdown-text">Syllabus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../docs/tool_setup.html">
+ <span class="dropdown-text">Tool Setup Guide</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
+        <li>
+    <a class="dropdown-item" href="../assignments/assignment01.html">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assignments/weekly_ai_interaction_log.html">
+ <span class="dropdown-text">Weekly AI Interaction Log</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assignments/lab01_structured_ai_workflow.html">
+ <span class="dropdown-text">Lab 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assignments/lab02_eval_driven_development.html">
+ <span class="dropdown-text">Lab 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assignments/lab03_ai_system_implementation.html">
+ <span class="dropdown-text">Lab 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assignments/lab04_risk_analysis_production_readiness.html">
+ <span class="dropdown-text">Lab 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assignments/lab05_coding_agents_controlled_workflows.html">
+ <span class="dropdown-text">Lab 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assignments/final_project_milestone01.html">
+ <span class="dropdown-text">Final Project Milestone 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assignments/final_project_milestone02.html">
+ <span class="dropdown-text">Final Project Milestone 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assignments/final_project_final_submission.html">
+ <span class="dropdown-text">Final Project Final Submission</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lectures" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Lectures</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture01.html">
+ <span class="dropdown-text">Lecture 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture02_part1.html">
+ <span class="dropdown-text">Lecture 2, Part 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture02_part2.html">
+ <span class="dropdown-text">Lecture 2, Part 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture03.html">
+ <span class="dropdown-text">Lecture 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture04.html">
+ <span class="dropdown-text">Lecture 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture05.html">
+ <span class="dropdown-text">Lecture 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture06.html">
+ <span class="dropdown-text">Lecture 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture07.html">
+ <span class="dropdown-text">Lecture 7</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture08.html">
+ <span class="dropdown-text">Lecture 8</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture09.html">
+ <span class="dropdown-text">Lecture 9</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture10.html">
+ <span class="dropdown-text">Lecture 10</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture11.html">
+ <span class="dropdown-text">Lecture 11</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/lecture12.html">
+ <span class="dropdown-text">Lecture 12</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/t-morgan/ai-assisted-software-engineering"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welcome-course-introduction" id="toc-welcome-course-introduction" class="nav-link active" data-scroll-target="#welcome-course-introduction">1) Welcome &amp; Course Introduction</a></li>
+  <li><a href="#syllabus-learning-outcomes" id="toc-syllabus-learning-outcomes" class="nav-link" data-scroll-target="#syllabus-learning-outcomes">2) Syllabus &amp; Learning Outcomes</a></li>
+  <li><a href="#tools-setup-week-1-assignment" id="toc-tools-setup-week-1-assignment" class="nav-link" data-scroll-target="#tools-setup-week-1-assignment">3) Tools &amp; Setup (Week 1 Assignment)</a></li>
+  <li><a href="#course-logistics" id="toc-course-logistics" class="nav-link" data-scroll-target="#course-logistics">4) Course Logistics</a></li>
+  <li><a href="#ai-use-evidence-and-academic-integrity" id="toc-ai-use-evidence-and-academic-integrity" class="nav-link" data-scroll-target="#ai-use-evidence-and-academic-integrity">5) AI Use, Evidence, and Academic Integrity</a></li>
+  <li><a href="#risks-to-watch-throughout-the-course" id="toc-risks-to-watch-throughout-the-course" class="nav-link" data-scroll-target="#risks-to-watch-throughout-the-course">6) Risks To Watch Throughout the Course</a></li>
+  <li><a href="#learning-activities" id="toc-learning-activities" class="nav-link" data-scroll-target="#learning-activities">7) Learning Activities</a></li>
+  <li><a href="#success-strategies" id="toc-success-strategies" class="nav-link" data-scroll-target="#success-strategies">8) Success Strategies</a></li>
+  <li><a href="#orientation-activities-week-1" id="toc-orientation-activities-week-1" class="nav-link" data-scroll-target="#orientation-activities-week-1">9) Orientation Activities (Week 1)</a></li>
+  <li><a href="#week-1-deliverables" id="toc-week-1-deliverables" class="nav-link" data-scroll-target="#week-1-deliverables">10) Week 1 Deliverables</a></li>
+  <li><a href="#quick-reference-links-fill-in-lms" id="toc-quick-reference-links-fill-in-lms" class="nav-link" data-scroll-target="#quick-reference-links-fill-in-lms">11) Quick Reference &amp; Links (fill in LMS)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">COMP 331: AI-Assisted Software Engineering Orientation</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<hr>
+<p><strong>Quick Links:</strong> - <a href="../docs/syllabus.html">Syllabus &amp; Weekly Schedule</a> - <a href="../docs/tool_setup.html">Tool Setup Guide</a></p>
+<hr>
+<section id="welcome-course-introduction" class="level2">
+<h2 class="anchored" data-anchor-id="welcome-course-introduction">1) Welcome &amp; Course Introduction</h2>
+<p><strong>Instructor:</strong> <em>Add name, office hours, contact preferences</em></p>
+<p><strong>Format:</strong> 12-week · 4 credits · Prerequisite: <strong>COMP 311 | Advanced Java Programming</strong> (or equivalent)</p>
+<p><strong>Why this course now?</strong></p>
+<p>AI-assisted development is changing how software is built. You’ll learn to pair your expertise with tools like GitHub Copilot to generate code, tests, docs, and plans—while critically evaluating quality, security, and ethics.</p>
+<p><strong>Course arc (high-level):</strong></p>
+<ul>
+<li>Week 1: Environment setup and AI-assisted software engineering foundations</li>
+<li>Weeks 2–10: Weekly AI Interaction Log documenting prompts, decisions, and evaluations</li>
+<li>Weeks 3, 5, 7, 9, and 10: Labs that build a Controlled Coding Agent workflow</li>
+<li>Weeks 10–12: Final Project proposal, partial implementation, evaluation strategy, risk analysis, final system, and demo</li>
+</ul>
+<hr>
+</section>
+<section id="syllabus-learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="syllabus-learning-outcomes">2) Syllabus &amp; Learning Outcomes</h2>
+<p>See the <a href="../docs/syllabus.html">Syllabus &amp; Weekly Schedule</a> for full course description, learning outcomes, topics, grading breakdown, and weekly activities.</p>
+<hr>
+<p><strong>Catalog Description</strong></p>
+<p>Explores how software engineers can use AI-assisted tools intentionally while building controlled, evaluable coding-agent workflows. Emphasis is placed on structured task input, AI-assisted code generation, evaluation, risk analysis, human oversight, reproducibility, and professional documentation. Hands-on labs build toward a final <strong>Controlled Coding Agent</strong> project in Java.</p>
+<p><strong>Learning Outcomes (mapped to Bloom’s levels):</strong></p>
+<ol type="1">
+<li>Set up and verify a Java development environment with GitHub Copilot and GitHub-based submission workflows. <em>(Apply)</em></li>
+<li>Document AI-assisted development decisions through weekly interaction logs. <em>(Analyze)</em></li>
+<li>Translate feature requests into structured task specifications for AI-assisted implementation. <em>(Create)</em></li>
+<li>Define and run evaluations that measure correctness and detect regressions in AI-generated outputs. <em>(Evaluate)</em></li>
+<li>Integrate structured input, AI-assisted generation, evaluation, and human approval into a controlled coding-agent workflow. <em>(Create)</em></li>
+<li>Analyze reliability, security, maintainability, and production-readiness risks in AI-assisted systems. <em>(Analyze/Evaluate)</em></li>
+<li>Deliver a complete Controlled Coding Agent final project with documentation, evaluation evidence, and a reproducible demo. <em>(Create)</em></li>
+</ol>
+<hr>
+</section>
+<section id="tools-setup-week-1-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="tools-setup-week-1-assignment">3) Tools &amp; Setup (Week 1 Assignment)</h2>
+<p>See the <a href="../docs/tool_setup.html">Tool Setup Guide</a> for step-by-step instructions for installing and configuring your IDE, Java, GitHub Copilot, and related tools.</p>
+<hr>
+<p><strong>Required Software/Accounts</strong> - <strong>JDK (latest LTS)</strong> - <strong>IntelliJ IDEA</strong> or <strong>Visual Studio Code</strong> - <strong>Git</strong> + <strong>GitHub</strong> account - <strong>GitHub Copilot</strong> with IDE plugin; students should set up GitHub Education using their university email address at <a href="https://github.com/settings/education/benefits">github.com/settings/education/benefits</a> - <strong>Maven</strong>, <strong>Gradle</strong>, and <strong>JUnit 5</strong> are introduced later for labs and evaluations</p>
+<p><strong>Setup Checklist</strong> - [ ] Install JDK and confirm <code>java -version</code> - [ ] Install IntelliJ or VS Code - [ ] Install Git and configure SSH/HTTPS for GitHub - [ ] Set up GitHub Education with your university email address - [ ] Enable GitHub Copilot and sign in from IDE - [ ] Create a sample Java project; generate a simple method using Copilot - [ ] Confirm a simple Java project runs</p>
+<p><strong>Submission (Assignment 1):</strong> - Screenshots of IDE + Copilot in action - Brief reflection (150–250 words) on setup experience and Week 1 concepts</p>
+<hr>
+</section>
+<section id="course-logistics" class="level2">
+<h2 class="anchored" data-anchor-id="course-logistics">4) Course Logistics</h2>
+<p>See the <a href="../docs/syllabus.html">Syllabus &amp; Weekly Schedule</a> for details on modality, workload, assessment weights, deadlines, and submission conventions.</p>
+<hr>
+<p><strong>Modality &amp; Rhythm</strong> - Weekly cadence: lecture/discussion (concepts), live demo, guided lab, short reflection - Estimated workload: <strong>8–10 hours/week</strong></p>
+<p><strong>Assessments &amp; Weights</strong> - <a href="../assignments/assignment01.html">Assignment 1: Environment Setup &amp; AI-Assisted SWE Foundations</a>: <strong>30 points</strong> - <a href="../assignments/weekly_ai_interaction_log.html">Weekly AI Interaction Log</a>: <strong>90 points</strong> - Labs 1–5: <strong>480 points</strong> total, building the Controlled Coding Agent workflow over time - Final Project Milestones and Final Submission: <strong>400 points</strong> total - <strong>Total:</strong> 1000 points</p>
+<p><strong>Deadlines &amp; Late Policy</strong> - Standard deadline: end of week (Sunday 11:59 PM local) - Extensions for documented circumstances—contact instructor early per university policies</p>
+<p><strong>Submission Conventions</strong> - Code via GitHub; submit Canvas link, repository link, and commit hash when requested - Unless your professor instructs otherwise, continue extending the same project repository through Labs 1–5 and the Final Project - Include <code>README.md</code> with <strong>how to run</strong>, <strong>how to evaluate</strong>, and <strong>AI usage notes</strong> - Maintain weekly AI interaction log entries from Week 2 through Week 10 - Final submissions must include reproducible setup/run instructions and a demo link when required</p>
+<hr>
+</section>
+<section id="ai-use-evidence-and-academic-integrity" class="level2">
+<h2 class="anchored" data-anchor-id="ai-use-evidence-and-academic-integrity">5) AI Use, Evidence, and Academic Integrity</h2>
+<p>GitHub Copilot is the approved AI assistant for course programming work unless an assignment says otherwise. You may use Copilot to help draft code, tests, documentation, evaluation criteria, and workflow artifacts, but you remain responsible for every submitted artifact.</p>
+<p><strong>Required Evidence</strong></p>
+<ul>
+<li>Record meaningful Copilot interactions in the <a href="../assignments/weekly_ai_interaction_log.html">Weekly AI Interaction Log</a>.</li>
+<li>Describe AI assistance in each repository README or assignment documentation.</li>
+<li>Preserve prompts, accepted or rejected suggestions, manual edits, evaluations, and final decisions when relevant.</li>
+</ul>
+<p><strong>Not Allowed</strong></p>
+<ul>
+<li>Submitting AI-generated work without acknowledgment.</li>
+<li>Submitting code you do not understand or cannot explain.</li>
+<li>Sharing full solutions with classmates unless the professor explicitly makes an activity collaborative.</li>
+<li>Pasting secrets, private data, proprietary code, or protected information into AI tools.</li>
+</ul>
+<hr>
+</section>
+<section id="risks-to-watch-throughout-the-course" class="level2">
+<h2 class="anchored" data-anchor-id="risks-to-watch-throughout-the-course">6) Risks To Watch Throughout the Course</h2>
+<p>The labs and Final Project ask you to evaluate AI-assisted systems, not just produce code. Keep these risks visible in your weekly logs, evaluations, and project documentation.</p>
+<ul>
+<li><strong>Correctness:</strong> Generated code may appear plausible while missing edge cases or requirements.</li>
+<li><strong>Security:</strong> AI suggestions may introduce unsafe input handling, secret leakage, weak cryptography, or injection risks.</li>
+<li><strong>Maintainability:</strong> Generated code may be hard to read, overcomplicated, or poorly aligned with your architecture.</li>
+<li><strong>Evaluation gaps:</strong> Passing one demo does not prove the workflow is reliable. Define measurable checks.</li>
+<li><strong>Human oversight:</strong> Controlled workflows need clear points where a human reviews, approves, rejects, or revises AI output.</li>
+</ul>
+<hr>
+</section>
+<section id="learning-activities" class="level2">
+<h2 class="anchored" data-anchor-id="learning-activities">7) Learning Activities</h2>
+<p><strong>Controlled Workflow Pattern</strong></p>
+<ol type="1">
+<li><p><strong>Specify</strong>: Translate a request into structured input with goals, constraints, edge cases, and acceptance criteria</p></li>
+<li><p><strong>Generate or revise</strong>: Use Copilot to propose implementation, tests, documentation, or workflow artifacts</p></li>
+<li><p><strong>Evaluate</strong>: Run tests, scripts, checks, or structured reviews against explicit criteria</p></li>
+<li><p><strong>Control</strong>: Add human approval checkpoints before accepting important changes</p></li>
+<li><p><strong>Document</strong>: Preserve prompts, outputs, evaluation results, risks, and final decisions</p></li>
+</ol>
+<p>This pattern appears repeatedly in Labs 1-5 and the Final Project. The goal is not to maximize AI usage; the goal is to make AI-assisted development controlled, observable, evaluable, and reproducible.</p>
+<hr>
+</section>
+<section id="success-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="success-strategies">8) Success Strategies</h2>
+<ul>
+<li><p>Keep the <strong>Weekly AI Interaction Log</strong> current: record prompts, outputs, evaluations, decisions, and what worked</p></li>
+<li><p>Prefer <strong>small, precise prompts</strong> over broad requests; iterate quickly</p></li>
+<li><p>Define evaluation criteria before trusting generated code; use AI to scaffold edge cases where appropriate</p></li>
+<li><p>Use tests, static analysis, security checks, and manual review alongside AI suggestions</p></li>
+<li><p>Commit early/often; preserve artifacts that make workflow decisions reproducible</p></li>
+<li><p>Treat AI like a <strong>junior pair-programmer</strong>: useful for drafts, but never the final authority</p></li>
+</ul>
+<hr>
+</section>
+<section id="orientation-activities-week-1" class="level2">
+<h2 class="anchored" data-anchor-id="orientation-activities-week-1">9) Orientation Activities (Week 1)</h2>
+<p><strong>Icebreaker (Forum):</strong> Share your first experience using AI on codewhat surprised you?</p>
+<p><strong>Mini-Demo (in class or video):</strong> Instructor demonstrates Copilot in a small Java file, then critiques the output for intent match, correctness, and risk.</p>
+<p><strong>Quick Poll:</strong> Which part of a controlled AI workflow seems most challenging? <em>Options: specifying tasks, generating code, evaluating outputs, managing risk, documenting decisions</em></p>
+<p><strong>Checklist TurnIn:</strong> Confirm tools installed; Copilot active; simple Java project running.</p>
+<hr>
+</section>
+<section id="week-1-deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="week-1-deliverables">10) Week 1 Deliverables</h2>
+<ul>
+<li><p><strong><a href="../assignments/assignment01.html">Assignment 1</a>:</strong> Setup verification + short reflection</p></li>
+<li><p><strong><a href="../assignments/weekly_ai_interaction_log.html">Weekly AI Interaction Log</a>:</strong> Begins in Week 2 and continues through Week 10</p></li>
+</ul>
+<p><strong>Rubric Snapshot (Assignment 1)</strong></p>
+<ul>
+<li><p>Environment, GitHub, and Copilot setup completed — 10 points</p></li>
+<li><p>Screenshots clearly demonstrate setup — 5 points</p></li>
+<li><p>Repository includes minimal Java project and README — 5 points</p></li>
+<li><p>Reflection demonstrates understanding of Week 1 concepts — 10 points</p></li>
+</ul>
+<hr>
+</section>
+<section id="quick-reference-links-fill-in-lms" class="level2">
+<h2 class="anchored" data-anchor-id="quick-reference-links-fill-in-lms">11) Quick Reference &amp; Links (fill in LMS)</h2>
+<ul>
+<li><p>Course site / Canvas module: <em>link</em></p></li>
+<li><p>GitHub organization / assignment repository: <em>link</em></p></li>
+<li><p>Weekly AI Interaction Log location: <em>link</em></p></li>
+<li><p>Final Project repository: <em>link</em></p></li>
+<li><p>GitHub Education setup: <a href="https://github.com/settings/education/benefits">github.com/settings/education/benefits</a></p></li>
+<li><p>Copilot documentation: <em>link</em></p></li>
+<li><p>Java/JUnit templates, evaluation examples, and build scripts (Maven/Gradle): <em>links</em></p></li>
+<li><p>Office hours / booking link: <em>link</em></p></li>
+<li><p>Communication channel (Discord/Slack/Ed): <em>link</em></p></li>
+</ul>
+<p><strong>Contact Protocol</strong></p>
+<ul>
+<li><p>For bugs or repo issues — open a GitHub Issue</p></li>
+<li><p>For grading/logistics — course forum or email</p></li>
+<li><p>For private matters — office hours or direct message</p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/t-morgan\.github\.io\/ai-assisted-software-engineering\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
