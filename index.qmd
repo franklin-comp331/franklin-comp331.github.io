@@ -4,7 +4,7 @@ format: html
 ---
 
 
-# AI-Assisted Software Engineering
+# COMP 331: AI-Assisted Software Engineering
 
 Welcome to the course! Use the links below to access key documents and lectures.
 
@@ -13,6 +13,19 @@ Welcome to the course! Use the links below to access key documents and lectures.
 - [Course Orientation](docs/course_orientation.ipynb)
 - [Syllabus](docs/syllabus.ipynb)
 - [Tool Setup Guide](docs/tool_setup.ipynb)
+
+## Assignments
+
+- [Assignment 1: Environment Setup & AI-Assisted SWE Foundations](assignments/assignment01.ipynb)
+- [Weekly AI Interaction Log](assignments/weekly_ai_interaction_log.ipynb)
+- [Lab 1: Structured AI Workflow](assignments/lab01_structured_ai_workflow.ipynb)
+- [Lab 2: Eval-Driven Development](assignments/lab02_eval_driven_development.ipynb)
+- [Lab 3: AI System Implementation](assignments/lab03_ai_system_implementation.ipynb)
+- [Lab 4: AI Risk Analysis and Production Readiness](assignments/lab04_risk_analysis_production_readiness.ipynb)
+- [Lab 5: Coding Agents and Controlled Workflows](assignments/lab05_coding_agents_controlled_workflows.ipynb)
+- [Final Project Milestone 1: Proposal & Architecture](assignments/final_project_milestone01.ipynb)
+- [Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks](assignments/final_project_milestone02.ipynb)
+- [Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo](assignments/final_project_final_submission.ipynb)
 
 ## Lectures
 

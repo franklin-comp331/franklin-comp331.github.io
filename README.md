@@ -1,6 +1,6 @@
-# AI-Assisted Software Engineering Course
+# COMP 331: AI-Assisted Software Engineering
 
-This repository contains a Quarto site built from Jupyter notebooks. It hosts a 12-week undergraduate course on AI-Assisted Software Engineering. The site uses reveal.js for slide-style presentations generated from the notebooks.
+This repository contains a Quarto site built from Jupyter notebooks. It hosts COMP 331: AI-Assisted Software Engineering, a 12-week undergraduate course. The site uses reveal.js for slide-style presentations generated from the notebooks.
 
 ## Quick overview
 
@@ -110,4 +110,3 @@ uv pip install -r requirements.txt
 ```
 
 If you'd prefer to manage dependencies via `pyproject.toml`/Poetry or another tool, that's also fine—`requirements.txt` is provided for convenience and quick setup.
-

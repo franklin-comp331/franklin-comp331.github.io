@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "AI-Assisted Software Engineering"
+  title: "COMP 331: AI-Assisted Software Engineering"
   navbar:
     left:
       - text: Home
@@ -81,4 +81,3 @@ execute:
   error: true
   timeout: 60
   kernel: python3
-
