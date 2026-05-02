@@ -91,375 +91,557 @@
     "text": "Need Help?\n\nJava in VS Code\nIntelliJ IDEA documentation\nGitHub Docs: Set up Git\nGitHub Copilot documentation\nAsk questions in your course forum or contact your instructor."
   },
   {
-    "objectID": "assignments/final_project_milestone01.html",
-    "href": "assignments/final_project_milestone01.html",
-    "title": "Final Project Milestone 1: Proposal & Architecture",
+    "objectID": "docs/course_orientation.html",
+    "href": "docs/course_orientation.html",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 10\nPoints: 80\nThis milestone builds on Labs 1-5, especially Lab 5: Coding Agents and Controlled Workflows."
+    "text": "Quick Links: - Syllabus & Weekly Schedule - Tool Setup Guide"
   },
   {
-    "objectID": "assignments/final_project_milestone01.html#purpose-of-assignment",
-    "href": "assignments/final_project_milestone01.html#purpose-of-assignment",
-    "title": "Final Project Milestone 1: Proposal & Architecture",
+    "objectID": "docs/course_orientation.html#welcome-course-introduction",
+    "href": "docs/course_orientation.html#welcome-course-introduction",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "1) Welcome & Course Introduction",
+    "text": "1) Welcome & Course Introduction\nInstructor: Add name, office hours, contact preferences\nFormat: 12-week · 4 credits · Prerequisite: COMP 311 | Advanced Java Programming (or equivalent)\nWhy this course now?\nAI-assisted development is changing how software is built. You’ll learn to pair your expertise with tools like GitHub Copilot to generate code, tests, docs, and plans—while critically evaluating quality, security, and ethics.\nCourse arc (high-level):\n\nWeek 1: Environment setup and AI-assisted software engineering foundations\nWeeks 2–10: Weekly AI Interaction Log documenting prompts, decisions, and evaluations\nWeeks 3, 5, 7, 9, and 10: Labs that build a Controlled Coding Agent workflow\nWeeks 10–12: Final Project proposal, partial implementation, evaluation strategy, risk analysis, final system, and demo"
+  },
+  {
+    "objectID": "docs/course_orientation.html#syllabus-learning-outcomes",
+    "href": "docs/course_orientation.html#syllabus-learning-outcomes",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "2) Syllabus & Learning Outcomes",
+    "text": "2) Syllabus & Learning Outcomes\nSee the Syllabus & Weekly Schedule for full course description, learning outcomes, topics, grading breakdown, and weekly activities.\n\nCatalog Description\nExplores how software engineers can use AI-assisted tools intentionally while building controlled, evaluable coding-agent workflows. Emphasis is placed on structured task input, AI-assisted code generation, evaluation, risk analysis, human oversight, reproducibility, and professional documentation. Hands-on labs build toward a final Controlled Coding Agent project in Java.\nLearning Outcomes (mapped to Bloom’s levels):\n\nSet up and verify a Java development environment with GitHub Copilot and GitHub-based submission workflows. (Apply)\nDocument AI-assisted development decisions through weekly interaction logs. (Analyze)\nTranslate feature requests into structured task specifications for AI-assisted implementation. (Create)\nDefine and run evaluations that measure correctness and detect regressions in AI-generated outputs. (Evaluate)\nIntegrate structured input, AI-assisted generation, evaluation, and human approval into a controlled coding-agent workflow. (Create)\nAnalyze reliability, security, maintainability, and production-readiness risks in AI-assisted systems. (Analyze/Evaluate)\nDeliver a complete Controlled Coding Agent final project with documentation, evaluation evidence, and a reproducible demo. (Create)"
+  },
+  {
+    "objectID": "docs/course_orientation.html#tools-setup-week-1-assignment",
+    "href": "docs/course_orientation.html#tools-setup-week-1-assignment",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "3) Tools & Setup (Week 1 Assignment)",
+    "text": "3) Tools & Setup (Week 1 Assignment)\nSee the Tool Setup Guide for step-by-step instructions for installing and configuring your IDE, Java, GitHub Copilot, and related tools.\n\nRequired Software/Accounts - JDK (latest LTS) - IntelliJ IDEA or Visual Studio Code - Git + GitHub account - GitHub Copilot with IDE plugin; students should set up GitHub Education using their university email address at github.com/settings/education/benefits - Maven, Gradle, and JUnit 5 are introduced later for labs and evaluations\nSetup Checklist - [ ] Install JDK and confirm java -version - [ ] Install IntelliJ or VS Code - [ ] Install Git and configure SSH/HTTPS for GitHub - [ ] Set up GitHub Education with your university email address - [ ] Enable GitHub Copilot and sign in from IDE - [ ] Create a sample Java project; generate a simple method using Copilot - [ ] Confirm a simple Java project runs\nSubmission (Assignment 1): - Screenshots of IDE + Copilot in action - Brief reflection (150–250 words) on setup experience and Week 1 concepts"
+  },
+  {
+    "objectID": "docs/course_orientation.html#course-logistics",
+    "href": "docs/course_orientation.html#course-logistics",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "4) Course Logistics",
+    "text": "4) Course Logistics\nSee the Syllabus & Weekly Schedule for details on modality, workload, assessment weights, deadlines, and submission conventions.\n\nModality & Rhythm - Weekly cadence: lecture/discussion (concepts), live demo, guided lab, short reflection - Estimated workload: 8–10 hours/week\nAssessments & Weights - Assignment 1: Environment Setup & AI-Assisted SWE Foundations: 30 points - Weekly AI Interaction Log: 90 points - Labs 1–5: 480 points total, building the Controlled Coding Agent workflow over time - Final Project Milestones and Final Submission: 400 points total - Total: 1000 points\nDeadlines & Late Policy - Standard deadline: end of week (Sunday 11:59 PM local) - Extensions for documented circumstances—contact instructor early per university policies\nSubmission Conventions - Code via GitHub; submit Canvas link, repository link, and commit hash when requested - Unless your professor instructs otherwise, continue extending the same project repository through Labs 1–5 and the Final Project - Include README.md with how to run, how to evaluate, and AI usage notes - Maintain weekly AI interaction log entries from Week 2 through Week 10, including Copilot mode, accepted/rejected suggestions, and verification method - Final submissions must include reproducible setup/run instructions and a demo link when required"
+  },
+  {
+    "objectID": "docs/course_orientation.html#ai-use-evidence-and-academic-integrity",
+    "href": "docs/course_orientation.html#ai-use-evidence-and-academic-integrity",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "5) AI Use, Evidence, and Academic Integrity",
+    "text": "5) AI Use, Evidence, and Academic Integrity\nGitHub Copilot is the approved AI assistant for course programming work unless an assignment says otherwise. You may use Copilot to help draft code, tests, documentation, evaluation criteria, and workflow artifacts, but you remain responsible for every submitted artifact.\nRequired Evidence\n\nRecord meaningful Copilot interactions in the Weekly AI Interaction Log.\nIdentify the Copilot mode used, such as inline suggestion, chat, edit, agent/workspace, test generation, review, or debugging.\nDescribe AI assistance in each repository README or assignment documentation.\nPreserve prompts, accepted or rejected suggestions, manual edits, evaluations, verification methods, and final decisions when relevant.\n\nNot Allowed\n\nSubmitting AI-generated work without acknowledgment.\nSubmitting code you do not understand or cannot explain.\nSharing full solutions with classmates unless the professor explicitly makes an activity collaborative.\nPasting secrets, private data, proprietary code, or protected information into AI tools."
+  },
+  {
+    "objectID": "docs/course_orientation.html#risks-to-watch-throughout-the-course",
+    "href": "docs/course_orientation.html#risks-to-watch-throughout-the-course",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "6) Risks To Watch Throughout the Course",
+    "text": "6) Risks To Watch Throughout the Course\nThe labs and Final Project ask you to evaluate AI-assisted systems, not just produce code. Keep these risks visible in your weekly logs, evaluations, and project documentation.\n\nCorrectness: Generated code may appear plausible while missing edge cases or requirements.\nSecurity: AI suggestions may introduce unsafe input handling, secret leakage, weak cryptography, or injection risks.\nMaintainability: Generated code may be hard to read, overcomplicated, or poorly aligned with your architecture.\nEvaluation gaps: Passing one demo does not prove the workflow is reliable. Define measurable checks.\nHuman oversight: Controlled workflows need clear points where a human reviews, approves, rejects, or revises AI output."
+  },
+  {
+    "objectID": "docs/course_orientation.html#learning-activities",
+    "href": "docs/course_orientation.html#learning-activities",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "7) Learning Activities",
+    "text": "7) Learning Activities\nControlled Workflow Pattern\n\nSpecify: Translate a request into structured input with goals, constraints, edge cases, and acceptance criteria\nGenerate or revise: Use Copilot inline suggestions, Chat, edit/review features, or agent-style assistance to propose implementation, tests, documentation, or workflow artifacts\nEvaluate: Run tests, compiler checks, scripts, manual reviews, or structured comparisons against explicit criteria\nControl: Add human approval checkpoints before accepting important changes\nDocument: Preserve prompts, outputs, evaluation results, risks, and final decisions\n\nThis pattern appears repeatedly in Labs 1-5 and the Final Project. The goal is not to maximize AI usage; the goal is to make AI-assisted development controlled, observable, evaluable, and reproducible."
+  },
+  {
+    "objectID": "docs/course_orientation.html#success-strategies",
+    "href": "docs/course_orientation.html#success-strategies",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "8) Success Strategies",
+    "text": "8) Success Strategies\n\nKeep the Weekly AI Interaction Log current: record Copilot mode, prompts, outputs, verification methods, decisions, and what worked\nPrefer small, precise prompts over broad requests; iterate quickly\nDefine evaluation criteria before trusting generated code; use AI to scaffold edge cases where appropriate\nUse tests, static analysis, security checks, and manual review alongside AI suggestions\nCommit early/often; preserve artifacts that make workflow decisions reproducible\nTreat AI like a junior pair-programmer: useful for drafts, but never the final authority"
+  },
+  {
+    "objectID": "docs/course_orientation.html#orientation-activities-week-1",
+    "href": "docs/course_orientation.html#orientation-activities-week-1",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "9) Orientation Activities (Week 1)",
+    "text": "9) Orientation Activities (Week 1)\nIcebreaker (Forum): Share your first experience using AI on code\u0014what surprised you?\nMini-Demo (in class or video): Instructor demonstrates Copilot in a small Java file, then critiques the output for intent match, correctness, and risk.\nQuick Poll: Which part of a controlled AI workflow seems most challenging? Options: specifying tasks, generating code, evaluating outputs, managing risk, documenting decisions\nChecklist Turn\u0011In: Confirm tools installed; Copilot active; simple Java project running."
+  },
+  {
+    "objectID": "docs/course_orientation.html#week-1-deliverables",
+    "href": "docs/course_orientation.html#week-1-deliverables",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "10) Week 1 Deliverables",
+    "text": "10) Week 1 Deliverables\n\nAssignment 1: Setup verification + short reflection\nWeekly AI Interaction Log: Begins in Week 2 and continues through Week 10\n\nRubric Snapshot (Assignment 1)\n\nEnvironment, GitHub, and Copilot setup completed — 10 points\nScreenshots clearly demonstrate setup — 5 points\nRepository includes minimal Java project and README — 5 points\nREADME documents responsible Copilot use and verification — 5 points\nReflection demonstrates understanding of Week 1 concepts — 5 points"
+  },
+  {
+    "objectID": "docs/course_orientation.html#quick-reference-links-fill-in-lms",
+    "href": "docs/course_orientation.html#quick-reference-links-fill-in-lms",
+    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "section": "11) Quick Reference & Links (fill in LMS)",
+    "text": "11) Quick Reference & Links (fill in LMS)\n\nCourse site / Canvas module: link\nGitHub organization / assignment repository: link\nWeekly AI Interaction Log location: link\nFinal Project repository: link\nGitHub Education setup: github.com/settings/education/benefits\nCopilot documentation: link\nJava/JUnit templates, evaluation examples, and build scripts (Maven/Gradle): links\nOffice hours / booking link: link\nCommunication channel (Discord/Slack/Ed): link\n\nContact Protocol\n\nFor bugs or repo issues — open a GitHub Issue\nFor grading/logistics — course forum or email\nFor private matters — office hours or direct message"
+  },
+  {
+    "objectID": "assignments/lab01_structured_ai_workflow.html",
+    "href": "assignments/lab01_structured_ai_workflow.html",
+    "title": "Lab 1: Structured AI Workflow",
+    "section": "",
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 3\nPoints: 90\nContinue maintaining the Weekly AI Interaction Log while completing this lab."
+  },
+  {
+    "objectID": "assignments/lab01_structured_ai_workflow.html#purpose-of-assignment",
+    "href": "assignments/lab01_structured_ai_workflow.html#purpose-of-assignment",
+    "title": "Lab 1: Structured AI Workflow",
     "section": "1 Purpose of Assignment",
-    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nDefine the scope of your Controlled Coding Agent\nDesign a clear system architecture based on Labs 1-5\nEstablish a structured AI-assisted workflow\nCreate a realistic development plan for completion"
+    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nEstablish the task input layer of your coding agent\nTranslate feature requests into structured specifications\nCompare naive vs structured AI-assisted development\nBegin building the foundation of a Java-based coding agent system"
   },
   {
-    "objectID": "assignments/final_project_milestone01.html#steps-requirements-of-assignment",
-    "href": "assignments/final_project_milestone01.html#steps-requirements-of-assignment",
-    "title": "Final Project Milestone 1: Proposal & Architecture",
+    "objectID": "assignments/lab01_structured_ai_workflow.html#steps-requirements-of-assignment",
+    "href": "assignments/lab01_structured_ai_workflow.html#steps-requirements-of-assignment",
+    "title": "Lab 1: Structured AI Workflow",
     "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nPrepare a proposal and architecture plan for your final Controlled Coding Agent system. You may continue your lab repository or create a dedicated final project repository.\n\nDefine the problem your coding agent addresses.\nDescribe intended users and expected workflow.\nCreate an architecture diagram or structured architecture description.\nIdentify core components, including input, generation, evaluation, workflow, and persistence.\nCreate a development plan for Weeks 10-12."
+    "text": "2 Steps / Requirements of Assignment\nBuild the first layer of a Controlled Coding Agent workflow: a Java command-line program that can accept a user request, send it to an LLM, and compare naive prompting with structured prompting. This lab should feel small and controlled. You are not building the full agent yet.\nStart fresh for this lab. Create a new repository named comp331-java-agent. Do not use your Assignment 1 setup repository as the starting point unless your professor explicitly approves it. This Lab 1 repository should become your continuing repository for Labs 1-5 and may become the starting point for your final project.\n\nCreate a fresh GitHub repository named comp331-java-agent.\nCreate a Java project using Maven in that repository. A simple structure such as src/main/java/.../Main.java is enough.\nConfigure your Gemini API key using the Gemini API Setup Guide. Do not commit API keys, .env files, or other secrets.\nWrite a Main class that first sends one hard-coded prompt to the model and prints the response. This verifies that your Java project can connect to the API.\nRevise the program so it accepts the user prompt from command-line arguments, for example mvn exec:java -Dexec.args=\"Explain this Java method\".\nAdd a simple message representation for later labs. This may be a small Message class or record with fields such as role and content.\nAdd a --verbose flag or similar option that prints helpful debugging information, such as the user prompt, selected model, and token counts if your API provides them.\nChoose a small Java feature request that can be implemented in a utility class, such as formatting a string, validating input, parsing a simple expression, or computing a value.\nAsk GitHub Copilot or another approved coding assistant for help once using a naive prompt or informal comment. Save the prompt and resulting code or describe the interaction.\nCreate a structured task specification with goal, inputs, outputs, constraints, edge cases, and acceptance criteria. Use that specification to revise or re-implement the feature.\nCompare the naive and structured approaches in your README. Focus on concrete differences in output quality, missing edge cases, and human decisions.\n\nSuggested checkpoint commands:\nmvn test\nmvn exec:java -Dexec.args=\"Why are structured prompts useful for Java development?\"\nmvn exec:java -Dexec.args=\"--verbose Explain what this program does\""
   },
   {
-    "objectID": "assignments/final_project_milestone01.html#action-items",
-    "href": "assignments/final_project_milestone01.html#action-items",
-    "title": "Final Project Milestone 1: Proposal & Architecture",
+    "objectID": "assignments/lab01_structured_ai_workflow.html#action-items",
+    "href": "assignments/lab01_structured_ai_workflow.html#action-items",
+    "title": "Lab 1: Structured AI Workflow",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nCreate or update your project repository.\nAdd documentation for proposal and architecture.\nBegin implementation if possible."
+    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 1: Structured AI Workflow.\nFollow the instructions in the lab page.\nGo to github.com and create a fresh repository named comp331-java-agent.\nBuild the Java LLM command-line client and naive vs structured Copilot comparison described in the linked instructions.\nDocument setup, run commands, prompts, accepted/rejected Copilot suggestions, comparison notes, and verification results in README.md.\nCopy meaningful prompts and Copilot interaction notes into your weekly AI interaction reflection.\nSubmit the repository link through Canvas."
   },
   {
-    "objectID": "assignments/final_project_milestone01.html#deliverables",
-    "href": "assignments/final_project_milestone01.html#deliverables",
-    "title": "Final Project Milestone 1: Proposal & Architecture",
-    "section": "4 Deliverables",
-    "text": "4 Deliverables\nYour repository should include:\n\nProject proposal.\nArchitecture documentation or diagram.\nDevelopment plan and milestone checklist.\nInitial implementation artifacts if available."
+    "objectID": "assignments/lab01_structured_ai_workflow.html#using-github-copilot",
+    "href": "assignments/lab01_structured_ai_workflow.html#using-github-copilot",
+    "title": "Lab 1: Structured AI Workflow",
+    "section": "4 Using GitHub Copilot",
+    "text": "4 Using GitHub Copilot\nUse GitHub Copilot to compare unstructured assistance with intentional, structured assistance. You remain responsible for understanding, testing, and explaining all submitted work.\nRequired Copilot workflow:\n\nUse inline Copilot once with a vague comment or naive prompt. Save the prompt/comment and result.\nUse Copilot Chat again with a structured task specification. Include goal, inputs, outputs, constraints, edge cases, and acceptance criteria.\nAsk Copilot to explain the structured result before accepting it.\nCompare the naive and structured outputs in your README. Focus on correctness, missing edge cases, and what you changed manually.\n\nSuggested structured prompt:\nYou are helping me implement a small Java utility method.\nGoal:\nInputs:\nOutputs:\nConstraints:\nEdge cases:\nAcceptance criteria:\nGenerate only the method and a short explanation."
   },
   {
-    "objectID": "assignments/final_project_milestone01.html#grading",
-    "href": "assignments/final_project_milestone01.html#grading",
-    "title": "Final Project Milestone 1: Proposal & Architecture",
-    "section": "5 Grading",
-    "text": "5 Grading\n\n\n\nCategory\nPoints\n\n\n\n\nProject scope and problem statement are clear\n20\n\n\nArchitecture covers major system components\n25\n\n\nStructured AI-assisted workflow is defined\n15\n\n\nDevelopment plan is realistic and specific\n15\n\n\nRepository organization is ready for continued work\n5\n\n\nTotal\n80"
-  },
-  {
-    "objectID": "assignments/final_project_milestone01.html#submission-instructions",
-    "href": "assignments/final_project_milestone01.html#submission-instructions",
-    "title": "Final Project Milestone 1: Proposal & Architecture",
-    "section": "6 Submission Instructions",
-    "text": "6 Submission Instructions\nSubmit your project repository link through Canvas. Include links or paths to the proposal and architecture documentation.\nNext: Final Project Milestone 2."
-  },
-  {
-    "objectID": "assignments/lab04_risk_analysis_production_readiness.html",
-    "href": "assignments/lab04_risk_analysis_production_readiness.html",
-    "title": "Lab 4: AI Risk Analysis and Production Readiness",
-    "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 9\nPoints: 90\nThis lab analyzes the system built in Lab 3: AI System Implementation. Continue maintaining the Weekly AI Interaction Log."
-  },
-  {
-    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#purpose-of-assignment",
-    "href": "assignments/lab04_risk_analysis_production_readiness.html#purpose-of-assignment",
-    "title": "Lab 4: AI Risk Analysis and Production Readiness",
-    "section": "1 Purpose of Assignment",
-    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nAnalyze failure modes in your coding agent\nEvaluate reliability, security, and maintainability\nPropose improvements to increase robustness"
-  },
-  {
-    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#steps-requirements-of-assignment",
-    "href": "assignments/lab04_risk_analysis_production_readiness.html#steps-requirements-of-assignment",
-    "title": "Lab 4: AI Risk Analysis and Production Readiness",
-    "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nConduct a risk analysis of your current coding agent workflow. Focus on realistic failures and production-readiness concerns rather than generic AI risks.\n\nIdentify at least five failure modes in your system.\nAnalyze reliability, security, maintainability, and human oversight risks.\nRate each risk by likelihood and impact.\nPropose concrete mitigations.\nIdentify which mitigations you can implement before the final project submission."
-  },
-  {
-    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#action-items",
-    "href": "assignments/lab04_risk_analysis_production_readiness.html#action-items",
-    "title": "Lab 4: AI Risk Analysis and Production Readiness",
-    "section": "3 Action Items",
-    "text": "3 Action Items\n\nAnalyze your system.\nDocument findings clearly.\nAdd risk analysis documentation to your repository.\nRecord any AI-assisted analysis interactions in your weekly log."
-  },
-  {
-    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#deliverables",
-    "href": "assignments/lab04_risk_analysis_production_readiness.html#deliverables",
-    "title": "Lab 4: AI Risk Analysis and Production Readiness",
-    "section": "4 Deliverables",
-    "text": "4 Deliverables\nYour repository should include:\n\nRisk analysis document or README section.\nFailure mode table with likelihood, impact, and mitigation.\nProduction-readiness checklist.\nPrioritized improvement plan for the final project."
-  },
-  {
-    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#grading",
-    "href": "assignments/lab04_risk_analysis_production_readiness.html#grading",
-    "title": "Lab 4: AI Risk Analysis and Production Readiness",
-    "section": "5 Grading",
-    "text": "5 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nFailure modes are specific to the student’s system\n25\n\n\nReliability, security, maintainability, and oversight are addressed\n25\n\n\nRisk ratings and mitigations are concrete\n20\n\n\nProduction-readiness plan is actionable\n15\n\n\nAI interaction evidence is included\n5\n\n\nTotal\n90"
-  },
-  {
-    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#submission-instructions",
-    "href": "assignments/lab04_risk_analysis_production_readiness.html#submission-instructions",
-    "title": "Lab 4: AI Risk Analysis and Production Readiness",
-    "section": "6 Submission Instructions",
-    "text": "6 Submission Instructions\nSubmit your repository link and risk analysis document through Canvas.\nNext lab: Lab 5: Coding Agents and Controlled Workflows."
-  },
-  {
-    "objectID": "assignments/final_project_final_submission.html",
-    "href": "assignments/final_project_final_submission.html",
-    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
-    "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 12\nPoints: 180\nThis final submission completes the project developed through Final Project Milestone 1 and Final Project Milestone 2."
-  },
-  {
-    "objectID": "assignments/final_project_final_submission.html#purpose-of-assignment",
-    "href": "assignments/final_project_final_submission.html#purpose-of-assignment",
-    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
-    "section": "1 Purpose of Assignment",
-    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nDeliver a complete Controlled Coding Agent system\nDemonstrate integration of all course components\nApply engineering judgment to AI-assisted workflows\nClearly communicate system design and results"
-  },
-  {
-    "objectID": "assignments/final_project_final_submission.html#steps-requirements-of-assignment",
-    "href": "assignments/final_project_final_submission.html#steps-requirements-of-assignment",
-    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
-    "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nFinalize your Controlled Coding Agent system and submit a complete, reproducible project. Your final submission should demonstrate integration of structured input, AI-assisted generation, evaluation, controlled workflow, persistence or artifact tracking, documentation, and human oversight."
-  },
-  {
-    "objectID": "assignments/final_project_final_submission.html#action-items",
-    "href": "assignments/final_project_final_submission.html#action-items",
-    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
-    "section": "3 Action Items",
-    "text": "3 Action Items\n\nFinalize and verify your complete coding agent system, including input, generation, evaluation, workflow, and persistence.\nEnsure the project runs from a clean environment with clear setup instructions.\nProvide a reproducible demo command or script that executes the full workflow.\nSubmit a 5-8 minute recorded demo showing system functionality and iteration.\nInclude an example workflow run and evaluation results in your README.\nProvide evidence of AI-assisted development, including prompts, iterations, and Copilot usage.\nReview submission for completeness, clarity, and usability."
-  },
-  {
-    "objectID": "assignments/final_project_final_submission.html#deliverables",
-    "href": "assignments/final_project_final_submission.html#deliverables",
-    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
-    "section": "4 Deliverables",
-    "text": "4 Deliverables\nYour repository should include:\n\nComplete runnable Controlled Coding Agent system.\nREADME with setup, run, evaluation, and demo instructions.\nEvaluation report with results and interpretation.\nExample workflow run artifacts.\nAI-assisted development evidence.\nLink to a 5-8 minute recorded demo."
-  },
-  {
-    "objectID": "assignments/final_project_final_submission.html#grading",
-    "href": "assignments/final_project_final_submission.html#grading",
-    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
-    "section": "5 Grading",
-    "text": "5 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nComplete system integrates input, generation, evaluation, workflow, and persistence/artifact tracking\n50\n\n\nSystem runs from a clean environment with clear instructions\n25\n\n\nEvaluation report is meaningful and evidence-based\n35\n\n\nDocumentation clearly explains architecture, usage, and limitations\n30\n\n\nDemo is clear, complete, and within 5-8 minutes\n25\n\n\nAI-assisted development evidence is complete and transparent\n15\n\n\nTotal\n180"
-  },
-  {
-    "objectID": "assignments/final_project_final_submission.html#submission-instructions",
-    "href": "assignments/final_project_final_submission.html#submission-instructions",
-    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
-    "section": "6 Submission Instructions",
-    "text": "6 Submission Instructions\nSubmit your project repository link and recorded demo link through Canvas. Follow any additional sharing instructions provided by your professor."
-  },
-  {
-    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html",
-    "href": "assignments/lab05_coding_agents_controlled_workflows.html",
-    "title": "Lab 5: Coding Agents and Controlled Workflows",
-    "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 10\nPoints: 100\nThis lab extends Lab 4: AI Risk Analysis and Production Readiness and prepares you for Final Project Milestone 1."
-  },
-  {
-    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#purpose-of-assignment",
-    "href": "assignments/lab05_coding_agents_controlled_workflows.html#purpose-of-assignment",
-    "title": "Lab 5: Coding Agents and Controlled Workflows",
-    "section": "1 Purpose of Assignment",
-    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nImplement the core agent loop\nDesign controlled multi-step workflows\nIntroduce human oversight into your coding agent\nMove from simple workflows to agent-like behavior"
-  },
-  {
-    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#steps-requirements-of-assignment",
-    "href": "assignments/lab05_coding_agents_controlled_workflows.html#steps-requirements-of-assignment",
-    "title": "Lab 5: Coding Agents and Controlled Workflows",
-    "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nImplement a controlled multi-step workflow that resembles an agent loop while keeping human oversight explicit. The system should not blindly generate and apply changes without review.\n\nDefine the loop stages, such as intake, plan, generate, evaluate, revise, and approve.\nImplement the workflow in code, scripts, or a clearly runnable process.\nAdd at least one human approval checkpoint.\nPreserve artifacts from a workflow run, including input, generated output, evaluation result, and final decision.\nDocument how to reproduce the workflow."
-  },
-  {
-    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#action-items",
-    "href": "assignments/lab05_coding_agents_controlled_workflows.html#action-items",
-    "title": "Lab 5: Coding Agents and Controlled Workflows",
-    "section": "3 Action Items",
-    "text": "3 Action Items\n\nImplement the workflow in your repository.\nDocument how the workflow operates.\nEnsure reproducibility.\nRecord relevant AI interactions in your final Week 10 AI interaction log entry."
-  },
-  {
-    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#deliverables",
-    "href": "assignments/lab05_coding_agents_controlled_workflows.html#deliverables",
-    "title": "Lab 5: Coding Agents and Controlled Workflows",
-    "section": "4 Deliverables",
-    "text": "4 Deliverables\nYour repository should include:\n\nRunnable controlled workflow.\nDocumentation of the agent loop stages.\nHuman oversight checkpoint description.\nExample run artifacts.\nReproducible setup and execution instructions."
-  },
-  {
-    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#grading",
-    "href": "assignments/lab05_coding_agents_controlled_workflows.html#grading",
-    "title": "Lab 5: Coding Agents and Controlled Workflows",
-    "section": "5 Grading",
-    "text": "5 Grading\n\n\n\nCategory\nPoints\n\n\n\n\nCore agent loop is implemented and understandable\n30\n\n\nMulti-step workflow is controlled and reproducible\n25\n\n\nHuman oversight checkpoint is meaningful\n20\n\n\nExample run artifacts are complete\n15\n\n\nDocumentation is clear and usable\n10\n\n\nTotal\n100"
-  },
-  {
-    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#submission-instructions",
-    "href": "assignments/lab05_coding_agents_controlled_workflows.html#submission-instructions",
-    "title": "Lab 5: Coding Agents and Controlled Workflows",
-    "section": "6 Submission Instructions",
-    "text": "6 Submission Instructions\nSubmit your repository link through Canvas. Clearly identify the command, script, or steps your professor should use to reproduce the workflow.\nNext: Final Project Milestone 1: Proposal & Architecture."
-  },
-  {
-    "objectID": "assignments/assignment01.html",
-    "href": "assignments/assignment01.html",
-    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
-    "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 1\nPoints: 30\nUse the Tool Setup Guide to install and start the required tools before completing this assignment."
-  },
-  {
-    "objectID": "assignments/assignment01.html#purpose-of-assignment",
-    "href": "assignments/assignment01.html#purpose-of-assignment",
-    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
-    "section": "1 Purpose of Assignment",
-    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nSet up your development environment for AI-assisted software engineering\nVerify GitHub Copilot is working correctly\nUnderstand the difference between vibe coding and structured AI-assisted development\nIntroduce the concept of programming with intent\nRecognize key strengths and limitations of AI-generated code\nInterpret the Software 2.0 perspective"
-  },
-  {
-    "objectID": "assignments/assignment01.html#steps-requirements-of-assignment",
-    "href": "assignments/assignment01.html#steps-requirements-of-assignment",
-    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
-    "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nComplete the following setup tasks:\n\nInstall JDK 17+ and verify installation with:\n\njava -version\n\nInstall one development environment:\n\nIntelliJ IDEA, or\nVS Code with Java extensions\n\nInstall Git, sign in to GitHub, set up GitHub Education using your university email address at github.com/settings/education/benefits, and confirm you can create or access a GitHub repository.\nInstall and sign in to GitHub Copilot.\nCreate a simple Java project named:\n\nai-swe-course\n\nAdd a basic Main.java file.\nVerify Copilot suggestions are working:\n\nType a simple comment such as:\n\n\n// method to add two numbers\n\nConfirm Copilot ghost text appears.\nAccept at least one suggestion.\n\n\nGenerate one simple method using Copilot.\n\nExamples: - Add two numbers - Reverse a string - Check if a number is even\nKeep the code simple. The goal is to confirm your setup works."
-  },
-  {
-    "objectID": "assignments/assignment01.html#conceptual-reflection",
-    "href": "assignments/assignment01.html#conceptual-reflection",
-    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
-    "section": "3 Conceptual Reflection",
-    "text": "3 Conceptual Reflection\nWrite a short reflection of 150–250 words addressing the following:\n\nWhat is the difference between vibe coding and AI-assisted software engineering?\nWhat does programming with intent mean in practice?\nWhat are key strengths and limitations of AI-generated code?\nHow do you interpret the Software 2.0 perspective, and what are its implications for software development?\n\nYour response should be concise, thoughtful, and written in your own words."
-  },
-  {
-    "objectID": "assignments/assignment01.html#action-items",
-    "href": "assignments/assignment01.html#action-items",
-    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
-    "section": "4 Action Items",
-    "text": "4 Action Items\n\nCreate a Git repository\nCommit a minimal Java project\nAdd one Copilot-generated method\nAdd a README.md with setup confirmation\nCapture and include screenshots\nComplete the short reflection"
-  },
-  {
-    "objectID": "assignments/assignment01.html#deliverables",
-    "href": "assignments/assignment01.html#deliverables",
-    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
+    "objectID": "assignments/lab01_structured_ai_workflow.html#deliverables",
+    "href": "assignments/lab01_structured_ai_workflow.html#deliverables",
+    "title": "Lab 1: Structured AI Workflow",
     "section": "5 Deliverables",
-    "text": "5 Deliverables\nSubmit the following:\n\n5.1 1. Git Repository\nYour repository should include:\n\nA minimal Java project\nAt least one Copilot-generated method\nA README.md that includes:\n\nSetup confirmation\nOne sentence stating that Copilot is working\n\n\n\n\n5.2 2. Screenshots\nInclude 2–3 screenshots showing:\n\nYour IDE with the Java project open\nA Copilot suggestion visible as ghost text\nOptional: Copilot settings page\n\n\n\n5.3 3. Reflection\nSubmit your 150–250 word conceptual reflection."
+    "text": "5 Deliverables\nYour repository should include:\n\nA fresh Lab 1 repository named comp331-java-agent.\nA runnable Java Maven project with a command-line entry point.\nCode that sends a prompt to an LLM from Java.\nCommand-line prompt handling and a verbose/debug mode.\nJava source code for both the naive and structured feature attempts, or clearly separated commits showing each approach.\nA structured task specification.\nA README.md explaining setup, API key configuration, run commands, and the naive vs structured comparison.\nCopilot evidence showing the naive interaction, structured interaction, accepted changes, rejected or revised suggestions, and verification method.\nEvidence of AI-assisted development through prompts, comments, screenshots, transcript snippets, or log links."
   },
   {
-    "objectID": "assignments/assignment01.html#grading",
-    "href": "assignments/assignment01.html#grading",
-    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
+    "objectID": "assignments/lab01_structured_ai_workflow.html#grading",
+    "href": "assignments/lab01_structured_ai_workflow.html#grading",
+    "title": "Lab 1: Structured AI Workflow",
     "section": "6 Grading",
-    "text": "6 Grading\nTotal: 30 points\n\n\n\nCategory\nPoints\n\n\n\n\nEnvironment, GitHub, and Copilot setup completed\n10\n\n\nScreenshots clearly demonstrate setup\n5\n\n\nRepository includes minimal Java project and README\n5\n\n\nReflection demonstrates understanding of Week 1 concepts\n10\n\n\nTotal\n30"
+    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nJava LLM CLI is runnable and documented\n25\n\n\nStructured task specification is clear and complete\n20\n\n\nNaive and structured implementations are both present\n20\n\n\nComparison explains concrete differences in AI outputs and human decisions\n15\n\n\nCopilot use is documented with accepted, revised, and verified suggestions\n10\n\n\nFresh comp331-java-agent repository is organized with README setup and run instructions\n5\n\n\nVerbose/debug mode or equivalent inspection support is included\n5\n\n\nSecret handling is appropriate\n5\n\n\nTotal\n90"
   },
   {
-    "objectID": "assignments/assignment01.html#submission-instructions",
-    "href": "assignments/assignment01.html#submission-instructions",
-    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
+    "objectID": "assignments/lab01_structured_ai_workflow.html#submission-instructions",
+    "href": "assignments/lab01_structured_ai_workflow.html#submission-instructions",
+    "title": "Lab 1: Structured AI Workflow",
     "section": "7 Submission Instructions",
-    "text": "7 Submission Instructions\n\nSubmit your Git repository link.\nSubmit your screenshots and reflection through Canvas.\nFollow any additional sharing instructions provided by your professor."
+    "text": "7 Submission Instructions\nShare the comp331-java-agent Git repository with your professor per their instructions and submit the repository link through Canvas. Include any setup notes needed to run your Java project.\nNext lab: Lab 2: Eval-Driven Development."
   },
   {
-    "objectID": "assignments/assignment01.html#notes",
-    "href": "assignments/assignment01.html#notes",
-    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
-    "section": "8 Notes",
-    "text": "8 Notes\n\nOnly GitHub Copilot is approved for this assignment.\nDo not over-engineer the code portion.\nIf you encounter setup issues, briefly document what happened and how you attempted to resolve it.\nDeeper prompting and structured AI-assisted development will begin in later assignments."
+    "objectID": "assignments/final_project_milestone02.html",
+    "href": "assignments/final_project_milestone02.html",
+    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "section": "",
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 11\nPoints: 140\nThis milestone extends Final Project Milestone 1."
   },
   {
-    "objectID": "lectures/lecture01.html#objectives",
-    "href": "lectures/lecture01.html#objectives",
-    "title": "Week 1: Foundations of Software Engineering and AI-Driven Coding Assistants",
+    "objectID": "assignments/final_project_milestone02.html#purpose-of-assignment",
+    "href": "assignments/final_project_milestone02.html#purpose-of-assignment",
+    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "section": "1 Purpose of Assignment",
+    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nDemonstrate meaningful progress on your coding agent system\nDefine and implement an evaluation strategy\nIdentify risks and limitations in your system\nPrepare for final system completion"
+  },
+  {
+    "objectID": "assignments/final_project_milestone02.html#steps-requirements-of-assignment",
+    "href": "assignments/final_project_milestone02.html#steps-requirements-of-assignment",
+    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "section": "2 Steps / Requirements of Assignment",
+    "text": "2 Steps / Requirements of Assignment\nSubmit a partial implementation that demonstrates the core direction of your final project. The system does not need to be complete, but it must show meaningful progress and a concrete evaluation strategy.\n\nImplement the most important workflow path or system component.\nAdd or refine the evaluation strategy.\nRun the current system on at least one example task.\nIdentify current risks, limitations, and incomplete pieces.\nUpdate your plan for the final submission."
+  },
+  {
+    "objectID": "assignments/final_project_milestone02.html#using-github-copilot",
+    "href": "assignments/final_project_milestone02.html#using-github-copilot",
+    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "section": "3 Using GitHub Copilot",
+    "text": "3 Using GitHub Copilot\nUse GitHub Copilot for focused implementation, debugging, and evaluation work. Do not ask Copilot to generate the whole project at once; use it on scoped components and verify each result.\nRecommended Copilot workflow:\n\nUse Copilot for one focused implementation task tied to your architecture.\nUse Copilot to improve or expand evaluation cases.\nUse Copilot to debug one failing example run, then document the fix and verification.\nIdentify which implementation pieces were Copilot-assisted and how each was verified."
+  },
+  {
+    "objectID": "assignments/final_project_milestone02.html#action-items",
+    "href": "assignments/final_project_milestone02.html#action-items",
+    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "section": "4 Action Items",
+    "text": "4 Action Items\n\nClick the link to the full hosted milestone instructions: Final Project Milestone 2.\nFollow the instructions in the milestone page.\nOpen your final project repository and review the proposal, architecture, and milestone checklist from Milestone 1.\nComplete the partial implementation, evaluation strategy, example run, risk update, and final completion plan described in the linked instructions.\nAdd Copilot-assisted implementation notes identifying assisted pieces, accepted suggestions, rejected or modified suggestions, and verification methods.\nSubmit the repository link, current runnable path, and known setup constraints through Canvas."
+  },
+  {
+    "objectID": "assignments/final_project_milestone02.html#deliverables",
+    "href": "assignments/final_project_milestone02.html#deliverables",
+    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "section": "5 Deliverables",
+    "text": "5 Deliverables\nYour repository should include:\n\nPartial implementation of the Controlled Coding Agent.\nEvaluation strategy and current evaluation artifacts.\nExample run or walkthrough.\nRisk and limitations section.\nCopilot-assisted implementation notes identifying assisted pieces and verification methods.\nUpdated final completion plan."
+  },
+  {
+    "objectID": "assignments/final_project_milestone02.html#grading",
+    "href": "assignments/final_project_milestone02.html#grading",
+    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "section": "6 Grading",
+    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nPartial implementation shows meaningful progress\n45\n\n\nEvaluation strategy is defined and partially implemented\n35\n\n\nExample run demonstrates current workflow\n20\n\n\nRisks, limitations, and next steps are clearly documented\n20\n\n\nCopilot-assisted implementation evidence is specific and verified\n5\n\n\nRepository remains organized and usable\n15\n\n\nTotal\n140"
+  },
+  {
+    "objectID": "assignments/final_project_milestone02.html#submission-instructions",
+    "href": "assignments/final_project_milestone02.html#submission-instructions",
+    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "section": "7 Submission Instructions",
+    "text": "7 Submission Instructions\nSubmit your project repository link through Canvas. Identify the current runnable path, any known setup constraints, and where to find Copilot-assisted implementation notes.\nNext: Final Project Final Submission."
+  },
+  {
+    "objectID": "assignments/weekly_ai_interaction_log.html",
+    "href": "assignments/weekly_ai_interaction_log.html",
+    "title": "Weekly AI Interaction Log",
+    "section": "",
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeeks: 2, 3, 4, 5, 6, 7, 8, 9, 10\nPoints: 10 points each week / 90 total"
+  },
+  {
+    "objectID": "assignments/weekly_ai_interaction_log.html#purpose-of-assignment",
+    "href": "assignments/weekly_ai_interaction_log.html#purpose-of-assignment",
+    "title": "Weekly AI Interaction Log",
+    "section": "1 Purpose of Assignment",
+    "text": "1 Purpose of Assignment\nThis assignment is intended to help you learn to do the following:\n\nDevelop intentional and structured use of GitHub Copilot or another approved AI/LLM tool\nReflect on how prompting, iteration, and evaluation affect outcomes\nIdentify patterns in successful and unsuccessful AI interactions\nBuild awareness of your own engineering decision-making process\nDocument how AI-assisted development evolves over time"
+  },
+  {
+    "objectID": "assignments/weekly_ai_interaction_log.html#steps-requirements-of-assignment",
+    "href": "assignments/weekly_ai_interaction_log.html#steps-requirements-of-assignment",
+    "title": "Weekly AI Interaction Log",
+    "section": "2 Steps / Requirements of Assignment",
+    "text": "2 Steps / Requirements of Assignment\nSubmit a separate weekly AI interaction reflection from Week 2 through Week 10. Each week, create and submit a new document that contains only that week’s log entry. Do not submit one cumulative document containing multiple weeks unless your professor explicitly asks for it. Each weekly reflection should be submitted through Canvas as a document or PDF, such as .docx or .pdf, unless your professor approves another format.\nEach weekly entry should include:\n\nWeek number and date\nDevelopment task or learning activity\nYour intent before using Copilot\nCopilot mode used: inline suggestion, chat, edit, agent/workspace, test generation, review, or debugging\nPrompt, comment, or interaction summary\nAI tool output or suggestion summary\nWhat you accepted, modified, or rejected\nVerification method: test, compiler, manual review, comparison, or rejected output\nReflection on what worked, what failed, and what you will change next time\n\nSuggested template:\nIntent:\nCopilot mode used:\nContext I gave Copilot:\nCopilot output:\nWhat I accepted:\nWhat I changed:\nHow I verified it:\nWhat I learned:"
+  },
+  {
+    "objectID": "assignments/weekly_ai_interaction_log.html#action-items",
+    "href": "assignments/weekly_ai_interaction_log.html#action-items",
+    "title": "Weekly AI Interaction Log",
+    "section": "3 Action Items",
+    "text": "3 Action Items\n\nClick the link to the full hosted assignment instructions: Weekly AI Interaction Log.\nFollow the instructions in the assignment page.\nGo to your preferred document editor, such as Google Docs at docs.google.com, Microsoft Word, or another professor-approved format.\nEach week, create a new document for that week only. Do not submit a cumulative log with previous weeks included.\nUse GitHub Copilot as directed in the linked instructions and copy meaningful prompts, outputs, accepted/rejected suggestions, and verification notes into the log.\nWrite the required reflection paragraph about your initial prompt, prompt iterations, successful prompt patterns, unsuccessful prompt patterns, and what you will change next time.\nExport or save the current week’s entry as a document or PDF and submit it through Canvas."
+  },
+  {
+    "objectID": "assignments/weekly_ai_interaction_log.html#deliverables",
+    "href": "assignments/weekly_ai_interaction_log.html#deliverables",
+    "title": "Weekly AI Interaction Log",
+    "section": "4 Deliverables",
+    "text": "4 Deliverables\nSubmit only the current week’s reflection as a separate document or PDF through Canvas. The submitted file should contain that week’s log entry only, not a cumulative log from multiple weeks. A repository link is not required for this weekly reflection unless your professor specifically asks for one. Do not rely on lab repository notes as your weekly submission unless your professor explicitly approves that format.\nSuggested filename format:\nweek02-ai-reflection-yourname.pdf"
+  },
+  {
+    "objectID": "assignments/weekly_ai_interaction_log.html#grading",
+    "href": "assignments/weekly_ai_interaction_log.html#grading",
+    "title": "Weekly AI Interaction Log",
+    "section": "5 Grading",
+    "text": "5 Grading\nEach weekly entry is worth 10 points.\n\n\n\nCategory\nPoints\n\n\n\n\nClear task context and intent\n2\n\n\nCopilot mode and interaction documented with enough specificity\n3\n\n\nVerification and human decision-making explained\n3\n\n\nReflection identifies a useful pattern, risk, or next step\n2\n\n\nWeekly Total\n10\n\n\n\nAcross Weeks 2-10, the assignment is worth 90 points total."
+  },
+  {
+    "objectID": "assignments/weekly_ai_interaction_log.html#submission-instructions",
+    "href": "assignments/weekly_ai_interaction_log.html#submission-instructions",
+    "title": "Weekly AI Interaction Log",
+    "section": "6 Submission Instructions",
+    "text": "6 Submission Instructions\nSubmit the current week’s reflection document or PDF through Canvas. Each weekly submission should be a separate file containing only that week’s log entry. Follow any additional instructions provided by your professor."
+  },
+  {
+    "objectID": "assignments/lab02_eval_driven_development.html",
+    "href": "assignments/lab02_eval_driven_development.html",
+    "title": "Lab 2: Eval-Driven Development",
+    "section": "",
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 5\nPoints: 100\nThis lab extends Lab 1: Structured AI Workflow. Continue maintaining the Weekly AI Interaction Log."
+  },
+  {
+    "objectID": "assignments/lab02_eval_driven_development.html#purpose-of-assignment",
+    "href": "assignments/lab02_eval_driven_development.html#purpose-of-assignment",
+    "title": "Lab 2: Eval-Driven Development",
+    "section": "1 Purpose of Assignment",
+    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nBuild the evaluation layer of your coding agent\nDefine measurable correctness criteria\nDetect regressions in AI-generated outputs\nCreate the Java sandbox project that later agent tools will inspect and modify"
+  },
+  {
+    "objectID": "assignments/lab02_eval_driven_development.html#steps-requirements-of-assignment",
+    "href": "assignments/lab02_eval_driven_development.html#steps-requirements-of-assignment",
+    "title": "Lab 2: Eval-Driven Development",
+    "section": "2 Steps / Requirements of Assignment",
+    "text": "2 Steps / Requirements of Assignment\nExtend your Lab 1 repository by adding a small Java sandbox project and a repeatable evaluation process. Later labs will give the coding agent tools that operate on this sandbox, so keep it simple and easy to test.\n\nCreate a sandbox Java project or package inside your repository. A recommended name is workspace/calculator or sandbox/calculator.\nImplement a small Java program or library that has clear behavior. Recommended options include a calculator, string formatter, unit converter, password validator, or CSV summary utility.\nAdd JUnit tests that check normal cases, edge cases, and at least one invalid-input case.\nDefine measurable acceptance criteria in your README. Each criterion should connect to a test, command, or review check.\nRun the evaluation manually from the command line using mvn test or an equivalent command. Save the output or summarize it in your README.\nUse Copilot or another approved AI tool to make at least two iterations of the sandbox code. One iteration may intentionally be incomplete or flawed.\nRun the evaluation against at least two versions or iterations of the code and document what changed. You may use separate commits, branches, screenshots, copied terminal output, or a written comparison.\nConnect the evaluation back to your Lab 1 structured prompt/specification. Note which acceptance criteria were enforced automatically and which still required human review.\n\nSuggested checkpoint commands:\nmvn test\nmvn -q test\ngit log --oneline\nMinimum viable version: one sandbox Java class and at least five meaningful JUnit tests. Stretch goal: add a small script or Maven profile that runs only the sandbox evaluation."
+  },
+  {
+    "objectID": "assignments/lab02_eval_driven_development.html#action-items",
+    "href": "assignments/lab02_eval_driven_development.html#action-items",
+    "title": "Lab 2: Eval-Driven Development",
+    "section": "3 Action Items",
+    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 2: Eval-Driven Development.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository from Lab 1.\nCreate the sandbox project, JUnit evaluation, and Copilot-assisted iterations described in the linked instructions.\nDocument acceptance criteria, test commands, iteration results, Copilot-assisted test or code changes, and verification results in README.md.\nCopy meaningful Copilot prompts, test-generation notes, and evaluation decisions into your weekly AI interaction reflection.\nSubmit the repository link and required evaluation evidence through Canvas."
+  },
+  {
+    "objectID": "assignments/lab02_eval_driven_development.html#using-github-copilot",
+    "href": "assignments/lab02_eval_driven_development.html#using-github-copilot",
+    "title": "Lab 2: Eval-Driven Development",
+    "section": "4 Using GitHub Copilot",
+    "text": "4 Using GitHub Copilot\nUse GitHub Copilot to strengthen the evaluation process, not to bypass it. You remain responsible for deciding which tests matter and whether the implementation satisfies the assignment.\nRecommended Copilot workflow:\n\nAsk Copilot Chat to propose JUnit tests before implementation. Review the suggestions and keep only meaningful cases.\nAsk Copilot to identify missing edge cases after your first test set is written.\nUse Copilot to help create one incomplete or flawed implementation, then use your tests to expose the weakness.\nLabel tests or test ideas as human-authored, Copilot-assisted, or Copilot-suggested but modified.\nRecord how each accepted Copilot suggestion was verified with mvn test or an equivalent command."
+  },
+  {
+    "objectID": "assignments/lab02_eval_driven_development.html#deliverables",
+    "href": "assignments/lab02_eval_driven_development.html#deliverables",
+    "title": "Lab 2: Eval-Driven Development",
+    "section": "5 Deliverables",
+    "text": "5 Deliverables\nYour repository should include:\n\nA Java sandbox project or package that later labs can inspect and modify.\nEvaluation criteria in a documented format.\nRunnable JUnit tests or an equivalent automated evaluation command.\nExample evaluation results from at least two code iterations.\nREADME instructions for running the evaluations from a clean environment.\nNotes explaining what the evaluation caught and what it did not catch.\nA short note identifying which test ideas or implementation changes were Copilot-assisted and how they were verified."
+  },
+  {
+    "objectID": "assignments/lab02_eval_driven_development.html#grading",
+    "href": "assignments/lab02_eval_driven_development.html#grading",
+    "title": "Lab 2: Eval-Driven Development",
+    "section": "6 Grading",
+    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nJava sandbox project is clear, small, and usable for later labs\n15\n\n\nEvaluation criteria are measurable and tied to the task\n20\n\n\nJUnit tests or equivalent automated checks are implemented and runnable\n35\n\n\nRegression or iteration comparison is documented\n15\n\n\nREADME explains how to run and interpret evaluations\n10\n\n\nCopilot-assisted test or implementation work is documented and verified\n5\n\n\nTotal\n100"
+  },
+  {
+    "objectID": "assignments/lab02_eval_driven_development.html#submission-instructions",
+    "href": "assignments/lab02_eval_driven_development.html#submission-instructions",
+    "title": "Lab 2: Eval-Driven Development",
+    "section": "7 Submission Instructions",
+    "text": "7 Submission Instructions\nSubmit your repository link and any required evaluation output through Canvas. Identify the exact command your professor should run to execute the evaluation.\nNext lab: Lab 3: AI System Implementation."
+  },
+  {
+    "objectID": "assignments/lab03_ai_system_implementation.html",
+    "href": "assignments/lab03_ai_system_implementation.html",
+    "title": "Lab 3: AI System Implementation",
+    "section": "",
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 7\nPoints: 100\nThis lab extends Lab 2: Eval-Driven Development. Continue maintaining the Weekly AI Interaction Log."
+  },
+  {
+    "objectID": "assignments/lab03_ai_system_implementation.html#purpose-of-assignment",
+    "href": "assignments/lab03_ai_system_implementation.html#purpose-of-assignment",
+    "title": "Lab 3: AI System Implementation",
+    "section": "1 Purpose of Assignment",
+    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nIntegrate components into a working coding agent workflow\nConnect structured input, AI generation, and evaluation\nTransition from isolated tasks to a cohesive system\nImplement safe Java tools that allow an agent to inspect and work inside a sandbox"
+  },
+  {
+    "objectID": "assignments/lab03_ai_system_implementation.html#steps-requirements-of-assignment",
+    "href": "assignments/lab03_ai_system_implementation.html#steps-requirements-of-assignment",
+    "title": "Lab 3: AI System Implementation",
+    "section": "2 Steps / Requirements of Assignment",
+    "text": "2 Steps / Requirements of Assignment\nIntegrate your structured input and evaluation work by adding Java tool implementations. These tools are the controlled operations your coding agent will later expose to the LLM. At this stage, you may test the tools directly from Java code or JUnit; the model does not need to call them automatically yet.\n\nDefine a common tool interface or base pattern. For example, you might create an AgentTool interface with methods such as name(), description(), and execute(...).\nDefine one sandbox working directory. This should point to the Java sandbox project from Lab 2, such as workspace/calculator.\nImplement a file listing tool similar to get_files_info. It should list files and directories plus basic metadata such as size and whether each entry is a directory.\nImplement a file reading tool similar to get_file_content. It should read text files from the sandbox and cap output at a reasonable length, such as 10,000 characters.\nImplement a file writing tool similar to write_file. It should create or overwrite files only inside the sandbox.\nImplement a command execution tool similar to run_python_file, adapted for Java. Recommended: RunJavaTestsTool that runs mvn test or gradle test in the sandbox. Avoid arbitrary shell access unless you have a strict allowlist.\nUse Java Path APIs to prevent path traversal. Paths such as ../README.md or absolute paths outside the sandbox must be rejected.\nAdd JUnit tests for each tool. Include successful cases and blocked cases for missing files, invalid directories, path traversal, and command restrictions.\nAdd a small manual driver or test command that demonstrates the tools working together: list files, read a Java file, write a harmless file, and run the sandbox tests.\nDocument the architecture and current limitations in your README.\n\nSuggested Java path-safety approach:\nPath sandbox = Path.of(\"workspace/calculator\").toAbsolutePath().normalize();\nPath target = sandbox.resolve(userProvidedPath).normalize();\nif (!target.startsWith(sandbox)) {\n    throw new IllegalArgumentException(\"Path is outside the sandbox\");\n}\nSuggested checkpoint commands:\nmvn test\nmvn exec:java -Dexec.args=\"--tool-demo\""
+  },
+  {
+    "objectID": "assignments/lab03_ai_system_implementation.html#action-items",
+    "href": "assignments/lab03_ai_system_implementation.html#action-items",
+    "title": "Lab 3: AI System Implementation",
+    "section": "3 Action Items",
+    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 3: AI System Implementation.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review the Lab 2 sandbox directory.\nImplement the Java tool layer, sandbox restrictions, tool tests, and demo described in the linked instructions.\nDocument the tool architecture, sample run, accepted/rejected Copilot suggestions, and verification results in README.md.\nCopy meaningful prompts, iterations, and evaluation outcomes into your weekly AI interaction reflection.\nSubmit the repository link and required tool demo or test evidence through Canvas."
+  },
+  {
+    "objectID": "assignments/lab03_ai_system_implementation.html#using-github-copilot",
+    "href": "assignments/lab03_ai_system_implementation.html#using-github-copilot",
+    "title": "Lab 3: AI System Implementation",
+    "section": "4 Using GitHub Copilot",
+    "text": "4 Using GitHub Copilot\nUse GitHub Copilot as a design and review assistant for the tool layer. Be especially cautious with file and command tools; Copilot may suggest implementations that are too permissive.\nRecommended Copilot workflow:\n\nAsk Copilot Chat to brainstorm a small Java interface for tools before coding.\nUse Copilot to draft tests for path traversal, missing files, blocked absolute paths, and command allowlists.\nAsk Copilot to review your implementation for sandbox escape risks.\nDocument at least one Copilot suggestion you rejected because it was unsafe, overbroad, or insufficiently tested.\nVerify accepted suggestions with JUnit tests and the suggested checkpoint commands."
+  },
+  {
+    "objectID": "assignments/lab03_ai_system_implementation.html#deliverables",
+    "href": "assignments/lab03_ai_system_implementation.html#deliverables",
+    "title": "Lab 3: AI System Implementation",
+    "section": "5 Deliverables",
+    "text": "5 Deliverables\nYour repository should include:\n\nWorking Java source code for the agent tool layer.\nTools for listing files, reading files, writing files, and running Java evaluation commands.\nSandbox path validation that blocks access outside the permitted working directory.\nJUnit tests for successful and blocked tool behavior.\nArchitecture documentation in the README or a separate design document.\nA sample tool demo or transcript showing at least one successful workflow.\nEvaluation results from at least one sandbox test run.\nCopilot notes describing one accepted suggestion, one rejected or revised suggestion, and the verification used."
+  },
+  {
+    "objectID": "assignments/lab03_ai_system_implementation.html#grading",
+    "href": "assignments/lab03_ai_system_implementation.html#grading",
+    "title": "Lab 3: AI System Implementation",
+    "section": "6 Grading",
+    "text": "6 Grading\n\n\n\nCategory\nPoints\n\n\n\n\nTool layer includes the required Java tools\n25\n\n\nSandbox restrictions are correctly implemented and tested\n30\n\n\nSystem is runnable and produces inspectable output\n20\n\n\nArchitecture documentation and Copilot decision notes are clear\n15\n\n\nSample run and evaluation results are included\n10\n\n\nTotal\n100"
+  },
+  {
+    "objectID": "assignments/lab03_ai_system_implementation.html#submission-instructions",
+    "href": "assignments/lab03_ai_system_implementation.html#submission-instructions",
+    "title": "Lab 3: AI System Implementation",
+    "section": "7 Submission Instructions",
+    "text": "7 Submission Instructions\nSubmit your repository link through Canvas. Include any notes your professor needs to run the tool tests or demo workflow.\nNext lab: Lab 4: AI Risk Analysis and Production Readiness."
+  },
+  {
+    "objectID": "lectures/lecture02_part1.html#main-topics",
+    "href": "lectures/lecture02_part1.html#main-topics",
+    "title": "Week 2; Part 1: Overview of AI-Powered Coding Assistants and Their Java Integration",
+    "section": "Main Topics",
+    "text": "Main Topics\n\nFeatures and capabilities of AI coding assistants (e.g., GitHub Copilot)\nIntegration approaches in Java IDEs (VS Code, IntelliJ IDEA)\nPractical examples of Copilot in Java workflows"
+  },
+  {
+    "objectID": "lectures/lecture02_part1.html#learning-objectives",
+    "href": "lectures/lecture02_part1.html#learning-objectives",
+    "title": "Week 2; Part 1: Overview of AI-Powered Coding Assistants and Their Java Integration",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nUnderstand how AI coding assistants integrate with Java development environments\nExplore Copilot features for Java code generation, refactoring, and navigation"
+  },
+  {
+    "objectID": "lectures/lecture02_part1.html#activity",
+    "href": "lectures/lecture02_part1.html#activity",
+    "title": "Week 2; Part 1: Overview of AI-Powered Coding Assistants and Their Java Integration",
+    "section": "Activity",
+    "text": "Activity\nUse Copilot to generate a simple Java method in your IDE. Document the prompt used and evaluate the output.\nAdd your notes, code, and reflections below this cell."
+  },
+  {
+    "objectID": "lectures/lecture03.html#overview",
+    "href": "lectures/lecture03.html#overview",
+    "title": "Lecture 3: Human-AI Collaboration in Development Workflows",
+    "section": "Overview",
+    "text": "Overview\nThis lecture focuses on strategies for effective collaboration between human developers and AI coding assistants, such as GitHub Copilot, in software engineering workflows.\nKey Topics\n\nCombining human expertise with AI suggestions\nCollaborative editing and code review\nProductivity and code quality improvements"
+  },
+  {
+    "objectID": "lectures/lecture03.html#learning-objectives",
+    "href": "lectures/lecture03.html#learning-objectives",
+    "title": "Lecture 3: Human-AI Collaboration in Development Workflows",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nApply collaboration strategies in development workflows\nAnalyze before/after code changes with AI assistance\nDiscuss best practices for human-AI teamwork\n\nAdd your notes, code, and reflections below this cell."
+  },
+  {
+    "objectID": "lectures/lecture07.html#objectives",
+    "href": "lectures/lecture07.html#objectives",
+    "title": "Week 7: Security Considerations and Risks of AI-Generated Java Code",
     "section": "Objectives",
-    "text": "Objectives\n\nRecall the roles of AI technologies in the software engineering lifecycle\nSet up the development environment and AI coding assistant"
+    "text": "Objectives\n\nAnalyze security implications of AI-generated code"
   },
   {
-    "objectID": "lectures/lecture01.html#key-topics",
-    "href": "lectures/lecture01.html#key-topics",
-    "title": "Week 1: Foundations of Software Engineering and AI-Driven Coding Assistants",
+    "objectID": "lectures/lecture07.html#key-topics",
+    "href": "lectures/lecture07.html#key-topics",
+    "title": "Week 7: Security Considerations and Risks of AI-Generated Java Code",
     "section": "Key Topics",
-    "text": "Key Topics\n\nIntroduction to software engineering workflows\nRole of AI-driven coding assistants\nOverview of course structure and expectations"
+    "text": "Key Topics\n\nSecurity vulnerabilities in AI-generated code\nSafe coding practices"
   },
   {
-    "objectID": "lectures/lecture01.html#activities",
-    "href": "lectures/lecture01.html#activities",
-    "title": "Week 1: Foundations of Software Engineering and AI-Driven Coding Assistants",
+    "objectID": "lectures/lecture07.html#activities",
+    "href": "lectures/lecture07.html#activities",
+    "title": "Week 7: Security Considerations and Risks of AI-Generated Java Code",
     "section": "Activities",
-    "text": "Activities\n\nCourse orientation\nTool setup: IDE, GitHub Copilot, JDK, Git"
+    "text": "Activities\n\nReview and analyze AI-generated code for security risks"
   },
   {
-    "objectID": "lectures/lecture01.html#deliverable",
-    "href": "lectures/lecture01.html#deliverable",
-    "title": "Week 1: Foundations of Software Engineering and AI-Driven Coding Assistants",
+    "objectID": "lectures/lecture07.html#deliverable",
+    "href": "lectures/lecture07.html#deliverable",
+    "title": "Week 7: Security Considerations and Risks of AI-Generated Java Code",
     "section": "Deliverable",
-    "text": "Deliverable\n\nLab 1: Submit screenshots and a brief reflection on setup experience\n\nAdd your notes, code, and reflections below this cell."
+    "text": "Deliverable\n\nAssignment: Submit report on potential vulnerabilities"
   },
   {
-    "objectID": "lectures/lecture05.html#objectives",
-    "href": "lectures/lecture05.html#objectives",
-    "title": "Week 5: Debugging and Error Resolution Assisted by AI Tools",
+    "objectID": "lectures/lecture11.html#objectives",
+    "href": "lectures/lecture11.html#objectives",
+    "title": "Week 11: Final Project Design and Development",
     "section": "Objectives",
-    "text": "Objectives\n\nApply AI-assisted debugging techniques"
+    "text": "Objectives\n\nApply and create integrated AI-assisted software solution"
   },
   {
-    "objectID": "lectures/lecture05.html#key-topics",
-    "href": "lectures/lecture05.html#key-topics",
-    "title": "Week 5: Debugging and Error Resolution Assisted by AI Tools",
+    "objectID": "lectures/lecture11.html#key-topics",
+    "href": "lectures/lecture11.html#key-topics",
+    "title": "Week 11: Final Project Design and Development",
     "section": "Key Topics",
-    "text": "Key Topics\n\nUsing AI suggestions to identify and fix bugs\nUnderstanding error resolution workflows"
+    "text": "Key Topics\n\nProject proposal and initial design\nPartial implementation using AI tools"
   },
   {
-    "objectID": "lectures/lecture05.html#activities",
-    "href": "lectures/lecture05.html#activities",
-    "title": "Week 5: Debugging and Error Resolution Assisted by AI Tools",
+    "objectID": "lectures/lecture11.html#activities",
+    "href": "lectures/lecture11.html#activities",
+    "title": "Week 11: Final Project Design and Development",
     "section": "Activities",
-    "text": "Activities\n\nDebug Java code with Copilot"
+    "text": "Activities\n\nDesign and continue development of the final Controlled Coding Agent project"
   },
   {
-    "objectID": "lectures/lecture05.html#deliverable",
-    "href": "lectures/lecture05.html#deliverable",
-    "title": "Week 5: Debugging and Error Resolution Assisted by AI Tools",
+    "objectID": "lectures/lecture11.html#deliverable",
+    "href": "lectures/lecture11.html#deliverable",
+    "title": "Week 11: Final Project Design and Development",
     "section": "Deliverable",
-    "text": "Deliverable\n\nLab 5: Submit bug description, fixes, and evaluation of AI help"
+    "text": "Deliverable\n\nProject Milestone: Submit proposal, design, and partial implementation"
   },
   {
-    "objectID": "lectures/lecture08.html#objectives",
-    "href": "lectures/lecture08.html#objectives",
-    "title": "Week 8: Project Management and Agile Practices Supported by AI Tools",
+    "objectID": "lectures/lecture04.html#objectives",
+    "href": "lectures/lecture04.html#objectives",
+    "title": "Week 4: AI-Driven Java Code Generation and Unit Test Creation using JUnit",
     "section": "Objectives",
-    "text": "Objectives\n\nApply AI tools to project management and agile practices"
+    "text": "Objectives\n\nApply AI-assisted code generation and automated testing"
   },
   {
-    "objectID": "lectures/lecture08.html#key-topics",
-    "href": "lectures/lecture08.html#key-topics",
-    "title": "Week 8: Project Management and Agile Practices Supported by AI Tools",
+    "objectID": "lectures/lecture04.html#key-topics",
+    "href": "lectures/lecture04.html#key-topics",
+    "title": "Week 4: AI-Driven Java Code Generation and Unit Test Creation using JUnit",
     "section": "Key Topics",
-    "text": "Key Topics\n\nEnhancing project planning and task management\nTeam collaboration with AI assistance"
+    "text": "Key Topics\n\nGenerating Java classes and methods with AI\nCreating JUnit tests via AI"
   },
   {
-    "objectID": "lectures/lecture08.html#activities",
-    "href": "lectures/lecture08.html#activities",
-    "title": "Week 8: Project Management and Agile Practices Supported by AI Tools",
+    "objectID": "lectures/lecture04.html#activities",
+    "href": "lectures/lecture04.html#activities",
+    "title": "Week 4: AI-Driven Java Code Generation and Unit Test Creation using JUnit",
     "section": "Activities",
-    "text": "Activities\n\nDevelop project plan and user stories with Copilot"
+    "text": "Activities\n\nUse Copilot to generate code and tests"
   },
   {
-    "objectID": "lectures/lecture08.html#deliverable",
-    "href": "lectures/lecture08.html#deliverable",
-    "title": "Week 8: Project Management and Agile Practices Supported by AI Tools",
+    "objectID": "lectures/lecture04.html#deliverable",
+    "href": "lectures/lecture04.html#deliverable",
+    "title": "Week 4: AI-Driven Java Code Generation and Unit Test Creation using JUnit",
     "section": "Deliverable",
-    "text": "Deliverable\n\nLab 7: Submit project plan and reflection"
+    "text": "Deliverable\n\nLab 4: Submit code and test reports"
   },
   {
-    "objectID": "lectures/lecture12.html#objectives",
-    "href": "lectures/lecture12.html#objectives",
-    "title": "Week 12: Final Project Completion and Presentations",
+    "objectID": "lectures/lecture06.html#objectives",
+    "href": "lectures/lecture06.html#objectives",
+    "title": "Week 6: Automating Java Documentation and Code Review with AI Assistance",
     "section": "Objectives",
-    "text": "Objectives\n\nSynthesize course skills in comprehensive project"
+    "text": "Objectives\n\nApply AI tools to automate documentation and code review"
   },
   {
-    "objectID": "lectures/lecture12.html#key-topics",
-    "href": "lectures/lecture12.html#key-topics",
-    "title": "Week 12: Final Project Completion and Presentations",
+    "objectID": "lectures/lecture06.html#key-topics",
+    "href": "lectures/lecture06.html#key-topics",
+    "title": "Week 6: Automating Java Documentation and Code Review with AI Assistance",
     "section": "Key Topics",
-    "text": "Key Topics\n\nFinal project completion\nPeer review and presentations"
+    "text": "Key Topics\n\nGenerating JavaDoc comments with AI\nSummarizing code and assisting in code review"
   },
   {
-    "objectID": "lectures/lecture12.html#activities",
-    "href": "lectures/lecture12.html#activities",
-    "title": "Week 12: Final Project Completion and Presentations",
+    "objectID": "lectures/lecture06.html#activities",
+    "href": "lectures/lecture06.html#activities",
+    "title": "Week 6: Automating Java Documentation and Code Review with AI Assistance",
     "section": "Activities",
-    "text": "Activities\n\nComplete project and present findings"
+    "text": "Activities\n\nUse Copilot for documentation and review notes"
   },
   {
-    "objectID": "lectures/lecture12.html#deliverable",
-    "href": "lectures/lecture12.html#deliverable",
-    "title": "Week 12: Final Project Completion and Presentations",
+    "objectID": "lectures/lecture06.html#deliverable",
+    "href": "lectures/lecture06.html#deliverable",
+    "title": "Week 6: Automating Java Documentation and Code Review with AI Assistance",
     "section": "Deliverable",
-    "text": "Deliverable\n\nFinal Submission: Project source code, report, recorded presentation; Peer review"
+    "text": "Deliverable\n\nLab 6: Submit documentation and review summary"
+  },
+  {
+    "objectID": "lectures/lecture10.html#objectives",
+    "href": "lectures/lecture10.html#objectives",
+    "title": "Week 10: Case Studies and Future Trends in AI-Assisted Software Engineering",
+    "section": "Objectives",
+    "text": "Objectives\n\nAnalyze real-world applications and emerging trends"
+  },
+  {
+    "objectID": "lectures/lecture10.html#key-topics",
+    "href": "lectures/lecture10.html#key-topics",
+    "title": "Week 10: Case Studies and Future Trends in AI-Assisted Software Engineering",
+    "section": "Key Topics",
+    "text": "Key Topics\n\nCase studies of AI in software engineering\nFuture landscape of AI-powered development"
+  },
+  {
+    "objectID": "lectures/lecture10.html#activities",
+    "href": "lectures/lecture10.html#activities",
+    "title": "Week 10: Case Studies and Future Trends in AI-Assisted Software Engineering",
+    "section": "Activities",
+    "text": "Activities\n\nGroup analysis and presentation of case studies"
+  },
+  {
+    "objectID": "lectures/lecture10.html#deliverable",
+    "href": "lectures/lecture10.html#deliverable",
+    "title": "Week 10: Case Studies and Future Trends in AI-Assisted Software Engineering",
+    "section": "Deliverable",
+    "text": "Deliverable\n\nGroup Assignment: Submit recorded video or slide deck"
+  },
+  {
+    "objectID": "lectures/lecture02_part2.html#main-topics",
+    "href": "lectures/lecture02_part2.html#main-topics",
+    "title": "Week 2; Part 2: Introduction to Prompt Engineering",
+    "section": "Main Topics",
+    "text": "Main Topics\n\nCrafting effective prompts for Java code generation\nBest practices for prompt refinement\nEvaluating AI-generated code for correctness and quality"
+  },
+  {
+    "objectID": "lectures/lecture02_part2.html#learning-objectives",
+    "href": "lectures/lecture02_part2.html#learning-objectives",
+    "title": "Week 2; Part 2: Introduction to Prompt Engineering",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nCompose prompts to guide Copilot in generating Java code\nCompare prompt effectiveness and output quality"
+  },
+  {
+    "objectID": "lectures/lecture02_part2.html#activity",
+    "href": "lectures/lecture02_part2.html#activity",
+    "title": "Week 2; Part 2: Introduction to Prompt Engineering",
+    "section": "Activity",
+    "text": "Activity\nExperiment with different prompts to generate Java methods using Copilot. Compare the results and discuss which prompts produced the best code.\nAdd your notes, code, and reflections below this cell."
   },
   {
     "objectID": "lectures/lecture09.html#overview",
@@ -518,529 +700,487 @@
     "text": "Further Reading\n\nGitHub Copilot documentation: Ethics & Security\nSelected academic papers on AI ethics in software engineering"
   },
   {
-    "objectID": "lectures/lecture02_part2.html#main-topics",
-    "href": "lectures/lecture02_part2.html#main-topics",
-    "title": "Week 2; Part 2: Introduction to Prompt Engineering",
-    "section": "Main Topics",
-    "text": "Main Topics\n\nCrafting effective prompts for Java code generation\nBest practices for prompt refinement\nEvaluating AI-generated code for correctness and quality"
-  },
-  {
-    "objectID": "lectures/lecture02_part2.html#learning-objectives",
-    "href": "lectures/lecture02_part2.html#learning-objectives",
-    "title": "Week 2; Part 2: Introduction to Prompt Engineering",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nCompose prompts to guide Copilot in generating Java code\nCompare prompt effectiveness and output quality"
-  },
-  {
-    "objectID": "lectures/lecture02_part2.html#activity",
-    "href": "lectures/lecture02_part2.html#activity",
-    "title": "Week 2; Part 2: Introduction to Prompt Engineering",
-    "section": "Activity",
-    "text": "Activity\nExperiment with different prompts to generate Java methods using Copilot. Compare the results and discuss which prompts produced the best code.\nAdd your notes, code, and reflections below this cell."
-  },
-  {
-    "objectID": "lectures/lecture10.html#objectives",
-    "href": "lectures/lecture10.html#objectives",
-    "title": "Week 10: Case Studies and Future Trends in AI-Assisted Software Engineering",
+    "objectID": "lectures/lecture12.html#objectives",
+    "href": "lectures/lecture12.html#objectives",
+    "title": "Week 12: Final Project Completion and Presentations",
     "section": "Objectives",
-    "text": "Objectives\n\nAnalyze real-world applications and emerging trends"
+    "text": "Objectives\n\nSynthesize course skills in comprehensive project"
   },
   {
-    "objectID": "lectures/lecture10.html#key-topics",
-    "href": "lectures/lecture10.html#key-topics",
-    "title": "Week 10: Case Studies and Future Trends in AI-Assisted Software Engineering",
+    "objectID": "lectures/lecture12.html#key-topics",
+    "href": "lectures/lecture12.html#key-topics",
+    "title": "Week 12: Final Project Completion and Presentations",
     "section": "Key Topics",
-    "text": "Key Topics\n\nCase studies of AI in software engineering\nFuture landscape of AI-powered development"
+    "text": "Key Topics\n\nFinal project completion\nPeer review and presentations"
   },
   {
-    "objectID": "lectures/lecture10.html#activities",
-    "href": "lectures/lecture10.html#activities",
-    "title": "Week 10: Case Studies and Future Trends in AI-Assisted Software Engineering",
+    "objectID": "lectures/lecture12.html#activities",
+    "href": "lectures/lecture12.html#activities",
+    "title": "Week 12: Final Project Completion and Presentations",
     "section": "Activities",
-    "text": "Activities\n\nGroup analysis and presentation of case studies"
+    "text": "Activities\n\nComplete project and present findings"
   },
   {
-    "objectID": "lectures/lecture10.html#deliverable",
-    "href": "lectures/lecture10.html#deliverable",
-    "title": "Week 10: Case Studies and Future Trends in AI-Assisted Software Engineering",
+    "objectID": "lectures/lecture12.html#deliverable",
+    "href": "lectures/lecture12.html#deliverable",
+    "title": "Week 12: Final Project Completion and Presentations",
     "section": "Deliverable",
-    "text": "Deliverable\n\nGroup Assignment: Submit recorded video or slide deck"
+    "text": "Deliverable\n\nFinal Submission: Project source code, report, recorded presentation; Peer review"
   },
   {
-    "objectID": "lectures/lecture06.html#objectives",
-    "href": "lectures/lecture06.html#objectives",
-    "title": "Week 6: Automating Java Documentation and Code Review with AI Assistance",
+    "objectID": "lectures/lecture08.html#objectives",
+    "href": "lectures/lecture08.html#objectives",
+    "title": "Week 8: Project Management and Agile Practices Supported by AI Tools",
     "section": "Objectives",
-    "text": "Objectives\n\nApply AI tools to automate documentation and code review"
+    "text": "Objectives\n\nApply AI tools to project management and agile practices"
   },
   {
-    "objectID": "lectures/lecture06.html#key-topics",
-    "href": "lectures/lecture06.html#key-topics",
-    "title": "Week 6: Automating Java Documentation and Code Review with AI Assistance",
+    "objectID": "lectures/lecture08.html#key-topics",
+    "href": "lectures/lecture08.html#key-topics",
+    "title": "Week 8: Project Management and Agile Practices Supported by AI Tools",
     "section": "Key Topics",
-    "text": "Key Topics\n\nGenerating JavaDoc comments with AI\nSummarizing code and assisting in code review"
+    "text": "Key Topics\n\nEnhancing project planning and task management\nTeam collaboration with AI assistance"
   },
   {
-    "objectID": "lectures/lecture06.html#activities",
-    "href": "lectures/lecture06.html#activities",
-    "title": "Week 6: Automating Java Documentation and Code Review with AI Assistance",
+    "objectID": "lectures/lecture08.html#activities",
+    "href": "lectures/lecture08.html#activities",
+    "title": "Week 8: Project Management and Agile Practices Supported by AI Tools",
     "section": "Activities",
-    "text": "Activities\n\nUse Copilot for documentation and review notes"
+    "text": "Activities\n\nDevelop project plan and user stories with Copilot"
   },
   {
-    "objectID": "lectures/lecture06.html#deliverable",
-    "href": "lectures/lecture06.html#deliverable",
-    "title": "Week 6: Automating Java Documentation and Code Review with AI Assistance",
+    "objectID": "lectures/lecture08.html#deliverable",
+    "href": "lectures/lecture08.html#deliverable",
+    "title": "Week 8: Project Management and Agile Practices Supported by AI Tools",
     "section": "Deliverable",
-    "text": "Deliverable\n\nLab 6: Submit documentation and review summary"
+    "text": "Deliverable\n\nLab 7: Submit project plan and reflection"
   },
   {
-    "objectID": "lectures/lecture04.html#objectives",
-    "href": "lectures/lecture04.html#objectives",
-    "title": "Week 4: AI-Driven Java Code Generation and Unit Test Creation using JUnit",
+    "objectID": "lectures/lecture05.html#objectives",
+    "href": "lectures/lecture05.html#objectives",
+    "title": "Week 5: Debugging and Error Resolution Assisted by AI Tools",
     "section": "Objectives",
-    "text": "Objectives\n\nApply AI-assisted code generation and automated testing"
+    "text": "Objectives\n\nApply AI-assisted debugging techniques"
   },
   {
-    "objectID": "lectures/lecture04.html#key-topics",
-    "href": "lectures/lecture04.html#key-topics",
-    "title": "Week 4: AI-Driven Java Code Generation and Unit Test Creation using JUnit",
+    "objectID": "lectures/lecture05.html#key-topics",
+    "href": "lectures/lecture05.html#key-topics",
+    "title": "Week 5: Debugging and Error Resolution Assisted by AI Tools",
     "section": "Key Topics",
-    "text": "Key Topics\n\nGenerating Java classes and methods with AI\nCreating JUnit tests via AI"
+    "text": "Key Topics\n\nUsing AI suggestions to identify and fix bugs\nUnderstanding error resolution workflows"
   },
   {
-    "objectID": "lectures/lecture04.html#activities",
-    "href": "lectures/lecture04.html#activities",
-    "title": "Week 4: AI-Driven Java Code Generation and Unit Test Creation using JUnit",
+    "objectID": "lectures/lecture05.html#activities",
+    "href": "lectures/lecture05.html#activities",
+    "title": "Week 5: Debugging and Error Resolution Assisted by AI Tools",
     "section": "Activities",
-    "text": "Activities\n\nUse Copilot to generate code and tests"
+    "text": "Activities\n\nDebug Java code with Copilot"
   },
   {
-    "objectID": "lectures/lecture04.html#deliverable",
-    "href": "lectures/lecture04.html#deliverable",
-    "title": "Week 4: AI-Driven Java Code Generation and Unit Test Creation using JUnit",
+    "objectID": "lectures/lecture05.html#deliverable",
+    "href": "lectures/lecture05.html#deliverable",
+    "title": "Week 5: Debugging and Error Resolution Assisted by AI Tools",
     "section": "Deliverable",
-    "text": "Deliverable\n\nLab 4: Submit code and test reports"
+    "text": "Deliverable\n\nLab 5: Submit bug description, fixes, and evaluation of AI help"
   },
   {
-    "objectID": "lectures/lecture11.html#objectives",
-    "href": "lectures/lecture11.html#objectives",
-    "title": "Week 11: Final Project Design and Development",
+    "objectID": "lectures/lecture01.html#objectives",
+    "href": "lectures/lecture01.html#objectives",
+    "title": "Week 1: Foundations of Software Engineering and AI-Driven Coding Assistants",
     "section": "Objectives",
-    "text": "Objectives\n\nApply and create integrated AI-assisted software solution"
+    "text": "Objectives\n\nRecall the roles of AI technologies in the software engineering lifecycle\nSet up the development environment and AI coding assistant"
   },
   {
-    "objectID": "lectures/lecture11.html#key-topics",
-    "href": "lectures/lecture11.html#key-topics",
-    "title": "Week 11: Final Project Design and Development",
+    "objectID": "lectures/lecture01.html#key-topics",
+    "href": "lectures/lecture01.html#key-topics",
+    "title": "Week 1: Foundations of Software Engineering and AI-Driven Coding Assistants",
     "section": "Key Topics",
-    "text": "Key Topics\n\nProject proposal and initial design\nPartial implementation using AI tools"
+    "text": "Key Topics\n\nIntroduction to software engineering workflows\nRole of AI-driven coding assistants\nOverview of course structure and expectations"
   },
   {
-    "objectID": "lectures/lecture11.html#activities",
-    "href": "lectures/lecture11.html#activities",
-    "title": "Week 11: Final Project Design and Development",
+    "objectID": "lectures/lecture01.html#activities",
+    "href": "lectures/lecture01.html#activities",
+    "title": "Week 1: Foundations of Software Engineering and AI-Driven Coding Assistants",
     "section": "Activities",
-    "text": "Activities\n\nDesign and continue development of the final Controlled Coding Agent project"
+    "text": "Activities\n\nCourse orientation\nTool setup: IDE, GitHub Copilot, JDK, Git"
   },
   {
-    "objectID": "lectures/lecture11.html#deliverable",
-    "href": "lectures/lecture11.html#deliverable",
-    "title": "Week 11: Final Project Design and Development",
+    "objectID": "lectures/lecture01.html#deliverable",
+    "href": "lectures/lecture01.html#deliverable",
+    "title": "Week 1: Foundations of Software Engineering and AI-Driven Coding Assistants",
     "section": "Deliverable",
-    "text": "Deliverable\n\nProject Milestone: Submit proposal, design, and partial implementation"
+    "text": "Deliverable\n\nLab 1: Submit screenshots and a brief reflection on setup experience\n\nAdd your notes, code, and reflections below this cell."
   },
   {
-    "objectID": "lectures/lecture07.html#objectives",
-    "href": "lectures/lecture07.html#objectives",
-    "title": "Week 7: Security Considerations and Risks of AI-Generated Java Code",
-    "section": "Objectives",
-    "text": "Objectives\n\nAnalyze security implications of AI-generated code"
-  },
-  {
-    "objectID": "lectures/lecture07.html#key-topics",
-    "href": "lectures/lecture07.html#key-topics",
-    "title": "Week 7: Security Considerations and Risks of AI-Generated Java Code",
-    "section": "Key Topics",
-    "text": "Key Topics\n\nSecurity vulnerabilities in AI-generated code\nSafe coding practices"
-  },
-  {
-    "objectID": "lectures/lecture07.html#activities",
-    "href": "lectures/lecture07.html#activities",
-    "title": "Week 7: Security Considerations and Risks of AI-Generated Java Code",
-    "section": "Activities",
-    "text": "Activities\n\nReview and analyze AI-generated code for security risks"
-  },
-  {
-    "objectID": "lectures/lecture07.html#deliverable",
-    "href": "lectures/lecture07.html#deliverable",
-    "title": "Week 7: Security Considerations and Risks of AI-Generated Java Code",
-    "section": "Deliverable",
-    "text": "Deliverable\n\nAssignment: Submit report on potential vulnerabilities"
-  },
-  {
-    "objectID": "lectures/lecture03.html#overview",
-    "href": "lectures/lecture03.html#overview",
-    "title": "Lecture 3: Human-AI Collaboration in Development Workflows",
-    "section": "Overview",
-    "text": "Overview\nThis lecture focuses on strategies for effective collaboration between human developers and AI coding assistants, such as GitHub Copilot, in software engineering workflows.\nKey Topics\n\nCombining human expertise with AI suggestions\nCollaborative editing and code review\nProductivity and code quality improvements"
-  },
-  {
-    "objectID": "lectures/lecture03.html#learning-objectives",
-    "href": "lectures/lecture03.html#learning-objectives",
-    "title": "Lecture 3: Human-AI Collaboration in Development Workflows",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nApply collaboration strategies in development workflows\nAnalyze before/after code changes with AI assistance\nDiscuss best practices for human-AI teamwork\n\nAdd your notes, code, and reflections below this cell."
-  },
-  {
-    "objectID": "lectures/lecture02_part1.html#main-topics",
-    "href": "lectures/lecture02_part1.html#main-topics",
-    "title": "Week 2; Part 1: Overview of AI-Powered Coding Assistants and Their Java Integration",
-    "section": "Main Topics",
-    "text": "Main Topics\n\nFeatures and capabilities of AI coding assistants (e.g., GitHub Copilot)\nIntegration approaches in Java IDEs (VS Code, IntelliJ IDEA)\nPractical examples of Copilot in Java workflows"
-  },
-  {
-    "objectID": "lectures/lecture02_part1.html#learning-objectives",
-    "href": "lectures/lecture02_part1.html#learning-objectives",
-    "title": "Week 2; Part 1: Overview of AI-Powered Coding Assistants and Their Java Integration",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nUnderstand how AI coding assistants integrate with Java development environments\nExplore Copilot features for Java code generation, refactoring, and navigation"
-  },
-  {
-    "objectID": "lectures/lecture02_part1.html#activity",
-    "href": "lectures/lecture02_part1.html#activity",
-    "title": "Week 2; Part 1: Overview of AI-Powered Coding Assistants and Their Java Integration",
-    "section": "Activity",
-    "text": "Activity\nUse Copilot to generate a simple Java method in your IDE. Document the prompt used and evaluate the output.\nAdd your notes, code, and reflections below this cell."
-  },
-  {
-    "objectID": "assignments/lab03_ai_system_implementation.html",
-    "href": "assignments/lab03_ai_system_implementation.html",
-    "title": "Lab 3: AI System Implementation",
+    "objectID": "assignments/assignment01.html",
+    "href": "assignments/assignment01.html",
+    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 7\nPoints: 100\nThis lab extends Lab 2: Eval-Driven Development. Continue maintaining the Weekly AI Interaction Log."
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 1\nPoints: 30\nUse the Tool Setup Guide to install and start the required tools before completing this assignment."
   },
   {
-    "objectID": "assignments/lab03_ai_system_implementation.html#purpose-of-assignment",
-    "href": "assignments/lab03_ai_system_implementation.html#purpose-of-assignment",
-    "title": "Lab 3: AI System Implementation",
+    "objectID": "assignments/assignment01.html#purpose-of-assignment",
+    "href": "assignments/assignment01.html#purpose-of-assignment",
+    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
     "section": "1 Purpose of Assignment",
-    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nIntegrate components into a working coding agent workflow\nConnect structured input, AI generation, and evaluation\nTransition from isolated tasks to a cohesive system"
+    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nSet up your development environment for AI-assisted software engineering\nVerify GitHub Copilot is working correctly\nUnderstand the difference between vibe coding and structured AI-assisted development\nIntroduce the concept of programming with intent\nRecognize key strengths and limitations of AI-generated code\nInterpret the Software 2.0 perspective"
   },
   {
-    "objectID": "assignments/lab03_ai_system_implementation.html#steps-requirements-of-assignment",
-    "href": "assignments/lab03_ai_system_implementation.html#steps-requirements-of-assignment",
-    "title": "Lab 3: AI System Implementation",
+    "objectID": "assignments/assignment01.html#steps-requirements-of-assignment",
+    "href": "assignments/assignment01.html#steps-requirements-of-assignment",
+    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
     "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nIntegrate your structured input and evaluation work into a cohesive workflow. The system does not need to be fully autonomous, but it should show a repeatable path from task request to generated or revised code to evaluation.\n\nDefine the main workflow stages.\nConnect the task specification to code generation or revision.\nConnect the generated output to your evaluation layer.\nAdd clear instructions or a command that runs the workflow.\nDocument the architecture and current limitations."
+    "text": "2 Steps / Requirements of Assignment\nComplete the following setup tasks:\n\nInstall JDK 17+ and verify installation with:\n\njava -version\n\nInstall one development environment:\n\nIntelliJ IDEA, or\nVS Code with Java extensions\n\nInstall Git, sign in to GitHub, set up GitHub Education using your university email address at github.com/settings/education/benefits, and confirm you can create or access a GitHub repository.\nInstall and sign in to GitHub Copilot.\nCreate a separate GitHub repository for this assignment named:\n\ncomp331-assignment1-setup\nThis repository is only for Assignment 1 setup verification. You will create a fresh repository for Lab 1 and do not need to reuse this setup repository for later labs.\n\nIn that repository, create a simple Java project and add a basic Main.java file.\nVerify Copilot suggestions are working:\n\nType a simple comment such as:\n\n\n// method to add two numbers\n\nConfirm Copilot ghost text appears.\nAccept at least one suggestion.\n\n\nGenerate one simple method using Copilot.\n\nExamples: - Add two numbers - Reverse a string - Check if a number is even\nKeep the code simple. The goal is to confirm your setup works."
   },
   {
-    "objectID": "assignments/lab03_ai_system_implementation.html#action-items",
-    "href": "assignments/lab03_ai_system_implementation.html#action-items",
-    "title": "Lab 3: AI System Implementation",
-    "section": "3 Action Items",
-    "text": "3 Action Items\n\nBuild the system in your repository.\nEnsure the system is runnable.\nDocument the architecture.\nRecord prompts, iterations, and evaluation outcomes in your weekly log."
+    "objectID": "assignments/assignment01.html#conceptual-reflection",
+    "href": "assignments/assignment01.html#conceptual-reflection",
+    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
+    "section": "3 Conceptual Reflection",
+    "text": "3 Conceptual Reflection\nWrite a short reflection of 150–250 words addressing the following:\n\nWhat is the difference between vibe coding and AI-assisted software engineering?\nWhat does programming with intent mean in practice?\nWhat are key strengths and limitations of AI-generated code?\nHow do you interpret the Software 2.0 perspective, and what are its implications for software development?\n\nYour response should be concise, thoughtful, and written in your own words."
   },
   {
-    "objectID": "assignments/lab03_ai_system_implementation.html#deliverables",
-    "href": "assignments/lab03_ai_system_implementation.html#deliverables",
-    "title": "Lab 3: AI System Implementation",
-    "section": "4 Deliverables",
-    "text": "4 Deliverables\nYour repository should include:\n\nWorking source code for the integrated workflow.\nArchitecture documentation in the README or a separate design document.\nA sample task input and resulting output.\nEvaluation results from at least one workflow run."
+    "objectID": "assignments/assignment01.html#using-github-copilot",
+    "href": "assignments/assignment01.html#using-github-copilot",
+    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
+    "section": "4 Using GitHub Copilot",
+    "text": "4 Using GitHub Copilot\nYou are encouraged to use GitHub Copilot in this assignment, but you remain responsible for understanding and explaining all submitted work. Do not accept suggestions blindly.\nUse Copilot in small, observable ways:\n\nUse inline suggestions from a simple Java comment, such as // method to reverse a string.\nUse Copilot Chat for setup questions, such as How do I create a minimal Maven Java project?.\nAsk Copilot to explain generated code before you accept it.\nDocument one Copilot suggestion you accepted and one change you made manually.\n\nAdd a short README.md note describing how you used Copilot and how you confirmed the generated method works."
   },
   {
-    "objectID": "assignments/lab03_ai_system_implementation.html#grading",
-    "href": "assignments/lab03_ai_system_implementation.html#grading",
-    "title": "Lab 3: AI System Implementation",
-    "section": "5 Grading",
-    "text": "5 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nWorkflow integrates structured input, generation, and evaluation\n35\n\n\nSystem is runnable and produces inspectable output\n25\n\n\nArchitecture documentation is clear\n20\n\n\nSample run and evaluation results are included\n15\n\n\nAI interaction evidence is included\n5\n\n\nTotal\n100"
+    "objectID": "assignments/assignment01.html#action-items",
+    "href": "assignments/assignment01.html#action-items",
+    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
+    "section": "5 Action Items",
+    "text": "5 Action Items\n\nClick the link to the full hosted assignment instructions: Assignment 1.\nFollow the instructions in the assignment page.\nGo to github.com and create a separate repository named comp331-assignment1-setup.\nCreate the minimal Java project, Copilot-generated method, README, and screenshots described in the linked instructions.\nDocument one accepted Copilot suggestion, one manual change, and how you verified the result.\nSubmit the repository link, screenshots, and short reflection through Canvas."
   },
   {
-    "objectID": "assignments/lab03_ai_system_implementation.html#submission-instructions",
-    "href": "assignments/lab03_ai_system_implementation.html#submission-instructions",
-    "title": "Lab 3: AI System Implementation",
-    "section": "6 Submission Instructions",
-    "text": "6 Submission Instructions\nSubmit your repository link through Canvas. Include any notes your professor needs to run the workflow.\nNext lab: Lab 4: AI Risk Analysis and Production Readiness."
+    "objectID": "assignments/assignment01.html#deliverables",
+    "href": "assignments/assignment01.html#deliverables",
+    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
+    "section": "6 Deliverables",
+    "text": "6 Deliverables\nSubmit the following:\n\n6.1 1. Assignment 1 Git Repository\nCreate and submit a link to a separate Assignment 1 repository, recommended name comp331-assignment1-setup. This repository should include:\n\nA minimal Java project\nAt least one Copilot-generated method\nA README.md that includes:\n\nSetup confirmation\nOne sentence stating that Copilot is working\nA short note explaining how Copilot was used and how the result was checked\n\n\n\n\n6.2 2. Screenshots\nInclude 2–3 screenshots showing:\n\nYour IDE with the Java project open\nA Copilot suggestion visible as ghost text\nOptional: Copilot settings page\n\n\n\n6.3 3. Reflection\nSubmit your 150–250 word conceptual reflection as a document or PDF through Canvas."
   },
   {
-    "objectID": "assignments/lab02_eval_driven_development.html",
-    "href": "assignments/lab02_eval_driven_development.html",
-    "title": "Lab 2: Eval-Driven Development",
+    "objectID": "assignments/assignment01.html#grading",
+    "href": "assignments/assignment01.html#grading",
+    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
+    "section": "7 Grading",
+    "text": "7 Grading\nTotal: 30 points\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nEnvironment, GitHub, and Copilot setup completed\n10\n\n\nScreenshots clearly demonstrate setup\n5\n\n\nSeparate Assignment 1 repository includes minimal Java project and README\n5\n\n\nREADME documents responsible Copilot use and verification\n5\n\n\nReflection demonstrates understanding of Week 1 concepts\n5\n\n\nTotal\n30"
+  },
+  {
+    "objectID": "assignments/assignment01.html#submission-instructions",
+    "href": "assignments/assignment01.html#submission-instructions",
+    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
+    "section": "8 Submission Instructions",
+    "text": "8 Submission Instructions\n\nSubmit your Assignment 1 Git repository link.\nSubmit your screenshots through Canvas.\nSubmit your 150–250 word reflection as a document or PDF through Canvas.\nFollow any additional sharing instructions provided by your professor."
+  },
+  {
+    "objectID": "assignments/assignment01.html#notes",
+    "href": "assignments/assignment01.html#notes",
+    "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
+    "section": "9 Notes",
+    "text": "9 Notes\n\nOnly GitHub Copilot is approved for this assignment.\nDo not over-engineer the code portion.\nIf you encounter setup issues, briefly document what happened and how you attempted to resolve it.\nDeeper prompting and structured AI-assisted development will begin in Lab 1 using a fresh repository."
+  },
+  {
+    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html",
+    "href": "assignments/lab05_coding_agents_controlled_workflows.html",
+    "title": "Lab 5: Coding Agents and Controlled Workflows",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 5\nPoints: 100\nThis lab extends Lab 1: Structured AI Workflow. Continue maintaining the Weekly AI Interaction Log."
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 10\nPoints: 100\nThis lab extends Lab 4: AI Risk Analysis and Production Readiness and prepares you for Final Project Milestone 1."
   },
   {
-    "objectID": "assignments/lab02_eval_driven_development.html#purpose-of-assignment",
-    "href": "assignments/lab02_eval_driven_development.html#purpose-of-assignment",
-    "title": "Lab 2: Eval-Driven Development",
+    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#purpose-of-assignment",
+    "href": "assignments/lab05_coding_agents_controlled_workflows.html#purpose-of-assignment",
+    "title": "Lab 5: Coding Agents and Controlled Workflows",
     "section": "1 Purpose of Assignment",
-    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nBuild the evaluation layer of your coding agent\nDefine measurable correctness criteria\nDetect regressions in AI-generated outputs"
+    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nImplement the core agent loop\nDesign controlled multi-step workflows\nIntroduce human oversight into your coding agent\nMove from simple workflows to agent-like behavior\nCombine the Java CLI, message history, sandbox tools, evaluation, and safety controls from Labs 1-4"
   },
   {
-    "objectID": "assignments/lab02_eval_driven_development.html#steps-requirements-of-assignment",
-    "href": "assignments/lab02_eval_driven_development.html#steps-requirements-of-assignment",
-    "title": "Lab 2: Eval-Driven Development",
+    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#steps-requirements-of-assignment",
+    "href": "assignments/lab05_coding_agents_controlled_workflows.html#steps-requirements-of-assignment",
+    "title": "Lab 5: Coding Agents and Controlled Workflows",
     "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nExtend your Lab 1 repository by adding an evaluation system for generated or revised code. The evaluation layer should make correctness criteria explicit and repeatable.\n\nIdentify the feature or task your evaluation will check.\nDefine measurable acceptance criteria.\nAdd automated checks, tests, scripts, or structured review criteria.\nRun the evaluation against at least two versions or iterations of the code.\nDocument what the evaluation caught and what it did not catch."
+    "text": "2 Steps / Requirements of Assignment\nImplement a controlled multi-step workflow that resembles an agent loop while keeping human oversight explicit. The system should not blindly generate and apply changes without review. By the end of this lab, your Java project should behave like a small, safe version of a coding agent: it receives a task, lets the LLM request approved tools, feeds tool results back into the conversation, and stops with a final answer or a safety limit.\n\nDefine the loop stages in your README before coding. Recommended stages: intake, model request, tool-call detection, approval, tool execution, tool-result message, evaluation, final response.\nDefine tool schemas or tool descriptions for the Java tools you built in Lab 3. Include at least file listing, file reading, file writing, and Java test execution.\nRegister available tools in a dispatcher, map, or registry so that a requested tool name can be matched to the correct Java implementation.\nSend the tool declarations or equivalent tool descriptions with the LLM request using your chosen API. If your API wrapper does not support native function calling, you may use a structured JSON convention, but you must document the format clearly.\nDetect when the model requests a tool call. Extract the tool name and arguments.\nBefore executing any write or command-running tool, add a human approval checkpoint. This can be an interactive y/n prompt, a --auto-approve-readonly mode, or a documented manual review step. File reads and file listings may be allowed automatically if your risk analysis supports that choice.\nExecute allowed tool calls using your Lab 3 tool implementations. Unknown tools, invalid arguments, unsafe paths, and blocked commands must produce safe error messages rather than crashes.\nAppend tool results back into the message history and send the updated conversation back to the model.\nRepeat the loop until the model produces a final answer or until a maximum iteration limit is reached. Recommended maximum: 10-20 iterations.\nPreserve artifacts from one complete workflow run. Include the user prompt, model responses, tool calls, tool outputs, approval decisions, changed files, evaluation result, and final response.\nDemonstrate a complete controlled workflow using your sandbox project. A good example is: inspect the calculator project, identify a bug or missing behavior, propose a change, request approval, write the change, run tests, and report the result.\nDocument how to reproduce the workflow from a clean checkout.\n\nSuggested pseudocode:\nmessages.add(Message.user(userPrompt));\nfor (int i = 0; i &lt; maxIterations; i++) {\n    ModelResponse response = client.generate(messages, toolSchemas);\n    messages.add(response.asMessage());\n\n    if (!response.hasToolCall()) {\n        System.out.println(response.finalText());\n        break;\n    }\n\n    ToolCall call = response.toolCall();\n    if (requiresApproval(call) && !approvedByHuman(call)) {\n        messages.add(Message.toolResult(call.name(), \"Tool call rejected by human reviewer.\"));\n        continue;\n    }\n\n    String result = dispatcher.execute(call);\n    messages.add(Message.toolResult(call.name(), result));\n}\nSuggested checkpoint commands:\nmvn test\nmvn exec:java -Dexec.args=\"--verbose Inspect the sandbox project and run the tests\"\nmvn exec:java -Dexec.args=\"--max-iterations 10 Fix one failing test in the sandbox project\""
   },
   {
-    "objectID": "assignments/lab02_eval_driven_development.html#action-items",
-    "href": "assignments/lab02_eval_driven_development.html#action-items",
-    "title": "Lab 2: Eval-Driven Development",
+    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#action-items",
+    "href": "assignments/lab05_coding_agents_controlled_workflows.html#action-items",
+    "title": "Lab 5: Coding Agents and Controlled Workflows",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nExtend your existing repository.\nAdd an evaluation system.\nDocument how to run evaluations.\nRecord Copilot interactions and evaluation decisions in your weekly log."
+    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 5: Coding Agents and Controlled Workflows.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review the tool layer and risk mitigations from Labs 3-4.\nImplement the controlled agent loop, tool registry connection, approval checkpoint, and example workflow described in the linked instructions.\nPreserve the required workflow artifacts, including prompt, tool calls, approvals, changed files, evaluation result, and final response.\nDocument reproducible setup, Copilot-assisted workflow decisions, and verification results in the repository.\nCopy meaningful Copilot design, debugging, or review interactions into your Week 10 AI interaction reflection.\nSubmit the repository link and reproduction notes through Canvas."
   },
   {
-    "objectID": "assignments/lab02_eval_driven_development.html#deliverables",
-    "href": "assignments/lab02_eval_driven_development.html#deliverables",
-    "title": "Lab 2: Eval-Driven Development",
-    "section": "4 Deliverables",
-    "text": "4 Deliverables\nYour repository should include:\n\nEvaluation criteria in a documented format.\nRunnable evaluation code, tests, scripts, or checklist.\nExample evaluation results.\nREADME instructions for running the evaluations from a clean environment."
+    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#using-github-copilot",
+    "href": "assignments/lab05_coding_agents_controlled_workflows.html#using-github-copilot",
+    "title": "Lab 5: Coding Agents and Controlled Workflows",
+    "section": "4 Using GitHub Copilot",
+    "text": "4 Using GitHub Copilot\nUse GitHub Copilot to help design and debug the controlled workflow, but preserve human oversight. Copilot may suggest unsafe automation; your implementation must keep approval checkpoints, command restrictions, and iteration limits.\nRecommended Copilot workflow:\n\nAsk Copilot to help draft the loop stages before implementation.\nUse Copilot to generate pseudocode, then manually adapt it to your existing architecture.\nAsk Copilot to review whether your human approval checkpoints are meaningful.\nUse Copilot to debug one controlled workflow run, but verify the final behavior with tests or a reproducible transcript.\nPreserve a transcript or notes showing Copilot-assisted design, debugging, or review of the agent loop."
   },
   {
-    "objectID": "assignments/lab02_eval_driven_development.html#grading",
-    "href": "assignments/lab02_eval_driven_development.html#grading",
-    "title": "Lab 2: Eval-Driven Development",
-    "section": "5 Grading",
-    "text": "5 Grading\n\n\n\nCategory\nPoints\n\n\n\n\nEvaluation criteria are measurable and tied to the task\n25\n\n\nEvaluation system is implemented and runnable\n35\n\n\nRegression or iteration comparison is documented\n20\n\n\nREADME explains how to run and interpret evaluations\n15\n\n\nAI interaction evidence is included\n5\n\n\nTotal\n100"
+    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#deliverables",
+    "href": "assignments/lab05_coding_agents_controlled_workflows.html#deliverables",
+    "title": "Lab 5: Coding Agents and Controlled Workflows",
+    "section": "5 Deliverables",
+    "text": "5 Deliverables\nYour repository should include:\n\nRunnable Java controlled coding agent workflow.\nDocumentation of the agent loop stages.\nTool schema or tool description documentation.\nTool dispatcher or registry connected to the Lab 3 tools.\nHuman oversight checkpoint description and evidence that it is used.\nExample run artifacts, including prompt, tool calls, tool outputs, approvals, evaluation result, and final decision.\nReproducible setup and execution instructions.\nA short limitations section that connects back to the Lab 4 risk analysis.\nCopilot transcript or notes showing how Copilot helped design, debug, or review the controlled workflow."
   },
   {
-    "objectID": "assignments/lab02_eval_driven_development.html#submission-instructions",
-    "href": "assignments/lab02_eval_driven_development.html#submission-instructions",
-    "title": "Lab 2: Eval-Driven Development",
-    "section": "6 Submission Instructions",
-    "text": "6 Submission Instructions\nSubmit your repository link and any required evaluation output through Canvas.\nNext lab: Lab 3: AI System Implementation."
+    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#grading",
+    "href": "assignments/lab05_coding_agents_controlled_workflows.html#grading",
+    "title": "Lab 5: Coding Agents and Controlled Workflows",
+    "section": "6 Grading",
+    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nCore Java agent loop is implemented and understandable\n25\n\n\nTool declarations, dispatcher, and tool-result handling are connected\n20\n\n\nMulti-step workflow is controlled and reproducible\n20\n\n\nHuman oversight checkpoint is meaningful\n15\n\n\nExample run artifacts are complete\n10\n\n\nDocumentation is clear and usable\n5\n\n\nCopilot-assisted workflow decisions are documented and verified\n5\n\n\nTotal\n100"
   },
   {
-    "objectID": "assignments/weekly_ai_interaction_log.html",
-    "href": "assignments/weekly_ai_interaction_log.html",
-    "title": "Weekly AI Interaction Log",
+    "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#submission-instructions",
+    "href": "assignments/lab05_coding_agents_controlled_workflows.html#submission-instructions",
+    "title": "Lab 5: Coding Agents and Controlled Workflows",
+    "section": "7 Submission Instructions",
+    "text": "7 Submission Instructions\nSubmit your repository link through Canvas. Clearly identify the command, script, or steps your professor should use to reproduce the controlled agent workflow.\nNext: Final Project Milestone 1: Proposal & Architecture."
+  },
+  {
+    "objectID": "assignments/final_project_final_submission.html",
+    "href": "assignments/final_project_final_submission.html",
+    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeeks: 2, 3, 4, 5, 6, 7, 8, 9, 10\nPoints: 10 points each week / 90 total"
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 12\nPoints: 180\nThis final submission completes the project developed through Final Project Milestone 1 and Final Project Milestone 2."
   },
   {
-    "objectID": "assignments/weekly_ai_interaction_log.html#purpose-of-assignment",
-    "href": "assignments/weekly_ai_interaction_log.html#purpose-of-assignment",
-    "title": "Weekly AI Interaction Log",
+    "objectID": "assignments/final_project_final_submission.html#purpose-of-assignment",
+    "href": "assignments/final_project_final_submission.html#purpose-of-assignment",
+    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
     "section": "1 Purpose of Assignment",
-    "text": "1 Purpose of Assignment\nThis assignment is intended to help you learn to do the following:\n\nDevelop intentional and structured use of GitHub Copilot\nReflect on how prompting, iteration, and evaluation affect outcomes\nIdentify patterns in successful and unsuccessful AI interactions\nBuild awareness of your own engineering decision-making process\nDocument how AI-assisted development evolves over time"
+    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nDeliver a complete Controlled Coding Agent system\nDemonstrate integration of all course components\nApply engineering judgment to AI-assisted workflows\nClearly communicate system design and results"
   },
   {
-    "objectID": "assignments/weekly_ai_interaction_log.html#steps-requirements-of-assignment",
-    "href": "assignments/weekly_ai_interaction_log.html#steps-requirements-of-assignment",
-    "title": "Weekly AI Interaction Log",
+    "objectID": "assignments/final_project_final_submission.html#steps-requirements-of-assignment",
+    "href": "assignments/final_project_final_submission.html#steps-requirements-of-assignment",
+    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
     "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nMaintain a running AI interaction log from Week 2 through Week 10. A single document, a folder of weekly Markdown files, or a dedicated section in your course repository is acceptable.\nEach weekly entry should include:\n\nWeek number and date\nDevelopment task or learning activity\nYour intent before using Copilot\nPrompt, comment, or interaction summary\nCopilot output or suggestion summary\nWhat you accepted, modified, or rejected\nHow you evaluated the result\nReflection on what worked, what failed, and what you will change next time"
+    "text": "2 Steps / Requirements of Assignment\nFinalize your Controlled Coding Agent system and submit a complete, reproducible project. Your final submission should demonstrate integration of structured input, AI-assisted generation, evaluation, controlled workflow, persistence or artifact tracking, documentation, and human oversight."
   },
   {
-    "objectID": "assignments/weekly_ai_interaction_log.html#action-items",
-    "href": "assignments/weekly_ai_interaction_log.html#action-items",
-    "title": "Weekly AI Interaction Log",
-    "section": "3 Action Items",
-    "text": "3 Action Items\n\nCreate a running AI interaction log in your repository.\nAdd one entry each week from Week 2 through Week 10.\nRecord enough detail that another reader can understand your intent, the AI interaction, and your engineering decision.\nSubmit the weekly entry according to your professor’s Canvas instructions."
+    "objectID": "assignments/final_project_final_submission.html#using-github-copilot",
+    "href": "assignments/final_project_final_submission.html#using-github-copilot",
+    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
+    "section": "3 Using GitHub Copilot",
+    "text": "3 Using GitHub Copilot\nYour final submission should make AI-assisted development transparent. Evidence should show responsible engineering judgment, not just prompt volume.\nAdd an AI Assistance section to your README using this structure:\n## AI Assistance\n\nGitHub Copilot was used for:\n- Planning:\n- Code generation:\n- Test generation:\n- Debugging:\n- Review:\n\nImportant Copilot suggestions accepted:\nImportant Copilot suggestions modified:\nImportant Copilot suggestions rejected:\nVerification methods:\nConnect this section to your weekly interaction logs, example workflow artifacts, tests, and demo."
   },
   {
-    "objectID": "assignments/weekly_ai_interaction_log.html#deliverables",
-    "href": "assignments/weekly_ai_interaction_log.html#deliverables",
-    "title": "Weekly AI Interaction Log",
-    "section": "4 Deliverables",
-    "text": "4 Deliverables\nSubmit a link to the current week’s log entry. Recommended repository structure:\nai-interaction-log/\n  week02.md\n  week03.md\n  week04.md\n  week05.md\n  week06.md\n  week07.md\n  week08.md\n  week09.md\n  week10.md"
+    "objectID": "assignments/final_project_final_submission.html#action-items",
+    "href": "assignments/final_project_final_submission.html#action-items",
+    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
+    "section": "4 Action Items",
+    "text": "4 Action Items\n\nClick the link to the full hosted final submission instructions: Final Project Final Submission.\nFollow the instructions in the final submission page.\nOpen your final project repository and review all milestone feedback, known risks, and incomplete tasks.\nFinalize the complete system, documentation, evaluation report, example workflow artifacts, and recorded demo described in the linked instructions.\nAdd an AI Assistance README section identifying Copilot use, accepted/modified/rejected suggestions, and verification methods.\nVerify the project from a clean environment and confirm no secrets are committed.\nSubmit the project repository link and recorded demo link through Canvas."
   },
   {
-    "objectID": "assignments/weekly_ai_interaction_log.html#grading",
-    "href": "assignments/weekly_ai_interaction_log.html#grading",
-    "title": "Weekly AI Interaction Log",
-    "section": "5 Grading",
-    "text": "5 Grading\nEach weekly entry is worth 10 points.\n\n\n\nCategory\nPoints\n\n\n\n\nClear task context and intent\n2\n\n\nAI interaction documented with enough specificity\n3\n\n\nEvaluation and human decision-making explained\n3\n\n\nReflection identifies a useful pattern, risk, or next step\n2\n\n\nWeekly Total\n10\n\n\n\nAcross Weeks 2-10, the assignment is worth 90 points total."
+    "objectID": "assignments/final_project_final_submission.html#deliverables",
+    "href": "assignments/final_project_final_submission.html#deliverables",
+    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
+    "section": "5 Deliverables",
+    "text": "5 Deliverables\nYour repository should include:\n\nComplete runnable Controlled Coding Agent system.\nREADME with setup, run, evaluation, demo instructions, and an AI Assistance section.\nEvaluation report with results and interpretation.\nExample workflow run artifacts.\nAI-assisted development evidence.\nLink to a 5-8 minute recorded demo."
   },
   {
-    "objectID": "assignments/weekly_ai_interaction_log.html#submission-instructions",
-    "href": "assignments/weekly_ai_interaction_log.html#submission-instructions",
-    "title": "Weekly AI Interaction Log",
-    "section": "6 Submission Instructions",
-    "text": "6 Submission Instructions\nSubmit the current week’s log entry link through Canvas. Follow any additional repository sharing instructions provided by your professor."
+    "objectID": "assignments/final_project_final_submission.html#grading",
+    "href": "assignments/final_project_final_submission.html#grading",
+    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
+    "section": "6 Grading",
+    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nComplete system integrates input, generation, evaluation, workflow, and persistence/artifact tracking\n50\n\n\nSystem runs from a clean environment with clear instructions\n25\n\n\nEvaluation report is meaningful and evidence-based\n35\n\n\nDocumentation clearly explains architecture, usage, and limitations\n30\n\n\nDemo is clear, complete, and within 5-8 minutes\n25\n\n\nAI-assisted development evidence is complete, transparent, and verification-focused\n15\n\n\nTotal\n180"
   },
   {
-    "objectID": "assignments/final_project_milestone02.html",
-    "href": "assignments/final_project_milestone02.html",
-    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "objectID": "assignments/final_project_final_submission.html#submission-instructions",
+    "href": "assignments/final_project_final_submission.html#submission-instructions",
+    "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
+    "section": "7 Submission Instructions",
+    "text": "7 Submission Instructions\nSubmit your project repository link and recorded demo link through Canvas. Follow any additional sharing instructions provided by your professor."
+  },
+  {
+    "objectID": "assignments/lab04_risk_analysis_production_readiness.html",
+    "href": "assignments/lab04_risk_analysis_production_readiness.html",
+    "title": "Lab 4: AI Risk Analysis and Production Readiness",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 11\nPoints: 140\nThis milestone extends Final Project Milestone 1."
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 9\nPoints: 90\nThis lab analyzes the system built in Lab 3: AI System Implementation. Continue maintaining the Weekly AI Interaction Log."
   },
   {
-    "objectID": "assignments/final_project_milestone02.html#purpose-of-assignment",
-    "href": "assignments/final_project_milestone02.html#purpose-of-assignment",
-    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#purpose-of-assignment",
+    "href": "assignments/lab04_risk_analysis_production_readiness.html#purpose-of-assignment",
+    "title": "Lab 4: AI Risk Analysis and Production Readiness",
     "section": "1 Purpose of Assignment",
-    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nDemonstrate meaningful progress on your coding agent system\nDefine and implement an evaluation strategy\nIdentify risks and limitations in your system\nPrepare for final system completion"
+    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nAnalyze failure modes in your coding agent\nEvaluate reliability, security, and maintainability\nPropose improvements to increase robustness\nStrengthen the safety controls around Java tools before adding an autonomous loop"
   },
   {
-    "objectID": "assignments/final_project_milestone02.html#steps-requirements-of-assignment",
-    "href": "assignments/final_project_milestone02.html#steps-requirements-of-assignment",
-    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#steps-requirements-of-assignment",
+    "href": "assignments/lab04_risk_analysis_production_readiness.html#steps-requirements-of-assignment",
+    "title": "Lab 4: AI Risk Analysis and Production Readiness",
     "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nSubmit a partial implementation that demonstrates the core direction of your final project. The system does not need to be complete, but it must show meaningful progress and a concrete evaluation strategy.\n\nImplement the most important workflow path or system component.\nAdd or refine the evaluation strategy.\nRun the current system on at least one example task.\nIdentify current risks, limitations, and incomplete pieces.\nUpdate your plan for the final submission."
+    "text": "2 Steps / Requirements of Assignment\nConduct a risk analysis of your current Java coding agent workflow. Focus on realistic failures in your own implementation rather than generic AI risks. Your system now has tools that can inspect files, read files, write files, and run Java evaluation commands, so your analysis should be specific to those capabilities.\n\nReview each tool from Lab 3 and identify what could go wrong if an LLM requested unsafe or incorrect arguments.\nIdentify at least six failure modes. Include path traversal, accidental overwrite, command execution risk, secret exposure, misleading model output, incomplete tests, and human oversight gaps where relevant.\nAnalyze reliability, security, maintainability, and human oversight risks. At least one risk must come from each category.\nRate each risk by likelihood and impact using a simple scale such as Low, Medium, or High.\nPropose concrete mitigations. Examples include path normalization, read-size limits, command allowlists, write approval checkpoints, max iteration limits, logging, and better test coverage.\nImplement at least two small safeguards or tests based on your analysis. Reasonable options include blocking absolute paths, adding a command allowlist, adding a write confirmation mode, or adding tests for secret-like files.\nAdd a production-readiness checklist that distinguishes what is currently safe enough for coursework from what would be required before real use.\nIdentify which mitigations you plan to carry into Lab 5 and the final project.\n\nSuggested risk table columns:\n\n\n\n\n\n\n\n\n\n\n\n\nRisk\nTool/Component\nCategory\nLikelihood\nImpact\nCurrent Control\nProposed Mitigation\n\n\n\n\n\nSuggested checkpoint commands:\nmvn test\nmvn test -Dtest=*Tool*"
   },
   {
-    "objectID": "assignments/final_project_milestone02.html#action-items",
-    "href": "assignments/final_project_milestone02.html#action-items",
-    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
+    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#action-items",
+    "href": "assignments/lab04_risk_analysis_production_readiness.html#action-items",
+    "title": "Lab 4: AI Risk Analysis and Production Readiness",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nContinue building your system.\nIntegrate evaluation into the workflow.\nDocument progress clearly."
+    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 4: AI Risk Analysis and Production Readiness.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review each Lab 3 tool implementation.\nComplete the risk analysis, safeguard implementation, and safety-test work described in the linked instructions.\nDocument the risk table, production-readiness checklist, prioritized improvement plan, Copilot-assisted analysis notes, and verification results in the repository.\nCopy meaningful Copilot risk-analysis prompts and verification decisions into your weekly AI interaction reflection.\nSubmit the repository link and risk-analysis document through Canvas."
   },
   {
-    "objectID": "assignments/final_project_milestone02.html#deliverables",
-    "href": "assignments/final_project_milestone02.html#deliverables",
-    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
-    "section": "4 Deliverables",
-    "text": "4 Deliverables\nYour repository should include:\n\nPartial implementation of the Controlled Coding Agent.\nEvaluation strategy and current evaluation artifacts.\nExample run or walkthrough.\nRisk and limitations section.\nUpdated final completion plan."
+    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#using-github-copilot",
+    "href": "assignments/lab04_risk_analysis_production_readiness.html#using-github-copilot",
+    "title": "Lab 4: AI Risk Analysis and Production Readiness",
+    "section": "4 Using GitHub Copilot",
+    "text": "4 Using GitHub Copilot\nUse GitHub Copilot as a risk-analysis assistant, not as the final authority. Your risk analysis must be specific to your own Java tool implementation.\nRecommended Copilot workflow:\n\nAsk Copilot to identify failure modes for your actual file, path, write, and test-execution tools.\nVerify Copilot’s suggestions against your code and tests. Remove generic risks that do not apply.\nAsk Copilot to critique your proposed mitigations, then decide which safeguards are realistic for this project.\nInclude one example where Copilot missed, understated, or overstated a risk.\n\nSuggested prompt:\nReview this Java coding-agent tool design for realistic risks.\nFocus on reliability, security, maintainability, and human oversight.\nIdentify concrete failure modes tied to file reading, file writing, path handling, and test execution.\nDo not give generic AI risk language."
   },
   {
-    "objectID": "assignments/final_project_milestone02.html#grading",
-    "href": "assignments/final_project_milestone02.html#grading",
-    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
-    "section": "5 Grading",
-    "text": "5 Grading\n\n\n\nCategory\nPoints\n\n\n\n\nPartial implementation shows meaningful progress\n45\n\n\nEvaluation strategy is defined and partially implemented\n35\n\n\nExample run demonstrates current workflow\n20\n\n\nRisks, limitations, and next steps are clearly documented\n25\n\n\nRepository remains organized and usable\n15\n\n\nTotal\n140"
+    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#deliverables",
+    "href": "assignments/lab04_risk_analysis_production_readiness.html#deliverables",
+    "title": "Lab 4: AI Risk Analysis and Production Readiness",
+    "section": "5 Deliverables",
+    "text": "5 Deliverables\nYour repository should include:\n\nRisk analysis document or README section specific to your Java coding agent.\nFailure mode table with likelihood, impact, current controls, and mitigation.\nEvidence of at least two implemented safeguards or safety tests.\nProduction-readiness checklist.\nPrioritized improvement plan for Lab 5 and the final project.\nCopilot risk-analysis notes, including one example where you corrected or refined Copilot’s analysis."
   },
   {
-    "objectID": "assignments/final_project_milestone02.html#submission-instructions",
-    "href": "assignments/final_project_milestone02.html#submission-instructions",
-    "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
-    "section": "6 Submission Instructions",
-    "text": "6 Submission Instructions\nSubmit your project repository link through Canvas. Identify the current runnable path and any known setup constraints.\nNext: Final Project Final Submission."
+    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#grading",
+    "href": "assignments/lab04_risk_analysis_production_readiness.html#grading",
+    "title": "Lab 4: AI Risk Analysis and Production Readiness",
+    "section": "6 Grading",
+    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nFailure modes are specific to the student’s Java agent and tools\n20\n\n\nReliability, security, maintainability, and oversight are addressed\n20\n\n\nRisk ratings and mitigations are concrete\n20\n\n\nAt least two safeguards or safety tests are implemented\n20\n\n\nProduction-readiness plan is actionable\n5\n\n\nCopilot-assisted risk analysis is verified and corrected by the student\n5\n\n\nDocumentation is clear and connected to Lab 5\n5\n\n\nTotal\n90"
   },
   {
-    "objectID": "assignments/lab01_structured_ai_workflow.html",
-    "href": "assignments/lab01_structured_ai_workflow.html",
-    "title": "Lab 1: Structured AI Workflow",
+    "objectID": "assignments/lab04_risk_analysis_production_readiness.html#submission-instructions",
+    "href": "assignments/lab04_risk_analysis_production_readiness.html#submission-instructions",
+    "title": "Lab 4: AI Risk Analysis and Production Readiness",
+    "section": "7 Submission Instructions",
+    "text": "7 Submission Instructions\nSubmit your repository link and risk analysis document through Canvas. Identify any safeguards you implemented in code or tests.\nNext lab: Lab 5: Coding Agents and Controlled Workflows."
+  },
+  {
+    "objectID": "assignments/final_project_milestone01.html",
+    "href": "assignments/final_project_milestone01.html",
+    "title": "Final Project Milestone 1: Proposal & Architecture",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 3\nPoints: 90\nContinue maintaining the Weekly AI Interaction Log while completing this lab."
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 10\nPoints: 80\nThis milestone builds on Labs 1-5, especially Lab 5: Coding Agents and Controlled Workflows."
   },
   {
-    "objectID": "assignments/lab01_structured_ai_workflow.html#purpose-of-assignment",
-    "href": "assignments/lab01_structured_ai_workflow.html#purpose-of-assignment",
-    "title": "Lab 1: Structured AI Workflow",
+    "objectID": "assignments/final_project_milestone01.html#purpose-of-assignment",
+    "href": "assignments/final_project_milestone01.html#purpose-of-assignment",
+    "title": "Final Project Milestone 1: Proposal & Architecture",
     "section": "1 Purpose of Assignment",
-    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nEstablish the task input layer of your coding agent\nTranslate feature requests into structured specifications\nCompare naive vs structured AI-assisted development\nBegin building the foundation of your agent system"
+    "text": "1 Purpose of Assignment\nThis assignment is intended to help you:\n\nDefine the scope of your Controlled Coding Agent\nDesign a clear system architecture based on Labs 1-5\nEstablish a structured AI-assisted workflow\nCreate a realistic development plan for completion"
   },
   {
-    "objectID": "assignments/lab01_structured_ai_workflow.html#steps-requirements-of-assignment",
-    "href": "assignments/lab01_structured_ai_workflow.html#steps-requirements-of-assignment",
-    "title": "Lab 1: Structured AI Workflow",
+    "objectID": "assignments/final_project_milestone01.html#steps-requirements-of-assignment",
+    "href": "assignments/final_project_milestone01.html#steps-requirements-of-assignment",
+    "title": "Final Project Milestone 1: Proposal & Architecture",
     "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nBuild the first layer of a Controlled Coding Agent workflow: a structured task input process. Use GitHub Copilot intentionally, but keep human judgment visible in your documentation.\n\nChoose a small Java feature request that can be implemented in a short program or utility class.\nImplement the feature once using a naive prompt or informal comment.\nCreate a structured task specification that includes goal, inputs, outputs, constraints, edge cases, and acceptance criteria.\nRe-implement or revise the feature using the structured specification.\nCompare the two approaches in your README."
+    "text": "2 Steps / Requirements of Assignment\nPrepare a proposal and architecture plan for your final Controlled Coding Agent system. You may continue your lab repository or create a dedicated final project repository.\n\nDefine the problem your coding agent addresses.\nDescribe intended users and expected workflow.\nCreate an architecture diagram or structured architecture description.\nIdentify core components, including input, generation, evaluation, workflow, and persistence.\nCreate a development plan for Weeks 10-12."
   },
   {
-    "objectID": "assignments/lab01_structured_ai_workflow.html#action-items",
-    "href": "assignments/lab01_structured_ai_workflow.html#action-items",
-    "title": "Lab 1: Structured AI Workflow",
-    "section": "3 Action Items",
-    "text": "3 Action Items\n\nCreate a Git repository or use your continuing course repository.\nImplement both the naive and structured approaches.\nInclude documentation in README.md.\nRecord relevant Copilot interactions in your weekly AI interaction log."
+    "objectID": "assignments/final_project_milestone01.html#using-github-copilot",
+    "href": "assignments/final_project_milestone01.html#using-github-copilot",
+    "title": "Final Project Milestone 1: Proposal & Architecture",
+    "section": "3 Using GitHub Copilot",
+    "text": "3 Using GitHub Copilot\nUse GitHub Copilot as a planning and critique partner, not as a substitute for your architecture decisions. You remain responsible for scope, feasibility, and tradeoffs.\nRecommended Copilot workflow:\n\nAsk Copilot Chat to critique your project scope for feasibility in the remaining course timeline.\nAsk Copilot to generate two or three architecture alternatives, then choose and justify one.\nAsk Copilot for likely risks, evaluation strategy ideas, and a milestone breakdown.\nDocument at least one Copilot-generated alternative that you did not choose and explain why."
   },
   {
-    "objectID": "assignments/lab01_structured_ai_workflow.html#deliverables",
-    "href": "assignments/lab01_structured_ai_workflow.html#deliverables",
-    "title": "Lab 1: Structured AI Workflow",
-    "section": "4 Deliverables",
-    "text": "4 Deliverables\nYour repository should include:\n\nJava source code for both approaches or clearly separated commits showing each approach.\nA structured task specification.\nA README.md explaining how to run the code and comparing naive vs structured development.\nEvidence of AI-assisted development through prompts, comments, screenshots, or log links."
+    "objectID": "assignments/final_project_milestone01.html#action-items",
+    "href": "assignments/final_project_milestone01.html#action-items",
+    "title": "Final Project Milestone 1: Proposal & Architecture",
+    "section": "4 Action Items",
+    "text": "4 Action Items\n\nClick the link to the full hosted milestone instructions: Final Project Milestone 1.\nFollow the instructions in the milestone page.\nGo to github.com and either continue your lab repository or create a dedicated final project repository.\nCreate the proposal, architecture documentation or diagram, development plan, and milestone checklist described in the linked instructions.\nInclude AI-assisted planning notes showing Copilot prompts, alternatives considered, accepted ideas, rejected ideas, and your final decision.\nSubmit the repository link and paths to the proposal and architecture documentation through Canvas."
   },
   {
-    "objectID": "assignments/lab01_structured_ai_workflow.html#grading",
-    "href": "assignments/lab01_structured_ai_workflow.html#grading",
-    "title": "Lab 1: Structured AI Workflow",
-    "section": "5 Grading",
-    "text": "5 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nStructured task specification is clear and complete\n25\n\n\nNaive and structured implementations are both present\n25\n\n\nComparison explains concrete differences in AI outputs and human decisions\n20\n\n\nRepository is organized and runnable with README instructions\n15\n\n\nAI interaction evidence is included\n5\n\n\nTotal\n90"
+    "objectID": "assignments/final_project_milestone01.html#deliverables",
+    "href": "assignments/final_project_milestone01.html#deliverables",
+    "title": "Final Project Milestone 1: Proposal & Architecture",
+    "section": "5 Deliverables",
+    "text": "5 Deliverables\nYour repository should include:\n\nProject proposal.\nArchitecture documentation or diagram.\nDevelopment plan and milestone checklist.\nAI-assisted planning notes showing at least one Copilot-generated alternative and your decision.\nInitial implementation artifacts if available."
   },
   {
-    "objectID": "assignments/lab01_structured_ai_workflow.html#submission-instructions",
-    "href": "assignments/lab01_structured_ai_workflow.html#submission-instructions",
-    "title": "Lab 1: Structured AI Workflow",
-    "section": "6 Submission Instructions",
-    "text": "6 Submission Instructions\nShare the Git repository with your professor per their instructions and submit the repository link through Canvas.\nNext lab: Lab 2: Eval-Driven Development."
+    "objectID": "assignments/final_project_milestone01.html#grading",
+    "href": "assignments/final_project_milestone01.html#grading",
+    "title": "Final Project Milestone 1: Proposal & Architecture",
+    "section": "6 Grading",
+    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nProject scope and problem statement are clear\n20\n\n\nArchitecture covers major system components\n25\n\n\nStructured AI-assisted workflow is defined\n15\n\n\nDevelopment plan is realistic and specific\n10\n\n\nCopilot-assisted planning evidence shows alternatives and student judgment\n5\n\n\nRepository organization is ready for continued work\n5\n\n\nTotal\n80"
   },
   {
-    "objectID": "docs/course_orientation.html",
-    "href": "docs/course_orientation.html",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
+    "objectID": "assignments/final_project_milestone01.html#submission-instructions",
+    "href": "assignments/final_project_milestone01.html#submission-instructions",
+    "title": "Final Project Milestone 1: Proposal & Architecture",
+    "section": "7 Submission Instructions",
+    "text": "7 Submission Instructions\nSubmit your project repository link through Canvas. Include links or paths to the proposal, architecture documentation, and Copilot-assisted planning notes.\nNext: Final Project Milestone 2."
+  },
+  {
+    "objectID": "docs/gemini_api_setup.html",
+    "href": "docs/gemini_api_setup.html",
+    "title": "Gemini API Setup Guide",
     "section": "",
-    "text": "Quick Links: - Syllabus & Weekly Schedule - Tool Setup Guide"
+    "text": "This guide supports Lab 1: Structured AI Workflow, where you will build the first version of a Java command-line program that sends a prompt to an LLM and prints the response."
   },
   {
-    "objectID": "docs/course_orientation.html#welcome-course-introduction",
-    "href": "docs/course_orientation.html#welcome-course-introduction",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "1) Welcome & Course Introduction",
-    "text": "1) Welcome & Course Introduction\nInstructor: Add name, office hours, contact preferences\nFormat: 12-week · 4 credits · Prerequisite: COMP 311 | Advanced Java Programming (or equivalent)\nWhy this course now?\nAI-assisted development is changing how software is built. You’ll learn to pair your expertise with tools like GitHub Copilot to generate code, tests, docs, and plans—while critically evaluating quality, security, and ethics.\nCourse arc (high-level):\n\nWeek 1: Environment setup and AI-assisted software engineering foundations\nWeeks 2–10: Weekly AI Interaction Log documenting prompts, decisions, and evaluations\nWeeks 3, 5, 7, 9, and 10: Labs that build a Controlled Coding Agent workflow\nWeeks 10–12: Final Project proposal, partial implementation, evaluation strategy, risk analysis, final system, and demo"
+    "objectID": "docs/gemini_api_setup.html#large-language-models",
+    "href": "docs/gemini_api_setup.html#large-language-models",
+    "title": "Gemini API Setup Guide",
+    "section": "Large Language Models",
+    "text": "Large Language Models\nLarge language models, or LLMs, are the AI technology behind tools such as ChatGPT, Claude, Cursor, and Google Gemini. In this course, we will treat an LLM as a text-based service: your program sends a prompt, and the model returns a generated response.\nWe will use Google’s Gemini API to power the coding agent you build in Java. Gemini gives us a practical API for experimenting with prompt handling, model responses, tool use, and agent workflows."
   },
   {
-    "objectID": "docs/course_orientation.html#syllabus-learning-outcomes",
-    "href": "docs/course_orientation.html#syllabus-learning-outcomes",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "2) Syllabus & Learning Outcomes",
-    "text": "2) Syllabus & Learning Outcomes\nSee the Syllabus & Weekly Schedule for full course description, learning outcomes, topics, grading breakdown, and weekly activities.\n\nCatalog Description\nExplores how software engineers can use AI-assisted tools intentionally while building controlled, evaluable coding-agent workflows. Emphasis is placed on structured task input, AI-assisted code generation, evaluation, risk analysis, human oversight, reproducibility, and professional documentation. Hands-on labs build toward a final Controlled Coding Agent project in Java.\nLearning Outcomes (mapped to Bloom’s levels):\n\nSet up and verify a Java development environment with GitHub Copilot and GitHub-based submission workflows. (Apply)\nDocument AI-assisted development decisions through weekly interaction logs. (Analyze)\nTranslate feature requests into structured task specifications for AI-assisted implementation. (Create)\nDefine and run evaluations that measure correctness and detect regressions in AI-generated outputs. (Evaluate)\nIntegrate structured input, AI-assisted generation, evaluation, and human approval into a controlled coding-agent workflow. (Create)\nAnalyze reliability, security, maintainability, and production-readiness risks in AI-assisted systems. (Analyze/Evaluate)\nDeliver a complete Controlled Coding Agent final project with documentation, evaluation evidence, and a reproducible demo. (Create)"
+    "objectID": "docs/gemini_api_setup.html#cost-and-rate-limits",
+    "href": "docs/gemini_api_setup.html#cost-and-rate-limits",
+    "title": "Gemini API Setup Guide",
+    "section": "Cost and Rate Limits",
+    "text": "Cost and Rate Limits\nGemini API usage is subject to request and token limits. For this course, use only free-tier access unless your instructor gives different institutional guidance. Do not create a billing account or enable paid API usage for coursework. The course examples are designed to require only a small number of calls.\nEvery API call counts toward your usage, including calls made while testing your code. If you reach a quota or rate limit, wait for the quota window to reset, reduce how often your code calls the model, or ask your instructor whether the course has switched to an approved fallback provider. Creating a new API key should not be treated as a way to bypass quota limits."
   },
   {
-    "objectID": "docs/course_orientation.html#tools-setup-week-1-assignment",
-    "href": "docs/course_orientation.html#tools-setup-week-1-assignment",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "3) Tools & Setup (Week 1 Assignment)",
-    "text": "3) Tools & Setup (Week 1 Assignment)\nSee the Tool Setup Guide for step-by-step instructions for installing and configuring your IDE, Java, GitHub Copilot, and related tools.\n\nRequired Software/Accounts - JDK (latest LTS) - IntelliJ IDEA or Visual Studio Code - Git + GitHub account - GitHub Copilot with IDE plugin; students should set up GitHub Education using their university email address at github.com/settings/education/benefits - Maven, Gradle, and JUnit 5 are introduced later for labs and evaluations\nSetup Checklist - [ ] Install JDK and confirm java -version - [ ] Install IntelliJ or VS Code - [ ] Install Git and configure SSH/HTTPS for GitHub - [ ] Set up GitHub Education with your university email address - [ ] Enable GitHub Copilot and sign in from IDE - [ ] Create a sample Java project; generate a simple method using Copilot - [ ] Confirm a simple Java project runs\nSubmission (Assignment 1): - Screenshots of IDE + Copilot in action - Brief reflection (150–250 words) on setup experience and Week 1 concepts"
+    "objectID": "docs/gemini_api_setup.html#tokens",
+    "href": "docs/gemini_api_setup.html#tokens",
+    "title": "Gemini API Setup Guide",
+    "section": "Tokens",
+    "text": "Tokens\nTokens are the units LLM APIs use to measure text input and output. A token is often a short word, part of a word, punctuation mark, or whitespace sequence. As a rough estimate, one token is about four characters for many English-language inputs, although the exact count varies by model and text.\nYour usage in this course should be modest, but you should still monitor tokens and requests. Later labs ask you to add verbose or debug output so you can inspect model usage when the API provides that information."
   },
   {
-    "objectID": "docs/course_orientation.html#course-logistics",
-    "href": "docs/course_orientation.html#course-logistics",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "4) Course Logistics",
-    "text": "4) Course Logistics\nSee the Syllabus & Weekly Schedule for details on modality, workload, assessment weights, deadlines, and submission conventions.\n\nModality & Rhythm - Weekly cadence: lecture/discussion (concepts), live demo, guided lab, short reflection - Estimated workload: 8–10 hours/week\nAssessments & Weights - Assignment 1: Environment Setup & AI-Assisted SWE Foundations: 30 points - Weekly AI Interaction Log: 90 points - Labs 1–5: 480 points total, building the Controlled Coding Agent workflow over time - Final Project Milestones and Final Submission: 400 points total - Total: 1000 points\nDeadlines & Late Policy - Standard deadline: end of week (Sunday 11:59 PM local) - Extensions for documented circumstances—contact instructor early per university policies\nSubmission Conventions - Code via GitHub; submit Canvas link, repository link, and commit hash when requested - Unless your professor instructs otherwise, continue extending the same project repository through Labs 1–5 and the Final Project - Include README.md with how to run, how to evaluate, and AI usage notes - Maintain weekly AI interaction log entries from Week 2 through Week 10 - Final submissions must include reproducible setup/run instructions and a demo link when required"
+    "objectID": "docs/gemini_api_setup.html#if-gemini-is-unavailable",
+    "href": "docs/gemini_api_setup.html#if-gemini-is-unavailable",
+    "title": "Gemini API Setup Guide",
+    "section": "If Gemini Is Unavailable",
+    "text": "If Gemini Is Unavailable\nFree API tiers change frequently. If Gemini becomes unreliable for course use, your instructor may announce an approved fallback provider. Do not switch providers on your own for graded work unless the assignment allows it, because request formats, model behavior, rate limits, and tool-calling support differ across APIs.\nPossible free-tier or no-cost options your instructor may evaluate include:\n\nGitHub Models: useful for experimentation if students already have GitHub access, but it does not provide a separate “GitHub Models API key” in the same way Gemini does. API access, when available, uses GitHub authentication such as a personal access token or a GitHub-provided token, and model availability and limits depend on GitHub’s current terms.\nGroqCloud: often provides free developer access to fast open-weight models; limits and available models can change.\nOpenRouter: sometimes offers free models through a single API; individual model availability varies.\nHugging Face Inference Providers: useful for experimenting with open models; free access may be limited by provider, account, and model.\nCloudflare Workers AI: may be practical when the course wants students to use a Cloudflare account; setup is different from a simple local API key.\nLocal models with Ollama or LM Studio: avoids API keys and cloud quotas, but requires enough laptop memory and may produce weaker or slower results.\n\nFor this course, the safest fallback design is to keep your Java code modular: isolate the model call behind a small class or interface so the rest of your agent does not depend on Gemini-specific request code."
   },
   {
-    "objectID": "docs/course_orientation.html#ai-use-evidence-and-academic-integrity",
-    "href": "docs/course_orientation.html#ai-use-evidence-and-academic-integrity",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "5) AI Use, Evidence, and Academic Integrity",
-    "text": "5) AI Use, Evidence, and Academic Integrity\nGitHub Copilot is the approved AI assistant for course programming work unless an assignment says otherwise. You may use Copilot to help draft code, tests, documentation, evaluation criteria, and workflow artifacts, but you remain responsible for every submitted artifact.\nRequired Evidence\n\nRecord meaningful Copilot interactions in the Weekly AI Interaction Log.\nDescribe AI assistance in each repository README or assignment documentation.\nPreserve prompts, accepted or rejected suggestions, manual edits, evaluations, and final decisions when relevant.\n\nNot Allowed\n\nSubmitting AI-generated work without acknowledgment.\nSubmitting code you do not understand or cannot explain.\nSharing full solutions with classmates unless the professor explicitly makes an activity collaborative.\nPasting secrets, private data, proprietary code, or protected information into AI tools."
+    "objectID": "docs/gemini_api_setup.html#create-a-gemini-api-key",
+    "href": "docs/gemini_api_setup.html#create-a-gemini-api-key",
+    "title": "Gemini API Setup Guide",
+    "section": "Create a Gemini API Key",
+    "text": "Create a Gemini API Key\n\nGo to Google AI Studio.\nSign in with a Google account.\nClick Get API key or Create API key.\nIf you already have a Google Cloud project, you may create the key in that project. Otherwise, AI Studio will guide you through creating a project.\nCopy the API key. You will use it in your Java project.\n\nIf you get stuck, use the Gemini API key documentation."
   },
   {
-    "objectID": "docs/course_orientation.html#risks-to-watch-throughout-the-course",
-    "href": "docs/course_orientation.html#risks-to-watch-throughout-the-course",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "6) Risks To Watch Throughout the Course",
-    "text": "6) Risks To Watch Throughout the Course\nThe labs and Final Project ask you to evaluate AI-assisted systems, not just produce code. Keep these risks visible in your weekly logs, evaluations, and project documentation.\n\nCorrectness: Generated code may appear plausible while missing edge cases or requirements.\nSecurity: AI suggestions may introduce unsafe input handling, secret leakage, weak cryptography, or injection risks.\nMaintainability: Generated code may be hard to read, overcomplicated, or poorly aligned with your architecture.\nEvaluation gaps: Passing one demo does not prove the workflow is reliable. Define measurable checks.\nHuman oversight: Controlled workflows need clear points where a human reviews, approves, rejects, or revises AI output."
+    "objectID": "docs/gemini_api_setup.html#store-the-api-key-safely",
+    "href": "docs/gemini_api_setup.html#store-the-api-key-safely",
+    "title": "Gemini API Setup Guide",
+    "section": "Store the API Key Safely",
+    "text": "Store the API Key Safely\nIn your Lab 1 repository, create a file named .env in the project root:\nGEMINI_API_KEY=your_api_key_here\nAdd .env to your .gitignore file:\n.env\nNever commit API keys, passwords, access tokens, or other secrets to Git. If you accidentally commit a key, revoke it immediately in Google AI Studio and create a new one."
   },
   {
-    "objectID": "docs/course_orientation.html#learning-activities",
-    "href": "docs/course_orientation.html#learning-activities",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "7) Learning Activities",
-    "text": "7) Learning Activities\nControlled Workflow Pattern\n\nSpecify: Translate a request into structured input with goals, constraints, edge cases, and acceptance criteria\nGenerate or revise: Use Copilot to propose implementation, tests, documentation, or workflow artifacts\nEvaluate: Run tests, scripts, checks, or structured reviews against explicit criteria\nControl: Add human approval checkpoints before accepting important changes\nDocument: Preserve prompts, outputs, evaluation results, risks, and final decisions\n\nThis pattern appears repeatedly in Labs 1-5 and the Final Project. The goal is not to maximize AI usage; the goal is to make AI-assisted development controlled, observable, evaluable, and reproducible."
+    "objectID": "docs/gemini_api_setup.html#add-java-dependencies",
+    "href": "docs/gemini_api_setup.html#add-java-dependencies",
+    "title": "Gemini API Setup Guide",
+    "section": "Add Java Dependencies",
+    "text": "Add Java Dependencies\nThere are multiple ways to call Gemini from Java. For this course, a simple REST call is acceptable and keeps the agent architecture easy to inspect. The example below uses Java’s built-in HttpClient, plus two small libraries: one for loading .env files and one for parsing JSON.\nAdd these dependencies to your Maven pom.xml:\n&lt;dependencies&gt;\n    &lt;dependency&gt;\n        &lt;groupId&gt;io.github.cdimascio&lt;/groupId&gt;\n        &lt;artifactId&gt;dotenv-java&lt;/artifactId&gt;\n        &lt;version&gt;3.0.0&lt;/version&gt;\n    &lt;/dependency&gt;\n    &lt;dependency&gt;\n        &lt;groupId&gt;org.json&lt;/groupId&gt;\n        &lt;artifactId&gt;json&lt;/artifactId&gt;\n        &lt;version&gt;20250517&lt;/version&gt;\n    &lt;/dependency&gt;\n&lt;/dependencies&gt;\nIf your instructor provides a different Gemini Java client or starter project, follow that version instead. The important concepts are the same: load the API key safely, send a prompt, receive text, and avoid committing secrets."
   },
   {
-    "objectID": "docs/course_orientation.html#success-strategies",
-    "href": "docs/course_orientation.html#success-strategies",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "8) Success Strategies",
-    "text": "8) Success Strategies\n\nKeep the Weekly AI Interaction Log current: record prompts, outputs, evaluations, decisions, and what worked\nPrefer small, precise prompts over broad requests; iterate quickly\nDefine evaluation criteria before trusting generated code; use AI to scaffold edge cases where appropriate\nUse tests, static analysis, security checks, and manual review alongside AI suggestions\nCommit early/often; preserve artifacts that make workflow decisions reproducible\nTreat AI like a junior pair-programmer: useful for drafts, but never the final authority"
+    "objectID": "docs/gemini_api_setup.html#minimal-java-test-program",
+    "href": "docs/gemini_api_setup.html#minimal-java-test-program",
+    "title": "Gemini API Setup Guide",
+    "section": "Minimal Java Test Program",
+    "text": "Minimal Java Test Program\nCreate or update your Main.java file so it loads the API key and sends one hard-coded prompt to Gemini. This is only a connection test; you will make the prompt configurable in Lab 1.\nimport io.github.cdimascio.dotenv.Dotenv;\nimport org.json.JSONArray;\nimport org.json.JSONObject;\n\nimport java.net.URI;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\nimport java.net.http.HttpResponse;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Dotenv dotenv = Dotenv.configure()\n                .ignoreIfMalformed()\n                .ignoreIfMissing()\n                .load();\n\n        String apiKey = dotenv.get(\"GEMINI_API_KEY\", System.getenv(\"GEMINI_API_KEY\"));\n        if (apiKey == null || apiKey.isBlank()) {\n            throw new RuntimeException(\"GEMINI_API_KEY was not found. Add it to .env or your environment.\");\n        }\n\n        String prompt = \"In one paragraph, explain why clear requirements help software teams build better systems.\";\n\n        JSONObject body = new JSONObject()\n                .put(\"contents\", new JSONArray()\n                        .put(new JSONObject()\n                                .put(\"parts\", new JSONArray()\n                                        .put(new JSONObject().put(\"text\", prompt)))));\n\n        HttpRequest request = HttpRequest.newBuilder()\n                .uri(URI.create(\"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=\" + apiKey))\n                .header(\"Content-Type\", \"application/json\")\n                .POST(HttpRequest.BodyPublishers.ofString(body.toString()))\n                .build();\n\n        HttpClient client = HttpClient.newHttpClient();\n        HttpResponse&lt;String&gt; response = client.send(request, HttpResponse.BodyHandlers.ofString());\n\n        if (response.statusCode() &lt; 200 || response.statusCode() &gt;= 300) {\n            throw new RuntimeException(\"Gemini API request failed with status \"\n                    + response.statusCode() + \": \" + response.body());\n        }\n\n        JSONObject json = new JSONObject(response.body());\n        String text = json\n                .getJSONArray(\"candidates\")\n                .getJSONObject(0)\n                .getJSONObject(\"content\")\n                .getJSONArray(\"parts\")\n                .getJSONObject(0)\n                .getString(\"text\");\n\n        System.out.println(text);\n    }\n}"
   },
   {
-    "objectID": "docs/course_orientation.html#orientation-activities-week-1",
-    "href": "docs/course_orientation.html#orientation-activities-week-1",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "9) Orientation Activities (Week 1)",
-    "text": "9) Orientation Activities (Week 1)\nIcebreaker (Forum): Share your first experience using AI on code\u0014what surprised you?\nMini-Demo (in class or video): Instructor demonstrates Copilot in a small Java file, then critiques the output for intent match, correctness, and risk.\nQuick Poll: Which part of a controlled AI workflow seems most challenging? Options: specifying tasks, generating code, evaluating outputs, managing risk, documenting decisions\nChecklist Turn\u0011In: Confirm tools installed; Copilot active; simple Java project running."
+    "objectID": "docs/gemini_api_setup.html#run-the-connection-check",
+    "href": "docs/gemini_api_setup.html#run-the-connection-check",
+    "title": "Gemini API Setup Guide",
+    "section": "Run the Connection Check",
+    "text": "Run the Connection Check\nRun your Java program from the project root. The exact command depends on your Maven setup. Common options include:\nmvn compile\nmvn exec:java\nIf everything is working, you should see Gemini’s response printed in your terminal. After this works, continue Lab 1 by replacing the hard-coded prompt with command-line argument handling and adding verbose/debug output."
   },
   {
-    "objectID": "docs/course_orientation.html#week-1-deliverables",
-    "href": "docs/course_orientation.html#week-1-deliverables",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "10) Week 1 Deliverables",
-    "text": "10) Week 1 Deliverables\n\nAssignment 1: Setup verification + short reflection\nWeekly AI Interaction Log: Begins in Week 2 and continues through Week 10\n\nRubric Snapshot (Assignment 1)\n\nEnvironment, GitHub, and Copilot setup completed — 10 points\nScreenshots clearly demonstrate setup — 5 points\nRepository includes minimal Java project and README — 5 points\nReflection demonstrates understanding of Week 1 concepts — 10 points"
-  },
-  {
-    "objectID": "docs/course_orientation.html#quick-reference-links-fill-in-lms",
-    "href": "docs/course_orientation.html#quick-reference-links-fill-in-lms",
-    "title": "COMP 331: AI-Assisted Software Engineering Orientation",
-    "section": "11) Quick Reference & Links (fill in LMS)",
-    "text": "11) Quick Reference & Links (fill in LMS)\n\nCourse site / Canvas module: link\nGitHub organization / assignment repository: link\nWeekly AI Interaction Log location: link\nFinal Project repository: link\nGitHub Education setup: github.com/settings/education/benefits\nCopilot documentation: link\nJava/JUnit templates, evaluation examples, and build scripts (Maven/Gradle): links\nOffice hours / booking link: link\nCommunication channel (Discord/Slack/Ed): link\n\nContact Protocol\n\nFor bugs or repo issues — open a GitHub Issue\nFor grading/logistics — course forum or email\nFor private matters — office hours or direct message"
+    "objectID": "docs/gemini_api_setup.html#troubleshooting",
+    "href": "docs/gemini_api_setup.html#troubleshooting",
+    "title": "Gemini API Setup Guide",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nGEMINI_API_KEY was not found: confirm .env is in the project root and contains GEMINI_API_KEY=..., or set the variable in your shell.\n403 or permission errors: confirm the API key is active and copied correctly.\n429 or quota errors: you may have reached the free-tier limit. Wait for quota reset, reduce testing frequency, or ask whether an instructor-approved fallback is available.\nJSON parsing errors: print the raw response body temporarily to inspect the returned shape. Do not print API keys.\nRepeated testing consumes quota. Avoid running loops that call Gemini many times while debugging."
   },
   {
     "objectID": "docs/syllabus.html",

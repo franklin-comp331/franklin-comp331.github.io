@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -111,6 +146,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../docs/tool_setup.html">
  <span class="dropdown-text">Tool Setup Guide</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../docs/gemini_api_setup.html">
+ <span class="dropdown-text">Gemini API Setup</span></a>
   </li>  
     </ul>
   </li>
@@ -245,10 +284,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#purpose-of-assignment" id="toc-purpose-of-assignment" class="nav-link active" data-scroll-target="#purpose-of-assignment"><span class="header-section-number">1</span> Purpose of Assignment</a></li>
   <li><a href="#steps-requirements-of-assignment" id="toc-steps-requirements-of-assignment" class="nav-link" data-scroll-target="#steps-requirements-of-assignment"><span class="header-section-number">2</span> Steps / Requirements of Assignment</a></li>
-  <li><a href="#action-items" id="toc-action-items" class="nav-link" data-scroll-target="#action-items"><span class="header-section-number">3</span> Action Items</a></li>
-  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">4</span> Deliverables</a></li>
-  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading"><span class="header-section-number">5</span> Grading</a></li>
-  <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions"><span class="header-section-number">6</span> Submission Instructions</a></li>
+  <li><a href="#using-github-copilot" id="toc-using-github-copilot" class="nav-link" data-scroll-target="#using-github-copilot"><span class="header-section-number">3</span> Using GitHub Copilot</a></li>
+  <li><a href="#action-items" id="toc-action-items" class="nav-link" data-scroll-target="#action-items"><span class="header-section-number">4</span> Action Items</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">5</span> Deliverables</a></li>
+  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading"><span class="header-section-number">6</span> Grading</a></li>
+  <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions"><span class="header-section-number">7</span> Submission Instructions</a></li>
   </ul>
 </nav>
     </div>
@@ -292,32 +332,51 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="2" class="anchored" data-anchor-id="steps-requirements-of-assignment"><span class="header-section-number">2</span> Steps / Requirements of Assignment</h2>
 <p>Finalize your Controlled Coding Agent system and submit a complete, reproducible project. Your final submission should demonstrate integration of structured input, AI-assisted generation, evaluation, controlled workflow, persistence or artifact tracking, documentation, and human oversight.</p>
 </section>
-<section id="action-items" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="action-items"><span class="header-section-number">3</span> Action Items</h2>
+<section id="using-github-copilot" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="using-github-copilot"><span class="header-section-number">3</span> Using GitHub Copilot</h2>
+<p>Your final submission should make AI-assisted development transparent. Evidence should show responsible engineering judgment, not just prompt volume.</p>
+<p>Add an <code>AI Assistance</code> section to your README using this structure:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## AI Assistance</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>GitHub Copilot was used for:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Planning:</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Code generation:</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Test generation:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Debugging:</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Review:</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Important Copilot suggestions accepted:</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Important Copilot suggestions modified:</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Important Copilot suggestions rejected:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Verification methods:</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Connect this section to your weekly interaction logs, example workflow artifacts, tests, and demo.</p>
+</section>
+<section id="action-items" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="action-items"><span class="header-section-number">4</span> Action Items</h2>
 <ul>
-<li>Finalize and verify your complete coding agent system, including input, generation, evaluation, workflow, and persistence.</li>
-<li>Ensure the project runs from a clean environment with clear setup instructions.</li>
-<li>Provide a reproducible demo command or script that executes the full workflow.</li>
-<li>Submit a 5-8 minute recorded demo showing system functionality and iteration.</li>
-<li>Include an example workflow run and evaluation results in your README.</li>
-<li>Provide evidence of AI-assisted development, including prompts, iterations, and Copilot usage.</li>
-<li>Review submission for completeness, clarity, and usability.</li>
+<li>Click the link to the full hosted final submission instructions: <a href="https://t-morgan.github.io/ai-assisted-software-engineering/assignments/final_project_final_submission.html">Final Project Final Submission</a>.</li>
+<li>Follow the instructions in the final submission page.</li>
+<li>Open your final project repository and review all milestone feedback, known risks, and incomplete tasks.</li>
+<li>Finalize the complete system, documentation, evaluation report, example workflow artifacts, and recorded demo described in the linked instructions.</li>
+<li>Add an <code>AI Assistance</code> README section identifying Copilot use, accepted/modified/rejected suggestions, and verification methods.</li>
+<li>Verify the project from a clean environment and confirm no secrets are committed.</li>
+<li>Submit the project repository link and recorded demo link through Canvas.</li>
 </ul>
 </section>
-<section id="deliverables" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">4</span> Deliverables</h2>
+<section id="deliverables" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">5</span> Deliverables</h2>
 <p>Your repository should include:</p>
 <ul>
 <li>Complete runnable Controlled Coding Agent system.</li>
-<li>README with setup, run, evaluation, and demo instructions.</li>
+<li>README with setup, run, evaluation, demo instructions, and an <code>AI Assistance</code> section.</li>
 <li>Evaluation report with results and interpretation.</li>
 <li>Example workflow run artifacts.</li>
 <li>AI-assisted development evidence.</li>
 <li>Link to a 5-8 minute recorded demo.</li>
 </ul>
 </section>
-<section id="grading" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="grading"><span class="header-section-number">5</span> Grading</h2>
+<section id="grading" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="grading"><span class="header-section-number">6</span> Grading</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 42%">
@@ -351,7 +410,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: right;">25</td>
 </tr>
 <tr class="even">
-<td>AI-assisted development evidence is complete and transparent</td>
+<td>AI-assisted development evidence is complete, transparent, and verification-focused</td>
 <td style="text-align: right;">15</td>
 </tr>
 <tr class="odd">
@@ -361,8 +420,8 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="submission-instructions" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="submission-instructions"><span class="header-section-number">6</span> Submission Instructions</h2>
+<section id="submission-instructions" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="submission-instructions"><span class="header-section-number">7</span> Submission Instructions</h2>
 <p>Submit your project repository link and recorded demo link through Canvas. Follow any additional sharing instructions provided by your professor.</p>
 
 

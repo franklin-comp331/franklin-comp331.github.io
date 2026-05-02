@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -111,6 +146,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../docs/tool_setup.html">
  <span class="dropdown-text">Tool Setup Guide</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../docs/gemini_api_setup.html">
+ <span class="dropdown-text">Gemini API Setup</span></a>
   </li>  
     </ul>
   </li>
@@ -246,9 +285,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#purpose-of-assignment" id="toc-purpose-of-assignment" class="nav-link active" data-scroll-target="#purpose-of-assignment"><span class="header-section-number">1</span> Purpose of Assignment</a></li>
   <li><a href="#steps-requirements-of-assignment" id="toc-steps-requirements-of-assignment" class="nav-link" data-scroll-target="#steps-requirements-of-assignment"><span class="header-section-number">2</span> Steps / Requirements of Assignment</a></li>
   <li><a href="#action-items" id="toc-action-items" class="nav-link" data-scroll-target="#action-items"><span class="header-section-number">3</span> Action Items</a></li>
-  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">4</span> Deliverables</a></li>
-  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading"><span class="header-section-number">5</span> Grading</a></li>
-  <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions"><span class="header-section-number">6</span> Submission Instructions</a></li>
+  <li><a href="#using-github-copilot" id="toc-using-github-copilot" class="nav-link" data-scroll-target="#using-github-copilot"><span class="header-section-number">4</span> Using GitHub Copilot</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">5</span> Deliverables</a></li>
+  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading"><span class="header-section-number">6</span> Grading</a></li>
+  <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions"><span class="header-section-number">7</span> Submission Instructions</a></li>
   </ul>
 </nav>
     </div>
@@ -285,41 +325,72 @@ ul.task-list li input[type="checkbox"] {
 <li>Build the evaluation layer of your coding agent</li>
 <li>Define measurable correctness criteria</li>
 <li>Detect regressions in AI-generated outputs</li>
+<li>Create the Java sandbox project that later agent tools will inspect and modify</li>
 </ul>
 </section>
 <section id="steps-requirements-of-assignment" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="steps-requirements-of-assignment"><span class="header-section-number">2</span> Steps / Requirements of Assignment</h2>
-<p>Extend your Lab 1 repository by adding an evaluation system for generated or revised code. The evaluation layer should make correctness criteria explicit and repeatable.</p>
+<p>Extend your Lab 1 repository by adding a small Java sandbox project and a repeatable evaluation process. Later labs will give the coding agent tools that operate on this sandbox, so keep it simple and easy to test.</p>
 <ol type="1">
-<li>Identify the feature or task your evaluation will check.</li>
-<li>Define measurable acceptance criteria.</li>
-<li>Add automated checks, tests, scripts, or structured review criteria.</li>
-<li>Run the evaluation against at least two versions or iterations of the code.</li>
-<li>Document what the evaluation caught and what it did not catch.</li>
+<li>Create a sandbox Java project or package inside your repository. A recommended name is <code>workspace/calculator</code> or <code>sandbox/calculator</code>.</li>
+<li>Implement a small Java program or library that has clear behavior. Recommended options include a calculator, string formatter, unit converter, password validator, or CSV summary utility.</li>
+<li>Add JUnit tests that check normal cases, edge cases, and at least one invalid-input case.</li>
+<li>Define measurable acceptance criteria in your README. Each criterion should connect to a test, command, or review check.</li>
+<li>Run the evaluation manually from the command line using <code>mvn test</code> or an equivalent command. Save the output or summarize it in your README.</li>
+<li>Use Copilot or another approved AI tool to make at least two iterations of the sandbox code. One iteration may intentionally be incomplete or flawed.</li>
+<li>Run the evaluation against at least two versions or iterations of the code and document what changed. You may use separate commits, branches, screenshots, copied terminal output, or a written comparison.</li>
+<li>Connect the evaluation back to your Lab 1 structured prompt/specification. Note which acceptance criteria were enforced automatically and which still required human review.</li>
 </ol>
+<p>Suggested checkpoint commands:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> test</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> <span class="at">-q</span> test</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Minimum viable version: one sandbox Java class and at least five meaningful JUnit tests. Stretch goal: add a small script or Maven profile that runs only the sandbox evaluation.</p>
 </section>
 <section id="action-items" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="action-items"><span class="header-section-number">3</span> Action Items</h2>
 <ul>
-<li>Extend your existing repository.</li>
-<li>Add an evaluation system.</li>
-<li>Document how to run evaluations.</li>
-<li>Record Copilot interactions and evaluation decisions in your weekly log.</li>
+<li>Click the link to the full hosted lab instructions: <a href="https://t-morgan.github.io/ai-assisted-software-engineering/assignments/lab02_eval_driven_development.html">Lab 2: Eval-Driven Development</a>.</li>
+<li>Follow the instructions in the lab page.</li>
+<li>Open your existing <code>comp331-java-agent</code> repository from Lab 1.</li>
+<li>Create the sandbox project, JUnit evaluation, and Copilot-assisted iterations described in the linked instructions.</li>
+<li>Document acceptance criteria, test commands, iteration results, Copilot-assisted test or code changes, and verification results in <code>README.md</code>.</li>
+<li>Copy meaningful Copilot prompts, test-generation notes, and evaluation decisions into your weekly AI interaction reflection.</li>
+<li>Submit the repository link and required evaluation evidence through Canvas.</li>
 </ul>
 </section>
-<section id="deliverables" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">4</span> Deliverables</h2>
+<section id="using-github-copilot" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="using-github-copilot"><span class="header-section-number">4</span> Using GitHub Copilot</h2>
+<p>Use GitHub Copilot to strengthen the evaluation process, not to bypass it. You remain responsible for deciding which tests matter and whether the implementation satisfies the assignment.</p>
+<p>Recommended Copilot workflow:</p>
+<ul>
+<li>Ask Copilot Chat to propose JUnit tests before implementation. Review the suggestions and keep only meaningful cases.</li>
+<li>Ask Copilot to identify missing edge cases after your first test set is written.</li>
+<li>Use Copilot to help create one incomplete or flawed implementation, then use your tests to expose the weakness.</li>
+<li>Label tests or test ideas as human-authored, Copilot-assisted, or Copilot-suggested but modified.</li>
+<li>Record how each accepted Copilot suggestion was verified with <code>mvn test</code> or an equivalent command.</li>
+</ul>
+</section>
+<section id="deliverables" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">5</span> Deliverables</h2>
 <p>Your repository should include:</p>
 <ul>
+<li>A Java sandbox project or package that later labs can inspect and modify.</li>
 <li>Evaluation criteria in a documented format.</li>
-<li>Runnable evaluation code, tests, scripts, or checklist.</li>
-<li>Example evaluation results.</li>
+<li>Runnable JUnit tests or an equivalent automated evaluation command.</li>
+<li>Example evaluation results from at least two code iterations.</li>
 <li>README instructions for running the evaluations from a clean environment.</li>
+<li>Notes explaining what the evaluation caught and what it did not catch.</li>
+<li>A short note identifying which test ideas or implementation changes were Copilot-assisted and how they were verified.</li>
 </ul>
 </section>
-<section id="grading" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="grading"><span class="header-section-number">5</span> Grading</h2>
+<section id="grading" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="grading"><span class="header-section-number">6</span> Grading</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Category</th>
@@ -328,35 +399,39 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Evaluation criteria are measurable and tied to the task</td>
-<td style="text-align: right;">25</td>
+<td>Java sandbox project is clear, small, and usable for later labs</td>
+<td style="text-align: right;">15</td>
 </tr>
 <tr class="even">
-<td>Evaluation system is implemented and runnable</td>
-<td style="text-align: right;">35</td>
-</tr>
-<tr class="odd">
-<td>Regression or iteration comparison is documented</td>
+<td>Evaluation criteria are measurable and tied to the task</td>
 <td style="text-align: right;">20</td>
 </tr>
+<tr class="odd">
+<td>JUnit tests or equivalent automated checks are implemented and runnable</td>
+<td style="text-align: right;">35</td>
+</tr>
 <tr class="even">
-<td>README explains how to run and interpret evaluations</td>
+<td>Regression or iteration comparison is documented</td>
 <td style="text-align: right;">15</td>
 </tr>
 <tr class="odd">
-<td>AI interaction evidence is included</td>
-<td style="text-align: right;">5</td>
+<td>README explains how to run and interpret evaluations</td>
+<td style="text-align: right;">10</td>
 </tr>
 <tr class="even">
+<td>Copilot-assisted test or implementation work is documented and verified</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
 <td><strong>Total</strong></td>
 <td style="text-align: right;"><strong>100</strong></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="submission-instructions" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="submission-instructions"><span class="header-section-number">6</span> Submission Instructions</h2>
-<p>Submit your repository link and any required evaluation output through Canvas.</p>
+<section id="submission-instructions" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="submission-instructions"><span class="header-section-number">7</span> Submission Instructions</h2>
+<p>Submit your repository link and any required evaluation output through Canvas. Identify the exact command your professor should run to execute the evaluation.</p>
 <p>Next lab: <a href="../assignments/lab03_ai_system_implementation.html">Lab 3: AI System Implementation</a>.</p>
 
 

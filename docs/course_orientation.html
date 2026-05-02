@@ -112,6 +112,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../docs/tool_setup.html">
  <span class="dropdown-text">Tool Setup Guide</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../docs/gemini_api_setup.html">
+ <span class="dropdown-text">Gemini API Setup</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -331,7 +335,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Modality &amp; Rhythm</strong> - Weekly cadence: lecture/discussion (concepts), live demo, guided lab, short reflection - Estimated workload: <strong>8–10 hours/week</strong></p>
 <p><strong>Assessments &amp; Weights</strong> - <a href="../assignments/assignment01.html">Assignment 1: Environment Setup &amp; AI-Assisted SWE Foundations</a>: <strong>30 points</strong> - <a href="../assignments/weekly_ai_interaction_log.html">Weekly AI Interaction Log</a>: <strong>90 points</strong> - Labs 1–5: <strong>480 points</strong> total, building the Controlled Coding Agent workflow over time - Final Project Milestones and Final Submission: <strong>400 points</strong> total - <strong>Total:</strong> 1000 points</p>
 <p><strong>Deadlines &amp; Late Policy</strong> - Standard deadline: end of week (Sunday 11:59 PM local) - Extensions for documented circumstances—contact instructor early per university policies</p>
-<p><strong>Submission Conventions</strong> - Code via GitHub; submit Canvas link, repository link, and commit hash when requested - Unless your professor instructs otherwise, continue extending the same project repository through Labs 1–5 and the Final Project - Include <code>README.md</code> with <strong>how to run</strong>, <strong>how to evaluate</strong>, and <strong>AI usage notes</strong> - Maintain weekly AI interaction log entries from Week 2 through Week 10 - Final submissions must include reproducible setup/run instructions and a demo link when required</p>
+<p><strong>Submission Conventions</strong> - Code via GitHub; submit Canvas link, repository link, and commit hash when requested - Unless your professor instructs otherwise, continue extending the same project repository through Labs 1–5 and the Final Project - Include <code>README.md</code> with <strong>how to run</strong>, <strong>how to evaluate</strong>, and <strong>AI usage notes</strong> - Maintain weekly AI interaction log entries from Week 2 through Week 10, including Copilot mode, accepted/rejected suggestions, and verification method - Final submissions must include reproducible setup/run instructions and a demo link when required</p>
 <hr>
 </section>
 <section id="ai-use-evidence-and-academic-integrity" class="level2">
@@ -340,8 +344,9 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Required Evidence</strong></p>
 <ul>
 <li>Record meaningful Copilot interactions in the <a href="../assignments/weekly_ai_interaction_log.html">Weekly AI Interaction Log</a>.</li>
+<li>Identify the Copilot mode used, such as inline suggestion, chat, edit, agent/workspace, test generation, review, or debugging.</li>
 <li>Describe AI assistance in each repository README or assignment documentation.</li>
-<li>Preserve prompts, accepted or rejected suggestions, manual edits, evaluations, and final decisions when relevant.</li>
+<li>Preserve prompts, accepted or rejected suggestions, manual edits, evaluations, verification methods, and final decisions when relevant.</li>
 </ul>
 <p><strong>Not Allowed</strong></p>
 <ul>
@@ -369,8 +374,8 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Controlled Workflow Pattern</strong></p>
 <ol type="1">
 <li><p><strong>Specify</strong>: Translate a request into structured input with goals, constraints, edge cases, and acceptance criteria</p></li>
-<li><p><strong>Generate or revise</strong>: Use Copilot to propose implementation, tests, documentation, or workflow artifacts</p></li>
-<li><p><strong>Evaluate</strong>: Run tests, scripts, checks, or structured reviews against explicit criteria</p></li>
+<li><p><strong>Generate or revise</strong>: Use Copilot inline suggestions, Chat, edit/review features, or agent-style assistance to propose implementation, tests, documentation, or workflow artifacts</p></li>
+<li><p><strong>Evaluate</strong>: Run tests, compiler checks, scripts, manual reviews, or structured comparisons against explicit criteria</p></li>
 <li><p><strong>Control</strong>: Add human approval checkpoints before accepting important changes</p></li>
 <li><p><strong>Document</strong>: Preserve prompts, outputs, evaluation results, risks, and final decisions</p></li>
 </ol>
@@ -380,7 +385,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="success-strategies" class="level2">
 <h2 class="anchored" data-anchor-id="success-strategies">8) Success Strategies</h2>
 <ul>
-<li><p>Keep the <strong>Weekly AI Interaction Log</strong> current: record prompts, outputs, evaluations, decisions, and what worked</p></li>
+<li><p>Keep the <strong>Weekly AI Interaction Log</strong> current: record Copilot mode, prompts, outputs, verification methods, decisions, and what worked</p></li>
 <li><p>Prefer <strong>small, precise prompts</strong> over broad requests; iterate quickly</p></li>
 <li><p>Define evaluation criteria before trusting generated code; use AI to scaffold edge cases where appropriate</p></li>
 <li><p>Use tests, static analysis, security checks, and manual review alongside AI suggestions</p></li>
@@ -408,7 +413,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Environment, GitHub, and Copilot setup completed — 10 points</p></li>
 <li><p>Screenshots clearly demonstrate setup — 5 points</p></li>
 <li><p>Repository includes minimal Java project and README — 5 points</p></li>
-<li><p>Reflection demonstrates understanding of Week 1 concepts — 10 points</p></li>
+<li><p>README documents responsible Copilot use and verification — 5 points</p></li>
+<li><p>Reflection demonstrates understanding of Week 1 concepts — 5 points</p></li>
 </ul>
 <hr>
 </section>

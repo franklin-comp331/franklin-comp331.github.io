@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -111,6 +146,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../docs/tool_setup.html">
  <span class="dropdown-text">Tool Setup Guide</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../docs/gemini_api_setup.html">
+ <span class="dropdown-text">Gemini API Setup</span></a>
   </li>  
     </ul>
   </li>
@@ -246,9 +285,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#purpose-of-assignment" id="toc-purpose-of-assignment" class="nav-link active" data-scroll-target="#purpose-of-assignment"><span class="header-section-number">1</span> Purpose of Assignment</a></li>
   <li><a href="#steps-requirements-of-assignment" id="toc-steps-requirements-of-assignment" class="nav-link" data-scroll-target="#steps-requirements-of-assignment"><span class="header-section-number">2</span> Steps / Requirements of Assignment</a></li>
   <li><a href="#action-items" id="toc-action-items" class="nav-link" data-scroll-target="#action-items"><span class="header-section-number">3</span> Action Items</a></li>
-  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">4</span> Deliverables</a></li>
-  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading"><span class="header-section-number">5</span> Grading</a></li>
-  <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions"><span class="header-section-number">6</span> Submission Instructions</a></li>
+  <li><a href="#using-github-copilot" id="toc-using-github-copilot" class="nav-link" data-scroll-target="#using-github-copilot"><span class="header-section-number">4</span> Using GitHub Copilot</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">5</span> Deliverables</a></li>
+  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading"><span class="header-section-number">6</span> Grading</a></li>
+  <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions"><span class="header-section-number">7</span> Submission Instructions</a></li>
   </ul>
 </nav>
     </div>
@@ -285,40 +325,93 @@ ul.task-list li input[type="checkbox"] {
 <li>Analyze failure modes in your coding agent</li>
 <li>Evaluate reliability, security, and maintainability</li>
 <li>Propose improvements to increase robustness</li>
+<li>Strengthen the safety controls around Java tools before adding an autonomous loop</li>
 </ul>
 </section>
 <section id="steps-requirements-of-assignment" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="steps-requirements-of-assignment"><span class="header-section-number">2</span> Steps / Requirements of Assignment</h2>
-<p>Conduct a risk analysis of your current coding agent workflow. Focus on realistic failures and production-readiness concerns rather than generic AI risks.</p>
+<p>Conduct a risk analysis of your current Java coding agent workflow. Focus on realistic failures in your own implementation rather than generic AI risks. Your system now has tools that can inspect files, read files, write files, and run Java evaluation commands, so your analysis should be specific to those capabilities.</p>
 <ol type="1">
-<li>Identify at least five failure modes in your system.</li>
-<li>Analyze reliability, security, maintainability, and human oversight risks.</li>
-<li>Rate each risk by likelihood and impact.</li>
-<li>Propose concrete mitigations.</li>
-<li>Identify which mitigations you can implement before the final project submission.</li>
+<li>Review each tool from Lab 3 and identify what could go wrong if an LLM requested unsafe or incorrect arguments.</li>
+<li>Identify at least six failure modes. Include path traversal, accidental overwrite, command execution risk, secret exposure, misleading model output, incomplete tests, and human oversight gaps where relevant.</li>
+<li>Analyze reliability, security, maintainability, and human oversight risks. At least one risk must come from each category.</li>
+<li>Rate each risk by likelihood and impact using a simple scale such as Low, Medium, or High.</li>
+<li>Propose concrete mitigations. Examples include path normalization, read-size limits, command allowlists, write approval checkpoints, max iteration limits, logging, and better test coverage.</li>
+<li>Implement at least two small safeguards or tests based on your analysis. Reasonable options include blocking absolute paths, adding a command allowlist, adding a write confirmation mode, or adding tests for secret-like files.</li>
+<li>Add a production-readiness checklist that distinguishes what is currently safe enough for coursework from what would be required before real use.</li>
+<li>Identify which mitigations you plan to carry into Lab 5 and the final project.</li>
 </ol>
+<p>Suggested risk table columns:</p>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Risk</th>
+<th>Tool/Component</th>
+<th>Category</th>
+<th>Likelihood</th>
+<th>Impact</th>
+<th>Current Control</th>
+<th>Proposed Mitigation</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Suggested checkpoint commands:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> test</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> test <span class="at">-Dtest</span><span class="op">=</span><span class="pp">*</span>Tool<span class="pp">*</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="action-items" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="action-items"><span class="header-section-number">3</span> Action Items</h2>
 <ul>
-<li>Analyze your system.</li>
-<li>Document findings clearly.</li>
-<li>Add risk analysis documentation to your repository.</li>
-<li>Record any AI-assisted analysis interactions in your weekly log.</li>
+<li>Click the link to the full hosted lab instructions: <a href="https://t-morgan.github.io/ai-assisted-software-engineering/assignments/lab04_risk_analysis_production_readiness.html">Lab 4: AI Risk Analysis and Production Readiness</a>.</li>
+<li>Follow the instructions in the lab page.</li>
+<li>Open your existing <code>comp331-java-agent</code> repository and review each Lab 3 tool implementation.</li>
+<li>Complete the risk analysis, safeguard implementation, and safety-test work described in the linked instructions.</li>
+<li>Document the risk table, production-readiness checklist, prioritized improvement plan, Copilot-assisted analysis notes, and verification results in the repository.</li>
+<li>Copy meaningful Copilot risk-analysis prompts and verification decisions into your weekly AI interaction reflection.</li>
+<li>Submit the repository link and risk-analysis document through Canvas.</li>
 </ul>
 </section>
-<section id="deliverables" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">4</span> Deliverables</h2>
+<section id="using-github-copilot" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="using-github-copilot"><span class="header-section-number">4</span> Using GitHub Copilot</h2>
+<p>Use GitHub Copilot as a risk-analysis assistant, not as the final authority. Your risk analysis must be specific to your own Java tool implementation.</p>
+<p>Recommended Copilot workflow:</p>
+<ul>
+<li>Ask Copilot to identify failure modes for your actual file, path, write, and test-execution tools.</li>
+<li>Verify Copilot’s suggestions against your code and tests. Remove generic risks that do not apply.</li>
+<li>Ask Copilot to critique your proposed mitigations, then decide which safeguards are realistic for this project.</li>
+<li>Include one example where Copilot missed, understated, or overstated a risk.</li>
+</ul>
+<p>Suggested prompt:</p>
+<pre class="text"><code>Review this Java coding-agent tool design for realistic risks.
+Focus on reliability, security, maintainability, and human oversight.
+Identify concrete failure modes tied to file reading, file writing, path handling, and test execution.
+Do not give generic AI risk language.</code></pre>
+</section>
+<section id="deliverables" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">5</span> Deliverables</h2>
 <p>Your repository should include:</p>
 <ul>
-<li>Risk analysis document or README section.</li>
-<li>Failure mode table with likelihood, impact, and mitigation.</li>
+<li>Risk analysis document or README section specific to your Java coding agent.</li>
+<li>Failure mode table with likelihood, impact, current controls, and mitigation.</li>
+<li>Evidence of at least two implemented safeguards or safety tests.</li>
 <li>Production-readiness checklist.</li>
-<li>Prioritized improvement plan for the final project.</li>
+<li>Prioritized improvement plan for Lab 5 and the final project.</li>
+<li>Copilot risk-analysis notes, including one example where you corrected or refined Copilot’s analysis.</li>
 </ul>
 </section>
-<section id="grading" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="grading"><span class="header-section-number">5</span> Grading</h2>
+<section id="grading" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="grading"><span class="header-section-number">6</span> Grading</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 42%">
@@ -332,23 +425,31 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Failure modes are specific to the student’s system</td>
-<td style="text-align: right;">25</td>
+<td>Failure modes are specific to the student’s Java agent and tools</td>
+<td style="text-align: right;">20</td>
 </tr>
 <tr class="even">
 <td>Reliability, security, maintainability, and oversight are addressed</td>
-<td style="text-align: right;">25</td>
+<td style="text-align: right;">20</td>
 </tr>
 <tr class="odd">
 <td>Risk ratings and mitigations are concrete</td>
 <td style="text-align: right;">20</td>
 </tr>
 <tr class="even">
-<td>Production-readiness plan is actionable</td>
-<td style="text-align: right;">15</td>
+<td>At least two safeguards or safety tests are implemented</td>
+<td style="text-align: right;">20</td>
 </tr>
 <tr class="odd">
-<td>AI interaction evidence is included</td>
+<td>Production-readiness plan is actionable</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td>Copilot-assisted risk analysis is verified and corrected by the student</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td>Documentation is clear and connected to Lab 5</td>
 <td style="text-align: right;">5</td>
 </tr>
 <tr class="even">
@@ -358,9 +459,9 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="submission-instructions" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="submission-instructions"><span class="header-section-number">6</span> Submission Instructions</h2>
-<p>Submit your repository link and risk analysis document through Canvas.</p>
+<section id="submission-instructions" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="submission-instructions"><span class="header-section-number">7</span> Submission Instructions</h2>
+<p>Submit your repository link and risk analysis document through Canvas. Identify any safeguards you implemented in code or tests.</p>
 <p>Next lab: <a href="../assignments/lab05_coding_agents_controlled_workflows.html">Lab 5: Coding Agents and Controlled Workflows</a>.</p>
 
 
