@@ -123,7 +123,7 @@
     "href": "docs/course_orientation.html#course-logistics",
     "title": "COMP 331: AI-Assisted Software Engineering Orientation",
     "section": "4) Course Logistics",
-    "text": "4) Course Logistics\nSee the Syllabus & Weekly Schedule for details on modality, workload, assessment weights, deadlines, and submission conventions.\n\nModality & Rhythm - Weekly cadence: lecture/discussion (concepts), live demo, guided lab, short reflection - Estimated workload: 8–10 hours/week\nAssessments & Weights - Assignment 1: Environment Setup & AI-Assisted SWE Foundations: 30 points - Weekly AI Interaction Log: 90 points - Labs 1–5: 480 points total, building the Controlled Coding Agent workflow over time - Final Project Milestones and Final Submission: 400 points total - Total: 1000 points\nDeadlines & Late Policy - Standard deadline: end of week (Sunday 11:59 PM local) - Extensions for documented circumstances—contact instructor early per university policies\nSubmission Conventions - Code via GitHub; submit Canvas link, repository link, and commit hash when requested - Unless your professor instructs otherwise, continue extending the same project repository through Labs 1–5 and the Final Project - Include README.md with how to run, how to evaluate, and AI usage notes - Maintain weekly AI interaction log entries from Week 2 through Week 10, including Copilot mode, accepted/rejected suggestions, and verification method - Final submissions must include reproducible setup/run instructions and a demo link when required"
+    "text": "4) Course Logistics\nSee the Syllabus & Weekly Schedule for details on modality, workload, assessment weights, deadlines, and submission conventions.\n\nModality & Rhythm - Weekly cadence: lecture/discussion (concepts), live demo, guided lab, short reflection - Estimated workload: 8–10 hours/week\nAssessments & Weights - Assignment 1: Environment Setup & AI-Assisted SWE Foundations: 30 points - Weekly AI Interaction Log: 90 points - Labs 1–5: 480 points total, building the Controlled Coding Agent workflow over time - Final Project Milestones and Final Submission: 400 points total - Total: 1000 points\nDeadlines & Late Policy - Standard deadline: end of week (Sunday 11:59 PM local) - Extensions for documented circumstances—contact instructor early per university policies\nSubmission Conventions - Code via GitHub; repository-based assignments require a repository link and Git commit hash for the exact version submitted - Unless your professor instructs otherwise, continue extending the same project repository through Labs 1–5 and the Final Project - Include README.md with how to run, how to evaluate, and AI usage notes - Maintain weekly AI interaction log entries from Week 2 through Week 10, including Copilot mode, accepted/rejected suggestions, and verification method - Final submissions must include reproducible setup/run instructions and a demo link when required"
   },
   {
     "objectID": "docs/course_orientation.html#ai-use-evidence-and-academic-integrity",
@@ -200,7 +200,7 @@
     "href": "assignments/lab01_structured_ai_workflow.html#action-items",
     "title": "Lab 1: Structured AI Workflow",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 1: Structured AI Workflow.\nFollow the instructions in the lab page.\nGo to github.com and create a fresh repository named comp331-java-agent.\nBuild the Java LLM command-line client and naive vs structured Copilot comparison described in the linked instructions.\nDocument setup, run commands, prompts, accepted/rejected Copilot suggestions, comparison notes, and verification results in README.md.\nCopy meaningful prompts and Copilot interaction notes into your weekly AI interaction reflection.\nSubmit the repository link through Canvas."
+    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 1: Structured AI Workflow.\nFollow the instructions in the lab page.\nGo to github.com and create a fresh repository named comp331-java-agent.\nBuild the Java LLM command-line client and naive vs structured Copilot comparison described in the linked instructions.\nDocument setup, run commands, prompts, accepted/rejected Copilot suggestions, comparison notes, and verification results in README.md.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link and commit hash through Canvas."
   },
   {
     "objectID": "assignments/lab01_structured_ai_workflow.html#using-github-copilot",
@@ -228,7 +228,7 @@
     "href": "assignments/lab01_structured_ai_workflow.html#submission-instructions",
     "title": "Lab 1: Structured AI Workflow",
     "section": "7 Submission Instructions",
-    "text": "7 Submission Instructions\nShare the comp331-java-agent Git repository with your professor per their instructions and submit the repository link through Canvas. Include any setup notes needed to run your Java project.\nNext lab: Lab 2: Eval-Driven Development."
+    "text": "7 Submission Instructions\nShare the comp331-java-agent Git repository with your professor per their instructions and submit the repository link through Canvas. Include any setup notes needed to run your Java project. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD\nNext lab: Lab 2: Eval-Driven Development."
   },
   {
     "objectID": "assignments/final_project_milestone02.html",
@@ -263,7 +263,7 @@
     "href": "assignments/final_project_milestone02.html#action-items",
     "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
     "section": "4 Action Items",
-    "text": "4 Action Items\n\nClick the link to the full hosted milestone instructions: Final Project Milestone 2.\nFollow the instructions in the milestone page.\nOpen your final project repository and review the proposal, architecture, and milestone checklist from Milestone 1.\nComplete the partial implementation, evaluation strategy, example run, risk update, and final completion plan described in the linked instructions.\nAdd Copilot-assisted implementation notes identifying assisted pieces, accepted suggestions, rejected or modified suggestions, and verification methods.\nSubmit the repository link, current runnable path, and known setup constraints through Canvas."
+    "text": "4 Action Items\n\nClick the link to the full hosted milestone instructions: Final Project Milestone 2.\nFollow the instructions in the milestone page.\nOpen your final project repository and review the proposal, architecture, and milestone checklist from Milestone 1.\nComplete the partial implementation, evaluation strategy, example run, risk update, and final completion plan described in the linked instructions.\nAdd Copilot-assisted implementation notes identifying assisted pieces, accepted suggestions, rejected or modified suggestions, and verification methods.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, current runnable path, and known setup constraints through Canvas."
   },
   {
     "objectID": "assignments/final_project_milestone02.html#deliverables",
@@ -284,7 +284,7 @@
     "href": "assignments/final_project_milestone02.html#submission-instructions",
     "title": "Final Project Milestone 2: Partial Implementation, Evaluation Strategy, and Identified Risks",
     "section": "7 Submission Instructions",
-    "text": "7 Submission Instructions\nSubmit your project repository link through Canvas. Identify the current runnable path, any known setup constraints, and where to find Copilot-assisted implementation notes.\nNext: Final Project Final Submission."
+    "text": "7 Submission Instructions\nSubmit your project repository link through Canvas. Identify the current runnable path, any known setup constraints, and where to find Copilot-assisted implementation notes. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD\nNext: Final Project Final Submission."
   },
   {
     "objectID": "assignments/weekly_ai_interaction_log.html",
@@ -361,7 +361,7 @@
     "href": "assignments/lab02_eval_driven_development.html#action-items",
     "title": "Lab 2: Eval-Driven Development",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 2: Eval-Driven Development.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository from Lab 1.\nCreate the sandbox project, JUnit evaluation, and Copilot-assisted iterations described in the linked instructions.\nDocument acceptance criteria, test commands, iteration results, Copilot-assisted test or code changes, and verification results in README.md.\nCopy meaningful Copilot prompts, test-generation notes, and evaluation decisions into your weekly AI interaction reflection.\nSubmit the repository link and required evaluation evidence through Canvas."
+    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 2: Eval-Driven Development.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository from Lab 1.\nCreate the sandbox project, JUnit evaluation, and Copilot-assisted iterations described in the linked instructions.\nDocument acceptance criteria, test commands, iteration results, Copilot-assisted test or code changes, and verification results in README.md.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and required evaluation evidence through Canvas."
   },
   {
     "objectID": "assignments/lab02_eval_driven_development.html#using-github-copilot",
@@ -389,7 +389,7 @@
     "href": "assignments/lab02_eval_driven_development.html#submission-instructions",
     "title": "Lab 2: Eval-Driven Development",
     "section": "7 Submission Instructions",
-    "text": "7 Submission Instructions\nSubmit your repository link and any required evaluation output through Canvas. Identify the exact command your professor should run to execute the evaluation.\nNext lab: Lab 3: AI System Implementation."
+    "text": "7 Submission Instructions\nSubmit your repository link and any required evaluation output through Canvas. Identify the exact command your professor should run to execute the evaluation. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD\nNext lab: Lab 3: AI System Implementation."
   },
   {
     "objectID": "assignments/lab03_ai_system_implementation.html",
@@ -417,7 +417,7 @@
     "href": "assignments/lab03_ai_system_implementation.html#action-items",
     "title": "Lab 3: AI System Implementation",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 3: AI System Implementation.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review the Lab 2 sandbox directory.\nImplement the Java tool layer, sandbox restrictions, tool tests, and demo described in the linked instructions.\nDocument the tool architecture, sample run, accepted/rejected Copilot suggestions, and verification results in README.md.\nCopy meaningful prompts, iterations, and evaluation outcomes into your weekly AI interaction reflection.\nSubmit the repository link and required tool demo or test evidence through Canvas."
+    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 3: AI System Implementation.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review the Lab 2 sandbox directory.\nImplement the Java tool layer, sandbox restrictions, tool tests, and demo described in the linked instructions.\nDocument the tool architecture, sample run, accepted/rejected Copilot suggestions, and verification results in README.md.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and required tool demo or test evidence through Canvas."
   },
   {
     "objectID": "assignments/lab03_ai_system_implementation.html#using-github-copilot",
@@ -445,7 +445,7 @@
     "href": "assignments/lab03_ai_system_implementation.html#submission-instructions",
     "title": "Lab 3: AI System Implementation",
     "section": "7 Submission Instructions",
-    "text": "7 Submission Instructions\nSubmit your repository link through Canvas. Include any notes your professor needs to run the tool tests or demo workflow.\nNext lab: Lab 4: AI Risk Analysis and Production Readiness."
+    "text": "7 Submission Instructions\nSubmit your repository link through Canvas. Include any notes your professor needs to run the tool tests or demo workflow. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD\nNext lab: Lab 4: AI Risk Analysis and Production Readiness."
   },
   {
     "objectID": "lectures/lecture02_part1.html#main-topics",
@@ -851,7 +851,7 @@
     "href": "assignments/assignment01.html#action-items",
     "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
     "section": "5 Action Items",
-    "text": "5 Action Items\n\nClick the link to the full hosted assignment instructions: Assignment 1.\nFollow the instructions in the assignment page.\nGo to github.com and create a separate repository named comp331-assignment1-setup.\nCreate the minimal Java project, Copilot-generated method, README, and screenshots described in the linked instructions.\nDocument one accepted Copilot suggestion, one manual change, and how you verified the result.\nSubmit the repository link, screenshots, and short reflection through Canvas."
+    "text": "5 Action Items\n\nClick the link to the full hosted assignment instructions: Assignment 1.\nFollow the instructions in the assignment page.\nGo to github.com and create a separate repository named comp331-assignment1-setup.\nCreate the minimal Java project, Copilot-generated method, README, and screenshots described in the linked instructions.\nDocument one accepted Copilot suggestion, one manual change, and how you verified the result.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, screenshots, and short reflection through Canvas."
   },
   {
     "objectID": "assignments/assignment01.html#deliverables",
@@ -872,7 +872,7 @@
     "href": "assignments/assignment01.html#submission-instructions",
     "title": "Assignment 1: Environment Setup & AI-Assisted SWE Foundations",
     "section": "8 Submission Instructions",
-    "text": "8 Submission Instructions\n\nSubmit your Assignment 1 Git repository link.\nSubmit your screenshots through Canvas.\nSubmit your 150–250 word reflection as a document or PDF through Canvas.\nFollow any additional sharing instructions provided by your professor."
+    "text": "8 Submission Instructions\n\nSubmit your Assignment 1 Git repository link.\nSubmit the Git commit hash for the exact version you want graded. After committing your final work, run:\n\ngit rev-parse HEAD\n\nSubmit your screenshots through Canvas.\nSubmit your 150–250 word reflection as a document or PDF through Canvas.\nFollow any additional sharing instructions provided by your professor."
   },
   {
     "objectID": "assignments/assignment01.html#notes",
@@ -907,7 +907,7 @@
     "href": "assignments/lab05_coding_agents_controlled_workflows.html#action-items",
     "title": "Lab 5: Coding Agents and Controlled Workflows",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 5: Coding Agents and Controlled Workflows.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review the tool layer and risk mitigations from Labs 3-4.\nImplement the controlled agent loop, tool registry connection, approval checkpoint, and example workflow described in the linked instructions.\nPreserve the required workflow artifacts, including prompt, tool calls, approvals, changed files, evaluation result, and final response.\nDocument reproducible setup, Copilot-assisted workflow decisions, and verification results in the repository.\nCopy meaningful Copilot design, debugging, or review interactions into your Week 10 AI interaction reflection.\nSubmit the repository link and reproduction notes through Canvas."
+    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 5: Coding Agents and Controlled Workflows.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review the tool layer and risk mitigations from Labs 3-4.\nImplement the controlled agent loop, tool registry connection, approval checkpoint, and example workflow described in the linked instructions.\nPreserve the required workflow artifacts, including prompt, tool calls, approvals, changed files, evaluation result, and final response.\nDocument reproducible setup, Copilot-assisted workflow decisions, and verification results in the repository.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and reproduction notes through Canvas."
   },
   {
     "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#using-github-copilot",
@@ -935,7 +935,7 @@
     "href": "assignments/lab05_coding_agents_controlled_workflows.html#submission-instructions",
     "title": "Lab 5: Coding Agents and Controlled Workflows",
     "section": "7 Submission Instructions",
-    "text": "7 Submission Instructions\nSubmit your repository link through Canvas. Clearly identify the command, script, or steps your professor should use to reproduce the controlled agent workflow.\nNext: Final Project Milestone 1: Proposal & Architecture."
+    "text": "7 Submission Instructions\nSubmit your repository link through Canvas. Clearly identify the command, script, or steps your professor should use to reproduce the controlled agent workflow. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD\nNext: Final Project Milestone 1: Proposal & Architecture."
   },
   {
     "objectID": "assignments/final_project_final_submission.html",
@@ -970,7 +970,7 @@
     "href": "assignments/final_project_final_submission.html#action-items",
     "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
     "section": "4 Action Items",
-    "text": "4 Action Items\n\nClick the link to the full hosted final submission instructions: Final Project Final Submission.\nFollow the instructions in the final submission page.\nOpen your final project repository and review all milestone feedback, known risks, and incomplete tasks.\nFinalize the complete system, documentation, evaluation report, example workflow artifacts, and recorded demo described in the linked instructions.\nAdd an AI Assistance README section identifying Copilot use, accepted/modified/rejected suggestions, and verification methods.\nVerify the project from a clean environment and confirm no secrets are committed.\nSubmit the project repository link and recorded demo link through Canvas."
+    "text": "4 Action Items\n\nClick the link to the full hosted final submission instructions: Final Project Final Submission.\nFollow the instructions in the final submission page.\nOpen your final project repository and review all milestone feedback, known risks, and incomplete tasks.\nFinalize the complete system, documentation, evaluation report, example workflow artifacts, and recorded demo described in the linked instructions.\nAdd an AI Assistance README section identifying Copilot use, accepted/modified/rejected suggestions, and verification methods.\nVerify the project from a clean environment and confirm no secrets are committed.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the project repository link, commit hash, and recorded demo link through Canvas."
   },
   {
     "objectID": "assignments/final_project_final_submission.html#deliverables",
@@ -991,7 +991,7 @@
     "href": "assignments/final_project_final_submission.html#submission-instructions",
     "title": "Final Project Final Submission: Complete System, Documentation, Evaluation Report, and Demo",
     "section": "7 Submission Instructions",
-    "text": "7 Submission Instructions\nSubmit your project repository link and recorded demo link through Canvas. Follow any additional sharing instructions provided by your professor."
+    "text": "7 Submission Instructions\nSubmit your project repository link and recorded demo link through Canvas. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD\nFollow any additional sharing instructions provided by your professor."
   },
   {
     "objectID": "assignments/lab04_risk_analysis_production_readiness.html",
@@ -1019,7 +1019,7 @@
     "href": "assignments/lab04_risk_analysis_production_readiness.html#action-items",
     "title": "Lab 4: AI Risk Analysis and Production Readiness",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 4: AI Risk Analysis and Production Readiness.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review each Lab 3 tool implementation.\nComplete the risk analysis, safeguard implementation, and safety-test work described in the linked instructions.\nDocument the risk table, production-readiness checklist, prioritized improvement plan, Copilot-assisted analysis notes, and verification results in the repository.\nCopy meaningful Copilot risk-analysis prompts and verification decisions into your weekly AI interaction reflection.\nSubmit the repository link and risk-analysis document through Canvas."
+    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 4: AI Risk Analysis and Production Readiness.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review each Lab 3 tool implementation.\nComplete the risk analysis, safeguard implementation, and safety-test work described in the linked instructions.\nDocument the risk table, production-readiness checklist, prioritized improvement plan, Copilot-assisted analysis notes, and verification results in the repository.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and risk-analysis document through Canvas."
   },
   {
     "objectID": "assignments/lab04_risk_analysis_production_readiness.html#using-github-copilot",
@@ -1047,7 +1047,7 @@
     "href": "assignments/lab04_risk_analysis_production_readiness.html#submission-instructions",
     "title": "Lab 4: AI Risk Analysis and Production Readiness",
     "section": "7 Submission Instructions",
-    "text": "7 Submission Instructions\nSubmit your repository link and risk analysis document through Canvas. Identify any safeguards you implemented in code or tests.\nNext lab: Lab 5: Coding Agents and Controlled Workflows."
+    "text": "7 Submission Instructions\nSubmit your repository link and risk analysis document through Canvas. Identify any safeguards you implemented in code or tests. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD\nNext lab: Lab 5: Coding Agents and Controlled Workflows."
   },
   {
     "objectID": "assignments/final_project_milestone01.html",
@@ -1082,7 +1082,7 @@
     "href": "assignments/final_project_milestone01.html#action-items",
     "title": "Final Project Milestone 1: Proposal & Architecture",
     "section": "4 Action Items",
-    "text": "4 Action Items\n\nClick the link to the full hosted milestone instructions: Final Project Milestone 1.\nFollow the instructions in the milestone page.\nGo to github.com and either continue your lab repository or create a dedicated final project repository.\nCreate the proposal, architecture documentation or diagram, development plan, and milestone checklist described in the linked instructions.\nInclude AI-assisted planning notes showing Copilot prompts, alternatives considered, accepted ideas, rejected ideas, and your final decision.\nSubmit the repository link and paths to the proposal and architecture documentation through Canvas."
+    "text": "4 Action Items\n\nClick the link to the full hosted milestone instructions: Final Project Milestone 1.\nFollow the instructions in the milestone page.\nGo to github.com and either continue your lab repository or create a dedicated final project repository.\nCreate the proposal, architecture documentation or diagram, development plan, and milestone checklist described in the linked instructions.\nInclude AI-assisted planning notes showing Copilot prompts, alternatives considered, accepted ideas, rejected ideas, and your final decision.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and paths to the proposal and architecture documentation through Canvas."
   },
   {
     "objectID": "assignments/final_project_milestone01.html#deliverables",
@@ -1103,7 +1103,7 @@
     "href": "assignments/final_project_milestone01.html#submission-instructions",
     "title": "Final Project Milestone 1: Proposal & Architecture",
     "section": "7 Submission Instructions",
-    "text": "7 Submission Instructions\nSubmit your project repository link through Canvas. Include links or paths to the proposal, architecture documentation, and Copilot-assisted planning notes.\nNext: Final Project Milestone 2."
+    "text": "7 Submission Instructions\nSubmit your project repository link through Canvas. Include links or paths to the proposal, architecture documentation, and Copilot-assisted planning notes. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD\nNext: Final Project Milestone 2."
   },
   {
     "objectID": "docs/gemini_api_setup.html",
@@ -1229,6 +1229,6 @@
     "href": "docs/syllabus.html#assignment-schedule-assessments",
     "title": "Syllabus: COMP 331: AI-Assisted Software Engineering",
     "section": "Assignment Schedule & Assessments",
-    "text": "Assignment Schedule & Assessments\n\n\n\nAssignment\nWeeks\nTitle\nPoints\nDescription\n\n\n\n\nAssignment 1\n1\nEnvironment Setup & AI-Assisted SWE Foundations\n30\nSet up the development environment, verify Copilot, create a minimal Java project, and reflect on Week 1 concepts\n\n\nWeekly Log\n2–10\nWeekly AI Interaction Log\n90\nMaintain weekly evidence of prompting, iteration, evaluation, and human engineering decisions\n\n\nLab 1\n3\nStructured AI Workflow\n90\nBuild the structured task input layer and compare naive vs structured AI-assisted development\n\n\nLab 2\n5\nEval-Driven Development\n100\nAdd measurable correctness criteria and regression checks for AI-generated outputs\n\n\nLab 3\n7\nAI System Implementation\n100\nIntegrate structured input, AI generation, and evaluation into a cohesive workflow\n\n\nLab 4\n9\nAI Risk Analysis and Production Readiness\n90\nAnalyze failure modes, reliability, security, maintainability, and production readiness\n\n\nLab 5\n10\nCoding Agents and Controlled Workflows\n100\nImplement a controlled multi-step agent loop with human oversight\n\n\nFinal Milestone 1\n10\nProposal & Architecture\n80\nDefine scope, architecture, structured workflow, and development plan for the final project\n\n\nFinal Milestone 2\n11\nPartial Implementation, Evaluation Strategy, and Identified Risks\n140\nDemonstrate meaningful implementation progress, evaluation strategy, and risk analysis\n\n\nFinal Submission\n12\nComplete System, Documentation, Evaluation Report, and Demo\n180\nDeliver the complete Controlled Coding Agent system with documentation, evaluation, and demo\n\n\n\nTotal Points: 1000\nUnless otherwise specified, assignments are due at the end of the listed week. The Weekly AI Interaction Log is submitted once per week from Week 2 through Week 10.\n\nGrading Breakdown\n\n\n\nComponent\nPoints\n\n\n\n\nAssignment 1: Environment Setup & AI-Assisted SWE Foundations\n30\n\n\nWeekly AI Interaction Log\n90\n\n\nLabs 1-5: Controlled Coding Agent workflow development\n480\n\n\nFinal Project Milestones and Final Submission\n400\n\n\nTotal\n1000\n\n\n\nAssignments are weighted to build progressively from setup and weekly reflection into labs, controlled coding-agent workflows, and a complete final project.\n\n\nSubmission Expectations\n\nSubmit repository links, Canvas links, commit hashes, screenshots, reports, or demo links as requested in each assignment.\nMaintain AI usage evidence, including prompts, Copilot interactions, accepted or rejected outputs, evaluations, and human decisions.\nKeep README files current with setup, run, evaluation, and limitations information.\nThe Weekly AI Interaction Log is submitted weekly from Week 2 through Week 10.\nFinal Project submissions must be reproducible from a clean environment and include evaluation evidence."
+    "text": "Assignment Schedule & Assessments\n\n\n\nAssignment\nWeeks\nTitle\nPoints\nDescription\n\n\n\n\nAssignment 1\n1\nEnvironment Setup & AI-Assisted SWE Foundations\n30\nSet up the development environment, verify Copilot, create a minimal Java project, and reflect on Week 1 concepts\n\n\nWeekly Log\n2–10\nWeekly AI Interaction Log\n90\nMaintain weekly evidence of prompting, iteration, evaluation, and human engineering decisions\n\n\nLab 1\n3\nStructured AI Workflow\n90\nBuild the structured task input layer and compare naive vs structured AI-assisted development\n\n\nLab 2\n5\nEval-Driven Development\n100\nAdd measurable correctness criteria and regression checks for AI-generated outputs\n\n\nLab 3\n7\nAI System Implementation\n100\nIntegrate structured input, AI generation, and evaluation into a cohesive workflow\n\n\nLab 4\n9\nAI Risk Analysis and Production Readiness\n90\nAnalyze failure modes, reliability, security, maintainability, and production readiness\n\n\nLab 5\n10\nCoding Agents and Controlled Workflows\n100\nImplement a controlled multi-step agent loop with human oversight\n\n\nFinal Milestone 1\n10\nProposal & Architecture\n80\nDefine scope, architecture, structured workflow, and development plan for the final project\n\n\nFinal Milestone 2\n11\nPartial Implementation, Evaluation Strategy, and Identified Risks\n140\nDemonstrate meaningful implementation progress, evaluation strategy, and risk analysis\n\n\nFinal Submission\n12\nComplete System, Documentation, Evaluation Report, and Demo\n180\nDeliver the complete Controlled Coding Agent system with documentation, evaluation, and demo\n\n\n\nTotal Points: 1000\nUnless otherwise specified, assignments are due at the end of the listed week. The Weekly AI Interaction Log is submitted once per week from Week 2 through Week 10.\n\nGrading Breakdown\n\n\n\nComponent\nPoints\n\n\n\n\nAssignment 1: Environment Setup & AI-Assisted SWE Foundations\n30\n\n\nWeekly AI Interaction Log\n90\n\n\nLabs 1-5: Controlled Coding Agent workflow development\n480\n\n\nFinal Project Milestones and Final Submission\n400\n\n\nTotal\n1000\n\n\n\nAssignments are weighted to build progressively from setup and weekly reflection into labs, controlled coding-agent workflows, and a complete final project.\n\n\nSubmission Expectations\n\nFor repository-based assignments, submit the repository link and Git commit hash for the exact version submitted. Also submit Canvas links, screenshots, reports, or demo links as requested in each assignment.\nMaintain AI usage evidence, including prompts, Copilot interactions, accepted or rejected outputs, evaluations, and human decisions.\nKeep README files current with setup, run, evaluation, and limitations information.\nThe Weekly AI Interaction Log is submitted weekly from Week 2 through Week 10.\nFinal Project submissions must be reproducible from a clean environment and include evaluation evidence."
   }
 ]
