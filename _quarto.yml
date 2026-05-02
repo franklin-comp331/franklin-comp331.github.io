@@ -18,6 +18,8 @@ website:
             href: docs/syllabus.ipynb
           - text: Tool Setup Guide
             href: docs/tool_setup.ipynb
+          - text: Gemini API Setup
+            href: docs/gemini_api_setup.ipynb
       - text: Assignments
         menu:
           - text: Assignment 1
