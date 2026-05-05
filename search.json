@@ -305,14 +305,14 @@
     "href": "assignments/weekly_ai_interaction_log.html#steps-requirements-of-assignment",
     "title": "Weekly AI Interaction Log",
     "section": "2 Steps / Requirements of Assignment",
-    "text": "2 Steps / Requirements of Assignment\nSubmit a separate weekly AI interaction reflection from Week 2 through Week 10. Each week, create and submit a new document that contains only that week’s log entry. Do not submit one cumulative document containing multiple weeks unless your professor explicitly asks for it. Each weekly reflection should be submitted through Canvas as a document or PDF, such as .docx or .pdf, unless your professor approves another format.\nEach weekly entry should include:\n\nWeek number and date\nDevelopment task or learning activity\nYour intent before using Copilot\nCopilot mode used: inline suggestion, chat, edit, agent/workspace, test generation, review, or debugging\nPrompt, comment, or interaction summary\nAI tool output or suggestion summary\nWhat you accepted, modified, or rejected\nVerification method: test, compiler, manual review, comparison, or rejected output\nReflection on what worked, what failed, and what you will change next time\n\nSuggested template:\nIntent:\nCopilot mode used:\nContext I gave Copilot:\nCopilot output:\nWhat I accepted:\nWhat I changed:\nHow I verified it:\nWhat I learned:"
+    "text": "2 Steps / Requirements of Assignment\nSubmit a separate AI interaction reflection for Weeks 2 through 10. This is the same recurring assignment, but every submission should cover only the current course week. Focus on the AI-assisted work, lab activity, reading, debugging, testing, or project development completed during the week.\nCreate a new document for every submission. Do not submit one cumulative document containing multiple weeks unless your professor explicitly asks for it. Submit the reflection through Canvas as a document or PDF, such as .docx or .pdf, unless your professor approves another format.\nYour entry should include:\n\nWeek number and date\nDevelopment task or learning activity\nYour intent before using Copilot\nCopilot mode used: inline suggestion, chat, edit, agent/workspace, test generation, review, or debugging\nPrompt, comment, or interaction summary\nAI tool output or suggestion summary\nWhat you accepted, modified, or rejected\nVerification method: test, compiler, manual review, comparison, or rejected output\nReflection on what worked, what failed, and what you will change next time\n\nSuggested template:\nIntent:\nCopilot mode used:\nContext I gave Copilot:\nCopilot output:\nWhat I accepted:\nWhat I changed:\nHow I verified it:\nWhat I learned:"
   },
   {
     "objectID": "assignments/weekly_ai_interaction_log.html#action-items",
     "href": "assignments/weekly_ai_interaction_log.html#action-items",
     "title": "Weekly AI Interaction Log",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nClick the link to the full hosted assignment instructions: Weekly AI Interaction Log.\nFollow the instructions in the assignment page.\nGo to your preferred document editor, such as Google Docs at docs.google.com, Microsoft Word, or another professor-approved format.\nEach week, create a new document for that week only. Do not submit a cumulative log with previous weeks included.\nUse GitHub Copilot as directed in the linked instructions and copy meaningful prompts, outputs, accepted/rejected suggestions, and verification notes into the log.\nWrite the required reflection paragraph about your initial prompt, prompt iterations, successful prompt patterns, unsuccessful prompt patterns, and what you will change next time.\nExport or save the current week’s entry as a document or PDF and submit it through Canvas."
+    "text": "3 Action Items\n\nClick the link to the full hosted assignment instructions: Weekly AI Interaction Log.\nFollow the instructions in the assignment page.\nUse these same instructions for every log submission from Week 2 through Week 10.\nGo to your preferred document editor, such as Google Docs at docs.google.com, Microsoft Word, or another professor-approved format.\nCreate a new document for the current log only. Do not include previous weeks.\nDocument meaningful GitHub Copilot interactions from the current week’s work, including prompts, outputs, accepted/rejected suggestions, and verification notes.\nWrite the required reflection paragraph about your initial prompt, prompt iterations, successful prompt patterns, unsuccessful prompt patterns, and what you will change next time.\nExport or save the current week’s entry as a document or PDF and submit it through the Canvas submission item for the current course week."
   },
   {
     "objectID": "assignments/weekly_ai_interaction_log.html#deliverables",
@@ -326,14 +326,14 @@
     "href": "assignments/weekly_ai_interaction_log.html#grading",
     "title": "Weekly AI Interaction Log",
     "section": "5 Grading",
-    "text": "5 Grading\nEach weekly entry is worth 10 points.\n\n\n\nCategory\nPoints\n\n\n\n\nClear task context and intent\n2\n\n\nCopilot mode and interaction documented with enough specificity\n3\n\n\nVerification and human decision-making explained\n3\n\n\nReflection identifies a useful pattern, risk, or next step\n2\n\n\nWeekly Total\n10\n\n\n\nAcross Weeks 2-10, the assignment is worth 90 points total."
+    "text": "5 Grading\nThe log submission is worth 10 points.\n\n\n\nCategory\nPoints\n\n\n\n\nClear task context and intent\n2\n\n\nCopilot mode and interaction documented with enough specificity\n3\n\n\nVerification and human decision-making explained\n3\n\n\nReflection identifies a useful pattern, risk, or next step\n2\n\n\nWeekly Total\n10\n\n\n\nAcross Weeks 2-10, the assignment is worth 90 points total."
   },
   {
     "objectID": "assignments/weekly_ai_interaction_log.html#submission-instructions",
     "href": "assignments/weekly_ai_interaction_log.html#submission-instructions",
     "title": "Weekly AI Interaction Log",
     "section": "6 Submission Instructions",
-    "text": "6 Submission Instructions\nSubmit the current week’s reflection document or PDF through Canvas. Each weekly submission should be a separate file containing only that week’s log entry. Follow any additional instructions provided by your professor."
+    "text": "6 Submission Instructions\nSubmit the current week’s reflection document or PDF through Canvas. The file should contain only that week’s log entry. Follow any additional instructions provided by your professor."
   },
   {
     "objectID": "assignments/lab02_eval_driven_development.html",
