@@ -4,7 +4,7 @@
     "href": "assignments/lab05_coding_agents_controlled_workflows.html",
     "title": "Lab 5: Coding Agents and Controlled Workflows",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 10\nPoints: 100\nThis lab extends Lab 4: AI Risk Analysis and Production Readiness and prepares you for Final Project Milestone 1."
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 10\nPoints: 100\nThis lab extends Lab 4: AI Risk Analysis and Production Readiness."
   },
   {
     "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#purpose-of-assignment",
@@ -53,14 +53,14 @@
     "href": "assignments/lab05_coding_agents_controlled_workflows.html#submission-instructions",
     "title": "Lab 5: Coding Agents and Controlled Workflows",
     "section": "7 Submission Instructions",
-    "text": "7 Submission Instructions\nSubmit your repository link through Canvas. Clearly identify the command, script, or steps your professor should use to reproduce the controlled agent workflow. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD\nNext: Final Project Milestone 1: Proposal & Architecture."
+    "text": "7 Submission Instructions\nSubmit your repository link through Canvas. Clearly identify the command, script, or steps your professor should use to reproduce the controlled agent workflow. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD"
   },
   {
     "objectID": "assignments/lab03_ai_system_implementation.html",
     "href": "assignments/lab03_ai_system_implementation.html",
     "title": "Lab 3: AI System Implementation",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 7\nPoints: 100\nThis lab extends Lab 2: Eval-Driven Development. Continue maintaining the Weekly AI Interaction Log."
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 7\nPoints: 100\nThis lab extends Lab 2: Eval-Driven Development."
   },
   {
     "objectID": "assignments/lab03_ai_system_implementation.html#purpose-of-assignment",
@@ -116,7 +116,7 @@
     "href": "assignments/lab01_structured_ai_workflow.html",
     "title": "Lab 1: Structured AI Workflow",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 3\nPoints: 90\nContinue maintaining the Weekly AI Interaction Log while completing this lab."
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 3\nPoints: 90\nComplete this lab using a structured AI-assisted workflow."
   },
   {
     "objectID": "assignments/lab01_structured_ai_workflow.html#purpose-of-assignment",
@@ -186,7 +186,7 @@
     "href": "assignments/lab02_eval_driven_development.html",
     "title": "Lab 2: Eval-Driven Development",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 5\nPoints: 100\nThis lab extends Lab 1: Structured AI Workflow. Continue maintaining the Weekly AI Interaction Log."
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 5\nPoints: 100\nThis lab extends Lab 1: Structured AI Workflow."
   },
   {
     "objectID": "assignments/lab02_eval_driven_development.html#purpose-of-assignment",
@@ -242,7 +242,7 @@
     "href": "assignments/lab04_risk_analysis_production_readiness.html",
     "title": "Lab 4: AI Risk Analysis and Production Readiness",
     "section": "",
-    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 9\nPoints: 90\nThis lab analyzes the system built in Lab 3: AI System Implementation. Continue maintaining the Weekly AI Interaction Log."
+    "text": "Course Name/Number: COMP 331: AI-Assisted Software Engineering\nWeek: 9\nPoints: 90\nThis lab analyzes the system built in Lab 3: AI System Implementation."
   },
   {
     "objectID": "assignments/lab04_risk_analysis_production_readiness.html#purpose-of-assignment",
