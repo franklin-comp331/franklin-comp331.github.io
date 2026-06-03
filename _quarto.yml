@@ -1,6 +1,13 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - index.qmd
+    - assignments/lab01_structured_ai_workflow.ipynb
+    - assignments/lab02_eval_driven_development.ipynb
+    - assignments/lab03_ai_system_implementation.ipynb
+    - assignments/lab04_risk_analysis_production_readiness.ipynb
+    - assignments/lab05_coding_agents_controlled_workflows.ipynb
 
 website:
   title: "COMP 331: AI-Assisted Software Engineering"
@@ -10,22 +17,8 @@ website:
     left:
       - text: Home
         href: index.qmd
-      - text: Docs
+      - text: Labs
         menu:
-          - text: Course Orientation
-            href: docs/course_orientation.ipynb
-          - text: Syllabus
-            href: docs/syllabus.ipynb
-          - text: Tool Setup Guide
-            href: docs/tool_setup.ipynb
-          - text: Gemini API Setup
-            href: docs/gemini_api_setup.ipynb
-      - text: Assignments
-        menu:
-          - text: Assignment 1
-            href: assignments/assignment01.ipynb
-          - text: Weekly AI Interaction Log
-            href: assignments/weekly_ai_interaction_log.ipynb
           - text: Lab 1
             href: assignments/lab01_structured_ai_workflow.ipynb
           - text: Lab 2
@@ -36,40 +29,6 @@ website:
             href: assignments/lab04_risk_analysis_production_readiness.ipynb
           - text: Lab 5
             href: assignments/lab05_coding_agents_controlled_workflows.ipynb
-          - text: Final Project Milestone 1
-            href: assignments/final_project_milestone01.ipynb
-          - text: Final Project Milestone 2
-            href: assignments/final_project_milestone02.ipynb
-          - text: Final Project Final Submission
-            href: assignments/final_project_final_submission.ipynb
-      - text: Lectures
-        menu:
-          - text: Lecture 1
-            href: lectures/lecture01.ipynb
-          - text: Lecture 2, Part 1
-            href: lectures/lecture02_part1.ipynb
-          - text: Lecture 2, Part 2
-            href: lectures/lecture02_part2.ipynb
-          - text: Lecture 3
-            href: lectures/lecture03.ipynb
-          - text: Lecture 4
-            href: lectures/lecture04.ipynb
-          - text: Lecture 5
-            href: lectures/lecture05.ipynb
-          - text: Lecture 6
-            href: lectures/lecture06.ipynb
-          - text: Lecture 7
-            href: lectures/lecture07.ipynb
-          - text: Lecture 8
-            href: lectures/lecture08.ipynb
-          - text: Lecture 9
-            href: lectures/lecture09.ipynb
-          - text: Lecture 10
-            href: lectures/lecture10.ipynb
-          - text: Lecture 11
-            href: lectures/lecture11.ipynb
-          - text: Lecture 12
-            href: lectures/lecture12.ipynb
     right:
       - icon: github
         href: https://github.com/t-morgan/ai-assisted-software-engineering
