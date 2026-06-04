@@ -46,7 +46,7 @@
     "href": "assignments/lab05_coding_agents_controlled_workflows.html#grading",
     "title": "Lab 5: Coding Agents and Controlled Workflows",
     "section": "6 Grading",
-    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nCore Java agent loop is implemented and understandable\n25\n\n\nTool declarations, dispatcher, and tool-result handling are connected\n20\n\n\nMulti-step workflow is controlled and reproducible\n20\n\n\nHuman oversight checkpoint is meaningful\n15\n\n\nExample run artifacts are complete\n10\n\n\nDocumentation is clear and usable\n5\n\n\nCopilot-assisted workflow decisions are documented and verified\n5\n\n\nTotal\n100"
+    "text": "6 Grading\nRefer to the assignment rubric in Canvas."
   },
   {
     "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#submission-instructions",
@@ -102,7 +102,7 @@
     "href": "assignments/lab03_ai_system_implementation.html#grading",
     "title": "Lab 3: AI System Implementation",
     "section": "6 Grading",
-    "text": "6 Grading\n\n\n\nCategory\nPoints\n\n\n\n\nTool layer includes the required Java tools\n25\n\n\nSandbox restrictions are correctly implemented and tested\n30\n\n\nSystem is runnable and produces inspectable output\n20\n\n\nArchitecture documentation and Copilot decision notes are clear\n15\n\n\nSample run and evaluation results are included\n10\n\n\nTotal\n100"
+    "text": "6 Grading\nRefer to the assignment rubric in Canvas."
   },
   {
     "objectID": "assignments/lab03_ai_system_implementation.html#submission-instructions",
@@ -158,7 +158,7 @@
     "href": "assignments/lab01_structured_ai_workflow.html#grading",
     "title": "Lab 1: Structured AI Workflow",
     "section": "6 Grading",
-    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nJava LLM CLI is runnable and documented\n25\n\n\nStructured task specification is clear and complete\n20\n\n\nNaive and structured implementations are both present\n20\n\n\nComparison explains concrete differences in AI outputs and human decisions\n15\n\n\nCopilot use is documented with accepted, revised, and verified suggestions\n10\n\n\nFresh comp331-java-agent repository is organized with README setup and run instructions\n5\n\n\nVerbose/debug mode or equivalent inspection support is included\n5\n\n\nSecret handling is appropriate\n5\n\n\nTotal\n90"
+    "text": "6 Grading\nRefer to the assignment rubric in Canvas."
   },
   {
     "objectID": "assignments/lab01_structured_ai_workflow.html#submission-instructions",
@@ -228,7 +228,7 @@
     "href": "assignments/lab02_eval_driven_development.html#grading",
     "title": "Lab 2: Eval-Driven Development",
     "section": "6 Grading",
-    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nJava sandbox project is clear, small, and usable for later labs\n15\n\n\nEvaluation criteria are measurable and tied to the task\n20\n\n\nJUnit tests or equivalent automated checks are implemented and runnable\n35\n\n\nRegression or iteration comparison is documented\n15\n\n\nREADME explains how to run and interpret evaluations\n10\n\n\nCopilot-assisted test or implementation work is documented and verified\n5\n\n\nTotal\n100"
+    "text": "6 Grading\nRefer to the assignment rubric in Canvas."
   },
   {
     "objectID": "assignments/lab02_eval_driven_development.html#submission-instructions",
@@ -284,7 +284,7 @@
     "href": "assignments/lab04_risk_analysis_production_readiness.html#grading",
     "title": "Lab 4: AI Risk Analysis and Production Readiness",
     "section": "6 Grading",
-    "text": "6 Grading\n\n\n\n\n\n\n\nCategory\nPoints\n\n\n\n\nFailure modes are specific to the student’s Java agent and tools\n20\n\n\nReliability, security, maintainability, and oversight are addressed\n20\n\n\nRisk ratings and mitigations are concrete\n20\n\n\nAt least two safeguards or safety tests are implemented\n20\n\n\nProduction-readiness plan is actionable\n5\n\n\nCopilot-assisted risk analysis is verified and corrected by the student\n5\n\n\nDocumentation is clear and connected to Lab 5\n5\n\n\nTotal\n90"
+    "text": "6 Grading\nRefer to the assignment rubric in Canvas."
   },
   {
     "objectID": "assignments/lab04_risk_analysis_production_readiness.html#submission-instructions",
