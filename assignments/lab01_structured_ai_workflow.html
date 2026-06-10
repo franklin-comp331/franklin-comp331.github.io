@@ -229,9 +229,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="steps-requirements-of-assignment" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="steps-requirements-of-assignment"><span class="header-section-number">2</span> Steps / Requirements of Assignment</h2>
 <p>Build the first layer of a Controlled Coding Agent workflow: a Java command-line program that can accept a user request, send it to an LLM, and compare naive prompting with structured prompting. This lab should feel small and controlled. You are not building the full agent yet.</p>
-<p>Start fresh for this lab. Create a new repository named <code>comp331-java-agent</code>. Do not use your Assignment 1 setup repository as the starting point unless your professor explicitly approves it. This Lab 1 repository should become your continuing repository for Labs 1-5 and may become the starting point for your final project.</p>
+<p>Start fresh for this lab. Create a new repository named <code>comp331-java-agent</code>. Do not use your Assignment 1 setup repository as the starting point unless your professor explicitly approves it. Create this lab repository once; it is the continuing repository for Labs 1-5 and may become the starting point for your final project.</p>
 <ol type="1">
-<li>Create a fresh GitHub repository named <code>comp331-java-agent</code>.</li>
+<li>Create a fresh GitHub repository named <code>comp331-java-agent</code>. You will continue developing in this same repository for Labs 2-5; do not create a new <code>comp331-java-agent</code> repository for each lab.</li>
 <li>Create a Java project using Maven in that repository. A simple structure such as <code>src/main/java/.../Main.java</code> is enough.</li>
 <li>Configure your Gemini API key using the <a href="../docs/gemini_api_setup.ipynb">Gemini API Setup Guide</a>. Do not commit API keys, <code>.env</code> files, or other secrets.</li>
 <li>Write a <code>Main</code> class that first sends one hard-coded prompt to the model and prints the response. This verifies that your Java project can connect to the API.</li>
@@ -253,7 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Click the link to the full hosted lab instructions: <a href="https://t-morgan.github.io/ai-assisted-software-engineering/assignments/lab01_structured_ai_workflow.html">Lab 1: Structured AI Workflow</a>.</li>
 <li>Follow the instructions in the lab page.</li>
-<li>Go to <a href="https://github.com/">github.com</a> and create a fresh repository named <code>comp331-java-agent</code>.</li>
+<li>Go to <a href="https://github.com/">github.com</a> and create a fresh repository named <code>comp331-java-agent</code>. This is the one lab repository you will continue using for Labs 1-5.</li>
 <li>Build the Java LLM command-line client and naive vs structured Copilot comparison described in the linked instructions.</li>
 <li>Document setup, run commands, prompts, accepted/rejected Copilot suggestions, comparison notes, and verification results in <code>README.md</code>.</li>
 <li>Commit your completed work and obtain the Git commit hash for the submitted version.</li>
@@ -284,7 +284,7 @@ Generate only the method and a short explanation.</code></pre>
 <h2 data-number="5" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">5</span> Deliverables</h2>
 <p>Your repository should include:</p>
 <ul>
-<li>A fresh Lab 1 repository named <code>comp331-java-agent</code>.</li>
+<li>The Lab 1 repository named <code>comp331-java-agent</code>, which will continue as your working repository for Labs 2-5.</li>
 <li>A runnable Java Maven project with a command-line entry point.</li>
 <li>Code that sends a prompt to an LLM from Java.</li>
 <li>Command-line prompt handling and a verbose/debug mode.</li>

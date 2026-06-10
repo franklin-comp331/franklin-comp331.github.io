@@ -215,7 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Course Name/Number:</strong> COMP 331: AI-Assisted Software Engineering<br>
 <strong>Week:</strong> 10<br>
 <strong>Points:</strong> 100</p>
-<p>This lab extends <a href="../assignments/lab04_risk_analysis_production_readiness.html">Lab 4: AI Risk Analysis and Production Readiness</a>.</p>
+<p>This lab extends <a href="../assignments/lab04_risk_analysis_production_readiness.html">Lab 4: AI Risk Analysis and Production Readiness</a>. Continue working in the same <code>comp331-java-agent</code> repository you used for Labs 1-4; do not create a new repository for this lab.</p>
 <section id="purpose-of-assignment" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="purpose-of-assignment"><span class="header-section-number">1</span> Purpose of Assignment</h2>
 <p>This assignment is intended to help you:</p>
@@ -229,7 +229,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="steps-requirements-of-assignment" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="steps-requirements-of-assignment"><span class="header-section-number">2</span> Steps / Requirements of Assignment</h2>
-<p>Implement a controlled multi-step workflow that resembles an agent loop while keeping human oversight explicit. The system should not blindly generate and apply changes without review. By the end of this lab, your Java project should behave like a small, safe version of a coding agent: it receives a task, lets the LLM request approved tools, feeds tool results back into the conversation, and stops with a final answer or a safety limit.</p>
+<p>Implement a controlled multi-step workflow in your existing <code>comp331-java-agent</code> repository that resembles an agent loop while keeping human oversight explicit. The system should not blindly generate and apply changes without review. By the end of this lab, your Java project should behave like a small, safe version of a coding agent: it receives a task, lets the LLM request approved tools, feeds tool results back into the conversation, and stops with a final answer or a safety limit.</p>
 <ol type="1">
 <li>Define the loop stages in your README before coding. Recommended stages: intake, model request, tool-call detection, approval, tool execution, tool-result message, evaluation, final response.</li>
 <li>Define tool schemas or tool descriptions for the Java tools you built in Lab 3. Include at least file listing, file reading, file writing, and Java test execution.</li>
@@ -274,7 +274,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Click the link to the full hosted lab instructions: <a href="https://t-morgan.github.io/ai-assisted-software-engineering/assignments/lab05_coding_agents_controlled_workflows.html">Lab 5: Coding Agents and Controlled Workflows</a>.</li>
 <li>Follow the instructions in the lab page.</li>
-<li>Open your existing <code>comp331-java-agent</code> repository and review the tool layer and risk mitigations from Labs 3-4.</li>
+<li>Open your existing <code>comp331-java-agent</code> repository and review the tool layer and risk mitigations from Labs 3-4. Continue in that repository instead of creating a new one.</li>
 <li>Implement the controlled agent loop, tool registry connection, approval checkpoint, and example workflow described in the linked instructions.</li>
 <li>Preserve the required workflow artifacts, including prompt, tool calls, approvals, changed files, evaluation result, and final response.</li>
 <li>Document reproducible setup, Copilot-assisted workflow decisions, and verification results in the repository.</li>
