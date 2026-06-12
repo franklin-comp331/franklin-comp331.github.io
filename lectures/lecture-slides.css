@@ -7,3 +7,25 @@
 .reveal pre.mermaid-js {
   max-height: 520px;
 }
+
+.reveal .toc, 
+.reveal #TOC,
+.reveal nav[role="doc-toc"] {
+  overflow: visible;
+}
+
+.reveal .toc ul,
+.reveal #TOC ul,
+.reveal nav[role="doc-toc"] ul {
+  column-count: 2;
+  column-gap: 2rem;
+  font-size: 0.58em;
+  line-height: 1.08;
+}
+
+.reveal .toc li,
+.reveal #TOC li,
+.reveal nav[role="doc-toc"] li {
+  break-inside: avoid;
+  margin-bottom: 0.18em;
+}
