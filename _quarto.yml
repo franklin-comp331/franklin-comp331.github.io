@@ -1,19 +1,6 @@
 project:
   type: website
   output-dir: _site
-  resources:
-    - lectures/module01.qmd
-    - lectures/module02.qmd
-    - lectures/module03.qmd
-    - lectures/module04.qmd
-    - lectures/module05.qmd
-    - lectures/module06.qmd
-    - lectures/module07.qmd
-    - lectures/module08.qmd
-    - lectures/module09.qmd
-    - lectures/module10.qmd
-    - lectures/module11.qmd
-    - lectures/module12.qmd
   render:
     - index.qmd
     - lecture_downloads.qmd

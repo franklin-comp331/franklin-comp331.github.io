@@ -8,9 +8,9 @@ format:
 
 # Lecture Downloads
 
-Each lecture deck is available as a PDF handout, a rendered HTML slide deck, and editable Quarto source.
+Each lecture deck is available as a PDF handout and a rendered HTML slide deck.
 
-PDFs are the easiest format for students to download, print, annotate, and keep offline. The HTML files preserve the interactive slide format. The `.qmd` files are intended for instructors who want to revise, remix, or export the decks in another format.
+PDFs are the easiest format for students to download, print, annotate, and keep offline. The HTML files preserve the interactive slide format for presenting in a browser.
 
 <table>
   <thead>
@@ -21,21 +21,21 @@ PDFs are the easiest format for students to download, print, annotate, and keep 
     </tr>
   </thead>
   <tbody>
-    <tr><td>1</td><td>What AI Changes</td><td><a href="lectures/module01.pdf" download>PDF</a> | <a href="lectures/module01.html" download>HTML slides</a> | <a href="lectures/module01.qmd" download>Quarto source</a></td></tr>
-    <tr><td>2</td><td>Prompting as Communication</td><td><a href="lectures/module02.pdf" download>PDF</a> | <a href="lectures/module02.html" download>HTML slides</a> | <a href="lectures/module02.qmd" download>Quarto source</a></td></tr>
-    <tr><td>3</td><td>The 70 Percent Problem</td><td><a href="lectures/module03.pdf" download>PDF</a> | <a href="lectures/module03.html" download>HTML slides</a> | <a href="lectures/module03.qmd" download>Quarto source</a></td></tr>
-    <tr><td>4</td><td>Human Contribution Beyond AI</td><td><a href="lectures/module04.pdf" download>PDF</a> | <a href="lectures/module04.html" download>HTML slides</a> | <a href="lectures/module04.qmd" download>Quarto source</a></td></tr>
-    <tr><td>5</td><td>Reviewing and Testing AI Code</td><td><a href="lectures/module05.pdf" download>PDF</a> | <a href="lectures/module05.html" download>HTML slides</a> | <a href="lectures/module05.qmd" download>Quarto source</a></td></tr>
-    <tr><td>6</td><td>Prototyping vs Production</td><td><a href="lectures/module06.pdf" download>PDF</a> | <a href="lectures/module06.html" download>HTML slides</a> | <a href="lectures/module06.qmd" download>Quarto source</a></td></tr>
-    <tr><td>7</td><td>Building AI Systems</td><td><a href="lectures/module07.pdf" download>PDF</a> | <a href="lectures/module07.html" download>HTML slides</a> | <a href="lectures/module07.qmd" download>Quarto source</a></td></tr>
-    <tr><td>8</td><td>Security and Reliability</td><td><a href="lectures/module08.pdf" download>PDF</a> | <a href="lectures/module08.html" download>HTML slides</a> | <a href="lectures/module08.qmd" download>Quarto source</a></td></tr>
-    <tr><td>9</td><td>Ethics and Responsibility</td><td><a href="lectures/module09.pdf" download>PDF</a> | <a href="lectures/module09.html" download>HTML slides</a> | <a href="lectures/module09.qmd" download>Quarto source</a></td></tr>
-    <tr><td>10</td><td>Autonomous Agents</td><td><a href="lectures/module10.pdf" download>PDF</a> | <a href="lectures/module10.html" download>HTML slides</a> | <a href="lectures/module10.qmd" download>Quarto source</a></td></tr>
-    <tr><td>11</td><td>The Future of AI Engineering</td><td><a href="lectures/module11.pdf" download>PDF</a> | <a href="lectures/module11.html" download>HTML slides</a> | <a href="lectures/module11.qmd" download>Quarto source</a></td></tr>
-    <tr><td>12</td><td>Final Project Workbench</td><td><a href="lectures/module12.pdf" download>PDF</a> | <a href="lectures/module12.html" download>HTML slides</a> | <a href="lectures/module12.qmd" download>Quarto source</a></td></tr>
+    <tr><td>1</td><td>What AI Changes</td><td><a href="lectures/module01.pdf" download>PDF</a> | <a href="lectures/module01.html" download>HTML slides</a></td></tr>
+    <tr><td>2</td><td>Prompting as Communication</td><td><a href="lectures/module02.pdf" download>PDF</a> | <a href="lectures/module02.html" download>HTML slides</a></td></tr>
+    <tr><td>3</td><td>The 70 Percent Problem</td><td><a href="lectures/module03.pdf" download>PDF</a> | <a href="lectures/module03.html" download>HTML slides</a></td></tr>
+    <tr><td>4</td><td>Human Contribution Beyond AI</td><td><a href="lectures/module04.pdf" download>PDF</a> | <a href="lectures/module04.html" download>HTML slides</a></td></tr>
+    <tr><td>5</td><td>Reviewing and Testing AI Code</td><td><a href="lectures/module05.pdf" download>PDF</a> | <a href="lectures/module05.html" download>HTML slides</a></td></tr>
+    <tr><td>6</td><td>Prototyping vs Production</td><td><a href="lectures/module06.pdf" download>PDF</a> | <a href="lectures/module06.html" download>HTML slides</a></td></tr>
+    <tr><td>7</td><td>Building AI Systems</td><td><a href="lectures/module07.pdf" download>PDF</a> | <a href="lectures/module07.html" download>HTML slides</a></td></tr>
+    <tr><td>8</td><td>Security and Reliability</td><td><a href="lectures/module08.pdf" download>PDF</a> | <a href="lectures/module08.html" download>HTML slides</a></td></tr>
+    <tr><td>9</td><td>Ethics and Responsibility</td><td><a href="lectures/module09.pdf" download>PDF</a> | <a href="lectures/module09.html" download>HTML slides</a></td></tr>
+    <tr><td>10</td><td>Autonomous Agents</td><td><a href="lectures/module10.pdf" download>PDF</a> | <a href="lectures/module10.html" download>HTML slides</a></td></tr>
+    <tr><td>11</td><td>The Future of AI Engineering</td><td><a href="lectures/module11.pdf" download>PDF</a> | <a href="lectures/module11.html" download>HTML slides</a></td></tr>
+    <tr><td>12</td><td>Final Project Workbench</td><td><a href="lectures/module12.pdf" download>PDF</a> | <a href="lectures/module12.html" download>HTML slides</a></td></tr>
   </tbody>
 </table>
 
 ## Offline Use
 
-Download the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser. The source files can be edited with Quarto if an instructor wants to customize the slides.
+Download the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser.

@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 1: What AI Changes
@@ -39,14 +49,14 @@ It does not remove the need for engineering judgment.
 
 ## AI-Assisted SWE Loop
 
-```{mermaid}
-flowchart LR
+```{mermaid echo=false fig-width=6 fig-height=4 out-width="100%"}
+flowchart TD
   A[Human intent] --> B[Structured prompt]
   B --> C[AI draft]
   C --> D[Human review]
   D --> E[Tests and evidence]
   E --> F[Commit and document]
-  E -->|gaps found| B
+  E -->|gaps| B
 ```
 
 ---
@@ -133,7 +143,7 @@ It establishes the course habit:
 
 ---
 
-## Studio Activity
+## Practice Activity
 
 Ask Copilot for a small Java method.
 

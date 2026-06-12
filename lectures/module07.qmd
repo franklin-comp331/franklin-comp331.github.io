@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 7: Building AI Systems
@@ -42,7 +52,7 @@ It includes:
 
 ## Controlled Agent Architecture
 
-```{mermaid}
+```{mermaid echo=false fig-width=7 fig-height=4 out-width="100%"}
 flowchart TD
   U[User request] --> S[Structured task spec]
   S --> C[Context builder]
@@ -140,7 +150,7 @@ Your risk analysis should be specific to your actual system:
 
 ---
 
-## Studio Activity
+## Practice Activity
 
 Draw your agent as boxes and arrows.
 

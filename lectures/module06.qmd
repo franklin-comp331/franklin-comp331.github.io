@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 6: Prototyping vs Production
@@ -40,8 +50,8 @@ Prototype risk: mistaking a learning artifact for a production system.
 
 ## Prototype to Production Path
 
-```{mermaid}
-flowchart LR
+```{mermaid echo=false fig-width=6 fig-height=4 out-width="100%"}
+flowchart TD
   A[Prototype] --> B[Feedback]
   B --> C[Tests]
   C --> D[Refactor boundaries]
@@ -133,7 +143,7 @@ Evidence should include:
 
 ---
 
-## Studio Activity
+## Practice Activity
 
 Take a working prototype feature and label each part:
 

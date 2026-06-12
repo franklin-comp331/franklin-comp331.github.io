@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 9: Ethics and Responsibility
@@ -39,8 +49,8 @@ The engineer or team remains responsible for:
 
 ## Accountability Flow
 
-```{mermaid}
-flowchart LR
+```{mermaid echo=false fig-width=6 fig-height=4 out-width="100%"}
+flowchart TD
   A[AI suggestion] --> B[Student review]
   B --> C[Team PR review]
   C --> D[Tests and evidence]
@@ -130,7 +140,7 @@ Controlled workflows need:
 
 ---
 
-## Studio Activity
+## Practice Activity
 
 Draft team AI rules:
 

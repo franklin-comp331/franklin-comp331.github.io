@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 2: Prompting as Communication
@@ -40,7 +50,7 @@ It is a communication artifact that should carry:
 
 ## Prompt Anatomy
 
-```{mermaid}
+```{mermaid echo=false fig-width=7 fig-height=4 out-width="100%"}
 flowchart TD
   P[Effective prompt] --> G[Goal]
   P --> C[Context]
@@ -135,7 +145,7 @@ Your evidence should show:
 
 ---
 
-## Studio Activity
+## Practice Activity
 
 Take a vague feature request and rewrite it three ways:
 

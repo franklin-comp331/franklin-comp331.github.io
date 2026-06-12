@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 8: Security and Reliability
@@ -40,7 +50,7 @@ Risks include:
 
 ## Risk Matrix
 
-```{mermaid}
+```{mermaid echo=false fig-width=7 fig-height=4 out-width="100%"}
 quadrantChart
   title Risk Prioritization
   x-axis Low likelihood --> High likelihood
@@ -134,7 +144,7 @@ Your submission should include:
 
 ---
 
-## Studio Activity
+## Practice Activity
 
 Threat-model your Java agent:
 

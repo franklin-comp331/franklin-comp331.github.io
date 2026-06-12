@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 12: Final Project Workbench
@@ -40,20 +50,13 @@ Your Controlled Coding Agent should demonstrate:
 
 ## Final Submission Timeline
 
-```{mermaid}
-gantt
-  title Final Project Workbench
-  dateFormat  YYYY-MM-DD
-  axisFormat  %b %d
-  section Build
-  Complete core system       :a1, 2026-01-01, 3d
-  Integration testing        :a2, after a1, 2d
-  section Evidence
-  Evaluation report          :b1, after a1, 2d
-  AI assistance documentation:b2, after a1, 2d
-  section Delivery
-  Demo recording             :c1, after a2, 1d
-  Final cleanup              :c2, after c1, 1d
+```{mermaid echo=false fig-width=6 fig-height=4 out-width="100%"}
+flowchart TD
+  A[Complete core system] --> B[Integration testing]
+  B --> C[Evaluation report]
+  C --> D[AI assistance documentation]
+  D --> E[Demo recording]
+  E --> F[Final cleanup]
 ```
 
 ---

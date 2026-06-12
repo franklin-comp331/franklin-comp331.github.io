@@ -26,6 +26,9 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Set up TinyTeX
+        uses: r-lib/actions/setup-tinytex@v2
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -36,9 +39,6 @@ jobs:
 
       - name: Render site
         run: quarto render
-
-      - name: Generate lecture PDFs
-        run: bash scripts/generate_lecture_pdfs.sh
 
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4

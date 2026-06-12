@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 3: The 70 Percent Problem
@@ -38,8 +48,8 @@ Common shape:
 
 ## The 70 Percent Trap
 
-```{mermaid}
-flowchart LR
+```{mermaid echo=false fig-width=6 fig-height=4 out-width="100%"}
+flowchart TD
   A[Looks plausible] --> B[Accepted too early]
   B --> C[Hidden defects]
   C --> D[Debugging debt]
@@ -122,7 +132,7 @@ Evaluation criteria should be:
 
 ---
 
-## Studio Activity
+## Practice Activity
 
 Given a Java feature request, define:
 

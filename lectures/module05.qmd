@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 5: Reviewing and Testing AI Code
@@ -39,8 +49,8 @@ You own:
 
 ## Review Pipeline
 
-```{mermaid}
-flowchart LR
+```{mermaid echo=false fig-width=6 fig-height=4 out-width="100%"}
+flowchart TD
   A[AI-generated code] --> B[Read the diff]
   B --> C[Check requirements]
   C --> D[Run tests]
@@ -128,7 +138,7 @@ Good evidence includes:
 
 ---
 
-## Studio Activity
+## Practice Activity
 
 Give Copilot an intentionally incomplete implementation and ask it to review.
 

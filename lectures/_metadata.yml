@@ -4,4 +4,7 @@ format:
     slide-number: true
     toc: true
     self-contained: true
+    css: lecture-slides.css
     # Add more revealjs options for lectures here if needed
+execute:
+  echo: false

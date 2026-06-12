@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 4: Human Contribution Beyond AI
@@ -36,15 +46,14 @@ Osmani frames the engineer's durable value as the work AI cannot reliably infer.
 
 ## Where Human Judgment Concentrates
 
-```{mermaid}
-mindmap
-  root((Human judgment))
-    Domain context
-    Architecture
-    Tradeoffs
-    Risk tolerance
-    Long-term maintenance
-    User consequences
+```{mermaid echo=false fig-width=6 fig-height=4 out-width="100%"}
+flowchart TD
+  H[Human judgment] --> D[Domain context]
+  H --> A[Architecture]
+  H --> T[Tradeoffs]
+  H --> R[Risk tolerance]
+  H --> M[Maintenance]
+  H --> U[User consequences]
 ```
 
 ---
@@ -130,7 +139,7 @@ Your eval-driven lab should demonstrate human judgment through:
 
 ---
 
-## Studio Activity
+## Practice Activity
 
 Review AI-generated Java code and mark:
 

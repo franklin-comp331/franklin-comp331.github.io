@@ -6,6 +6,16 @@ format:
     theme: default
     slide-number: true
     toc: true
+  pdf:
+    toc: false
+    header-includes:
+      - \usepackage{graphicx}
+      - \usepackage{needspace}
+      - \usepackage{etoolbox}
+      - \setkeys{Gin}{width=\linewidth,height=0.35\textheight,keepaspectratio}
+      - \pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+      - \pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+      - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
 # Module 10: Autonomous Agents
@@ -49,7 +59,7 @@ Your course agent should make this loop inspectable.
 
 ## Agent Control Points
 
-```{mermaid}
+```{mermaid echo=false fig-width=7 fig-height=4 out-width="100%"}
 sequenceDiagram
   participant H as Human
   participant A as Agent
@@ -150,7 +160,7 @@ Your architecture should identify:
 
 ---
 
-## Studio Activity
+## Practice Activity
 
 Evaluate a candidate task for delegation.
 
