@@ -1,0 +1,149 @@
+---
+title: "Module 9: Ethics and Responsibility"
+subtitle: "Accountability, transparency, and team practice"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    toc: true
+---
+
+# Module 9: Ethics and Responsibility
+
+Primary sources: Osmani, Chapter 9; Thomas & Hunt, Pragmatic Teams.
+
+---
+
+## Learning Outcomes
+
+- Evaluate ethical risks in AI-assisted development.
+- Assess responsibility boundaries between engineers and AI systems.
+- Analyze bias and unintended consequences.
+- Justify responsible engineering practices.
+
+---
+
+## Responsibility Boundary
+
+AI can assist, but it cannot be accountable.
+
+The engineer or team remains responsible for:
+
+- Submitted code.
+- Security impacts.
+- Documentation accuracy.
+- Disclosure of AI assistance.
+- User consequences.
+
+---
+
+## Accountability Flow
+
+```{mermaid}
+flowchart LR
+  A[AI suggestion] --> B[Student review]
+  B --> C[Team PR review]
+  C --> D[Tests and evidence]
+  D --> E[Submission]
+  E --> F[Accountability remains with humans]
+```
+
+---
+
+## Transparency
+
+Responsible AI use includes a clear artifact trail.
+
+- What tool or mode was used?
+- What prompt or task was given?
+- What was accepted, modified, or rejected?
+- How was the result verified?
+- What uncertainty remains?
+
+---
+
+## IP and Provenance
+
+AI-generated output can raise provenance questions.
+
+Practical safeguards:
+
+- Avoid asking for copyrighted code.
+- Be cautious with suspiciously specific output.
+- Prefer explanations, patterns, and tests over copied solutions.
+- Follow course and organizational policy.
+
+---
+
+## Bias and Consequences
+
+Software can encode unfair assumptions.
+
+AI can amplify them by producing common patterns without context.
+
+Ask:
+
+- Who could be harmed?
+- Whose data is missing?
+- What assumptions are hidden?
+- What feedback would reveal harm?
+
+---
+
+## Pragmatic Teams
+
+Thomas and Hunt emphasize stable, communicative teams with shared standards.
+
+For AI-assisted teams:
+
+- Agree on AI usage rules.
+- Review AI-generated code carefully.
+- Share prompt patterns that work.
+- Do not let AI create invisible solo work.
+
+---
+
+## Controlled Collaboration
+
+Team repositories should show:
+
+- Issues or task board.
+- Feature branches.
+- Pull requests.
+- Review comments.
+- Test evidence.
+- AI usage notes.
+
+---
+
+## Lab 5 Development Connection
+
+Coding agents increase ethical stakes because they act over multiple steps.
+
+Controlled workflows need:
+
+- Human checkpoints.
+- Reproducible runs.
+- Tool boundaries.
+- Reviewable artifacts.
+- Clear stop conditions.
+
+---
+
+## Studio Activity
+
+Draft team AI rules:
+
+- When is Copilot allowed?
+- What must be documented?
+- What requires peer review?
+- What data must never be pasted?
+- What counts as sufficient verification?
+
+---
+
+## Takeaways
+
+- Responsible use is an engineering practice, not a slogan.
+- Transparency supports grading, collaboration, and trust.
+- Teams need explicit norms for AI-assisted work.

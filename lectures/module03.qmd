@@ -1,0 +1,142 @@
+---
+title: "Module 3: The 70 Percent Problem"
+subtitle: "Structured workflows for partially correct output"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    toc: true
+---
+
+# Module 3: The 70 Percent Problem
+
+Primary sources: Osmani, Chapter 3; Thomas & Hunt, Tracer Bullets.
+
+---
+
+## Learning Outcomes
+
+- Describe the 70 percent problem.
+- Apply structured workflows to guide generation.
+- Compare naive prompting with structured approaches.
+- Implement a basic feature using an AI-assisted workflow.
+
+---
+
+## What Is the 70 Percent Problem?
+
+AI output often looks close enough to create confidence but not close enough to trust.
+
+Common shape:
+
+- Compiles, but misses edge cases.
+- Solves the sample, but not the requirement.
+- Uses plausible APIs incorrectly.
+- Produces code that is hard to maintain.
+
+---
+
+## The 70 Percent Trap
+
+```{mermaid}
+flowchart LR
+  A[Looks plausible] --> B[Accepted too early]
+  B --> C[Hidden defects]
+  C --> D[Debugging debt]
+  D --> E[Lost trust]
+  A --> F[Structured review]
+  F --> G[Tests expose gaps]
+  G --> H[Safer iteration]
+```
+
+---
+
+## Why It Is Dangerous
+
+Partially correct output can be worse than obviously wrong output.
+
+- It saves time early.
+- It shifts cost into debugging and review.
+- It creates sunk-cost pressure.
+- It can hide security or reliability defects.
+
+---
+
+## Workflow Over Heroics
+
+Effective AI-assisted development uses a loop:
+
+1. Define intent.
+2. Ask for a small implementation.
+3. Inspect the diff.
+4. Run tests.
+5. Refine prompt or code.
+6. Document decisions.
+
+---
+
+## Tracer Bullets
+
+Thomas and Hunt recommend building thin, end-to-end slices that prove direction.
+
+In AI-assisted SWE:
+
+- Ask AI to help create the smallest complete path.
+- Keep scope narrow enough to evaluate.
+- Prefer inspectable progress over broad unfinished generation.
+
+---
+
+## Bad AI Workflow
+
+- Ask for a whole feature.
+- Paste output without reading.
+- Fix compile errors manually.
+- Skip tests because it "seems right."
+- Document only the final result.
+
+---
+
+## Better AI Workflow
+
+- Ask for an implementation plan first.
+- Generate one component at a time.
+- Require tests before or alongside code.
+- Compare output against criteria.
+- Preserve rejected suggestions and rationale.
+
+---
+
+## Lab 2 Development Connection
+
+Eval-driven development starts this week.
+
+Your lab goal is to make correctness measurable before relying on AI output.
+
+Evaluation criteria should be:
+
+- Specific.
+- Runnable or inspectable.
+- Connected to task intent.
+- Useful for regression.
+
+---
+
+## Studio Activity
+
+Given a Java feature request, define:
+
+- One happy-path test.
+- Two edge-case tests.
+- One invalid-input test.
+- One maintainability criterion.
+
+Then ask Copilot to implement only enough code to pass those checks.
+
+---
+
+## Takeaways
+
+- The last 30 percent is engineering work.
+- Small slices expose uncertainty early.
+- AI is most useful when surrounded by feedback loops.

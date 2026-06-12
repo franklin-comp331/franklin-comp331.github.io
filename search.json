@@ -168,6 +168,475 @@
     "text": "7 Submission Instructions\nShare the comp331-java-agent Git repository with your professor per their instructions and submit the repository link through Canvas. Include any setup notes needed to run your Java project. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:\ngit rev-parse HEAD\nNext lab: Lab 2: Eval-Driven Development."
   },
   {
+    "objectID": "lectures/module11.html#learning-outcomes",
+    "href": "lectures/module11.html#learning-outcomes",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nEvaluate emerging AI-assisted development trends.\nSynthesize course concepts into a framework.\nPropose improvements to AI-assisted workflows.\nFormulate a personal engineering approach to AI use."
+  },
+  {
+    "objectID": "lectures/module11.html#beyond-code-generation",
+    "href": "lectures/module11.html#beyond-code-generation",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Beyond Code Generation",
+    "text": "Beyond Code Generation\nAI assistance is expanding into:\n\nTest generation.\nDebugging.\nMaintenance.\nDesign exploration.\nProject coordination.\nAgent-driven task execution.\n\nThe engineering problem remains: how do we trust the result?"
+  },
+  {
+    "objectID": "lectures/module11.html#course-concept-map",
+    "href": "lectures/module11.html#course-concept-map",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Course Concept Map",
+    "text": "Course Concept Map\n\nflowchart TD\n  I[Intent] --&gt; P[Prompting]\n  P --&gt; E[Evaluation]\n  E --&gt; T[Testing]\n  T --&gt; R[Risk analysis]\n  R --&gt; A[Agent workflows]\n  A --&gt; C[Capstone system]\n  H[Human judgment] --&gt; I\n  H --&gt; E\n  H --&gt; R\n  H --&gt; C\n\n\n\n\nflowchart TD\n  I[Intent] --&gt; P[Prompting]\n  P --&gt; E[Evaluation]\n  E --&gt; T[Testing]\n  T --&gt; R[Risk analysis]\n  R --&gt; A[Agent workflows]\n  A --&gt; C[Capstone system]\n  H[Human judgment] --&gt; I\n  H --&gt; E\n  H --&gt; R\n  H --&gt; C"
+  },
+  {
+    "objectID": "lectures/module11.html#future-skill-shift",
+    "href": "lectures/module11.html#future-skill-shift",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Future Skill Shift",
+    "text": "Future Skill Shift\nImportant skills move toward:\n\nProblem framing.\nRequirements clarification.\nArchitecture judgment.\nTest design.\nReview and verification.\nWorkflow design.\nEthical decision-making."
+  },
+  {
+    "objectID": "lectures/module11.html#essence-of-good-design",
+    "href": "lectures/module11.html#essence-of-good-design",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Essence of Good Design",
+    "text": "Essence of Good Design\nThomas and Hunt define good design around ease of change.\nAI-era interpretation:\n\nGood systems absorb generated changes safely.\nGood boundaries make AI suggestions reviewable.\nGood tests make iteration cheap.\nGood documentation makes context reusable."
+  },
+  {
+    "objectID": "lectures/module11.html#personal-ai-workflow",
+    "href": "lectures/module11.html#personal-ai-workflow",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Personal AI Workflow",
+    "text": "Personal AI Workflow\nA durable workflow should answer:\n\nWhen do I ask AI for help?\nHow do I scope the request?\nWhat evidence must I collect?\nWhat do I never delegate?\nHow do I improve after each interaction?"
+  },
+  {
+    "objectID": "lectures/module11.html#course-framework",
+    "href": "lectures/module11.html#course-framework",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Course Framework",
+    "text": "Course Framework\nThe course has built a progression:\n\nIntent.\nPrompting.\nEvaluation.\nHuman judgment.\nTesting.\nProduction readiness.\nSystems thinking.\nSecurity.\nEthics.\nAgents.\nCapstone integration."
+  },
+  {
+    "objectID": "lectures/module11.html#milestone-2-connection",
+    "href": "lectures/module11.html#milestone-2-connection",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Milestone 2 Connection",
+    "text": "Milestone 2 Connection\nYour partial implementation should prove the final system is feasible.\nEvidence should include:\n\nMeaningful implementation.\nComponent integration.\nExample workflow run.\nEvaluation strategy.\nRisks and limitations.\nPeer review and AI notes."
+  },
+  {
+    "objectID": "lectures/module11.html#improving-the-workflow",
+    "href": "lectures/module11.html#improving-the-workflow",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Improving the Workflow",
+    "text": "Improving the Workflow\nAsk your team:\n\nWhich prompts produced useful output?\nWhich AI suggestions created rework?\nWhich tests found real issues?\nWhich review practices improved quality?\nWhich risks are still unmanaged?"
+  },
+  {
+    "objectID": "lectures/module11.html#studio-activity",
+    "href": "lectures/module11.html#studio-activity",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nCreate a personal AI-assisted SWE checklist with three sections:\n\nBefore prompting.\nBefore accepting output.\nBefore submitting or merging.\n\nTie each item to course evidence."
+  },
+  {
+    "objectID": "lectures/module11.html#takeaways",
+    "href": "lectures/module11.html#takeaways",
+    "title": "Module 11: The Future of AI Engineering",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nThe future is not just faster coding.\nThe future is better orchestration, verification, and judgment.\nYour professional advantage is disciplined AI use."
+  },
+  {
+    "objectID": "lectures/module09.html#learning-outcomes",
+    "href": "lectures/module09.html#learning-outcomes",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nEvaluate ethical risks in AI-assisted development.\nAssess responsibility boundaries between engineers and AI systems.\nAnalyze bias and unintended consequences.\nJustify responsible engineering practices."
+  },
+  {
+    "objectID": "lectures/module09.html#responsibility-boundary",
+    "href": "lectures/module09.html#responsibility-boundary",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "Responsibility Boundary",
+    "text": "Responsibility Boundary\nAI can assist, but it cannot be accountable.\nThe engineer or team remains responsible for:\n\nSubmitted code.\nSecurity impacts.\nDocumentation accuracy.\nDisclosure of AI assistance.\nUser consequences."
+  },
+  {
+    "objectID": "lectures/module09.html#accountability-flow",
+    "href": "lectures/module09.html#accountability-flow",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "Accountability Flow",
+    "text": "Accountability Flow\n\nflowchart LR\n  A[AI suggestion] --&gt; B[Student review]\n  B --&gt; C[Team PR review]\n  C --&gt; D[Tests and evidence]\n  D --&gt; E[Submission]\n  E --&gt; F[Accountability remains with humans]\n\n\n\n\nflowchart LR\n  A[AI suggestion] --&gt; B[Student review]\n  B --&gt; C[Team PR review]\n  C --&gt; D[Tests and evidence]\n  D --&gt; E[Submission]\n  E --&gt; F[Accountability remains with humans]"
+  },
+  {
+    "objectID": "lectures/module09.html#transparency",
+    "href": "lectures/module09.html#transparency",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "Transparency",
+    "text": "Transparency\nResponsible AI use includes a clear artifact trail.\n\nWhat tool or mode was used?\nWhat prompt or task was given?\nWhat was accepted, modified, or rejected?\nHow was the result verified?\nWhat uncertainty remains?"
+  },
+  {
+    "objectID": "lectures/module09.html#ip-and-provenance",
+    "href": "lectures/module09.html#ip-and-provenance",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "IP and Provenance",
+    "text": "IP and Provenance\nAI-generated output can raise provenance questions.\nPractical safeguards:\n\nAvoid asking for copyrighted code.\nBe cautious with suspiciously specific output.\nPrefer explanations, patterns, and tests over copied solutions.\nFollow course and organizational policy."
+  },
+  {
+    "objectID": "lectures/module09.html#bias-and-consequences",
+    "href": "lectures/module09.html#bias-and-consequences",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "Bias and Consequences",
+    "text": "Bias and Consequences\nSoftware can encode unfair assumptions.\nAI can amplify them by producing common patterns without context.\nAsk:\n\nWho could be harmed?\nWhose data is missing?\nWhat assumptions are hidden?\nWhat feedback would reveal harm?"
+  },
+  {
+    "objectID": "lectures/module09.html#pragmatic-teams",
+    "href": "lectures/module09.html#pragmatic-teams",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "Pragmatic Teams",
+    "text": "Pragmatic Teams\nThomas and Hunt emphasize stable, communicative teams with shared standards.\nFor AI-assisted teams:\n\nAgree on AI usage rules.\nReview AI-generated code carefully.\nShare prompt patterns that work.\nDo not let AI create invisible solo work."
+  },
+  {
+    "objectID": "lectures/module09.html#controlled-collaboration",
+    "href": "lectures/module09.html#controlled-collaboration",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "Controlled Collaboration",
+    "text": "Controlled Collaboration\nTeam repositories should show:\n\nIssues or task board.\nFeature branches.\nPull requests.\nReview comments.\nTest evidence.\nAI usage notes."
+  },
+  {
+    "objectID": "lectures/module09.html#lab-5-development-connection",
+    "href": "lectures/module09.html#lab-5-development-connection",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "Lab 5 Development Connection",
+    "text": "Lab 5 Development Connection\nCoding agents increase ethical stakes because they act over multiple steps.\nControlled workflows need:\n\nHuman checkpoints.\nReproducible runs.\nTool boundaries.\nReviewable artifacts.\nClear stop conditions."
+  },
+  {
+    "objectID": "lectures/module09.html#studio-activity",
+    "href": "lectures/module09.html#studio-activity",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nDraft team AI rules:\n\nWhen is Copilot allowed?\nWhat must be documented?\nWhat requires peer review?\nWhat data must never be pasted?\nWhat counts as sufficient verification?"
+  },
+  {
+    "objectID": "lectures/module09.html#takeaways",
+    "href": "lectures/module09.html#takeaways",
+    "title": "Module 9: Ethics and Responsibility",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nResponsible use is an engineering practice, not a slogan.\nTransparency supports grading, collaboration, and trust.\nTeams need explicit norms for AI-assisted work."
+  },
+  {
+    "objectID": "lectures/module07.html#learning-outcomes",
+    "href": "lectures/module07.html#learning-outcomes",
+    "title": "Module 7: Building AI Systems",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nAnalyze components of an AI-assisted system.\nDescribe data and context flow.\nEvaluate integration challenges.\nDesign a basic architecture for an AI-assisted feature."
+  },
+  {
+    "objectID": "lectures/module07.html#from-task-to-system",
+    "href": "lectures/module07.html#from-task-to-system",
+    "title": "Module 7: Building AI Systems",
+    "section": "From Task to System",
+    "text": "From Task to System\nAn AI-assisted system is more than a model call.\nIt includes:\n\nInput handling.\nContext assembly.\nPrompt construction.\nModel interaction.\nTool invocation.\nEvaluation.\nArtifact tracking.\nHuman oversight."
+  },
+  {
+    "objectID": "lectures/module07.html#controlled-agent-architecture",
+    "href": "lectures/module07.html#controlled-agent-architecture",
+    "title": "Module 7: Building AI Systems",
+    "section": "Controlled Agent Architecture",
+    "text": "Controlled Agent Architecture\n\nflowchart TD\n  U[User request] --&gt; S[Structured task spec]\n  S --&gt; C[Context builder]\n  C --&gt; M[Model interaction]\n  M --&gt; T[Tool dispatcher]\n  T --&gt; X[Sandboxed tools]\n  X --&gt; R[Tool results]\n  R --&gt; E[Evaluation]\n  E --&gt; A[Artifacts and logs]\n  E --&gt; H[Human checkpoint]\n  H --&gt; M\n\n\n\n\nflowchart TD\n  U[User request] --&gt; S[Structured task spec]\n  S --&gt; C[Context builder]\n  C --&gt; M[Model interaction]\n  M --&gt; T[Tool dispatcher]\n  T --&gt; X[Sandboxed tools]\n  X --&gt; R[Tool results]\n  R --&gt; E[Evaluation]\n  E --&gt; A[Artifacts and logs]\n  E --&gt; H[Human checkpoint]\n  H --&gt; M"
+  },
+  {
+    "objectID": "lectures/module07.html#system-boundary",
+    "href": "lectures/module07.html#system-boundary",
+    "title": "Module 7: Building AI Systems",
+    "section": "System Boundary",
+    "text": "System Boundary\nDefine what the agent may and may not do.\nFor a controlled coding agent:\n\nAllowed tools.\nAllowed paths.\nAllowed commands.\nRequired approvals.\nRequired logs.\nRequired tests."
+  },
+  {
+    "objectID": "lectures/module07.html#context-flow",
+    "href": "lectures/module07.html#context-flow",
+    "title": "Module 7: Building AI Systems",
+    "section": "Context Flow",
+    "text": "Context Flow\nContext should be curated, not dumped.\nTypical flow:\n\nUser request.\nStructured task specification.\nRelevant project files or summaries.\nTool definitions.\nEvaluation criteria.\nOutput and artifact records."
+  },
+  {
+    "objectID": "lectures/module07.html#integration-challenges",
+    "href": "lectures/module07.html#integration-challenges",
+    "title": "Module 7: Building AI Systems",
+    "section": "Integration Challenges",
+    "text": "Integration Challenges\n\nMismatched frontend/backend contracts.\nUnclear data models.\nGenerated code that bypasses abstractions.\nTests that require unavailable services.\nTool outputs too verbose to inspect.\nError handling split across layers."
+  },
+  {
+    "objectID": "lectures/module07.html#tracer-bullet-architecture",
+    "href": "lectures/module07.html#tracer-bullet-architecture",
+    "title": "Module 7: Building AI Systems",
+    "section": "Tracer Bullet Architecture",
+    "text": "Tracer Bullet Architecture\nBuild one thin complete workflow first.\nExample:\n\nRead task.\nAsk model for plan.\nDispatch one safe tool.\nCapture result.\nEvaluate with one check.\nSave run artifact."
+  },
+  {
+    "objectID": "lectures/module07.html#ai-system-prompting",
+    "href": "lectures/module07.html#ai-system-prompting",
+    "title": "Module 7: Building AI Systems",
+    "section": "AI System Prompting",
+    "text": "AI System Prompting\nUseful prompts ask the model to operate inside architecture.\n\n“Use only these tools.”\n“Return JSON matching this schema.”\n“If input is ambiguous, ask for clarification.”\n“Do not modify files outside this sandbox.”\n“Explain verification steps separately from implementation.”"
+  },
+  {
+    "objectID": "lectures/module07.html#lab-4-development-connection",
+    "href": "lectures/module07.html#lab-4-development-connection",
+    "title": "Module 7: Building AI Systems",
+    "section": "Lab 4 Development Connection",
+    "text": "Lab 4 Development Connection\nLab 4 begins risk analysis and production readiness.\nYour risk analysis should be specific to your actual system:\n\nTool misuse.\nSandbox escape.\nPrompt injection.\nFalse confidence from weak tests.\nMissing human checkpoint."
+  },
+  {
+    "objectID": "lectures/module07.html#studio-activity",
+    "href": "lectures/module07.html#studio-activity",
+    "title": "Module 7: Building AI Systems",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nDraw your agent as boxes and arrows.\nFor each arrow, label:\n\nData passed.\nTrust boundary.\nValidation step.\nFailure mode."
+  },
+  {
+    "objectID": "lectures/module07.html#takeaways",
+    "href": "lectures/module07.html#takeaways",
+    "title": "Module 7: Building AI Systems",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nAI engineering is systems engineering.\nContext, tools, and evaluation are first-class components.\nThin end-to-end slices make risk visible."
+  },
+  {
+    "objectID": "lectures/module05.html#learning-outcomes",
+    "href": "lectures/module05.html#learning-outcomes",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nAnalyze AI-generated code for correctness and quality.\nIdentify common failure patterns.\nDistinguish superficial correctness from true correctness.\nApply testing strategies to validate outputs."
+  },
+  {
+    "objectID": "lectures/module05.html#review-refine-own",
+    "href": "lectures/module05.html#review-refine-own",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Review, Refine, Own",
+    "text": "Review, Refine, Own\nOsmani’s core message for generated code: understanding is not optional.\nYou own:\n\nWhat was generated.\nWhat was accepted.\nWhat was changed.\nWhat was verified.\nWhat risk remains."
+  },
+  {
+    "objectID": "lectures/module05.html#review-pipeline",
+    "href": "lectures/module05.html#review-pipeline",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Review Pipeline",
+    "text": "Review Pipeline\n\nflowchart LR\n  A[AI-generated code] --&gt; B[Read the diff]\n  B --&gt; C[Check requirements]\n  C --&gt; D[Run tests]\n  D --&gt; E[Add missing tests]\n  E --&gt; F[Refactor]\n  F --&gt; G[Document decision]\n  D --&gt;|failure| H[Revise prompt or code]\n  H --&gt; B\n\n\n\n\nflowchart LR\n  A[AI-generated code] --&gt; B[Read the diff]\n  B --&gt; C[Check requirements]\n  C --&gt; D[Run tests]\n  D --&gt; E[Add missing tests]\n  E --&gt; F[Refactor]\n  F --&gt; G[Document decision]\n  D --&gt;|failure| H[Revise prompt or code]\n  H --&gt; B"
+  },
+  {
+    "objectID": "lectures/module05.html#superficial-correctness",
+    "href": "lectures/module05.html#superficial-correctness",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Superficial Correctness",
+    "text": "Superficial Correctness\nCode may appear correct because it:\n\nMatches naming conventions.\nCompiles.\nHandles the example input.\nUses familiar libraries.\nIncludes comments that sound confident.\n\nNone of these prove behavior."
+  },
+  {
+    "objectID": "lectures/module05.html#review-checklist",
+    "href": "lectures/module05.html#review-checklist",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Review Checklist",
+    "text": "Review Checklist\n\nDoes it implement the stated requirement?\nWhat assumptions did it add?\nWhat edge cases are missing?\nIs error handling intentional?\nIs the design testable?\nDoes it expose secrets or unsafe behavior?\nAre dependencies appropriate?"
+  },
+  {
+    "objectID": "lectures/module05.html#tests-as-design",
+    "href": "lectures/module05.html#tests-as-design",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Tests as Design",
+    "text": "Tests as Design\nThomas and Hunt argue testing is part of design, not an afterthought.\nFor AI-assisted work:\n\nAsk for tests before accepting implementation.\nReview tests as critically as code.\nAvoid tests that merely mirror the implementation.\nAdd regression tests for AI mistakes."
+  },
+  {
+    "objectID": "lectures/module05.html#test-pyramid-for-ai-code",
+    "href": "lectures/module05.html#test-pyramid-for-ai-code",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Test Pyramid for AI Code",
+    "text": "Test Pyramid for AI Code\n\nUnit tests: fast checks of isolated behavior.\nIntegration tests: verify components work together.\nEnd-to-end tests: validate user-visible workflow.\nSafety tests: verify refusal, bounds, permissions, and secrets handling."
+  },
+  {
+    "objectID": "lectures/module05.html#property-thinking",
+    "href": "lectures/module05.html#property-thinking",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Property Thinking",
+    "text": "Property Thinking\nProperty-based testing asks what must always be true.\nExamples for Java command parsing:\n\nParsing then serializing preserves arguments.\nInvalid commands never execute tools.\nSandbox paths never escape the workspace.\nEmpty input always fails safely."
+  },
+  {
+    "objectID": "lectures/module05.html#lab-3-development-connection",
+    "href": "lectures/module05.html#lab-3-development-connection",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Lab 3 Development Connection",
+    "text": "Lab 3 Development Connection\nAs Lab 3 begins, implementation must remain inspectable.\nGood evidence includes:\n\nTool contracts.\nSandbox restrictions.\nTests proving restrictions.\nSample runs.\nCopilot decisions and corrections."
+  },
+  {
+    "objectID": "lectures/module05.html#studio-activity",
+    "href": "lectures/module05.html#studio-activity",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nGive Copilot an intentionally incomplete implementation and ask it to review.\nThen do a human review and compare:\n\nWhat did Copilot catch?\nWhat did it miss?\nWhich issues require domain judgment?"
+  },
+  {
+    "objectID": "lectures/module05.html#takeaways",
+    "href": "lectures/module05.html#takeaways",
+    "title": "Module 5: Reviewing and Testing AI Code",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nAI-generated code needs adversarial review.\nTests are engineering evidence.\nOwning code means understanding failure behavior."
+  },
+  {
+    "objectID": "lectures/module03.html#learning-outcomes",
+    "href": "lectures/module03.html#learning-outcomes",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nDescribe the 70 percent problem.\nApply structured workflows to guide generation.\nCompare naive prompting with structured approaches.\nImplement a basic feature using an AI-assisted workflow."
+  },
+  {
+    "objectID": "lectures/module03.html#what-is-the-70-percent-problem",
+    "href": "lectures/module03.html#what-is-the-70-percent-problem",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "What Is the 70 Percent Problem?",
+    "text": "What Is the 70 Percent Problem?\nAI output often looks close enough to create confidence but not close enough to trust.\nCommon shape:\n\nCompiles, but misses edge cases.\nSolves the sample, but not the requirement.\nUses plausible APIs incorrectly.\nProduces code that is hard to maintain."
+  },
+  {
+    "objectID": "lectures/module03.html#the-70-percent-trap",
+    "href": "lectures/module03.html#the-70-percent-trap",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "The 70 Percent Trap",
+    "text": "The 70 Percent Trap\n\nflowchart LR\n  A[Looks plausible] --&gt; B[Accepted too early]\n  B --&gt; C[Hidden defects]\n  C --&gt; D[Debugging debt]\n  D --&gt; E[Lost trust]\n  A --&gt; F[Structured review]\n  F --&gt; G[Tests expose gaps]\n  G --&gt; H[Safer iteration]\n\n\n\n\nflowchart LR\n  A[Looks plausible] --&gt; B[Accepted too early]\n  B --&gt; C[Hidden defects]\n  C --&gt; D[Debugging debt]\n  D --&gt; E[Lost trust]\n  A --&gt; F[Structured review]\n  F --&gt; G[Tests expose gaps]\n  G --&gt; H[Safer iteration]"
+  },
+  {
+    "objectID": "lectures/module03.html#why-it-is-dangerous",
+    "href": "lectures/module03.html#why-it-is-dangerous",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "Why It Is Dangerous",
+    "text": "Why It Is Dangerous\nPartially correct output can be worse than obviously wrong output.\n\nIt saves time early.\nIt shifts cost into debugging and review.\nIt creates sunk-cost pressure.\nIt can hide security or reliability defects."
+  },
+  {
+    "objectID": "lectures/module03.html#workflow-over-heroics",
+    "href": "lectures/module03.html#workflow-over-heroics",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "Workflow Over Heroics",
+    "text": "Workflow Over Heroics\nEffective AI-assisted development uses a loop:\n\nDefine intent.\nAsk for a small implementation.\nInspect the diff.\nRun tests.\nRefine prompt or code.\nDocument decisions."
+  },
+  {
+    "objectID": "lectures/module03.html#tracer-bullets",
+    "href": "lectures/module03.html#tracer-bullets",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "Tracer Bullets",
+    "text": "Tracer Bullets\nThomas and Hunt recommend building thin, end-to-end slices that prove direction.\nIn AI-assisted SWE:\n\nAsk AI to help create the smallest complete path.\nKeep scope narrow enough to evaluate.\nPrefer inspectable progress over broad unfinished generation."
+  },
+  {
+    "objectID": "lectures/module03.html#bad-ai-workflow",
+    "href": "lectures/module03.html#bad-ai-workflow",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "Bad AI Workflow",
+    "text": "Bad AI Workflow\n\nAsk for a whole feature.\nPaste output without reading.\nFix compile errors manually.\nSkip tests because it “seems right.”\nDocument only the final result."
+  },
+  {
+    "objectID": "lectures/module03.html#better-ai-workflow",
+    "href": "lectures/module03.html#better-ai-workflow",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "Better AI Workflow",
+    "text": "Better AI Workflow\n\nAsk for an implementation plan first.\nGenerate one component at a time.\nRequire tests before or alongside code.\nCompare output against criteria.\nPreserve rejected suggestions and rationale."
+  },
+  {
+    "objectID": "lectures/module03.html#lab-2-development-connection",
+    "href": "lectures/module03.html#lab-2-development-connection",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "Lab 2 Development Connection",
+    "text": "Lab 2 Development Connection\nEval-driven development starts this week.\nYour lab goal is to make correctness measurable before relying on AI output.\nEvaluation criteria should be:\n\nSpecific.\nRunnable or inspectable.\nConnected to task intent.\nUseful for regression."
+  },
+  {
+    "objectID": "lectures/module03.html#studio-activity",
+    "href": "lectures/module03.html#studio-activity",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nGiven a Java feature request, define:\n\nOne happy-path test.\nTwo edge-case tests.\nOne invalid-input test.\nOne maintainability criterion.\n\nThen ask Copilot to implement only enough code to pass those checks."
+  },
+  {
+    "objectID": "lectures/module03.html#takeaways",
+    "href": "lectures/module03.html#takeaways",
+    "title": "Module 3: The 70 Percent Problem",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nThe last 30 percent is engineering work.\nSmall slices expose uncertainty early.\nAI is most useful when surrounded by feedback loops."
+  },
+  {
+    "objectID": "lectures/module01.html#learning-outcomes",
+    "href": "lectures/module01.html#learning-outcomes",
+    "title": "Module 1: What AI Changes",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nExplain the difference between vibe coding and AI-assisted software engineering.\nDescribe programming with intent.\nSummarize strengths and limits of AI-generated code.\nInterpret Software 2.0 as a shift in specification and verification."
+  },
+  {
+    "objectID": "lectures/module01.html#the-core-shift",
+    "href": "lectures/module01.html#the-core-shift",
+    "title": "Module 1: What AI Changes",
+    "section": "The Core Shift",
+    "text": "The Core Shift\nAI changes the interface to software creation.\nIt does not remove the need for engineering judgment.\n\nBefore: translate intent into code directly.\nNow: translate intent into prompts, examples, constraints, tests, reviews, and code.\nThe human role moves upstream and downstream: specify better, verify harder."
+  },
+  {
+    "objectID": "lectures/module01.html#ai-assisted-swe-loop",
+    "href": "lectures/module01.html#ai-assisted-swe-loop",
+    "title": "Module 1: What AI Changes",
+    "section": "AI-Assisted SWE Loop",
+    "text": "AI-Assisted SWE Loop\n\nflowchart LR\n  A[Human intent] --&gt; B[Structured prompt]\n  B --&gt; C[AI draft]\n  C --&gt; D[Human review]\n  D --&gt; E[Tests and evidence]\n  E --&gt; F[Commit and document]\n  E --&gt;|gaps found| B\n\n\n\n\nflowchart LR\n  A[Human intent] --&gt; B[Structured prompt]\n  B --&gt; C[AI draft]\n  C --&gt; D[Human review]\n  D --&gt; E[Tests and evidence]\n  E --&gt; F[Commit and document]\n  E --&gt;|gaps found| B"
+  },
+  {
+    "objectID": "lectures/module01.html#vibe-coding-vs-engineering",
+    "href": "lectures/module01.html#vibe-coding-vs-engineering",
+    "title": "Module 1: What AI Changes",
+    "section": "Vibe Coding vs Engineering",
+    "text": "Vibe Coding vs Engineering\n\n\n\nVibe Coding\nAI-Assisted Engineering\n\n\n\n\nConversational exploration\nStructured collaboration\n\n\nAccepts plausible output\nVerifies behavior and risks\n\n\nOptimizes for momentum\nOptimizes for trusted progress\n\n\nWeak artifact trail\nPrompts, tests, decisions, commits"
+  },
+  {
+    "objectID": "lectures/module01.html#programming-with-intent",
+    "href": "lectures/module01.html#programming-with-intent",
+    "title": "Module 1: What AI Changes",
+    "section": "Programming With Intent",
+    "text": "Programming With Intent\nProgramming with intent means making the desired behavior explicit before accepting implementation.\n\nWhat should the system do?\nWhat should it refuse to do?\nWhat edge cases matter?\nWhat evidence proves it works?\nWhat human decision remains non-delegable?"
+  },
+  {
+    "objectID": "lectures/module01.html#pragmatic-foundation",
+    "href": "lectures/module01.html#pragmatic-foundation",
+    "title": "Module 1: What AI Changes",
+    "section": "Pragmatic Foundation",
+    "text": "Pragmatic Foundation\nThomas and Hunt frame software mastery as responsibility, communication, and continuous adaptation.\nFor AI-assisted SWE, this means:\n\nOwn every generated artifact.\nCommunicate precisely with humans and tools.\nTreat AI output as a draft, not authority.\nKeep improving your knowledge portfolio."
+  },
+  {
+    "objectID": "lectures/module01.html#where-ai-helps",
+    "href": "lectures/module01.html#where-ai-helps",
+    "title": "Module 1: What AI Changes",
+    "section": "Where AI Helps",
+    "text": "Where AI Helps\n\nDrafting boilerplate and examples.\nExploring alternate implementations.\nExplaining unfamiliar APIs.\nCreating first-pass tests and docs.\nSpeeding up setup and debugging paths."
+  },
+  {
+    "objectID": "lectures/module01.html#where-ai-still-struggles",
+    "href": "lectures/module01.html#where-ai-still-struggles",
+    "title": "Module 1: What AI Changes",
+    "section": "Where AI Still Struggles",
+    "text": "Where AI Still Struggles\n\nHidden requirements and domain context.\nArchitecture tradeoffs across time.\nSecurity-sensitive boundary decisions.\nCorrectness when tests are weak.\nKnowing when the task is underspecified."
+  },
+  {
+    "objectID": "lectures/module01.html#software-2.0-lens",
+    "href": "lectures/module01.html#software-2.0-lens",
+    "title": "Module 1: What AI Changes",
+    "section": "Software 2.0 Lens",
+    "text": "Software 2.0 Lens\nSoftware 2.0 reframes some development as training, prompting, selecting, and evaluating behavior.\nIn this course, we apply that lens pragmatically:\n\nSpecifications become prompts plus tests.\nCode review includes model-output review.\nEngineering evidence matters more than confidence."
+  },
+  {
+    "objectID": "lectures/module01.html#setup-lab-connection",
+    "href": "lectures/module01.html#setup-lab-connection",
+    "title": "Module 1: What AI Changes",
+    "section": "Setup Lab Connection",
+    "text": "Setup Lab Connection\nAssignment 1 is not just tool setup.\nIt establishes the course habit:\n\nCapture the prompt.\nInspect the suggestion.\nMake a manual decision.\nVerify the result.\nDocument what happened."
+  },
+  {
+    "objectID": "lectures/module01.html#studio-activity",
+    "href": "lectures/module01.html#studio-activity",
+    "title": "Module 1: What AI Changes",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nAsk Copilot for a small Java method.\nThen improve the interaction:\n\nAdd input constraints.\nAdd expected behavior.\nAdd one edge case.\nAsk for a JUnit test.\nRecord what changed between attempts."
+  },
+  {
+    "objectID": "lectures/module01.html#takeaways",
+    "href": "lectures/module01.html#takeaways",
+    "title": "Module 1: What AI Changes",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nAI assistance amplifies both good and bad engineering habits.\nIntent, verification, and responsibility remain human work.\nThe course evidence trail is part of the engineering process."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
@@ -180,6 +649,503 @@
     "title": "Home",
     "section": "",
     "text": "Lab 1: Structured AI Workflow\nLab 2: Eval-Driven Development\nLab 3: AI System Implementation\nLab 4: AI Risk Analysis and Production Readiness\nLab 5: Coding Agents and Controlled Workflows"
+  },
+  {
+    "objectID": "lecture_downloads.html",
+    "href": "lecture_downloads.html",
+    "title": "Lecture Downloads",
+    "section": "",
+    "text": "Each lecture deck is available as a PDF handout, a rendered HTML slide deck, and editable Quarto source.\nPDFs are the easiest format for students to download, print, annotate, and keep offline. The HTML files preserve the interactive slide format. The .qmd files are intended for instructors who want to revise, remix, or export the decks in another format.\n\n\n\n\nModule\n\n\nTopic\n\n\nDownloads\n\n\n\n\n\n\n1\n\n\nWhat AI Changes\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n2\n\n\nPrompting as Communication\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n3\n\n\nThe 70 Percent Problem\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n4\n\n\nHuman Contribution Beyond AI\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n5\n\n\nReviewing and Testing AI Code\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n6\n\n\nPrototyping vs Production\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n7\n\n\nBuilding AI Systems\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n8\n\n\nSecurity and Reliability\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n9\n\n\nEthics and Responsibility\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n10\n\n\nAutonomous Agents\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n11\n\n\nThe Future of AI Engineering\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n12\n\n\nFinal Project Workbench\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n\n\nDownload the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser. The source files can be edited with Quarto if an instructor wants to customize the slides."
+  },
+  {
+    "objectID": "lecture_downloads.html#offline-use",
+    "href": "lecture_downloads.html#offline-use",
+    "title": "Lecture Downloads",
+    "section": "",
+    "text": "Download the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser. The source files can be edited with Quarto if an instructor wants to customize the slides."
+  },
+  {
+    "objectID": "lectures/module02.html#learning-outcomes",
+    "href": "lectures/module02.html#learning-outcomes",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nExplain prompting as specification.\nApply prompt structures that improve output quality.\nConstruct prompts with constraints and expected behavior.\nIterate based on model responses."
+  },
+  {
+    "objectID": "lectures/module02.html#prompting-is-engineering-communication",
+    "href": "lectures/module02.html#prompting-is-engineering-communication",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Prompting Is Engineering Communication",
+    "text": "Prompting Is Engineering Communication\nA prompt is not a magic phrase.\nIt is a communication artifact that should carry:\n\nGoal.\nContext.\nConstraints.\nExamples.\nOutput format.\nVerification expectations."
+  },
+  {
+    "objectID": "lectures/module02.html#prompt-anatomy",
+    "href": "lectures/module02.html#prompt-anatomy",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Prompt Anatomy",
+    "text": "Prompt Anatomy\n\nflowchart TD\n  P[Effective prompt] --&gt; G[Goal]\n  P --&gt; C[Context]\n  P --&gt; R[Requirements]\n  P --&gt; X[Constraints]\n  P --&gt; E[Examples]\n  P --&gt; V[Verification]\n\n\n\n\nflowchart TD\n  P[Effective prompt] --&gt; G[Goal]\n  P --&gt; C[Context]\n  P --&gt; R[Requirements]\n  P --&gt; X[Constraints]\n  P --&gt; E[Examples]\n  P --&gt; V[Verification]"
+  },
+  {
+    "objectID": "lectures/module02.html#weak-prompt-pattern",
+    "href": "lectures/module02.html#weak-prompt-pattern",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Weak Prompt Pattern",
+    "text": "Weak Prompt Pattern\n“Write a Java parser for commands.”\nProblems:\n\nNo grammar.\nNo failure behavior.\nNo test cases.\nNo integration context.\nNo definition of done."
+  },
+  {
+    "objectID": "lectures/module02.html#strong-prompt-pattern",
+    "href": "lectures/module02.html#strong-prompt-pattern",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Strong Prompt Pattern",
+    "text": "Strong Prompt Pattern\n“Create a Java method that parses commands in the form toolName arg1 arg2. Requirements: reject blank tool names, preserve quoted arguments, return a typed result, throw IllegalArgumentException for malformed input, and include JUnit 5 tests for valid input, blank input, unmatched quotes, and extra whitespace.”"
+  },
+  {
+    "objectID": "lectures/module02.html#prompt-components",
+    "href": "lectures/module02.html#prompt-components",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Prompt Components",
+    "text": "Prompt Components\n\nRole: what expertise should the assistant apply?\nTask: what should be produced?\nContext: what codebase or assignment constraints matter?\nConstraints: what must not happen?\nExamples: what should inputs and outputs look like?\nEvaluation: how will we know it is correct?"
+  },
+  {
+    "objectID": "lectures/module02.html#iterative-refinement",
+    "href": "lectures/module02.html#iterative-refinement",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Iterative Refinement",
+    "text": "Iterative Refinement\nOsmani emphasizes prompt iteration as a feedback loop.\nIn software terms:\n\nPrompt is the initial spec.\nOutput is the prototype.\nReview identifies gaps.\nFollow-up prompt narrows ambiguity.\nTests convert expectations into evidence."
+  },
+  {
+    "objectID": "lectures/module02.html#pragmatic-paranoia",
+    "href": "lectures/module02.html#pragmatic-paranoia",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Pragmatic Paranoia",
+    "text": "Pragmatic Paranoia\nPragmatic paranoia means assuming things can fail and designing accordingly.\nFor AI-assisted work:\n\nAsk for failure cases.\nAsk what assumptions the answer made.\nAsk for tests that should fail against a naive solution.\nDo not accept code without a verification path."
+  },
+  {
+    "objectID": "lectures/module02.html#tool-fluency",
+    "href": "lectures/module02.html#tool-fluency",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Tool Fluency",
+    "text": "Tool Fluency\nThe Basic Tools matter more with AI, not less.\n\nGit lets you isolate and inspect changes.\nShell commands make verification repeatable.\nIDEs provide context and refactoring support.\nLogs and diffs reveal what the assistant actually changed."
+  },
+  {
+    "objectID": "lectures/module02.html#lab-1-connection",
+    "href": "lectures/module02.html#lab-1-connection",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Lab 1 Connection",
+    "text": "Lab 1 Connection\nLab 1 compares naive and structured workflows.\nYour evidence should show:\n\nThe naive prompt and output.\nThe structured specification.\nAccepted, rejected, and revised suggestions.\nVerification results.\nWhy the structured approach changed the outcome."
+  },
+  {
+    "objectID": "lectures/module02.html#studio-activity",
+    "href": "lectures/module02.html#studio-activity",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nTake a vague feature request and rewrite it three ways:\n\nUser-story prompt.\nTest-first prompt.\nRisk-aware prompt.\n\nCompare what each prompt asks the AI to optimize for."
+  },
+  {
+    "objectID": "lectures/module02.html#takeaways",
+    "href": "lectures/module02.html#takeaways",
+    "title": "Module 2: Prompting as Communication",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nPrompt quality is specification quality.\nConstraints reduce ambiguity.\nIteration is expected, not failure.\nVerification turns conversation into engineering."
+  },
+  {
+    "objectID": "lectures/module04.html#learning-outcomes",
+    "href": "lectures/module04.html#learning-outcomes",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nIdentify where human judgment is critical.\nAnalyze the role of system design and architecture.\nExplain how domain knowledge impacts output quality.\nEvaluate AI limitations in complex engineering tasks."
+  },
+  {
+    "objectID": "lectures/module04.html#the-human-30-percent",
+    "href": "lectures/module04.html#the-human-30-percent",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "The Human 30 Percent",
+    "text": "The Human 30 Percent\nOsmani frames the engineer’s durable value as the work AI cannot reliably infer.\n\nWhat matters in this domain?\nWhat tradeoff is acceptable?\nWhat future change should the design tolerate?\nWhat risk is not visible in the code?"
+  },
+  {
+    "objectID": "lectures/module04.html#where-human-judgment-concentrates",
+    "href": "lectures/module04.html#where-human-judgment-concentrates",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "Where Human Judgment Concentrates",
+    "text": "Where Human Judgment Concentrates\n\nmindmap\n  root((Human judgment))\n    Domain context\n    Architecture\n    Tradeoffs\n    Risk tolerance\n    Long-term maintenance\n    User consequences\n\n\n\n\nmindmap\n  root((Human judgment))\n    Domain context\n    Architecture\n    Tradeoffs\n    Risk tolerance\n    Long-term maintenance\n    User consequences"
+  },
+  {
+    "objectID": "lectures/module04.html#architect-and-editor",
+    "href": "lectures/module04.html#architect-and-editor",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "Architect and Editor",
+    "text": "Architect and Editor\nAI can draft local code quickly.\nHumans still own:\n\nBoundaries.\nNaming.\nAbstractions.\nData flow.\nOperational constraints.\nLong-term maintainability."
+  },
+  {
+    "objectID": "lectures/module04.html#bend-or-break",
+    "href": "lectures/module04.html#bend-or-break",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "Bend or Break",
+    "text": "Bend or Break\nPragmatic design favors systems that can change.\nFor AI-generated code, watch for:\n\nTight coupling.\nHidden global state.\nOver-specific implementations.\nMissing seams for tests.\nConfiguration hardcoded into logic."
+  },
+  {
+    "objectID": "lectures/module04.html#context-is-a-design-input",
+    "href": "lectures/module04.html#context-is-a-design-input",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "Context Is a Design Input",
+    "text": "Context Is a Design Input\nAI performs better when given project context, but context is never complete.\nHuman engineers supply:\n\nDomain vocabulary.\nNonfunctional requirements.\nOrganizational constraints.\nLegacy system knowledge.\nUser consequences."
+  },
+  {
+    "objectID": "lectures/module04.html#concurrency-as-a-cautionary-case",
+    "href": "lectures/module04.html#concurrency-as-a-cautionary-case",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "Concurrency as a Cautionary Case",
+    "text": "Concurrency as a Cautionary Case\nConcurrent systems reveal AI limits because correctness depends on interactions over time.\nAsk:\n\nWhat state is shared?\nWhat order assumptions exist?\nWhat happens under failure?\nCan tests expose race conditions?"
+  },
+  {
+    "objectID": "lectures/module04.html#architecture-prompt-pattern",
+    "href": "lectures/module04.html#architecture-prompt-pattern",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "Architecture Prompt Pattern",
+    "text": "Architecture Prompt Pattern\nAsk AI for alternatives, not the answer.\nUseful structure:\n\n“Generate three designs.”\n“List tradeoffs for reliability, testability, and complexity.”\n“Identify assumptions.”\n“Recommend one for this course scope.”\n“Show what would make that recommendation wrong.”"
+  },
+  {
+    "objectID": "lectures/module04.html#lab-2-final-connection",
+    "href": "lectures/module04.html#lab-2-final-connection",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "Lab 2 Final Connection",
+    "text": "Lab 2 Final Connection\nYour eval-driven lab should demonstrate human judgment through:\n\nMeasurable criteria.\nRunnable checks.\nRegression comparison.\nDocumentation explaining what the tests prove and do not prove."
+  },
+  {
+    "objectID": "lectures/module04.html#studio-activity",
+    "href": "lectures/module04.html#studio-activity",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nReview AI-generated Java code and mark:\n\nLocal correctness issues.\nDesign issues.\nMissing tests.\nHidden assumptions.\nQuestions you would ask before merging."
+  },
+  {
+    "objectID": "lectures/module04.html#takeaways",
+    "href": "lectures/module04.html#takeaways",
+    "title": "Module 4: Human Contribution Beyond AI",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nAI can accelerate implementation but cannot own architecture.\nHuman value concentrates in judgment, context, and verification.\nFlexible design protects you from fast wrong turns."
+  },
+  {
+    "objectID": "lectures/module06.html#learning-outcomes",
+    "href": "lectures/module06.html#learning-outcomes",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nDistinguish prototype and production systems.\nAnalyze tradeoffs between speed and reliability.\nIdentify gaps between generated code and production needs.\nExplain strategies for evolving prototypes into production systems."
+  },
+  {
+    "objectID": "lectures/module06.html#prototype-value",
+    "href": "lectures/module06.html#prototype-value",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Prototype Value",
+    "text": "Prototype Value\nAI is strong at rapid prototyping because it can quickly create visible progress.\nPrototype goals:\n\nLearn feasibility.\nExpose requirement gaps.\nCompare alternatives.\nGet feedback early.\n\nPrototype risk: mistaking a learning artifact for a production system."
+  },
+  {
+    "objectID": "lectures/module06.html#prototype-to-production-path",
+    "href": "lectures/module06.html#prototype-to-production-path",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Prototype to Production Path",
+    "text": "Prototype to Production Path\n\nflowchart LR\n  A[Prototype] --&gt; B[Feedback]\n  B --&gt; C[Tests]\n  C --&gt; D[Refactor boundaries]\n  D --&gt; E[Security review]\n  E --&gt; F[Observability]\n  F --&gt; G[Production candidate]\n  C --&gt;|fails| A\n\n\n\n\nflowchart LR\n  A[Prototype] --&gt; B[Feedback]\n  B --&gt; C[Tests]\n  C --&gt; D[Refactor boundaries]\n  D --&gt; E[Security review]\n  E --&gt; F[Observability]\n  F --&gt; G[Production candidate]\n  C --&gt;|fails| A"
+  },
+  {
+    "objectID": "lectures/module06.html#production-means-constraints",
+    "href": "lectures/module06.html#production-means-constraints",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Production Means Constraints",
+    "text": "Production Means Constraints\nProduction-ready software must address:\n\nReliability.\nSecurity.\nObservability.\nMaintainability.\nDependency management.\nError recovery.\nDocumentation.\nOperational cost."
+  },
+  {
+    "objectID": "lectures/module06.html#prototype-to-production-gap",
+    "href": "lectures/module06.html#prototype-to-production-gap",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Prototype to Production Gap",
+    "text": "Prototype to Production Gap\nAI-generated prototypes often omit:\n\nInput validation.\nPermission boundaries.\nLogging discipline.\nTest coverage.\nFailure modes.\nDeployment assumptions.\nData migration concerns."
+  },
+  {
+    "objectID": "lectures/module06.html#orthogonality",
+    "href": "lectures/module06.html#orthogonality",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Orthogonality",
+    "text": "Orthogonality\nOrthogonal components can change independently.\nFor the Java agent project:\n\nPrompt construction should not depend on CLI parsing.\nTool dispatch should not depend on UI output.\nEvaluation should run without live model calls.\nSecret handling should be isolated."
+  },
+  {
+    "objectID": "lectures/module06.html#reversibility",
+    "href": "lectures/module06.html#reversibility",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Reversibility",
+    "text": "Reversibility\nDecisions should be easy to change when uncertainty is high.\nUse AI to explore reversible options:\n\nInterfaces before implementations.\nAdapter boundaries around model providers.\nConfigurable paths and tools.\nSmall commits that can be discarded."
+  },
+  {
+    "objectID": "lectures/module06.html#production-readiness-questions",
+    "href": "lectures/module06.html#production-readiness-questions",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Production Readiness Questions",
+    "text": "Production Readiness Questions\n\nWhat can fail?\nHow will we know?\nWhat is the safe default?\nWhat should be logged?\nWhat must never be logged?\nWhat requires human approval?"
+  },
+  {
+    "objectID": "lectures/module06.html#lab-3-final-connection",
+    "href": "lectures/module06.html#lab-3-final-connection",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Lab 3 Final Connection",
+    "text": "Lab 3 Final Connection\nLab 3 implementation should prove that your system is controlled, not just functional.\nEvidence should include:\n\nRequired Java tools.\nSandbox enforcement.\nInspectable output.\nArchitecture notes.\nEvaluation results."
+  },
+  {
+    "objectID": "lectures/module06.html#studio-activity",
+    "href": "lectures/module06.html#studio-activity",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nTake a working prototype feature and label each part:\n\nKeep for production.\nRewrite before production.\nAdd tests.\nAdd monitoring.\nAdd security review."
+  },
+  {
+    "objectID": "lectures/module06.html#takeaways",
+    "href": "lectures/module06.html#takeaways",
+    "title": "Module 6: Prototyping vs Production",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nAI speed is useful for learning, not a substitute for readiness.\nOrthogonal design makes generated code safer to evolve.\nReversibility reduces the cost of AI-assisted experiments."
+  },
+  {
+    "objectID": "lectures/module08.html#learning-outcomes",
+    "href": "lectures/module08.html#learning-outcomes",
+    "title": "Module 8: Security and Reliability",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nIdentify security risks in AI-generated code.\nAnalyze reliability challenges.\nEvaluate safety, performance, and complexity tradeoffs.\nPropose strategies to improve robustness."
+  },
+  {
+    "objectID": "lectures/module08.html#ai-specific-risk-pattern",
+    "href": "lectures/module08.html#ai-specific-risk-pattern",
+    "title": "Module 8: Security and Reliability",
+    "section": "AI-Specific Risk Pattern",
+    "text": "AI-Specific Risk Pattern\nAI often generates code optimized for the visible task, not the threat model.\nRisks include:\n\nMissing authorization checks.\nInsecure defaults.\nUnsafe command execution.\nOverbroad file access.\nDependency confusion.\nLogging secrets."
+  },
+  {
+    "objectID": "lectures/module08.html#risk-matrix",
+    "href": "lectures/module08.html#risk-matrix",
+    "title": "Module 8: Security and Reliability",
+    "section": "Risk Matrix",
+    "text": "Risk Matrix\n\nquadrantChart\n  title Risk Prioritization\n  x-axis Low likelihood --&gt; High likelihood\n  y-axis Low impact --&gt; High impact\n  quadrant-1 Mitigate first\n  quadrant-2 Monitor\n  quadrant-3 Accept or document\n  quadrant-4 Prevent cheaply\n  Command injection: [0.80, 0.90]\n  Path traversal: [0.65, 0.80]\n  Weak tests: [0.75, 0.60]\n  Verbose logs: [0.45, 0.55]\n  Formatting issue: [0.30, 0.20]\n\n\n\n\nquadrantChart\n  title Risk Prioritization\n  x-axis Low likelihood --&gt; High likelihood\n  y-axis Low impact --&gt; High impact\n  quadrant-1 Mitigate first\n  quadrant-2 Monitor\n  quadrant-3 Accept or document\n  quadrant-4 Prevent cheaply\n  Command injection: [0.80, 0.90]\n  Path traversal: [0.65, 0.80]\n  Weak tests: [0.75, 0.60]\n  Verbose logs: [0.45, 0.55]\n  Formatting issue: [0.30, 0.20]"
+  },
+  {
+    "objectID": "lectures/module08.html#security-review-areas",
+    "href": "lectures/module08.html#security-review-areas",
+    "title": "Module 8: Security and Reliability",
+    "section": "Security Review Areas",
+    "text": "Security Review Areas\n\nInput validation.\nAuthentication and authorization.\nSecrets handling.\nDependency versions.\nPath traversal.\nCommand injection.\nNetwork access.\nAudit logs."
+  },
+  {
+    "objectID": "lectures/module08.html#reliability-review-areas",
+    "href": "lectures/module08.html#reliability-review-areas",
+    "title": "Module 8: Security and Reliability",
+    "section": "Reliability Review Areas",
+    "text": "Reliability Review Areas\n\nTimeouts.\nRetries and backoff.\nDeterministic test paths.\nClear failure states.\nIdempotent operations.\nRecoverable artifacts.\nObservability."
+  },
+  {
+    "objectID": "lectures/module08.html#refactoring-ai-code",
+    "href": "lectures/module08.html#refactoring-ai-code",
+    "title": "Module 8: Security and Reliability",
+    "section": "Refactoring AI Code",
+    "text": "Refactoring AI Code\nRefactoring turns generated code into maintainable code without changing behavior.\nUse tests first, then improve:\n\nNames.\nDuplication.\nBoundaries.\nError handling.\nConfiguration."
+  },
+  {
+    "objectID": "lectures/module08.html#estimating-risk",
+    "href": "lectures/module08.html#estimating-risk",
+    "title": "Module 8: Security and Reliability",
+    "section": "Estimating Risk",
+    "text": "Estimating Risk\nRisk ratings should be concrete.\nUse a simple scale:\n\nLikelihood: low, medium, high.\nImpact: low, medium, high.\nMitigation: specific action.\nEvidence: test, review, log, or policy."
+  },
+  {
+    "objectID": "lectures/module08.html#safeguard-examples",
+    "href": "lectures/module08.html#safeguard-examples",
+    "title": "Module 8: Security and Reliability",
+    "section": "Safeguard Examples",
+    "text": "Safeguard Examples\n\nReject paths outside workspace.\nRequire confirmation before writes.\nDisable shell commands by default.\nRedact environment variables from logs.\nAdd tests for malicious inputs.\nFail closed when model output is malformed."
+  },
+  {
+    "objectID": "lectures/module08.html#lab-4-final-connection",
+    "href": "lectures/module08.html#lab-4-final-connection",
+    "title": "Module 8: Security and Reliability",
+    "section": "Lab 4 Final Connection",
+    "text": "Lab 4 Final Connection\nYour submission should include:\n\nSpecific failure modes.\nRisk ratings.\nConcrete mitigations.\nAt least two safeguards or safety tests.\nProduction readiness plan.\nCopilot-assisted analysis corrections."
+  },
+  {
+    "objectID": "lectures/module08.html#studio-activity",
+    "href": "lectures/module08.html#studio-activity",
+    "title": "Module 8: Security and Reliability",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nThreat-model your Java agent:\n\nWhat input could cause harm?\nWhat tool could be misused?\nWhat output could mislead a user?\nWhat safeguard would fail safely?"
+  },
+  {
+    "objectID": "lectures/module08.html#takeaways",
+    "href": "lectures/module08.html#takeaways",
+    "title": "Module 8: Security and Reliability",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nGenerated code is not security-reviewed code.\nReliability requires explicit design for failure.\nSafeguards must be implemented and tested, not merely described."
+  },
+  {
+    "objectID": "lectures/module10.html#learning-outcomes",
+    "href": "lectures/module10.html#learning-outcomes",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nEvaluate capabilities and limitations of autonomous agents.\nCompare agent-based and traditional workflows.\nAssess risks of increased autonomy.\nJustify appropriate use of agents."
+  },
+  {
+    "objectID": "lectures/module10.html#from-copilot-to-agent",
+    "href": "lectures/module10.html#from-copilot-to-agent",
+    "title": "Module 10: Autonomous Agents",
+    "section": "From Copilot to Agent",
+    "text": "From Copilot to Agent\nIn-IDE assistants operate under close human supervision.\nAutonomous or background agents take a larger task and work through multiple steps.\nThis shifts the main question from “Can it write code?” to “Can we safely delegate this workflow?”"
+  },
+  {
+    "objectID": "lectures/module10.html#agent-loop",
+    "href": "lectures/module10.html#agent-loop",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Agent Loop",
+    "text": "Agent Loop\nCommon autonomous workflow:\n\nPlan.\nExecute.\nVerify.\nReport.\nReceive human feedback.\n\nYour course agent should make this loop inspectable."
+  },
+  {
+    "objectID": "lectures/module10.html#agent-control-points",
+    "href": "lectures/module10.html#agent-control-points",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Agent Control Points",
+    "text": "Agent Control Points\n\nsequenceDiagram\n  participant H as Human\n  participant A as Agent\n  participant T as Tools\n  participant E as Evaluator\n  H-&gt;&gt;A: Task and constraints\n  A-&gt;&gt;H: Plan for approval\n  H-&gt;&gt;A: Approve or revise\n  A-&gt;&gt;T: Execute allowed tools\n  T--&gt;&gt;A: Results\n  A-&gt;&gt;E: Run checks\n  E--&gt;&gt;A: Pass or fail\n  A-&gt;&gt;H: Report, diff, evidence\n\n\n\n\nsequenceDiagram\n  participant H as Human\n  participant A as Agent\n  participant T as Tools\n  participant E as Evaluator\n  H-&gt;&gt;A: Task and constraints\n  A-&gt;&gt;H: Plan for approval\n  H-&gt;&gt;A: Approve or revise\n  A-&gt;&gt;T: Execute allowed tools\n  T--&gt;&gt;A: Results\n  A-&gt;&gt;E: Run checks\n  E--&gt;&gt;A: Pass or fail\n  A-&gt;&gt;H: Report, diff, evidence"
+  },
+  {
+    "objectID": "lectures/module10.html#appropriate-tasks",
+    "href": "lectures/module10.html#appropriate-tasks",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Appropriate Tasks",
+    "text": "Appropriate Tasks\nGood candidates:\n\nSmall, well-scoped changes.\nClear tests or checks.\nLow-risk refactors.\nDocumentation updates.\nRepetitive maintenance.\n\nPoor candidates:\n\nAmbiguous architecture decisions.\nSecurity-critical changes without review.\nLarge rewrites.\nChanges with weak verification."
+  },
+  {
+    "objectID": "lectures/module10.html#autonomy-risks",
+    "href": "lectures/module10.html#autonomy-risks",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Autonomy Risks",
+    "text": "Autonomy Risks\n\nWrong plan executed confidently.\nTool misuse.\nHidden side effects.\nIncomplete verification.\nSunk-cost bias toward bad generated work.\nConcurrent agent changes conflicting with humans."
+  },
+  {
+    "objectID": "lectures/module10.html#human-oversight-checkpoints",
+    "href": "lectures/module10.html#human-oversight-checkpoints",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Human Oversight Checkpoints",
+    "text": "Human Oversight Checkpoints\nMeaningful checkpoints happen before irreversible or high-risk action.\nExamples:\n\nApprove plan before edits.\nApprove file writes.\nReview failing tests before retry loops.\nApprove PR merge.\nRequire human signoff for sandbox exceptions."
+  },
+  {
+    "objectID": "lectures/module10.html#testing-strategy-for-agents",
+    "href": "lectures/module10.html#testing-strategy-for-agents",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Testing Strategy for Agents",
+    "text": "Testing Strategy for Agents\nAgents need tests at multiple levels:\n\nUnit tests for tool dispatcher.\nIntegration tests for tool-result handling.\nGolden examples for workflow output.\nSafety tests for denied operations.\nManual review for architecture decisions."
+  },
+  {
+    "objectID": "lectures/module10.html#lab-5-final-connection",
+    "href": "lectures/module10.html#lab-5-final-connection",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Lab 5 Final Connection",
+    "text": "Lab 5 Final Connection\nYour controlled workflow should demonstrate:\n\nCore Java agent loop.\nConnected tool declarations and dispatcher.\nReproducible multi-step workflow.\nHuman oversight checkpoint.\nExample run artifacts."
+  },
+  {
+    "objectID": "lectures/module10.html#final-milestone-1-connection",
+    "href": "lectures/module10.html#final-milestone-1-connection",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Final Milestone 1 Connection",
+    "text": "Final Milestone 1 Connection\nThe proposal and architecture due this module should show how Labs 1-5 become a team project.\nYour architecture should identify:\n\nInput.\nGeneration.\nEvaluation.\nWorkflow.\nPersistence.\nHuman oversight."
+  },
+  {
+    "objectID": "lectures/module10.html#studio-activity",
+    "href": "lectures/module10.html#studio-activity",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Studio Activity",
+    "text": "Studio Activity\nEvaluate a candidate task for delegation.\nClassify it:\n\nSafe to automate.\nSafe with checkpoint.\nHuman-only decision.\n\nExplain the evidence needed for each classification."
+  },
+  {
+    "objectID": "lectures/module10.html#takeaways",
+    "href": "lectures/module10.html#takeaways",
+    "title": "Module 10: Autonomous Agents",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nMore autonomy requires stronger controls.\nPlan-execute-verify-report must be visible.\nHuman review remains central to agentic workflows."
+  },
+  {
+    "objectID": "lectures/module12.html#learning-outcomes",
+    "href": "lectures/module12.html#learning-outcomes",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nDesign and implement a complete AI-assisted system.\nIntegrate workflows, evaluation, and safeguards.\nJustify architectural and engineering decisions.\nPresent and defend the system."
+  },
+  {
+    "objectID": "lectures/module12.html#final-system-expectations",
+    "href": "lectures/module12.html#final-system-expectations",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Final System Expectations",
+    "text": "Final System Expectations\nYour Controlled Coding Agent should demonstrate:\n\nStructured input handling.\nAI-assisted generation.\nEvaluation and testing.\nControlled workflow management.\nPersistence or artifact tracking.\nDocumentation.\nHuman oversight.\nCollaborative engineering practice."
+  },
+  {
+    "objectID": "lectures/module12.html#final-submission-timeline",
+    "href": "lectures/module12.html#final-submission-timeline",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Final Submission Timeline",
+    "text": "Final Submission Timeline\n\ngantt\n  title Final Project Workbench\n  dateFormat  YYYY-MM-DD\n  axisFormat  %b %d\n  section Build\n  Complete core system       :a1, 2026-01-01, 3d\n  Integration testing        :a2, after a1, 2d\n  section Evidence\n  Evaluation report          :b1, after a1, 2d\n  AI assistance documentation:b2, after a1, 2d\n  section Delivery\n  Demo recording             :c1, after a2, 1d\n  Final cleanup              :c2, after c1, 1d\n\n\n\n\ngantt\n  title Final Project Workbench\n  dateFormat  YYYY-MM-DD\n  axisFormat  %b %d\n  section Build\n  Complete core system       :a1, 2026-01-01, 3d\n  Integration testing        :a2, after a1, 2d\n  section Evidence\n  Evaluation report          :b1, after a1, 2d\n  AI assistance documentation:b2, after a1, 2d\n  section Delivery\n  Demo recording             :c1, after a2, 1d\n  Final cleanup              :c2, after c1, 1d"
+  },
+  {
+    "objectID": "lectures/module12.html#reproducibility",
+    "href": "lectures/module12.html#reproducibility",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Reproducibility",
+    "text": "Reproducibility\nA grader should be able to answer:\n\nHow do I set it up?\nHow do I run it?\nWhat example should I try?\nWhat output should I expect?\nHow do I run tests?\nWhere are evaluation results?\nWhere is AI assistance documented?"
+  },
+  {
+    "objectID": "lectures/module12.html#evaluation-report",
+    "href": "lectures/module12.html#evaluation-report",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Evaluation Report",
+    "text": "Evaluation Report\nThe evaluation report should include:\n\nWhat was evaluated.\nMetrics or criteria.\nTest cases or scenarios.\nResults.\nInterpretation.\nKnown limitations.\nWhat would improve next."
+  },
+  {
+    "objectID": "lectures/module12.html#ai-assistance-section",
+    "href": "lectures/module12.html#ai-assistance-section",
+    "title": "Module 12: Final Project Workbench",
+    "section": "AI Assistance Section",
+    "text": "AI Assistance Section\nYour README should make AI use transparent:\n\nPlanning.\nCode generation.\nTest generation.\nDebugging.\nReview.\nIntegration support.\nDocumentation support.\nAccepted, modified, and rejected suggestions.\nVerification methods."
+  },
+  {
+    "objectID": "lectures/module12.html#demo-structure",
+    "href": "lectures/module12.html#demo-structure",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Demo Structure",
+    "text": "Demo Structure\nRecommended 5-8 minute flow:\n\nProblem and users.\nArchitecture overview.\nLive or recorded workflow run.\nEvaluation results.\nSafeguards and human oversight.\nTeam process and AI evidence.\nLessons learned."
+  },
+  {
+    "objectID": "lectures/module12.html#professional-defense",
+    "href": "lectures/module12.html#professional-defense",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Professional Defense",
+    "text": "Professional Defense\nBe ready to explain:\n\nWhy this architecture?\nWhat did AI help with?\nWhat did humans correct?\nWhat risks remain?\nWhich tests matter most?\nWhat would you do next with more time?"
+  },
+  {
+    "objectID": "lectures/module12.html#final-quality-checklist",
+    "href": "lectures/module12.html#final-quality-checklist",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Final Quality Checklist",
+    "text": "Final Quality Checklist\n\nClean repository organization.\nNo committed secrets.\nFresh-environment setup tested.\nTests and examples run.\nDemo link included.\nRequired document paths submitted.\nCommit hash captured.\nIndividual contributions clear."
+  },
+  {
+    "objectID": "lectures/module12.html#course-synthesis",
+    "href": "lectures/module12.html#course-synthesis",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Course Synthesis",
+    "text": "Course Synthesis\nResponsible AI-assisted engineering means:\n\nClear intent.\nStructured prompts.\nHuman review.\nAutomated evidence.\nRisk awareness.\nTransparent documentation.\nTeam accountability."
+  },
+  {
+    "objectID": "lectures/module12.html#closing-reflection",
+    "href": "lectures/module12.html#closing-reflection",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Closing Reflection",
+    "text": "Closing Reflection\nAnswer individually:\n\nWhat AI interaction changed your process most?\nWhat risk did you underestimate early?\nWhat verification habit will you keep?\nWhat work should remain human-led?"
+  },
+  {
+    "objectID": "lectures/module12.html#takeaways",
+    "href": "lectures/module12.html#takeaways",
+    "title": "Module 12: Final Project Workbench",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nThe final project is a demonstration of engineering judgment.\nAI assistance is strongest when controlled, evaluated, and documented.\nThe goal is not to show that AI wrote code; it is to show that your team built trustworthy software with AI assistance."
   },
   {
     "objectID": "assignments/lab02_eval_driven_development.html",
