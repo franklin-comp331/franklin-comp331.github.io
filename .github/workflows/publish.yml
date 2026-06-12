@@ -37,6 +37,9 @@ jobs:
       - name: Render site
         run: quarto render
 
+      - name: Generate lecture PDFs
+        run: bash scripts/generate_lecture_pdfs.sh
+
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:

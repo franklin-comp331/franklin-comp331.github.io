@@ -1,0 +1,171 @@
+---
+title: "Module 10: Autonomous Agents"
+subtitle: "Plan, execute, verify, report"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    toc: true
+---
+
+# Module 10: Autonomous Agents
+
+Primary sources: Osmani, Chapter 10; Thomas & Hunt, Testing Strategies and Pragmatic Starter Kit.
+
+---
+
+## Learning Outcomes
+
+- Evaluate capabilities and limitations of autonomous agents.
+- Compare agent-based and traditional workflows.
+- Assess risks of increased autonomy.
+- Justify appropriate use of agents.
+
+---
+
+## From Copilot to Agent
+
+In-IDE assistants operate under close human supervision.
+
+Autonomous or background agents take a larger task and work through multiple steps.
+
+This shifts the main question from "Can it write code?" to "Can we safely delegate this workflow?"
+
+---
+
+## Agent Loop
+
+Common autonomous workflow:
+
+1. Plan.
+2. Execute.
+3. Verify.
+4. Report.
+5. Receive human feedback.
+
+Your course agent should make this loop inspectable.
+
+---
+
+## Agent Control Points
+
+```{mermaid}
+sequenceDiagram
+  participant H as Human
+  participant A as Agent
+  participant T as Tools
+  participant E as Evaluator
+  H->>A: Task and constraints
+  A->>H: Plan for approval
+  H->>A: Approve or revise
+  A->>T: Execute allowed tools
+  T-->>A: Results
+  A->>E: Run checks
+  E-->>A: Pass or fail
+  A->>H: Report, diff, evidence
+```
+
+---
+
+## Appropriate Tasks
+
+Good candidates:
+
+- Small, well-scoped changes.
+- Clear tests or checks.
+- Low-risk refactors.
+- Documentation updates.
+- Repetitive maintenance.
+
+Poor candidates:
+
+- Ambiguous architecture decisions.
+- Security-critical changes without review.
+- Large rewrites.
+- Changes with weak verification.
+
+---
+
+## Autonomy Risks
+
+- Wrong plan executed confidently.
+- Tool misuse.
+- Hidden side effects.
+- Incomplete verification.
+- Sunk-cost bias toward bad generated work.
+- Concurrent agent changes conflicting with humans.
+
+---
+
+## Human Oversight Checkpoints
+
+Meaningful checkpoints happen before irreversible or high-risk action.
+
+Examples:
+
+- Approve plan before edits.
+- Approve file writes.
+- Review failing tests before retry loops.
+- Approve PR merge.
+- Require human signoff for sandbox exceptions.
+
+---
+
+## Testing Strategy for Agents
+
+Agents need tests at multiple levels:
+
+- Unit tests for tool dispatcher.
+- Integration tests for tool-result handling.
+- Golden examples for workflow output.
+- Safety tests for denied operations.
+- Manual review for architecture decisions.
+
+---
+
+## Lab 5 Final Connection
+
+Your controlled workflow should demonstrate:
+
+- Core Java agent loop.
+- Connected tool declarations and dispatcher.
+- Reproducible multi-step workflow.
+- Human oversight checkpoint.
+- Example run artifacts.
+
+---
+
+## Final Milestone 1 Connection
+
+The proposal and architecture due this module should show how Labs 1-5 become a team project.
+
+Your architecture should identify:
+
+- Input.
+- Generation.
+- Evaluation.
+- Workflow.
+- Persistence.
+- Human oversight.
+
+---
+
+## Studio Activity
+
+Evaluate a candidate task for delegation.
+
+Classify it:
+
+- Safe to automate.
+- Safe with checkpoint.
+- Human-only decision.
+
+Explain the evidence needed for each classification.
+
+---
+
+## Takeaways
+
+- More autonomy requires stronger controls.
+- Plan-execute-verify-report must be visible.
+- Human review remains central to agentic workflows.

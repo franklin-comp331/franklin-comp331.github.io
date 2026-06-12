@@ -1,0 +1,159 @@
+---
+title: "Module 11: The Future of AI Engineering"
+subtitle: "Synthesis, trends, and personal practice"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    toc: true
+---
+
+# Module 11: The Future of AI Engineering
+
+Primary sources: Osmani, Chapter 11; Thomas & Hunt, Essence of Good Design.
+
+---
+
+## Learning Outcomes
+
+- Evaluate emerging AI-assisted development trends.
+- Synthesize course concepts into a framework.
+- Propose improvements to AI-assisted workflows.
+- Formulate a personal engineering approach to AI use.
+
+---
+
+## Beyond Code Generation
+
+AI assistance is expanding into:
+
+- Test generation.
+- Debugging.
+- Maintenance.
+- Design exploration.
+- Project coordination.
+- Agent-driven task execution.
+
+The engineering problem remains: how do we trust the result?
+
+---
+
+## Course Concept Map
+
+```{mermaid}
+flowchart TD
+  I[Intent] --> P[Prompting]
+  P --> E[Evaluation]
+  E --> T[Testing]
+  T --> R[Risk analysis]
+  R --> A[Agent workflows]
+  A --> C[Capstone system]
+  H[Human judgment] --> I
+  H --> E
+  H --> R
+  H --> C
+```
+
+---
+
+## Future Skill Shift
+
+Important skills move toward:
+
+- Problem framing.
+- Requirements clarification.
+- Architecture judgment.
+- Test design.
+- Review and verification.
+- Workflow design.
+- Ethical decision-making.
+
+---
+
+## Essence of Good Design
+
+Thomas and Hunt define good design around ease of change.
+
+AI-era interpretation:
+
+- Good systems absorb generated changes safely.
+- Good boundaries make AI suggestions reviewable.
+- Good tests make iteration cheap.
+- Good documentation makes context reusable.
+
+---
+
+## Personal AI Workflow
+
+A durable workflow should answer:
+
+- When do I ask AI for help?
+- How do I scope the request?
+- What evidence must I collect?
+- What do I never delegate?
+- How do I improve after each interaction?
+
+---
+
+## Course Framework
+
+The course has built a progression:
+
+- Intent.
+- Prompting.
+- Evaluation.
+- Human judgment.
+- Testing.
+- Production readiness.
+- Systems thinking.
+- Security.
+- Ethics.
+- Agents.
+- Capstone integration.
+
+---
+
+## Milestone 2 Connection
+
+Your partial implementation should prove the final system is feasible.
+
+Evidence should include:
+
+- Meaningful implementation.
+- Component integration.
+- Example workflow run.
+- Evaluation strategy.
+- Risks and limitations.
+- Peer review and AI notes.
+
+---
+
+## Improving the Workflow
+
+Ask your team:
+
+- Which prompts produced useful output?
+- Which AI suggestions created rework?
+- Which tests found real issues?
+- Which review practices improved quality?
+- Which risks are still unmanaged?
+
+---
+
+## Studio Activity
+
+Create a personal AI-assisted SWE checklist with three sections:
+
+- Before prompting.
+- Before accepting output.
+- Before submitting or merging.
+
+Tie each item to course evidence.
+
+---
+
+## Takeaways
+
+- The future is not just faster coding.
+- The future is better orchestration, verification, and judgment.
+- Your professional advantage is disciplined AI use.

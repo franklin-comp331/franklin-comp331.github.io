@@ -1,0 +1,160 @@
+---
+title: "Module 7: Building AI Systems"
+subtitle: "Inputs, generation, tools, evaluation, and artifacts"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    toc: true
+---
+
+# Module 7: Building AI Systems
+
+Primary sources: Osmani, Chapter 7; Thomas & Hunt, Tracer Bullets review.
+
+---
+
+## Learning Outcomes
+
+- Analyze components of an AI-assisted system.
+- Describe data and context flow.
+- Evaluate integration challenges.
+- Design a basic architecture for an AI-assisted feature.
+
+---
+
+## From Task to System
+
+An AI-assisted system is more than a model call.
+
+It includes:
+
+- Input handling.
+- Context assembly.
+- Prompt construction.
+- Model interaction.
+- Tool invocation.
+- Evaluation.
+- Artifact tracking.
+- Human oversight.
+
+---
+
+## Controlled Agent Architecture
+
+```{mermaid}
+flowchart TD
+  U[User request] --> S[Structured task spec]
+  S --> C[Context builder]
+  C --> M[Model interaction]
+  M --> T[Tool dispatcher]
+  T --> X[Sandboxed tools]
+  X --> R[Tool results]
+  R --> E[Evaluation]
+  E --> A[Artifacts and logs]
+  E --> H[Human checkpoint]
+  H --> M
+```
+
+---
+
+## System Boundary
+
+Define what the agent may and may not do.
+
+For a controlled coding agent:
+
+- Allowed tools.
+- Allowed paths.
+- Allowed commands.
+- Required approvals.
+- Required logs.
+- Required tests.
+
+---
+
+## Context Flow
+
+Context should be curated, not dumped.
+
+Typical flow:
+
+1. User request.
+2. Structured task specification.
+3. Relevant project files or summaries.
+4. Tool definitions.
+5. Evaluation criteria.
+6. Output and artifact records.
+
+---
+
+## Integration Challenges
+
+- Mismatched frontend/backend contracts.
+- Unclear data models.
+- Generated code that bypasses abstractions.
+- Tests that require unavailable services.
+- Tool outputs too verbose to inspect.
+- Error handling split across layers.
+
+---
+
+## Tracer Bullet Architecture
+
+Build one thin complete workflow first.
+
+Example:
+
+- Read task.
+- Ask model for plan.
+- Dispatch one safe tool.
+- Capture result.
+- Evaluate with one check.
+- Save run artifact.
+
+---
+
+## AI System Prompting
+
+Useful prompts ask the model to operate inside architecture.
+
+- "Use only these tools."
+- "Return JSON matching this schema."
+- "If input is ambiguous, ask for clarification."
+- "Do not modify files outside this sandbox."
+- "Explain verification steps separately from implementation."
+
+---
+
+## Lab 4 Development Connection
+
+Lab 4 begins risk analysis and production readiness.
+
+Your risk analysis should be specific to your actual system:
+
+- Tool misuse.
+- Sandbox escape.
+- Prompt injection.
+- False confidence from weak tests.
+- Missing human checkpoint.
+
+---
+
+## Studio Activity
+
+Draw your agent as boxes and arrows.
+
+For each arrow, label:
+
+- Data passed.
+- Trust boundary.
+- Validation step.
+- Failure mode.
+
+---
+
+## Takeaways
+
+- AI engineering is systems engineering.
+- Context, tools, and evaluation are first-class components.
+- Thin end-to-end slices make risk visible.
