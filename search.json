@@ -186,7 +186,7 @@
     "href": "lectures/module11.html#course-concept-map",
     "title": "Module 11: The Future of AI Engineering",
     "section": "Course Concept Map",
-    "text": "Course Concept Map\n\nflowchart TD\n  I[Intent] --&gt; P[Prompting]\n  P --&gt; E[Evaluation]\n  E --&gt; T[Testing]\n  T --&gt; R[Risk analysis]\n  R --&gt; A[Agent workflows]\n  A --&gt; C[Capstone system]\n  H[Human judgment] --&gt; I\n  H --&gt; E\n  H --&gt; R\n  H --&gt; C\n\n\n\n\nflowchart TD\n  I[Intent] --&gt; P[Prompting]\n  P --&gt; E[Evaluation]\n  E --&gt; T[Testing]\n  T --&gt; R[Risk analysis]\n  R --&gt; A[Agent workflows]\n  A --&gt; C[Capstone system]\n  H[Human judgment] --&gt; I\n  H --&gt; E\n  H --&gt; R\n  H --&gt; C"
+    "text": "Course Concept Map\n\n\n\n\n\nflowchart TD\n  I[Intent] --&gt; P[Prompting]\n  P --&gt; E[Evaluation]\n  E --&gt; T[Testing]\n  T --&gt; R[Risk analysis]\n  R --&gt; A[Agent workflows]\n  A --&gt; C[Capstone system]\n  H[Human judgment] --&gt; I\n  H --&gt; E\n  H --&gt; R\n  H --&gt; C"
   },
   {
     "objectID": "lectures/module11.html#future-skill-shift",
@@ -231,11 +231,11 @@
     "text": "Improving the Workflow\nAsk your team:\n\nWhich prompts produced useful output?\nWhich AI suggestions created rework?\nWhich tests found real issues?\nWhich review practices improved quality?\nWhich risks are still unmanaged?"
   },
   {
-    "objectID": "lectures/module11.html#studio-activity",
-    "href": "lectures/module11.html#studio-activity",
+    "objectID": "lectures/module11.html#practice-activity",
+    "href": "lectures/module11.html#practice-activity",
     "title": "Module 11: The Future of AI Engineering",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nCreate a personal AI-assisted SWE checklist with three sections:\n\nBefore prompting.\nBefore accepting output.\nBefore submitting or merging.\n\nTie each item to course evidence."
+    "section": "Practice Activity",
+    "text": "Practice Activity\nCreate a personal AI-assisted SWE checklist with three sections:\n\nBefore prompting.\nBefore accepting output.\nBefore submitting or merging.\n\nTie each item to course evidence."
   },
   {
     "objectID": "lectures/module11.html#takeaways",
@@ -263,7 +263,7 @@
     "href": "lectures/module09.html#accountability-flow",
     "title": "Module 9: Ethics and Responsibility",
     "section": "Accountability Flow",
-    "text": "Accountability Flow\n\nflowchart LR\n  A[AI suggestion] --&gt; B[Student review]\n  B --&gt; C[Team PR review]\n  C --&gt; D[Tests and evidence]\n  D --&gt; E[Submission]\n  E --&gt; F[Accountability remains with humans]\n\n\n\n\nflowchart LR\n  A[AI suggestion] --&gt; B[Student review]\n  B --&gt; C[Team PR review]\n  C --&gt; D[Tests and evidence]\n  D --&gt; E[Submission]\n  E --&gt; F[Accountability remains with humans]"
+    "text": "Accountability Flow\n\n\n\n\n\nflowchart TD\n  A[AI suggestion] --&gt; B[Student review]\n  B --&gt; C[Team PR review]\n  C --&gt; D[Tests and evidence]\n  D --&gt; E[Submission]\n  E --&gt; F[Accountability remains with humans]"
   },
   {
     "objectID": "lectures/module09.html#transparency",
@@ -308,11 +308,11 @@
     "text": "Lab 5 Development Connection\nCoding agents increase ethical stakes because they act over multiple steps.\nControlled workflows need:\n\nHuman checkpoints.\nReproducible runs.\nTool boundaries.\nReviewable artifacts.\nClear stop conditions."
   },
   {
-    "objectID": "lectures/module09.html#studio-activity",
-    "href": "lectures/module09.html#studio-activity",
+    "objectID": "lectures/module09.html#practice-activity",
+    "href": "lectures/module09.html#practice-activity",
     "title": "Module 9: Ethics and Responsibility",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nDraft team AI rules:\n\nWhen is Copilot allowed?\nWhat must be documented?\nWhat requires peer review?\nWhat data must never be pasted?\nWhat counts as sufficient verification?"
+    "section": "Practice Activity",
+    "text": "Practice Activity\nDraft team AI rules:\n\nWhen is Copilot allowed?\nWhat must be documented?\nWhat requires peer review?\nWhat data must never be pasted?\nWhat counts as sufficient verification?"
   },
   {
     "objectID": "lectures/module09.html#takeaways",
@@ -340,7 +340,7 @@
     "href": "lectures/module07.html#controlled-agent-architecture",
     "title": "Module 7: Building AI Systems",
     "section": "Controlled Agent Architecture",
-    "text": "Controlled Agent Architecture\n\nflowchart TD\n  U[User request] --&gt; S[Structured task spec]\n  S --&gt; C[Context builder]\n  C --&gt; M[Model interaction]\n  M --&gt; T[Tool dispatcher]\n  T --&gt; X[Sandboxed tools]\n  X --&gt; R[Tool results]\n  R --&gt; E[Evaluation]\n  E --&gt; A[Artifacts and logs]\n  E --&gt; H[Human checkpoint]\n  H --&gt; M\n\n\n\n\nflowchart TD\n  U[User request] --&gt; S[Structured task spec]\n  S --&gt; C[Context builder]\n  C --&gt; M[Model interaction]\n  M --&gt; T[Tool dispatcher]\n  T --&gt; X[Sandboxed tools]\n  X --&gt; R[Tool results]\n  R --&gt; E[Evaluation]\n  E --&gt; A[Artifacts and logs]\n  E --&gt; H[Human checkpoint]\n  H --&gt; M"
+    "text": "Controlled Agent Architecture\n\n\n\n\n\nflowchart TD\n  U[User request] --&gt; S[Structured task spec]\n  S --&gt; C[Context builder]\n  C --&gt; M[Model interaction]\n  M --&gt; T[Tool dispatcher]\n  T --&gt; X[Sandboxed tools]\n  X --&gt; R[Tool results]\n  R --&gt; E[Evaluation]\n  E --&gt; A[Artifacts and logs]\n  E --&gt; H[Human checkpoint]\n  H --&gt; M"
   },
   {
     "objectID": "lectures/module07.html#system-boundary",
@@ -385,11 +385,11 @@
     "text": "Lab 4 Development Connection\nLab 4 begins risk analysis and production readiness.\nYour risk analysis should be specific to your actual system:\n\nTool misuse.\nSandbox escape.\nPrompt injection.\nFalse confidence from weak tests.\nMissing human checkpoint."
   },
   {
-    "objectID": "lectures/module07.html#studio-activity",
-    "href": "lectures/module07.html#studio-activity",
+    "objectID": "lectures/module07.html#practice-activity",
+    "href": "lectures/module07.html#practice-activity",
     "title": "Module 7: Building AI Systems",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nDraw your agent as boxes and arrows.\nFor each arrow, label:\n\nData passed.\nTrust boundary.\nValidation step.\nFailure mode."
+    "section": "Practice Activity",
+    "text": "Practice Activity\nDraw your agent as boxes and arrows.\nFor each arrow, label:\n\nData passed.\nTrust boundary.\nValidation step.\nFailure mode."
   },
   {
     "objectID": "lectures/module07.html#takeaways",
@@ -417,7 +417,7 @@
     "href": "lectures/module05.html#review-pipeline",
     "title": "Module 5: Reviewing and Testing AI Code",
     "section": "Review Pipeline",
-    "text": "Review Pipeline\n\nflowchart LR\n  A[AI-generated code] --&gt; B[Read the diff]\n  B --&gt; C[Check requirements]\n  C --&gt; D[Run tests]\n  D --&gt; E[Add missing tests]\n  E --&gt; F[Refactor]\n  F --&gt; G[Document decision]\n  D --&gt;|failure| H[Revise prompt or code]\n  H --&gt; B\n\n\n\n\nflowchart LR\n  A[AI-generated code] --&gt; B[Read the diff]\n  B --&gt; C[Check requirements]\n  C --&gt; D[Run tests]\n  D --&gt; E[Add missing tests]\n  E --&gt; F[Refactor]\n  F --&gt; G[Document decision]\n  D --&gt;|failure| H[Revise prompt or code]\n  H --&gt; B"
+    "text": "Review Pipeline\n\n\n\n\n\nflowchart TD\n  A[AI-generated code] --&gt; B[Read the diff]\n  B --&gt; C[Check requirements]\n  C --&gt; D[Run tests]\n  D --&gt; E[Add missing tests]\n  E --&gt; F[Refactor]\n  F --&gt; G[Document decision]\n  D --&gt;|failure| H[Revise prompt or code]\n  H --&gt; B"
   },
   {
     "objectID": "lectures/module05.html#superficial-correctness",
@@ -462,11 +462,11 @@
     "text": "Lab 3 Development Connection\nAs Lab 3 begins, implementation must remain inspectable.\nGood evidence includes:\n\nTool contracts.\nSandbox restrictions.\nTests proving restrictions.\nSample runs.\nCopilot decisions and corrections."
   },
   {
-    "objectID": "lectures/module05.html#studio-activity",
-    "href": "lectures/module05.html#studio-activity",
+    "objectID": "lectures/module05.html#practice-activity",
+    "href": "lectures/module05.html#practice-activity",
     "title": "Module 5: Reviewing and Testing AI Code",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nGive Copilot an intentionally incomplete implementation and ask it to review.\nThen do a human review and compare:\n\nWhat did Copilot catch?\nWhat did it miss?\nWhich issues require domain judgment?"
+    "section": "Practice Activity",
+    "text": "Practice Activity\nGive Copilot an intentionally incomplete implementation and ask it to review.\nThen do a human review and compare:\n\nWhat did Copilot catch?\nWhat did it miss?\nWhich issues require domain judgment?"
   },
   {
     "objectID": "lectures/module05.html#takeaways",
@@ -494,7 +494,7 @@
     "href": "lectures/module03.html#the-70-percent-trap",
     "title": "Module 3: The 70 Percent Problem",
     "section": "The 70 Percent Trap",
-    "text": "The 70 Percent Trap\n\nflowchart LR\n  A[Looks plausible] --&gt; B[Accepted too early]\n  B --&gt; C[Hidden defects]\n  C --&gt; D[Debugging debt]\n  D --&gt; E[Lost trust]\n  A --&gt; F[Structured review]\n  F --&gt; G[Tests expose gaps]\n  G --&gt; H[Safer iteration]\n\n\n\n\nflowchart LR\n  A[Looks plausible] --&gt; B[Accepted too early]\n  B --&gt; C[Hidden defects]\n  C --&gt; D[Debugging debt]\n  D --&gt; E[Lost trust]\n  A --&gt; F[Structured review]\n  F --&gt; G[Tests expose gaps]\n  G --&gt; H[Safer iteration]"
+    "text": "The 70 Percent Trap\n\n\n\n\n\nflowchart TD\n  A[Looks plausible] --&gt; B[Accepted too early]\n  B --&gt; C[Hidden defects]\n  C --&gt; D[Debugging debt]\n  D --&gt; E[Lost trust]\n  A --&gt; F[Structured review]\n  F --&gt; G[Tests expose gaps]\n  G --&gt; H[Safer iteration]"
   },
   {
     "objectID": "lectures/module03.html#why-it-is-dangerous",
@@ -539,11 +539,11 @@
     "text": "Lab 2 Development Connection\nEval-driven development starts this week.\nYour lab goal is to make correctness measurable before relying on AI output.\nEvaluation criteria should be:\n\nSpecific.\nRunnable or inspectable.\nConnected to task intent.\nUseful for regression."
   },
   {
-    "objectID": "lectures/module03.html#studio-activity",
-    "href": "lectures/module03.html#studio-activity",
+    "objectID": "lectures/module03.html#practice-activity",
+    "href": "lectures/module03.html#practice-activity",
     "title": "Module 3: The 70 Percent Problem",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nGiven a Java feature request, define:\n\nOne happy-path test.\nTwo edge-case tests.\nOne invalid-input test.\nOne maintainability criterion.\n\nThen ask Copilot to implement only enough code to pass those checks."
+    "section": "Practice Activity",
+    "text": "Practice Activity\nGiven a Java feature request, define:\n\nOne happy-path test.\nTwo edge-case tests.\nOne invalid-input test.\nOne maintainability criterion.\n\nThen ask Copilot to implement only enough code to pass those checks."
   },
   {
     "objectID": "lectures/module03.html#takeaways",
@@ -571,7 +571,7 @@
     "href": "lectures/module01.html#ai-assisted-swe-loop",
     "title": "Module 1: What AI Changes",
     "section": "AI-Assisted SWE Loop",
-    "text": "AI-Assisted SWE Loop\n\nflowchart LR\n  A[Human intent] --&gt; B[Structured prompt]\n  B --&gt; C[AI draft]\n  C --&gt; D[Human review]\n  D --&gt; E[Tests and evidence]\n  E --&gt; F[Commit and document]\n  E --&gt;|gaps found| B\n\n\n\n\nflowchart LR\n  A[Human intent] --&gt; B[Structured prompt]\n  B --&gt; C[AI draft]\n  C --&gt; D[Human review]\n  D --&gt; E[Tests and evidence]\n  E --&gt; F[Commit and document]\n  E --&gt;|gaps found| B"
+    "text": "AI-Assisted SWE Loop\n\n\n\n\n\nflowchart TD\n  A[Human intent] --&gt; B[Structured prompt]\n  B --&gt; C[AI draft]\n  C --&gt; D[Human review]\n  D --&gt; E[Tests and evidence]\n  E --&gt; F[Commit and document]\n  E --&gt;|gaps| B"
   },
   {
     "objectID": "lectures/module01.html#vibe-coding-vs-engineering",
@@ -623,11 +623,11 @@
     "text": "Setup Lab Connection\nAssignment 1 is not just tool setup.\nIt establishes the course habit:\n\nCapture the prompt.\nInspect the suggestion.\nMake a manual decision.\nVerify the result.\nDocument what happened."
   },
   {
-    "objectID": "lectures/module01.html#studio-activity",
-    "href": "lectures/module01.html#studio-activity",
+    "objectID": "lectures/module01.html#practice-activity",
+    "href": "lectures/module01.html#practice-activity",
     "title": "Module 1: What AI Changes",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nAsk Copilot for a small Java method.\nThen improve the interaction:\n\nAdd input constraints.\nAdd expected behavior.\nAdd one edge case.\nAsk for a JUnit test.\nRecord what changed between attempts."
+    "section": "Practice Activity",
+    "text": "Practice Activity\nAsk Copilot for a small Java method.\nThen improve the interaction:\n\nAdd input constraints.\nAdd expected behavior.\nAdd one edge case.\nAsk for a JUnit test.\nRecord what changed between attempts."
   },
   {
     "objectID": "lectures/module01.html#takeaways",
@@ -655,14 +655,14 @@
     "href": "lecture_downloads.html",
     "title": "Lecture Downloads",
     "section": "",
-    "text": "Each lecture deck is available as a PDF handout, a rendered HTML slide deck, and editable Quarto source.\nPDFs are the easiest format for students to download, print, annotate, and keep offline. The HTML files preserve the interactive slide format. The .qmd files are intended for instructors who want to revise, remix, or export the decks in another format.\n\n\n\n\nModule\n\n\nTopic\n\n\nDownloads\n\n\n\n\n\n\n1\n\n\nWhat AI Changes\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n2\n\n\nPrompting as Communication\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n3\n\n\nThe 70 Percent Problem\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n4\n\n\nHuman Contribution Beyond AI\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n5\n\n\nReviewing and Testing AI Code\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n6\n\n\nPrototyping vs Production\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n7\n\n\nBuilding AI Systems\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n8\n\n\nSecurity and Reliability\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n9\n\n\nEthics and Responsibility\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n10\n\n\nAutonomous Agents\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n11\n\n\nThe Future of AI Engineering\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n12\n\n\nFinal Project Workbench\n\n\nPDF | HTML slides | Quarto source\n\n\n\n\n\n\nDownload the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser. The source files can be edited with Quarto if an instructor wants to customize the slides."
+    "text": "Each lecture deck is available as a PDF handout and a rendered HTML slide deck.\nPDFs are the easiest format for students to download, print, annotate, and keep offline. The HTML files preserve the interactive slide format for presenting in a browser.\n\n\n\n\nModule\n\n\nTopic\n\n\nDownloads\n\n\n\n\n\n\n1\n\n\nWhat AI Changes\n\n\nPDF | HTML slides\n\n\n\n\n2\n\n\nPrompting as Communication\n\n\nPDF | HTML slides\n\n\n\n\n3\n\n\nThe 70 Percent Problem\n\n\nPDF | HTML slides\n\n\n\n\n4\n\n\nHuman Contribution Beyond AI\n\n\nPDF | HTML slides\n\n\n\n\n5\n\n\nReviewing and Testing AI Code\n\n\nPDF | HTML slides\n\n\n\n\n6\n\n\nPrototyping vs Production\n\n\nPDF | HTML slides\n\n\n\n\n7\n\n\nBuilding AI Systems\n\n\nPDF | HTML slides\n\n\n\n\n8\n\n\nSecurity and Reliability\n\n\nPDF | HTML slides\n\n\n\n\n9\n\n\nEthics and Responsibility\n\n\nPDF | HTML slides\n\n\n\n\n10\n\n\nAutonomous Agents\n\n\nPDF | HTML slides\n\n\n\n\n11\n\n\nThe Future of AI Engineering\n\n\nPDF | HTML slides\n\n\n\n\n12\n\n\nFinal Project Workbench\n\n\nPDF | HTML slides\n\n\n\n\n\n\nDownload the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser."
   },
   {
     "objectID": "lecture_downloads.html#offline-use",
     "href": "lecture_downloads.html#offline-use",
     "title": "Lecture Downloads",
     "section": "",
-    "text": "Download the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser. The source files can be edited with Quarto if an instructor wants to customize the slides."
+    "text": "Download the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser."
   },
   {
     "objectID": "lectures/module02.html#learning-outcomes",
@@ -683,7 +683,7 @@
     "href": "lectures/module02.html#prompt-anatomy",
     "title": "Module 2: Prompting as Communication",
     "section": "Prompt Anatomy",
-    "text": "Prompt Anatomy\n\nflowchart TD\n  P[Effective prompt] --&gt; G[Goal]\n  P --&gt; C[Context]\n  P --&gt; R[Requirements]\n  P --&gt; X[Constraints]\n  P --&gt; E[Examples]\n  P --&gt; V[Verification]\n\n\n\n\nflowchart TD\n  P[Effective prompt] --&gt; G[Goal]\n  P --&gt; C[Context]\n  P --&gt; R[Requirements]\n  P --&gt; X[Constraints]\n  P --&gt; E[Examples]\n  P --&gt; V[Verification]"
+    "text": "Prompt Anatomy\n\n\n\n\n\nflowchart TD\n  P[Effective prompt] --&gt; G[Goal]\n  P --&gt; C[Context]\n  P --&gt; R[Requirements]\n  P --&gt; X[Constraints]\n  P --&gt; E[Examples]\n  P --&gt; V[Verification]"
   },
   {
     "objectID": "lectures/module02.html#weak-prompt-pattern",
@@ -735,11 +735,11 @@
     "text": "Lab 1 Connection\nLab 1 compares naive and structured workflows.\nYour evidence should show:\n\nThe naive prompt and output.\nThe structured specification.\nAccepted, rejected, and revised suggestions.\nVerification results.\nWhy the structured approach changed the outcome."
   },
   {
-    "objectID": "lectures/module02.html#studio-activity",
-    "href": "lectures/module02.html#studio-activity",
+    "objectID": "lectures/module02.html#practice-activity",
+    "href": "lectures/module02.html#practice-activity",
     "title": "Module 2: Prompting as Communication",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nTake a vague feature request and rewrite it three ways:\n\nUser-story prompt.\nTest-first prompt.\nRisk-aware prompt.\n\nCompare what each prompt asks the AI to optimize for."
+    "section": "Practice Activity",
+    "text": "Practice Activity\nTake a vague feature request and rewrite it three ways:\n\nUser-story prompt.\nTest-first prompt.\nRisk-aware prompt.\n\nCompare what each prompt asks the AI to optimize for."
   },
   {
     "objectID": "lectures/module02.html#takeaways",
@@ -767,7 +767,7 @@
     "href": "lectures/module04.html#where-human-judgment-concentrates",
     "title": "Module 4: Human Contribution Beyond AI",
     "section": "Where Human Judgment Concentrates",
-    "text": "Where Human Judgment Concentrates\n\nmindmap\n  root((Human judgment))\n    Domain context\n    Architecture\n    Tradeoffs\n    Risk tolerance\n    Long-term maintenance\n    User consequences\n\n\n\n\nmindmap\n  root((Human judgment))\n    Domain context\n    Architecture\n    Tradeoffs\n    Risk tolerance\n    Long-term maintenance\n    User consequences"
+    "text": "Where Human Judgment Concentrates\n\n\n\n\n\nflowchart TD\n  H[Human judgment] --&gt; D[Domain context]\n  H --&gt; A[Architecture]\n  H --&gt; T[Tradeoffs]\n  H --&gt; R[Risk tolerance]\n  H --&gt; M[Maintenance]\n  H --&gt; U[User consequences]"
   },
   {
     "objectID": "lectures/module04.html#architect-and-editor",
@@ -812,11 +812,11 @@
     "text": "Lab 2 Final Connection\nYour eval-driven lab should demonstrate human judgment through:\n\nMeasurable criteria.\nRunnable checks.\nRegression comparison.\nDocumentation explaining what the tests prove and do not prove."
   },
   {
-    "objectID": "lectures/module04.html#studio-activity",
-    "href": "lectures/module04.html#studio-activity",
+    "objectID": "lectures/module04.html#practice-activity",
+    "href": "lectures/module04.html#practice-activity",
     "title": "Module 4: Human Contribution Beyond AI",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nReview AI-generated Java code and mark:\n\nLocal correctness issues.\nDesign issues.\nMissing tests.\nHidden assumptions.\nQuestions you would ask before merging."
+    "section": "Practice Activity",
+    "text": "Practice Activity\nReview AI-generated Java code and mark:\n\nLocal correctness issues.\nDesign issues.\nMissing tests.\nHidden assumptions.\nQuestions you would ask before merging."
   },
   {
     "objectID": "lectures/module04.html#takeaways",
@@ -844,7 +844,7 @@
     "href": "lectures/module06.html#prototype-to-production-path",
     "title": "Module 6: Prototyping vs Production",
     "section": "Prototype to Production Path",
-    "text": "Prototype to Production Path\n\nflowchart LR\n  A[Prototype] --&gt; B[Feedback]\n  B --&gt; C[Tests]\n  C --&gt; D[Refactor boundaries]\n  D --&gt; E[Security review]\n  E --&gt; F[Observability]\n  F --&gt; G[Production candidate]\n  C --&gt;|fails| A\n\n\n\n\nflowchart LR\n  A[Prototype] --&gt; B[Feedback]\n  B --&gt; C[Tests]\n  C --&gt; D[Refactor boundaries]\n  D --&gt; E[Security review]\n  E --&gt; F[Observability]\n  F --&gt; G[Production candidate]\n  C --&gt;|fails| A"
+    "text": "Prototype to Production Path\n\n\n\n\n\nflowchart TD\n  A[Prototype] --&gt; B[Feedback]\n  B --&gt; C[Tests]\n  C --&gt; D[Refactor boundaries]\n  D --&gt; E[Security review]\n  E --&gt; F[Observability]\n  F --&gt; G[Production candidate]\n  C --&gt;|fails| A"
   },
   {
     "objectID": "lectures/module06.html#production-means-constraints",
@@ -889,11 +889,11 @@
     "text": "Lab 3 Final Connection\nLab 3 implementation should prove that your system is controlled, not just functional.\nEvidence should include:\n\nRequired Java tools.\nSandbox enforcement.\nInspectable output.\nArchitecture notes.\nEvaluation results."
   },
   {
-    "objectID": "lectures/module06.html#studio-activity",
-    "href": "lectures/module06.html#studio-activity",
+    "objectID": "lectures/module06.html#practice-activity",
+    "href": "lectures/module06.html#practice-activity",
     "title": "Module 6: Prototyping vs Production",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nTake a working prototype feature and label each part:\n\nKeep for production.\nRewrite before production.\nAdd tests.\nAdd monitoring.\nAdd security review."
+    "section": "Practice Activity",
+    "text": "Practice Activity\nTake a working prototype feature and label each part:\n\nKeep for production.\nRewrite before production.\nAdd tests.\nAdd monitoring.\nAdd security review."
   },
   {
     "objectID": "lectures/module06.html#takeaways",
@@ -921,7 +921,7 @@
     "href": "lectures/module08.html#risk-matrix",
     "title": "Module 8: Security and Reliability",
     "section": "Risk Matrix",
-    "text": "Risk Matrix\n\nquadrantChart\n  title Risk Prioritization\n  x-axis Low likelihood --&gt; High likelihood\n  y-axis Low impact --&gt; High impact\n  quadrant-1 Mitigate first\n  quadrant-2 Monitor\n  quadrant-3 Accept or document\n  quadrant-4 Prevent cheaply\n  Command injection: [0.80, 0.90]\n  Path traversal: [0.65, 0.80]\n  Weak tests: [0.75, 0.60]\n  Verbose logs: [0.45, 0.55]\n  Formatting issue: [0.30, 0.20]\n\n\n\n\nquadrantChart\n  title Risk Prioritization\n  x-axis Low likelihood --&gt; High likelihood\n  y-axis Low impact --&gt; High impact\n  quadrant-1 Mitigate first\n  quadrant-2 Monitor\n  quadrant-3 Accept or document\n  quadrant-4 Prevent cheaply\n  Command injection: [0.80, 0.90]\n  Path traversal: [0.65, 0.80]\n  Weak tests: [0.75, 0.60]\n  Verbose logs: [0.45, 0.55]\n  Formatting issue: [0.30, 0.20]"
+    "text": "Risk Matrix\n\n\n\n\n\nquadrantChart\n  title Risk Prioritization\n  x-axis Low likelihood --&gt; High likelihood\n  y-axis Low impact --&gt; High impact\n  quadrant-1 Mitigate first\n  quadrant-2 Monitor\n  quadrant-3 Accept or document\n  quadrant-4 Prevent cheaply\n  Command injection: [0.80, 0.90]\n  Path traversal: [0.65, 0.80]\n  Weak tests: [0.75, 0.60]\n  Verbose logs: [0.45, 0.55]\n  Formatting issue: [0.30, 0.20]"
   },
   {
     "objectID": "lectures/module08.html#security-review-areas",
@@ -966,11 +966,11 @@
     "text": "Lab 4 Final Connection\nYour submission should include:\n\nSpecific failure modes.\nRisk ratings.\nConcrete mitigations.\nAt least two safeguards or safety tests.\nProduction readiness plan.\nCopilot-assisted analysis corrections."
   },
   {
-    "objectID": "lectures/module08.html#studio-activity",
-    "href": "lectures/module08.html#studio-activity",
+    "objectID": "lectures/module08.html#practice-activity",
+    "href": "lectures/module08.html#practice-activity",
     "title": "Module 8: Security and Reliability",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nThreat-model your Java agent:\n\nWhat input could cause harm?\nWhat tool could be misused?\nWhat output could mislead a user?\nWhat safeguard would fail safely?"
+    "section": "Practice Activity",
+    "text": "Practice Activity\nThreat-model your Java agent:\n\nWhat input could cause harm?\nWhat tool could be misused?\nWhat output could mislead a user?\nWhat safeguard would fail safely?"
   },
   {
     "objectID": "lectures/module08.html#takeaways",
@@ -1005,7 +1005,7 @@
     "href": "lectures/module10.html#agent-control-points",
     "title": "Module 10: Autonomous Agents",
     "section": "Agent Control Points",
-    "text": "Agent Control Points\n\nsequenceDiagram\n  participant H as Human\n  participant A as Agent\n  participant T as Tools\n  participant E as Evaluator\n  H-&gt;&gt;A: Task and constraints\n  A-&gt;&gt;H: Plan for approval\n  H-&gt;&gt;A: Approve or revise\n  A-&gt;&gt;T: Execute allowed tools\n  T--&gt;&gt;A: Results\n  A-&gt;&gt;E: Run checks\n  E--&gt;&gt;A: Pass or fail\n  A-&gt;&gt;H: Report, diff, evidence\n\n\n\n\nsequenceDiagram\n  participant H as Human\n  participant A as Agent\n  participant T as Tools\n  participant E as Evaluator\n  H-&gt;&gt;A: Task and constraints\n  A-&gt;&gt;H: Plan for approval\n  H-&gt;&gt;A: Approve or revise\n  A-&gt;&gt;T: Execute allowed tools\n  T--&gt;&gt;A: Results\n  A-&gt;&gt;E: Run checks\n  E--&gt;&gt;A: Pass or fail\n  A-&gt;&gt;H: Report, diff, evidence"
+    "text": "Agent Control Points\n\n\n\n\n\nsequenceDiagram\n  participant H as Human\n  participant A as Agent\n  participant T as Tools\n  participant E as Evaluator\n  H-&gt;&gt;A: Task and constraints\n  A-&gt;&gt;H: Plan for approval\n  H-&gt;&gt;A: Approve or revise\n  A-&gt;&gt;T: Execute allowed tools\n  T--&gt;&gt;A: Results\n  A-&gt;&gt;E: Run checks\n  E--&gt;&gt;A: Pass or fail\n  A-&gt;&gt;H: Report, diff, evidence"
   },
   {
     "objectID": "lectures/module10.html#appropriate-tasks",
@@ -1050,11 +1050,11 @@
     "text": "Final Milestone 1 Connection\nThe proposal and architecture due this module should show how Labs 1-5 become a team project.\nYour architecture should identify:\n\nInput.\nGeneration.\nEvaluation.\nWorkflow.\nPersistence.\nHuman oversight."
   },
   {
-    "objectID": "lectures/module10.html#studio-activity",
-    "href": "lectures/module10.html#studio-activity",
+    "objectID": "lectures/module10.html#practice-activity",
+    "href": "lectures/module10.html#practice-activity",
     "title": "Module 10: Autonomous Agents",
-    "section": "Studio Activity",
-    "text": "Studio Activity\nEvaluate a candidate task for delegation.\nClassify it:\n\nSafe to automate.\nSafe with checkpoint.\nHuman-only decision.\n\nExplain the evidence needed for each classification."
+    "section": "Practice Activity",
+    "text": "Practice Activity\nEvaluate a candidate task for delegation.\nClassify it:\n\nSafe to automate.\nSafe with checkpoint.\nHuman-only decision.\n\nExplain the evidence needed for each classification."
   },
   {
     "objectID": "lectures/module10.html#takeaways",
@@ -1082,7 +1082,7 @@
     "href": "lectures/module12.html#final-submission-timeline",
     "title": "Module 12: Final Project Workbench",
     "section": "Final Submission Timeline",
-    "text": "Final Submission Timeline\n\ngantt\n  title Final Project Workbench\n  dateFormat  YYYY-MM-DD\n  axisFormat  %b %d\n  section Build\n  Complete core system       :a1, 2026-01-01, 3d\n  Integration testing        :a2, after a1, 2d\n  section Evidence\n  Evaluation report          :b1, after a1, 2d\n  AI assistance documentation:b2, after a1, 2d\n  section Delivery\n  Demo recording             :c1, after a2, 1d\n  Final cleanup              :c2, after c1, 1d\n\n\n\n\ngantt\n  title Final Project Workbench\n  dateFormat  YYYY-MM-DD\n  axisFormat  %b %d\n  section Build\n  Complete core system       :a1, 2026-01-01, 3d\n  Integration testing        :a2, after a1, 2d\n  section Evidence\n  Evaluation report          :b1, after a1, 2d\n  AI assistance documentation:b2, after a1, 2d\n  section Delivery\n  Demo recording             :c1, after a2, 1d\n  Final cleanup              :c2, after c1, 1d"
+    "text": "Final Submission Timeline\n\n\n\n\n\nflowchart TD\n  A[Complete core system] --&gt; B[Integration testing]\n  B --&gt; C[Evaluation report]\n  C --&gt; D[AI assistance documentation]\n  D --&gt; E[Demo recording]\n  E --&gt; F[Final cleanup]"
   },
   {
     "objectID": "lectures/module12.html#reproducibility",
