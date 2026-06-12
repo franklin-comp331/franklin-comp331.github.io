@@ -1,11 +1,11 @@
 # COMP 331: AI-Assisted Software Engineering
 
-This repository contains a Quarto site built from Jupyter notebooks. It hosts COMP 331: AI-Assisted Software Engineering, a 12-week undergraduate course. The site uses reveal.js for slide-style presentations generated from the notebooks.
+This repository contains a Quarto site for COMP 331: AI-Assisted Software Engineering, a 12-week undergraduate course. The site uses reveal.js for slide-style lecture presentations and Quarto/PDF output for downloadable handouts.
 
 ## Quick overview
 
 - Project root contains the Quarto config file (`_quarto.yml`) and a top-level `index.qmd`.
-- Notebooks for the course are in `lectures/` (one notebook per week).
+- Lecture slide decks are in `lectures/` as Quarto `.qmd` files.
 - Assignments are in `assignments/` and docs in `docs/`.
 - Site output (generated) lives in `_site/` and is ignored by the repo via `.gitignore`.
 
@@ -56,22 +56,34 @@ quarto preview
 quarto render
 ```
 
-## Working with notebooks
+## Working with course files
 
-- Open notebooks in Jupyter or JupyterLab while the virtual environment is activated:
+- Assignment notebooks can be opened in Jupyter or JupyterLab while the virtual environment is activated:
 
 ```bash
 jupyter lab
 ```
 
-- Edit notebooks in `lectures/` or `assignments/`. After editing, use `quarto render` to rebuild the site.
+- Edit lecture decks in `lectures/` and assignment notebooks in `assignments/`. After editing, use `quarto render` to rebuild the site.
 
 ## Publishing
 
-This site is published with GitHub Actions to GitHub Pages.
+This site can be published locally to GitHub Pages. GitHub Actions remains available as a manual fallback.
 
-- Pushes to `main` run `.github/workflows/publish.yml`.
-- The workflow installs Quarto and Python dependencies, runs `quarto render`, and publishes `_site/` to the `gh-pages` branch.
+- Local publish renders the site and pushes `_site/` to the `gh-pages` branch:
+
+```bash
+bash scripts/publish_gh_pages.sh
+```
+
+- Optional local hook: install a `pre-push` hook that publishes `gh-pages` when pushing `main`:
+
+```bash
+bash scripts/install_publish_pre_push_hook.sh
+```
+
+- The manual workflow `.github/workflows/publish.yml` can still be run from the GitHub Actions UI.
+- The workflow installs Quarto, TinyTeX, and Python dependencies, runs `quarto render`, and publishes `_site/` to the `gh-pages` branch.
 - GitHub Pages should be configured to deploy from the `gh-pages` branch.
 - Published site URL: https://t-morgan.github.io/ai-assisted-software-engineering/
 
@@ -85,7 +97,7 @@ If your local checkout still uses the old misspelled repository URL, update it b
 
 ## Project structure
 
-- `lectures/` — Jupyter notebooks used to generate weekly lecture slides.
+- `lectures/` — Quarto lecture slide decks.
 - `assignments/` — assignment notebooks and metadata.
 - `docs/` — supporting docs for the course.
 - `_site/` — generated site output (ignored by git).
