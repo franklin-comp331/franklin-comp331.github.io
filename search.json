@@ -795,14 +795,14 @@
     "href": "lecture_downloads.html",
     "title": "Lecture Downloads",
     "section": "",
-    "text": "Each lecture deck is available as a PDF handout and a rendered HTML slide deck.\nPDFs are the easiest format for students to download, print, annotate, and keep offline. The HTML files preserve the interactive slide format for presenting in a browser.\n\n\n\n\nModule\n\n\nTopic\n\n\nDownloads\n\n\n\n\n\n\n1\n\n\nWhat AI Changes\n\n\nPDF | HTML slides\n\n\n\n\n2\n\n\nPrompting as Communication\n\n\nPDF | HTML slides\n\n\n\n\n3\n\n\nThe 70 Percent Problem\n\n\nPDF | HTML slides\n\n\n\n\n4\n\n\nHuman Contribution Beyond AI\n\n\nPDF | HTML slides\n\n\n\n\n5\n\n\nReviewing and Testing AI Code\n\n\nPDF | HTML slides\n\n\n\n\n6\n\n\nPrototyping vs Production\n\n\nPDF | HTML slides\n\n\n\n\n7\n\n\nBuilding AI Systems\n\n\nPDF | HTML slides\n\n\n\n\n8\n\n\nSecurity and Reliability\n\n\nPDF | HTML slides\n\n\n\n\n9\n\n\nEthics and Responsibility\n\n\nPDF | HTML slides\n\n\n\n\n10\n\n\nAutonomous Agents\n\n\nPDF | HTML slides\n\n\n\n\n11\n\n\nThe Future of AI Engineering\n\n\nPDF | HTML slides\n\n\n\n\n12\n\n\nFinal Project - AI Engineering Workbench\n\n\nPDF | HTML slides\n\n\n\n\n\n\nDownload the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser."
+    "text": "Each lecture deck is available as a PDF handout and a rendered HTML slide deck.\nPDFs are the easiest format for students to download, print, annotate, and keep offline. The HTML files preserve the interactive slide format for presenting in a browser."
   },
   {
     "objectID": "lecture_downloads.html#offline-use",
     "href": "lecture_downloads.html#offline-use",
     "title": "Lecture Downloads",
-    "section": "",
-    "text": "Download the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser."
+    "section": "Offline Use",
+    "text": "Offline Use\nDownload the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser."
   },
   {
     "objectID": "lectures/module02.html#learning-outcomes",
