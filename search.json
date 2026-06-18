@@ -756,11 +756,11 @@
     "text": "Software 2.0 Lens\nSoftware 2.0 reframes some development as training, prompting, selecting, and evaluating behavior.\nIn this course, we apply that lens pragmatically:\n\nPrompts become one specification artifact alongside requirements, tests, and code.\nCode review includes model-output review.\nEngineering evidence matters more than confidence."
   },
   {
-    "objectID": "lectures/module01.html#setup-lab-connection",
-    "href": "lectures/module01.html#setup-lab-connection",
+    "objectID": "lectures/module01.html#lab-1-establishing-the-workflow",
+    "href": "lectures/module01.html#lab-1-establishing-the-workflow",
     "title": "Module 1: What AI Changes",
-    "section": "Setup Lab Connection",
-    "text": "Setup Lab Connection\nAssignment 1 is not just tool setup.\nIt establishes the course habit:\n\nCapture the prompt.\nInspect the suggestion.\nMake a manual decision.\nVerify the result.\nDocument what happened."
+    "section": "Lab 1: Establishing the Workflow",
+    "text": "Lab 1: Establishing the Workflow\nAssignment 1 is not just tool setup.\nIt establishes the course habit:\n\nCapture the prompt.\nInspect the suggestion.\nMake a manual decision.\nVerify the result.\nDocument what happened."
   },
   {
     "objectID": "lectures/module01.html#practice-activity",
