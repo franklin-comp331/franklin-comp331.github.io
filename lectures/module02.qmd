@@ -50,7 +50,7 @@ It is a communication artifact that should carry:
 
 ## Prompt Anatomy
 
-```{mermaid echo=false fig-width=7 fig-height=4 out-width="100%"}
+```{mermaid echo=false fig-width=5.5 fig-height=3.2 out-width="78%" fig-align="center"}
 flowchart TD
   P[Effective prompt] --> G[Goal]
   P --> C[Context]

@@ -155,7 +155,7 @@ In this course, we apply that lens pragmatically:
 
 ---
 
-## Lab 1: Establishing the Workflow
+## Initial Setup: Establishing the Workflow
 
 Assignment 1 is not just tool setup.
 

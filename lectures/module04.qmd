@@ -46,7 +46,7 @@ Osmani frames the engineer's durable value as the work AI cannot reliably infer.
 
 ## Where Human Judgment Concentrates
 
-```{mermaid echo=false fig-width=6 fig-height=4 out-width="100%"}
+```{mermaid echo=false fig-width=5 fig-height=3.2 out-width="78%" fig-align="center"}
 flowchart TD
   H[Human judgment] --> D[Domain context]
   H --> A[Architecture]

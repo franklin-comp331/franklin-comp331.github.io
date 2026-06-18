@@ -73,7 +73,7 @@ Your course agent should make this loop inspectable.
 
 ## Agent Control Points
 
-```{mermaid echo=false fig-width=7 fig-height=4 out-width="100%"}
+```{mermaid echo=false fig-width=5.5 fig-height=3.2 out-width="82%" fig-align="center"}
 sequenceDiagram
   participant H as Human
   participant A as Agent
