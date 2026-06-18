@@ -155,7 +155,7 @@ In this course, we apply that lens pragmatically:
 
 ---
 
-## Setup Lab Connection
+## Lab 1: Establishing the Workflow
 
 Assignment 1 is not just tool setup.
 
