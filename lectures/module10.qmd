@@ -20,7 +20,7 @@ format:
 
 # Module 10: Autonomous Agents
 
-Primary sources: Osmani, Chapter 10; Thomas & Hunt, Testing Strategies and Pragmatic Starter Kit.
+Primary sources: Osmani, Chapter 10; Thomas & Hunt, Topics 41-42; Topic 51: Pragmatic Starter Kit, section "Ruthless and Continuous Testing."
 
 ---
 
@@ -40,6 +40,20 @@ In-IDE assistants operate under close human supervision.
 Autonomous or background agents take a larger task and work through multiple steps.
 
 This shifts the main question from "Can it write code?" to "Can we safely delegate this workflow?"
+
+---
+
+## Background Agent Model
+
+Osmani describes a common background-agent model: asynchronous assistant developers working in controlled environments.
+
+- They receive a high-level task.
+- They clone or inspect a repository in an isolated environment.
+- They plan changes across files.
+- They edit, run commands, and test.
+- They return a diff, branch, pull request, or report for human review.
+
+The agent is not just completing code; it is operating inside the development workflow.
 
 ---
 
@@ -96,6 +110,18 @@ Poor candidates:
 
 ---
 
+## Agent vs IDE Assistant
+
+Autonomous agents and traditional assistants solve different problems.
+
+- IDE assistants are synchronous, local, and closely supervised.
+- Background agents are asynchronous, project-level, and delegated.
+- IDE assistants are better for tight-control logic and exploration.
+- Agents are better for bounded maintenance, cross-file chores, and repetitive updates.
+- Agent output shifts human effort from writing to reviewing and deciding.
+
+---
+
 ## Autonomy Risks
 
 - Wrong plan executed confidently.
@@ -105,11 +131,13 @@ Poor candidates:
 - Sunk-cost bias toward bad generated work.
 - Concurrent agent changes conflicting with humans.
 
+Osmani highlights additional risks: coherent incorrectness, environment drift, async coordination problems, review bottlenecks, and cascading tool actions.
+
 ---
 
 ## Human Oversight Checkpoints
 
-Meaningful checkpoints happen before irreversible or high-risk action.
+Meaningful checkpoints happen before irreversible or high-risk action. For isolated PR-producing agents, some edits may happen first, but merge, release, permission expansion, and exception decisions still require review.
 
 Examples:
 
@@ -130,6 +158,32 @@ Agents need tests at multiple levels:
 - Golden examples for workflow output.
 - Safety tests for denied operations.
 - Manual review for architecture decisions.
+
+Thomas and Hunt's testing guidance applies more strongly as autonomy increases: tests are feedback, property tests validate assumptions, and continuous testing catches regressions before they compound.
+
+---
+
+## Feedback Loops With Agents
+
+Autonomous systems need explicit feedback loops.
+
+- Make the plan visible before execution.
+- Make commands, diffs, and test output reviewable.
+- Fail fast when the environment cannot run verification.
+- Feed review comments back into the next agent run.
+- Track when a PR should be fixed, rerun, or discarded.
+
+---
+
+## Managing Concurrent Agents
+
+Parallel agents can increase throughput and integration risk.
+
+- Assign non-overlapping tasks where possible.
+- Avoid multiple agents editing the same subsystem without coordination.
+- Require small PRs and clear branch names.
+- Rebase and rerun tests before accepting output.
+- Keep a human owner for final integration decisions.
 
 ---
 
@@ -170,7 +224,7 @@ Classify it:
 - Safe with checkpoint.
 - Human-only decision.
 
-Explain the evidence needed for each classification.
+Use a decision table with task scope, risk, available tests, required permissions, review owner, and evidence needed.
 
 ---
 

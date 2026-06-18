@@ -20,7 +20,7 @@ format:
 
 # Module 11: The Future of AI Engineering
 
-Primary sources: Osmani, Chapter 11; Thomas & Hunt, Essence of Good Design.
+Primary sources: Osmani, Chapter 11; Thomas & Hunt, Topic 8: The Essence of Good Design.
 
 ---
 
@@ -45,6 +45,35 @@ AI assistance is expanding into:
 - Agent-driven task execution.
 
 The engineering problem remains: how do we trust the result?
+
+---
+
+## AI Across the Lifecycle
+
+Osmani frames the future as AI moving through the whole software lifecycle.
+
+- Test generation from code, requirements, and edge cases.
+- Debugging from traces, logs, runtime state, and error reports.
+- AI-assisted maintenance suggestions, dependency update triage, and refactoring candidates.
+- Performance analysis from profiles and production signals.
+- Design support for UI variants, accessibility, and UX research.
+- Project support for planning, risk analysis, and status summaries.
+
+The risk is the same pattern repeating at larger scale: fast output without shared understanding.
+
+---
+
+## Trend Evaluation Lens
+
+For any emerging AI engineering tool, ask:
+
+- What task does it make cheaper?
+- What new failure mode does it introduce?
+- What evidence does it produce?
+- What human decision does it still require?
+- What organizational norm must change for it to be safe?
+
+Do not evaluate the demo. Evaluate the workflow around the demo.
 
 ---
 
@@ -78,11 +107,13 @@ Important skills move toward:
 - Workflow design.
 - Ethical decision-making.
 
+Osmani's key claim is not that fundamentals disappear. Ambiguity, tradeoffs, review, testing, and user judgment become more important because AI can amplify unclear intent quickly.
+
 ---
 
 ## Essence of Good Design
 
-Thomas and Hunt define good design around ease of change.
+Thomas and Hunt define good design around ETC: easier to change.
 
 AI-era interpretation:
 
@@ -90,6 +121,37 @@ AI-era interpretation:
 - Good boundaries make AI suggestions reviewable.
 - Good tests make iteration cheap.
 - Good documentation makes context reusable.
+- Good workflows make bad AI output cheap to discard.
+
+ETC is a value, not a rigid rule. In AI-assisted work, use it as a review question: did this prompt, code change, test, abstraction, or process make future change easier or harder?
+
+---
+
+## Natural-Language Development
+
+Osmani predicts more software work will happen through intent and conversation.
+
+- Natural language may become a higher-level specification layer.
+- Traditional languages remain useful where precision matters.
+- Hybrid workflows may combine prose, pseudocode, tests, and code.
+- AI systems may ask clarifying questions before implementation.
+- Professional value shifts toward precise thinking and verification.
+
+The future is not English replacing code. It is clearer intent becoming more actionable through better tooling, then verified through tests, schemas, types, reviews, and runtime checks.
+
+---
+
+## Multiagent Engineering
+
+Autonomous agents may become a normal part of engineering teams.
+
+- Specialized agents for testing, security, refactoring, documentation, and performance.
+- Multi-branch exploration of different implementation paths.
+- Agent inboxes for tracking work, review requests, and blocked tasks.
+- Issue tracker and CI integration for automated maintenance.
+- Human checkpointing when uncertainty or tradeoffs appear.
+
+This creates a new design problem: orchestrating work so the system remains understandable.
 
 ---
 
@@ -102,6 +164,22 @@ A durable workflow should answer:
 - What evidence must I collect?
 - What do I never delegate?
 - How do I improve after each interaction?
+
+Your workflow should be explicit enough that another person can inspect it and understand how you control risk.
+
+---
+
+## Personal Engineering Position
+
+By this point in the course, you should be able to state a position such as:
+
+- I use AI for exploration, scaffolding, testing, and critique.
+- I do not use AI as a substitute for requirements ownership.
+- I require runnable evidence before accepting generated code.
+- I keep architecture, security, ethics, and merge decisions human-owned.
+- I improve prompts and checklists based on failures I observe.
+
+The goal is not to have the same policy as everyone else. The goal is to have a defensible policy.
 
 ---
 
@@ -147,6 +225,28 @@ Ask your team:
 - Which tests found real issues?
 - Which review practices improved quality?
 - Which risks are still unmanaged?
+
+Then propose one concrete improvement:
+
+- A better prompt template.
+- A stronger acceptance checklist.
+- A new automated test or CI gate.
+- A clearer team norm for AI disclosure.
+- A smaller task boundary for agent delegation.
+
+---
+
+## Future-Proofing Practice
+
+Osmani's call to action is pragmatic:
+
+- Experiment with new tools.
+- Share useful findings and pitfalls.
+- Contribute feedback or improvements to tools.
+- Advocate for secure and responsible adoption.
+- Keep learning from juniors, peers, and changing practice.
+- Balance enthusiasm with prudence.
+- Mentor others in fundamentals, not just tool use.
 
 ---
 

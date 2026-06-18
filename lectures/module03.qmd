@@ -1,5 +1,5 @@
 ---
-title: "Module 3: The 70 Percent Problem"
+title: "Module 3: The 70% Problem and Real Workflows"
 subtitle: "Structured workflows for partially correct output"
 format:
   revealjs:
@@ -18,9 +18,9 @@ format:
       - \pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
 ---
 
-# Module 3: The 70 Percent Problem
+# Module 3: The 70% Problem and Real Workflows
 
-Primary sources: Osmani, Chapter 3; Thomas & Hunt, Tracer Bullets.
+Primary sources: Osmani, Chapter 3; Thomas & Hunt, Topic 12: Tracer Bullets.
 
 ---
 
@@ -36,6 +36,8 @@ Primary sources: Osmani, Chapter 3; Thomas & Hunt, Tracer Bullets.
 ## What Is the 70 Percent Problem?
 
 AI output often looks close enough to create confidence but not close enough to trust.
+
+Osmani's core warning uses the "70 percent" idea as a heuristic: AI can often produce the patterned, visible part of a solution, while edge cases, architecture, maintainability, and production readiness remain human engineering work.
 
 Common shape:
 
@@ -70,6 +72,20 @@ Partially correct output can be worse than obviously wrong output.
 - It creates sunk-cost pressure.
 - It can hide security or reliability defects.
 
+Common failure modes include the "two steps back" loop and the demo-quality trap: an impressive happy path that collapses under real use.
+
+---
+
+## Real Workflow Patterns
+
+Osmani describes three useful AI-assisted workflow patterns.
+
+- AI as first drafter: generate, then refine, refactor, and test.
+- AI as pair programmer: work in tight feedback loops with frequent review.
+- AI as validator: write code first, then use AI to critique, test, and improve it.
+
+The pattern matters less than the discipline around it: review, test, commit small, and understand what you merge.
+
 ---
 
 ## Workflow Over Heroics
@@ -94,6 +110,23 @@ In AI-assisted SWE:
 - Ask AI to help create the smallest complete path.
 - Keep scope narrow enough to evaluate.
 - Prefer inspectable progress over broad unfinished generation.
+- Use the slice to get feedback under real project constraints.
+
+Tracer code is not throwaway code. It is a lean but production-shaped skeleton that can grow as the system becomes clearer.
+
+---
+
+## Golden Rules for the Remaining Work
+
+Useful guardrails from Osmani Chapter 3:
+
+- Be specific and clear about what you want.
+- Validate AI output against your intent.
+- Treat AI as a junior developer with supervision.
+- Use AI to expand capability, not replace thinking.
+- Isolate AI changes in version control.
+- Do not merge code you do not understand.
+- Document decisions, prompts, and useful patterns.
 
 ---
 

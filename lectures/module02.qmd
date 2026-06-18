@@ -20,7 +20,7 @@ format:
 
 # Module 2: Prompting as Communication
 
-Primary sources: Osmani, Chapter 2; Thomas & Hunt, Basic Tools and Pragmatic Paranoia.
+Primary sources: Osmani, Chapter 2; Thomas & Hunt, Chapters 3-4 (Topics 16-27).
 
 ---
 
@@ -120,6 +120,18 @@ For AI-assisted work:
 
 ---
 
+## Defensive Prompting
+
+Thomas and Hunt's defensive habits translate directly into better prompts.
+
+- Design by contract: state preconditions, postconditions, and invariants.
+- Crash early: define failure behavior instead of hiding errors.
+- Assertive programming: ask for checks that expose impossible states.
+- Resource balance: specify cleanup, ownership, and lifecycle rules.
+- Small steps: do not outrun your headlights with oversized prompts.
+
+---
+
 ## Tool Fluency
 
 The Basic Tools matter more with AI, not less.
@@ -128,6 +140,18 @@ The Basic Tools matter more with AI, not less.
 - Shell commands make verification repeatable.
 - IDEs provide context and refactoring support.
 - Logs and diffs reveal what the assistant actually changed.
+
+---
+
+## Tools Shape Communication
+
+Prompting happens inside a toolchain, not outside it.
+
+- Plain text keeps prompts, specs, and logs inspectable.
+- Shell fluency turns model claims into repeatable evidence.
+- Power editing helps you review and reshape generated code.
+- Version control preserves the conversation between intent and change.
+- Debugging and daybooks capture what you learned from each iteration.
 
 ---
 

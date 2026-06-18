@@ -20,7 +20,7 @@ format:
 
 # Module 8: Security and Reliability
 
-Primary sources: Osmani, Chapter 8; Thomas & Hunt, Estimating, Refactoring, and Stay Safe Out There.
+Primary sources: Osmani, Chapter 8; Thomas & Hunt, Topics 15, 40, and 43.
 
 ---
 
@@ -81,6 +81,20 @@ quadrantChart
 
 ---
 
+## AI Security Audit Loop
+
+Osmani recommends layering review rather than trusting a single pass.
+
+- Run automated scanners and dependency audits.
+- Optionally ask a separate AI or review mode to critique security assumptions.
+- Use a human checklist for sensitive flows.
+- Add security-focused tests for malicious inputs and unauthorized access.
+- Slow down when generated code touches credentials, files, commands, or user data.
+
+AI critique is not a security control by itself. It can supplement, not replace, threat modeling, code review, tests, and scanners.
+
+---
+
 ## Reliability Review Areas
 
 - Timeouts.
@@ -90,6 +104,18 @@ quadrantChart
 - Idempotent operations.
 - Recoverable artifacts.
 - Observability.
+
+---
+
+## Reliability Needs Evidence
+
+AI assistance does not lower reliability requirements.
+
+- Put tests and security scans in CI.
+- Include failure-path tests, not just happy paths.
+- Check performance with measurement before optimizing.
+- Use logging that helps diagnosis without leaking sensitive data.
+- Monitor production behavior so reliability claims can be checked.
 
 ---
 
@@ -105,18 +131,35 @@ Use tests first, then improve:
 - Error handling.
 - Configuration.
 
+Thomas and Hunt's guardrails: do not refactor and add functionality at the same time, keep steps small, and run tests after each step.
+
 ---
 
 ## Estimating Risk
 
-Risk ratings should be concrete.
+Estimating is about building a model of uncertainty, not guessing a single number.
 
-Use a simple scale:
+For AI-assisted reliability work, estimate:
 
-- Likelihood: low, medium, high.
-- Impact: low, medium, high.
-- Mitigation: specific action.
-- Evidence: test, review, log, or policy.
+- Scope: what security or reliability question is being asked?
+- Drivers: which inputs, dependencies, or usage patterns dominate risk?
+- Range: optimistic, likely, and pessimistic outcomes.
+- Mitigation: what concrete action reduces uncertainty?
+- Evidence: what test, review, log, or policy supports the estimate?
+
+---
+
+## Safety Tradeoffs
+
+Robustness is not free.
+
+- More validation can improve safety but add complexity.
+- More logging can improve diagnosis but risk secret exposure.
+- More retries can improve reliability but amplify load.
+- More abstraction can improve maintainability but obscure behavior.
+- More security checks can slow development but prevent expensive failures.
+
+Make the tradeoff explicit and document the reason.
 
 ---
 
@@ -152,6 +195,8 @@ Threat-model your Java agent:
 - What tool could be misused?
 - What output could mislead a user?
 - What safeguard would fail safely?
+
+Produce a four-row risk matrix with likelihood, impact, mitigation, and evidence for each risk.
 
 ---
 

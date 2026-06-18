@@ -32,7 +32,7 @@ PDFs are the easiest format for students to download, print, annotate, and keep 
     <tr><td>9</td><td>Ethics and Responsibility</td><td><a href="lectures/module09.pdf" download>PDF</a> | <a href="lectures/module09.html" download>HTML slides</a></td></tr>
     <tr><td>10</td><td>Autonomous Agents</td><td><a href="lectures/module10.pdf" download>PDF</a> | <a href="lectures/module10.html" download>HTML slides</a></td></tr>
     <tr><td>11</td><td>The Future of AI Engineering</td><td><a href="lectures/module11.pdf" download>PDF</a> | <a href="lectures/module11.html" download>HTML slides</a></td></tr>
-    <tr><td>12</td><td>Final Project Workbench</td><td><a href="lectures/module12.pdf" download>PDF</a> | <a href="lectures/module12.html" download>HTML slides</a></td></tr>
+    <tr><td>12</td><td>Final Project - AI Engineering Workbench</td><td><a href="lectures/module12.pdf" download>PDF</a> | <a href="lectures/module12.html" download>HTML slides</a></td></tr>
   </tbody>
 </table>
 

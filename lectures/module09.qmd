@@ -20,7 +20,7 @@ format:
 
 # Module 9: Ethics and Responsibility
 
-Primary sources: Osmani, Chapter 9; Thomas & Hunt, Pragmatic Teams.
+Primary sources: Osmani, Chapter 9; Thomas & Hunt, Topic 49: Pragmatic Teams.
 
 ---
 
@@ -81,7 +81,21 @@ Practical safeguards:
 - Avoid asking for copyrighted code.
 - Be cautious with suspiciously specific output.
 - Prefer explanations, patterns, and tests over copied solutions.
+- Run license or provenance checks where required.
+- Follow project policy before accepting generated code into deliverables.
 - Follow course and organizational policy.
+
+---
+
+## Privacy and Consent
+
+Responsible AI use also means protecting inputs.
+
+- Do not paste secrets, private user data, or proprietary code into tools without permission.
+- Use sanitized or synthetic examples when debugging.
+- Check tool settings and organizational policy for data retention or training use.
+- Disclose AI-backed user-facing features when users need to know.
+- Provide notice, consent, opt-out, or deletion controls where required by law, policy, or user expectations.
 
 ---
 
@@ -100,6 +114,19 @@ Ask:
 
 ---
 
+## Responsible AI Checklist
+
+Osmani's responsible-use guidance turns ethics into reviewable practice.
+
+- Keep a human in the loop.
+- Take responsibility for code and decisions.
+- Comply with relevant laws, licenses, and policies.
+- Create guardrails and safety nets.
+- Document AI usage decisions.
+- Test for bias, discrimination, and misuse.
+
+---
+
 ## Pragmatic Teams
 
 Thomas and Hunt emphasize stable, communicative teams with shared standards.
@@ -110,6 +137,20 @@ For AI-assisted teams:
 - Review AI-generated code carefully.
 - Share prompt patterns that work.
 - Do not let AI create invisible solo work.
+
+Pragmatic teams make responsibility collective: quality is built in by everyone, not delegated to the person who clicked accept.
+
+---
+
+## Team Norms for AI
+
+Borrowing from Pragmatic Teams, responsible AI work needs team-level habits.
+
+- Maintain awareness so scope, risk, and AI use do not drift unnoticed.
+- Keep communication low-friction when prompts or outputs surprise you.
+- Use end-to-end slices so all disciplines see real consequences early.
+- Automate checks where possible instead of relying on memory.
+- Schedule process reflection as AI tools and policies change.
 
 ---
 

@@ -20,7 +20,7 @@ format:
 
 # Module 7: Building AI Systems
 
-Primary sources: Osmani, Chapter 7; Thomas & Hunt, Tracer Bullets review.
+Primary sources: Osmani, Chapter 7; Thomas & Hunt, Topic 12: Tracer Bullets.
 
 ---
 
@@ -47,6 +47,21 @@ It includes:
 - Evaluation.
 - Artifact tracking.
 - Human oversight.
+
+---
+
+## Full-Stack AI Workflow
+
+Osmani Chapter 7 frames AI-assisted development as an end-to-end workflow. In this course, treat full-stack examples as a transfer pattern for your controlled agent.
+
+- Scaffold the project and dependency structure.
+- Generate frontend components from clear descriptions.
+- Implement backend routes, business logic, and validation.
+- Integrate data storage and database access.
+- Align frontend and backend contracts.
+- Test and validate the whole stack.
+
+For the Java agent project, the analogous stack is CLI input, context builder, model call, tool dispatcher, sandboxed file tools, evaluator, logs, and human checkpoint.
 
 ---
 
@@ -100,12 +115,41 @@ Typical flow:
 
 ## Integration Challenges
 
-- Mismatched frontend/backend contracts.
-- Unclear data models.
+- Mismatched interface contracts.
+- Unclear task or artifact models.
 - Generated code that bypasses abstractions.
 - Tests that require unavailable services.
 - Tool outputs too verbose to inspect.
 - Error handling split across layers.
+
+---
+
+## Contracts Between Layers
+
+AI can generate each layer quickly, but humans must keep the interfaces coherent.
+
+Check:
+
+- Command names, arguments, and result codes.
+- Request and response schemas for model and tool calls.
+- Artifact fields, log formats, and validation rules.
+- Authorization assumptions around files and commands.
+- Error formats consumed by the next workflow step.
+- Test data that represents real agent states.
+
+---
+
+## Data and Context Flow
+
+In an AI-assisted system, context moves through several forms.
+
+- User intent becomes task specification.
+- Task specification becomes model prompt and tool constraints.
+- Tool constraints become dispatcher behavior and sandbox rules.
+- Runtime behavior becomes logs, tests, and evaluation artifacts.
+- Evaluation results become the next prompt or code change.
+
+Breakage usually appears at the boundaries, not inside the generated snippet.
 
 ---
 
@@ -121,6 +165,20 @@ Example:
 - Capture result.
 - Evaluate with one check.
 - Save run artifact.
+
+The goal is not complete functionality; it is a real path through the system that exposes integration risk.
+
+---
+
+## Testing the Whole Workflow
+
+Osmani emphasizes validation across the stack, not just isolated code.
+
+- Unit-test business logic and parsing.
+- Integration-test API and database behavior.
+- End-to-end-test the user-visible workflow.
+- Verify generated queries against expected data shapes.
+- Keep AI-created tests under the same review standard as code.
 
 ---
 
@@ -140,6 +198,13 @@ Useful prompts ask the model to operate inside architecture.
 
 Lab 4 begins risk analysis and production readiness.
 
+Use a compact threat model before you implement more automation:
+
+- Asset: what must be protected?
+- Entry point: where can bad input enter?
+- Trust boundary: where does control change hands?
+- Mitigation: what prevents or contains failure?
+
 Your risk analysis should be specific to your actual system:
 
 - Tool misuse.
@@ -154,7 +219,7 @@ Your risk analysis should be specific to your actual system:
 
 Draw your agent as boxes and arrows.
 
-For each arrow, label:
+Submit the diagram with a short table. For each arrow, label:
 
 - Data passed.
 - Trust boundary.

@@ -20,7 +20,7 @@ format:
 
 # Module 6: Prototyping vs Production
 
-Primary sources: Osmani, Chapter 6; Thomas & Hunt, Orthogonality and Reversibility.
+Primary sources: Osmani, Chapter 6; Thomas & Hunt, Topics 10-11 and Topic 13: Prototypes and Post-it Notes.
 
 ---
 
@@ -45,6 +45,31 @@ Prototype goals:
 - Get feedback early.
 
 Prototype risk: mistaking a learning artifact for a production system.
+
+---
+
+## Prototype Tool Tradeoffs
+
+Osmani frames AI prototyping tools around two tensions.
+
+- Fidelity: how closely the output matches the idea, mockup, or prompt.
+- Control: how much you can guide architecture, code structure, and changes.
+
+High-speed tools can validate ideas quickly, but low control can leave code that is hard to inspect, integrate, or harden.
+
+---
+
+## Iterative Refinement
+
+AI prototyping works best as a fast feedback loop.
+
+1. Generate a baseline.
+2. Run or inspect it.
+3. Refine the prompt with specific changes.
+4. Check whether the new version still supports the prototype goal.
+5. Stop when you have learned enough.
+
+Iteration is useful only if it answers the prototype question instead of drifting into accidental product scope.
 
 ---
 
@@ -92,9 +117,33 @@ AI-generated prototypes often omit:
 
 ---
 
+## Evolving Toward Production
+
+Osmani's production transition is a mindset shift from speed to discipline.
+
+- Review architecture and split prototype code into maintainable modules.
+- Add error handling and edge cases beyond the sunny-day path.
+- Check performance, security, and dependency choices.
+- Add documentation for future maintainers.
+- Build tests before and during refactoring.
+- Replace temporary shortcuts with real integrations.
+
+---
+
+## Prototype Traps
+
+Two common traps:
+
+- Scope creep: AI makes adding "one more feature" too cheap.
+- Fake integration: mock data, local files, or console logs hide real production work.
+
+Keep a visible list of temporary choices and production TODOs so the prototype does not accidentally become the architecture.
+
+---
+
 ## Orthogonality
 
-Orthogonal components can change independently.
+Orthogonal components can change independently. Thomas and Hunt's test: if a requirement changes, how many modules are affected?
 
 For the Java agent project:
 
@@ -108,6 +157,8 @@ For the Java agent project:
 ## Reversibility
 
 Decisions should be easy to change when uncertainty is high.
+
+Thomas and Hunt's warning: critical decisions shrink the target over time. Treat uncertain choices as written in sand, not carved in stone.
 
 Use AI to explore reversible options:
 

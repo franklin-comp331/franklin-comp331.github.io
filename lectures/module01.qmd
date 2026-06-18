@@ -22,7 +22,7 @@ format:
 
 COMP 331: AI-Assisted Software Engineering
 
-Primary sources: Osmani, Chapter 1; Thomas & Hunt, Topics 1-15.
+Primary sources: Osmani, Chapter 1; Thomas & Hunt, Chapters 1-2 (Topics 1-15).
 
 ---
 
@@ -86,7 +86,7 @@ Programming with intent means making the desired behavior explicit before accept
 
 ## Pragmatic Foundation
 
-Thomas and Hunt frame software mastery as responsibility, communication, and continuous adaptation.
+Thomas and Hunt start with a philosophy: pragmatic programmers take responsibility, keep learning, communicate clearly, and adapt to change.
 
 For AI-assisted SWE, this means:
 
@@ -94,6 +94,32 @@ For AI-assisted SWE, this means:
 - Communicate precisely with humans and tools.
 - Treat AI output as a draft, not authority.
 - Keep improving your knowledge portfolio.
+
+---
+
+## Pragmatic Approach
+
+The second reading turns philosophy into design habits.
+
+- Good design is easier to change.
+- DRY: keep each piece of knowledge in one authoritative place.
+- Orthogonality: avoid coupling unrelated decisions.
+- Reversibility: avoid choices that trap the project.
+- Tracer bullets and prototypes help test understanding early.
+
+---
+
+## AI Does Not Replace Design Judgment
+
+AI can generate code quickly, but it cannot know which future changes matter unless we supply context.
+
+Pragmatic questions still apply:
+
+- Is this easier to change?
+- Did the AI duplicate knowledge or intent?
+- Are components coupled for no good reason?
+- Is this a reversible experiment or a commitment?
+- What estimate or prototype would reduce uncertainty?
 
 ---
 
@@ -123,7 +149,7 @@ Software 2.0 reframes some development as training, prompting, selecting, and ev
 
 In this course, we apply that lens pragmatically:
 
-- Specifications become prompts plus tests.
+- Prompts become one specification artifact alongside requirements, tests, and code.
 - Code review includes model-output review.
 - Engineering evidence matters more than confidence.
 

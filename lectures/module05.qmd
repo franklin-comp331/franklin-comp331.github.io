@@ -20,7 +20,7 @@ format:
 
 # Module 5: Reviewing and Testing AI Code
 
-Primary sources: Osmani, Chapter 5; Thomas & Hunt, Test to Code, Property-Based Testing, and Pragmatic Starter Kit.
+Primary sources: Osmani, Chapter 5; Thomas & Hunt, Topics 16-27 and Topic 42: Property-Based Testing.
 
 ---
 
@@ -89,9 +89,23 @@ None of these prove behavior.
 
 ---
 
+## Majority Solution Problem
+
+Osmani warns that AI often gives the common solution, not the appropriate solution.
+
+Review for:
+
+- Generic assumptions that do not match this project.
+- Algorithms that work for small cases but not real inputs.
+- Tutorial-style code, comments, or global state.
+- Library choices that add unnecessary dependency or risk.
+- Missing behavior where the prompt was ambiguous.
+
+---
+
 ## Tests as Design
 
-Thomas and Hunt argue testing is part of design, not an afterthought.
+Osmani emphasizes that tests turn generated code into code you can own.
 
 For AI-assisted work:
 
@@ -102,12 +116,37 @@ For AI-assisted work:
 
 ---
 
+## Tools Make Review Real
+
+From The Basic Tools, reviewing AI code is practical tool work.
+
+- Plain text makes prompts, diffs, and logs inspectable.
+- Version control isolates AI changes for review and rollback.
+- Debuggers and shell commands reveal actual behavior.
+- Text manipulation helps compare outputs and find repeated patterns.
+- Daybooks preserve what you tried, rejected, and learned.
+
+---
+
+## Pragmatic Paranoia for AI Code
+
+Chapter 4 reinforces a defensive review stance.
+
+- Design by contract: check preconditions, postconditions, and invariants.
+- Crash early: prefer visible failures over hidden corruption.
+- Assertions: expose impossible states during development.
+- Resource balance: verify cleanup, ownership, and lifecycle behavior.
+- Small steps: review one coherent change before asking for the next.
+
+---
+
 ## Test Pyramid for AI Code
 
 - Unit tests: fast checks of isolated behavior.
 - Integration tests: verify components work together.
 - End-to-end tests: validate user-visible workflow.
-- Safety tests: verify refusal, bounds, permissions, and secrets handling.
+
+Safety and security checks are cross-cutting: verify refusal, bounds, permissions, and secrets handling at every relevant level.
 
 ---
 
