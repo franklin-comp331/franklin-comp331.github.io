@@ -6,8 +6,6 @@ format:
     toc: false
 ---
 
-# Lecture Downloads
-
 Each lecture deck is available as a PDF handout and a rendered HTML slide deck.
 
 PDFs are the easiest format for students to download, print, annotate, and keep offline. The HTML files preserve the interactive slide format for presenting in a browser.
