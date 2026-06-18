@@ -3926,6 +3926,8 @@ z-index: 1000;
 <li><a href="#/the-human-30-percent" id="/toc-the-human-30-percent">The Human 30 Percent</a></li>
 <li><a href="#/where-human-judgment-concentrates" id="/toc-where-human-judgment-concentrates">Where Human Judgment Concentrates</a></li>
 <li><a href="#/architect-and-editor" id="/toc-architect-and-editor">Architect and Editor</a></li>
+<li><a href="#/systems-thinking" id="/toc-systems-thinking">Systems Thinking</a></li>
+<li><a href="#/code-quality-is-human-oversight" id="/toc-code-quality-is-human-oversight">Code Quality Is Human Oversight</a></li>
 <li><a href="#/bend-or-break" id="/toc-bend-or-break">Bend or Break</a></li>
 <li><a href="#/context-is-a-design-input" id="/toc-context-is-a-design-input">Context Is a Design Input</a></li>
 <li><a href="#/concurrency-as-a-cautionary-case" id="/toc-concurrency-as-a-cautionary-case">Concurrency as a Cautionary Case</a></li>
@@ -3940,7 +3942,7 @@ z-index: 1000;
 <section>
 <section id="module-4-human-contribution-beyond-ai" class="title-slide slide level1 center">
 <h1>Module 4: Human Contribution Beyond AI</h1>
-<p>Primary sources: Osmani, Chapter 4; Thomas &amp; Hunt, Bend or Break and Concurrency.</p>
+<p>Primary sources: Osmani, Chapter 4 selected sections; Thomas &amp; Hunt, Topics 28-36.</p>
 </section>
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
@@ -3995,9 +3997,32 @@ z-index: 1000;
 <li>Long-term maintainability.</li>
 </ul>
 </section>
+<section id="systems-thinking" class="slide level2">
+<h2>Systems Thinking</h2>
+<p>Osmani emphasizes that software changes live inside larger systems.</p>
+<p>Humans reason about:</p>
+<ul>
+<li>How one change affects another component.</li>
+<li>Why the current system evolved this way.</li>
+<li>Which constraints come from users, teams, policy, or production.</li>
+<li>Whether an AI shortcut conflicts with long-term system goals.</li>
+</ul>
+</section>
+<section id="code-quality-is-human-oversight" class="slide level2">
+<h2>Code Quality Is Human Oversight</h2>
+<p>AI-generated code still needs a reviewer who understands the spec and the system.</p>
+<p>Look for:</p>
+<ul>
+<li>Edge cases and failure paths.</li>
+<li>Security, privacy, and accessibility implications.</li>
+<li>Inconsistent patterns or naming.</li>
+<li>Tests that prove behavior rather than just coverage.</li>
+<li>Simpler designs that preserve maintainability.</li>
+</ul>
+</section>
 <section id="bend-or-break" class="slide level2">
 <h2>Bend or Break</h2>
-<p>Pragmatic design favors systems that can change.</p>
+<p>Chapter 5 argues that code must stay loose enough to change: decouple concepts, handle events deliberately, prefer flexible transformations, avoid inheritance traps, and move changeable details into configuration.</p>
 <p>For AI-generated code, watch for:</p>
 <ul>
 <li>Tight coupling.</li>
@@ -4006,6 +4031,7 @@ z-index: 1000;
 <li>Missing seams for tests.</li>
 <li>Configuration hardcoded into logic.</li>
 </ul>
+<p>The question is not just “does it work?” It is “will this bend when requirements move?”</p>
 </section>
 <section id="context-is-a-design-input" class="slide level2">
 <h2>Context Is a Design Input</h2>
@@ -4022,6 +4048,7 @@ z-index: 1000;
 <section id="concurrency-as-a-cautionary-case" class="slide level2">
 <h2>Concurrency as a Cautionary Case</h2>
 <p>Concurrent systems reveal AI limits because correctness depends on interactions over time.</p>
+<p>Thomas and Hunt distinguish concurrency from parallelism: concurrency is code acting as if parts run at the same time; parallelism is actually running at the same time.</p>
 <p>Ask:</p>
 <ul>
 <li>What state is shared?</li>

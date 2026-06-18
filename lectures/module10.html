@@ -3924,12 +3924,16 @@ z-index: 1000;
 <ul>
 <li><a href="#/learning-outcomes" id="/toc-learning-outcomes">Learning Outcomes</a></li>
 <li><a href="#/from-copilot-to-agent" id="/toc-from-copilot-to-agent">From Copilot to Agent</a></li>
+<li><a href="#/background-agent-model" id="/toc-background-agent-model">Background Agent Model</a></li>
 <li><a href="#/agent-loop" id="/toc-agent-loop">Agent Loop</a></li>
 <li><a href="#/agent-control-points" id="/toc-agent-control-points">Agent Control Points</a></li>
 <li><a href="#/appropriate-tasks" id="/toc-appropriate-tasks">Appropriate Tasks</a></li>
+<li><a href="#/agent-vs-ide-assistant" id="/toc-agent-vs-ide-assistant">Agent vs IDE Assistant</a></li>
 <li><a href="#/autonomy-risks" id="/toc-autonomy-risks">Autonomy Risks</a></li>
 <li><a href="#/human-oversight-checkpoints" id="/toc-human-oversight-checkpoints">Human Oversight Checkpoints</a></li>
 <li><a href="#/testing-strategy-for-agents" id="/toc-testing-strategy-for-agents">Testing Strategy for Agents</a></li>
+<li><a href="#/feedback-loops-with-agents" id="/toc-feedback-loops-with-agents">Feedback Loops With Agents</a></li>
+<li><a href="#/managing-concurrent-agents" id="/toc-managing-concurrent-agents">Managing Concurrent Agents</a></li>
 <li><a href="#/lab-5-final-connection" id="/toc-lab-5-final-connection">Lab 5 Final Connection</a></li>
 <li><a href="#/final-milestone-1-connection" id="/toc-final-milestone-1-connection">Final Milestone 1 Connection</a></li>
 <li><a href="#/practice-activity" id="/toc-practice-activity">Practice Activity</a></li>
@@ -3941,7 +3945,7 @@ z-index: 1000;
 <section>
 <section id="module-10-autonomous-agents" class="title-slide slide level1 center">
 <h1>Module 10: Autonomous Agents</h1>
-<p>Primary sources: Osmani, Chapter 10; Thomas &amp; Hunt, Testing Strategies and Pragmatic Starter Kit.</p>
+<p>Primary sources: Osmani, Chapter 10; Thomas &amp; Hunt, Topics 41-42; Topic 51: Pragmatic Starter Kit, section “Ruthless and Continuous Testing.”</p>
 </section>
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
@@ -3957,6 +3961,18 @@ z-index: 1000;
 <p>In-IDE assistants operate under close human supervision.</p>
 <p>Autonomous or background agents take a larger task and work through multiple steps.</p>
 <p>This shifts the main question from “Can it write code?” to “Can we safely delegate this workflow?”</p>
+</section>
+<section id="background-agent-model" class="slide level2">
+<h2>Background Agent Model</h2>
+<p>Osmani describes a common background-agent model: asynchronous assistant developers working in controlled environments.</p>
+<ul>
+<li>They receive a high-level task.</li>
+<li>They clone or inspect a repository in an isolated environment.</li>
+<li>They plan changes across files.</li>
+<li>They edit, run commands, and test.</li>
+<li>They return a diff, branch, pull request, or report for human review.</li>
+</ul>
+<p>The agent is not just completing code; it is operating inside the development workflow.</p>
 </section>
 <section id="agent-loop" class="slide level2">
 <h2>Agent Loop</h2>
@@ -4015,6 +4031,17 @@ z-index: 1000;
 <li>Changes with weak verification.</li>
 </ul>
 </section>
+<section id="agent-vs-ide-assistant" class="slide level2">
+<h2>Agent vs IDE Assistant</h2>
+<p>Autonomous agents and traditional assistants solve different problems.</p>
+<ul>
+<li>IDE assistants are synchronous, local, and closely supervised.</li>
+<li>Background agents are asynchronous, project-level, and delegated.</li>
+<li>IDE assistants are better for tight-control logic and exploration.</li>
+<li>Agents are better for bounded maintenance, cross-file chores, and repetitive updates.</li>
+<li>Agent output shifts human effort from writing to reviewing and deciding.</li>
+</ul>
+</section>
 <section id="autonomy-risks" class="slide level2">
 <h2>Autonomy Risks</h2>
 <ul>
@@ -4025,10 +4052,11 @@ z-index: 1000;
 <li>Sunk-cost bias toward bad generated work.</li>
 <li>Concurrent agent changes conflicting with humans.</li>
 </ul>
+<p>Osmani highlights additional risks: coherent incorrectness, environment drift, async coordination problems, review bottlenecks, and cascading tool actions.</p>
 </section>
 <section id="human-oversight-checkpoints" class="slide level2">
 <h2>Human Oversight Checkpoints</h2>
-<p>Meaningful checkpoints happen before irreversible or high-risk action.</p>
+<p>Meaningful checkpoints happen before irreversible or high-risk action. For isolated PR-producing agents, some edits may happen first, but merge, release, permission expansion, and exception decisions still require review.</p>
 <p>Examples:</p>
 <ul>
 <li>Approve plan before edits.</li>
@@ -4047,6 +4075,29 @@ z-index: 1000;
 <li>Golden examples for workflow output.</li>
 <li>Safety tests for denied operations.</li>
 <li>Manual review for architecture decisions.</li>
+</ul>
+<p>Thomas and Hunt’s testing guidance applies more strongly as autonomy increases: tests are feedback, property tests validate assumptions, and continuous testing catches regressions before they compound.</p>
+</section>
+<section id="feedback-loops-with-agents" class="slide level2">
+<h2>Feedback Loops With Agents</h2>
+<p>Autonomous systems need explicit feedback loops.</p>
+<ul>
+<li>Make the plan visible before execution.</li>
+<li>Make commands, diffs, and test output reviewable.</li>
+<li>Fail fast when the environment cannot run verification.</li>
+<li>Feed review comments back into the next agent run.</li>
+<li>Track when a PR should be fixed, rerun, or discarded.</li>
+</ul>
+</section>
+<section id="managing-concurrent-agents" class="slide level2">
+<h2>Managing Concurrent Agents</h2>
+<p>Parallel agents can increase throughput and integration risk.</p>
+<ul>
+<li>Assign non-overlapping tasks where possible.</li>
+<li>Avoid multiple agents editing the same subsystem without coordination.</li>
+<li>Require small PRs and clear branch names.</li>
+<li>Rebase and rerun tests before accepting output.</li>
+<li>Keep a human owner for final integration decisions.</li>
 </ul>
 </section>
 <section id="lab-5-final-connection" class="slide level2">
@@ -4082,7 +4133,7 @@ z-index: 1000;
 <li>Safe with checkpoint.</li>
 <li>Human-only decision.</li>
 </ul>
-<p>Explain the evidence needed for each classification.</p>
+<p>Use a decision table with task scope, risk, available tests, required permissions, review owner, and evidence needed.</p>
 </section>
 <section id="takeaways" class="slide level2">
 <h2>Takeaways</h2>

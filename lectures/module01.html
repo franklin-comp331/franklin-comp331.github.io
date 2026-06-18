@@ -3928,6 +3928,8 @@ z-index: 1000;
 <li><a href="#/vibe-coding-vs-engineering" id="/toc-vibe-coding-vs-engineering">Vibe Coding vs Engineering</a></li>
 <li><a href="#/programming-with-intent" id="/toc-programming-with-intent">Programming With Intent</a></li>
 <li><a href="#/pragmatic-foundation" id="/toc-pragmatic-foundation">Pragmatic Foundation</a></li>
+<li><a href="#/pragmatic-approach" id="/toc-pragmatic-approach">Pragmatic Approach</a></li>
+<li><a href="#/ai-does-not-replace-design-judgment" id="/toc-ai-does-not-replace-design-judgment">AI Does Not Replace Design Judgment</a></li>
 <li><a href="#/where-ai-helps" id="/toc-where-ai-helps">Where AI Helps</a></li>
 <li><a href="#/where-ai-still-struggles" id="/toc-where-ai-still-struggles">Where AI Still Struggles</a></li>
 <li><a href="#/software-2.0-lens" id="/toc-software-2.0-lens">Software 2.0 Lens</a></li>
@@ -3942,7 +3944,7 @@ z-index: 1000;
 <section id="module-1-what-ai-changes" class="title-slide slide level1 center">
 <h1>Module 1: What AI Changes</h1>
 <p>COMP 331: AI-Assisted Software Engineering</p>
-<p>Primary sources: Osmani, Chapter 1; Thomas &amp; Hunt, Topics 1-15.</p>
+<p>Primary sources: Osmani, Chapter 1; Thomas &amp; Hunt, Chapters 1-2 (Topics 1-15).</p>
 </section>
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
@@ -4026,13 +4028,36 @@ z-index: 1000;
 </section>
 <section id="pragmatic-foundation" class="slide level2">
 <h2>Pragmatic Foundation</h2>
-<p>Thomas and Hunt frame software mastery as responsibility, communication, and continuous adaptation.</p>
+<p>Thomas and Hunt start with a philosophy: pragmatic programmers take responsibility, keep learning, communicate clearly, and adapt to change.</p>
 <p>For AI-assisted SWE, this means:</p>
 <ul>
 <li>Own every generated artifact.</li>
 <li>Communicate precisely with humans and tools.</li>
 <li>Treat AI output as a draft, not authority.</li>
 <li>Keep improving your knowledge portfolio.</li>
+</ul>
+</section>
+<section id="pragmatic-approach" class="slide level2">
+<h2>Pragmatic Approach</h2>
+<p>The second reading turns philosophy into design habits.</p>
+<ul>
+<li>Good design is easier to change.</li>
+<li>DRY: keep each piece of knowledge in one authoritative place.</li>
+<li>Orthogonality: avoid coupling unrelated decisions.</li>
+<li>Reversibility: avoid choices that trap the project.</li>
+<li>Tracer bullets and prototypes help test understanding early.</li>
+</ul>
+</section>
+<section id="ai-does-not-replace-design-judgment" class="slide level2">
+<h2>AI Does Not Replace Design Judgment</h2>
+<p>AI can generate code quickly, but it cannot know which future changes matter unless we supply context.</p>
+<p>Pragmatic questions still apply:</p>
+<ul>
+<li>Is this easier to change?</li>
+<li>Did the AI duplicate knowledge or intent?</li>
+<li>Are components coupled for no good reason?</li>
+<li>Is this a reversible experiment or a commitment?</li>
+<li>What estimate or prototype would reduce uncertainty?</li>
 </ul>
 </section>
 <section id="where-ai-helps" class="slide level2">
@@ -4060,7 +4085,7 @@ z-index: 1000;
 <p>Software 2.0 reframes some development as training, prompting, selecting, and evaluating behavior.</p>
 <p>In this course, we apply that lens pragmatically:</p>
 <ul>
-<li>Specifications become prompts plus tests.</li>
+<li>Prompts become one specification artifact alongside requirements, tests, and code.</li>
 <li>Code review includes model-output review.</li>
 <li>Engineering evidence matters more than confidence.</li>
 </ul>

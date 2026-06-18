@@ -3924,11 +3924,15 @@ z-index: 1000;
 <ul>
 <li><a href="#/learning-outcomes" id="/toc-learning-outcomes">Learning Outcomes</a></li>
 <li><a href="#/from-task-to-system" id="/toc-from-task-to-system">From Task to System</a></li>
+<li><a href="#/full-stack-ai-workflow" id="/toc-full-stack-ai-workflow">Full-Stack AI Workflow</a></li>
 <li><a href="#/controlled-agent-architecture" id="/toc-controlled-agent-architecture">Controlled Agent Architecture</a></li>
 <li><a href="#/system-boundary" id="/toc-system-boundary">System Boundary</a></li>
 <li><a href="#/context-flow" id="/toc-context-flow">Context Flow</a></li>
 <li><a href="#/integration-challenges" id="/toc-integration-challenges">Integration Challenges</a></li>
+<li><a href="#/contracts-between-layers" id="/toc-contracts-between-layers">Contracts Between Layers</a></li>
+<li><a href="#/data-and-context-flow" id="/toc-data-and-context-flow">Data and Context Flow</a></li>
 <li><a href="#/tracer-bullet-architecture" id="/toc-tracer-bullet-architecture">Tracer Bullet Architecture</a></li>
+<li><a href="#/testing-the-whole-workflow" id="/toc-testing-the-whole-workflow">Testing the Whole Workflow</a></li>
 <li><a href="#/ai-system-prompting" id="/toc-ai-system-prompting">AI System Prompting</a></li>
 <li><a href="#/lab-4-development-connection" id="/toc-lab-4-development-connection">Lab 4 Development Connection</a></li>
 <li><a href="#/practice-activity" id="/toc-practice-activity">Practice Activity</a></li>
@@ -3940,7 +3944,7 @@ z-index: 1000;
 <section>
 <section id="module-7-building-ai-systems" class="title-slide slide level1 center">
 <h1>Module 7: Building AI Systems</h1>
-<p>Primary sources: Osmani, Chapter 7; Thomas &amp; Hunt, Tracer Bullets review.</p>
+<p>Primary sources: Osmani, Chapter 7; Thomas &amp; Hunt, Topic 12: Tracer Bullets.</p>
 </section>
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
@@ -3965,6 +3969,19 @@ z-index: 1000;
 <li>Artifact tracking.</li>
 <li>Human oversight.</li>
 </ul>
+</section>
+<section id="full-stack-ai-workflow" class="slide level2">
+<h2>Full-Stack AI Workflow</h2>
+<p>Osmani Chapter 7 frames AI-assisted development as an end-to-end workflow. In this course, treat full-stack examples as a transfer pattern for your controlled agent.</p>
+<ul>
+<li>Scaffold the project and dependency structure.</li>
+<li>Generate frontend components from clear descriptions.</li>
+<li>Implement backend routes, business logic, and validation.</li>
+<li>Integrate data storage and database access.</li>
+<li>Align frontend and backend contracts.</li>
+<li>Test and validate the whole stack.</li>
+</ul>
+<p>For the Java agent project, the analogous stack is CLI input, context builder, model call, tool dispatcher, sandboxed file tools, evaluator, logs, and human checkpoint.</p>
 </section>
 <section id="controlled-agent-architecture" class="slide level2">
 <h2>Controlled Agent Architecture</h2>
@@ -4020,13 +4037,38 @@ z-index: 1000;
 <section id="integration-challenges" class="slide level2">
 <h2>Integration Challenges</h2>
 <ul>
-<li>Mismatched frontend/backend contracts.</li>
-<li>Unclear data models.</li>
+<li>Mismatched interface contracts.</li>
+<li>Unclear task or artifact models.</li>
 <li>Generated code that bypasses abstractions.</li>
 <li>Tests that require unavailable services.</li>
 <li>Tool outputs too verbose to inspect.</li>
 <li>Error handling split across layers.</li>
 </ul>
+</section>
+<section id="contracts-between-layers" class="slide level2">
+<h2>Contracts Between Layers</h2>
+<p>AI can generate each layer quickly, but humans must keep the interfaces coherent.</p>
+<p>Check:</p>
+<ul>
+<li>Command names, arguments, and result codes.</li>
+<li>Request and response schemas for model and tool calls.</li>
+<li>Artifact fields, log formats, and validation rules.</li>
+<li>Authorization assumptions around files and commands.</li>
+<li>Error formats consumed by the next workflow step.</li>
+<li>Test data that represents real agent states.</li>
+</ul>
+</section>
+<section id="data-and-context-flow" class="slide level2">
+<h2>Data and Context Flow</h2>
+<p>In an AI-assisted system, context moves through several forms.</p>
+<ul>
+<li>User intent becomes task specification.</li>
+<li>Task specification becomes model prompt and tool constraints.</li>
+<li>Tool constraints become dispatcher behavior and sandbox rules.</li>
+<li>Runtime behavior becomes logs, tests, and evaluation artifacts.</li>
+<li>Evaluation results become the next prompt or code change.</li>
+</ul>
+<p>Breakage usually appears at the boundaries, not inside the generated snippet.</p>
 </section>
 <section id="tracer-bullet-architecture" class="slide level2">
 <h2>Tracer Bullet Architecture</h2>
@@ -4039,6 +4081,18 @@ z-index: 1000;
 <li>Capture result.</li>
 <li>Evaluate with one check.</li>
 <li>Save run artifact.</li>
+</ul>
+<p>The goal is not complete functionality; it is a real path through the system that exposes integration risk.</p>
+</section>
+<section id="testing-the-whole-workflow" class="slide level2">
+<h2>Testing the Whole Workflow</h2>
+<p>Osmani emphasizes validation across the stack, not just isolated code.</p>
+<ul>
+<li>Unit-test business logic and parsing.</li>
+<li>Integration-test API and database behavior.</li>
+<li>End-to-end-test the user-visible workflow.</li>
+<li>Verify generated queries against expected data shapes.</li>
+<li>Keep AI-created tests under the same review standard as code.</li>
 </ul>
 </section>
 <section id="ai-system-prompting" class="slide level2">
@@ -4055,6 +4109,13 @@ z-index: 1000;
 <section id="lab-4-development-connection" class="slide level2">
 <h2>Lab 4 Development Connection</h2>
 <p>Lab 4 begins risk analysis and production readiness.</p>
+<p>Use a compact threat model before you implement more automation:</p>
+<ul>
+<li>Asset: what must be protected?</li>
+<li>Entry point: where can bad input enter?</li>
+<li>Trust boundary: where does control change hands?</li>
+<li>Mitigation: what prevents or contains failure?</li>
+</ul>
 <p>Your risk analysis should be specific to your actual system:</p>
 <ul>
 <li>Tool misuse.</li>
@@ -4067,7 +4128,7 @@ z-index: 1000;
 <section id="practice-activity" class="slide level2">
 <h2>Practice Activity</h2>
 <p>Draw your agent as boxes and arrows.</p>
-<p>For each arrow, label:</p>
+<p>Submit the diagram with a short table. For each arrow, label:</p>
 <ul>
 <li>Data passed.</li>
 <li>Trust boundary.</li>

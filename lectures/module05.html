@@ -3927,7 +3927,10 @@ z-index: 1000;
 <li><a href="#/review-pipeline" id="/toc-review-pipeline">Review Pipeline</a></li>
 <li><a href="#/superficial-correctness" id="/toc-superficial-correctness">Superficial Correctness</a></li>
 <li><a href="#/review-checklist" id="/toc-review-checklist">Review Checklist</a></li>
+<li><a href="#/majority-solution-problem" id="/toc-majority-solution-problem">Majority Solution Problem</a></li>
 <li><a href="#/tests-as-design" id="/toc-tests-as-design">Tests as Design</a></li>
+<li><a href="#/tools-make-review-real" id="/toc-tools-make-review-real">Tools Make Review Real</a></li>
+<li><a href="#/pragmatic-paranoia-for-ai-code" id="/toc-pragmatic-paranoia-for-ai-code">Pragmatic Paranoia for AI Code</a></li>
 <li><a href="#/test-pyramid-for-ai-code" id="/toc-test-pyramid-for-ai-code">Test Pyramid for AI Code</a></li>
 <li><a href="#/property-thinking" id="/toc-property-thinking">Property Thinking</a></li>
 <li><a href="#/lab-3-development-connection" id="/toc-lab-3-development-connection">Lab 3 Development Connection</a></li>
@@ -3940,7 +3943,7 @@ z-index: 1000;
 <section>
 <section id="module-5-reviewing-and-testing-ai-code" class="title-slide slide level1 center">
 <h1>Module 5: Reviewing and Testing AI Code</h1>
-<p>Primary sources: Osmani, Chapter 5; Thomas &amp; Hunt, Test to Code, Property-Based Testing, and Pragmatic Starter Kit.</p>
+<p>Primary sources: Osmani, Chapter 5; Thomas &amp; Hunt, Topics 16-27 and Topic 42: Property-Based Testing.</p>
 </section>
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
@@ -4010,9 +4013,21 @@ z-index: 1000;
 <li>Are dependencies appropriate?</li>
 </ul>
 </section>
+<section id="majority-solution-problem" class="slide level2">
+<h2>Majority Solution Problem</h2>
+<p>Osmani warns that AI often gives the common solution, not the appropriate solution.</p>
+<p>Review for:</p>
+<ul>
+<li>Generic assumptions that do not match this project.</li>
+<li>Algorithms that work for small cases but not real inputs.</li>
+<li>Tutorial-style code, comments, or global state.</li>
+<li>Library choices that add unnecessary dependency or risk.</li>
+<li>Missing behavior where the prompt was ambiguous.</li>
+</ul>
+</section>
 <section id="tests-as-design" class="slide level2">
 <h2>Tests as Design</h2>
-<p>Thomas and Hunt argue testing is part of design, not an afterthought.</p>
+<p>Osmani emphasizes that tests turn generated code into code you can own.</p>
 <p>For AI-assisted work:</p>
 <ul>
 <li>Ask for tests before accepting implementation.</li>
@@ -4021,14 +4036,36 @@ z-index: 1000;
 <li>Add regression tests for AI mistakes.</li>
 </ul>
 </section>
+<section id="tools-make-review-real" class="slide level2">
+<h2>Tools Make Review Real</h2>
+<p>From The Basic Tools, reviewing AI code is practical tool work.</p>
+<ul>
+<li>Plain text makes prompts, diffs, and logs inspectable.</li>
+<li>Version control isolates AI changes for review and rollback.</li>
+<li>Debuggers and shell commands reveal actual behavior.</li>
+<li>Text manipulation helps compare outputs and find repeated patterns.</li>
+<li>Daybooks preserve what you tried, rejected, and learned.</li>
+</ul>
+</section>
+<section id="pragmatic-paranoia-for-ai-code" class="slide level2">
+<h2>Pragmatic Paranoia for AI Code</h2>
+<p>Chapter 4 reinforces a defensive review stance.</p>
+<ul>
+<li>Design by contract: check preconditions, postconditions, and invariants.</li>
+<li>Crash early: prefer visible failures over hidden corruption.</li>
+<li>Assertions: expose impossible states during development.</li>
+<li>Resource balance: verify cleanup, ownership, and lifecycle behavior.</li>
+<li>Small steps: review one coherent change before asking for the next.</li>
+</ul>
+</section>
 <section id="test-pyramid-for-ai-code" class="slide level2">
 <h2>Test Pyramid for AI Code</h2>
 <ul>
 <li>Unit tests: fast checks of isolated behavior.</li>
 <li>Integration tests: verify components work together.</li>
 <li>End-to-end tests: validate user-visible workflow.</li>
-<li>Safety tests: verify refusal, bounds, permissions, and secrets handling.</li>
 </ul>
+<p>Safety and security checks are cross-cutting: verify refusal, bounds, permissions, and secrets handling at every relevant level.</p>
 </section>
 <section id="property-thinking" class="slide level2">
 <h2>Property Thinking</h2>

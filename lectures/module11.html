@@ -3924,13 +3924,19 @@ z-index: 1000;
 <ul>
 <li><a href="#/learning-outcomes" id="/toc-learning-outcomes">Learning Outcomes</a></li>
 <li><a href="#/beyond-code-generation" id="/toc-beyond-code-generation">Beyond Code Generation</a></li>
+<li><a href="#/ai-across-the-lifecycle" id="/toc-ai-across-the-lifecycle">AI Across the Lifecycle</a></li>
+<li><a href="#/trend-evaluation-lens" id="/toc-trend-evaluation-lens">Trend Evaluation Lens</a></li>
 <li><a href="#/course-concept-map" id="/toc-course-concept-map">Course Concept Map</a></li>
 <li><a href="#/future-skill-shift" id="/toc-future-skill-shift">Future Skill Shift</a></li>
 <li><a href="#/essence-of-good-design" id="/toc-essence-of-good-design">Essence of Good Design</a></li>
+<li><a href="#/natural-language-development" id="/toc-natural-language-development">Natural-Language Development</a></li>
+<li><a href="#/multiagent-engineering" id="/toc-multiagent-engineering">Multiagent Engineering</a></li>
 <li><a href="#/personal-ai-workflow" id="/toc-personal-ai-workflow">Personal AI Workflow</a></li>
+<li><a href="#/personal-engineering-position" id="/toc-personal-engineering-position">Personal Engineering Position</a></li>
 <li><a href="#/course-framework" id="/toc-course-framework">Course Framework</a></li>
 <li><a href="#/milestone-2-connection" id="/toc-milestone-2-connection">Milestone 2 Connection</a></li>
 <li><a href="#/improving-the-workflow" id="/toc-improving-the-workflow">Improving the Workflow</a></li>
+<li><a href="#/future-proofing-practice" id="/toc-future-proofing-practice">Future-Proofing Practice</a></li>
 <li><a href="#/practice-activity" id="/toc-practice-activity">Practice Activity</a></li>
 <li><a href="#/takeaways" id="/toc-takeaways">Takeaways</a></li>
 </ul></li>
@@ -3940,7 +3946,7 @@ z-index: 1000;
 <section>
 <section id="module-11-the-future-of-ai-engineering" class="title-slide slide level1 center">
 <h1>Module 11: The Future of AI Engineering</h1>
-<p>Primary sources: Osmani, Chapter 11; Thomas &amp; Hunt, Essence of Good Design.</p>
+<p>Primary sources: Osmani, Chapter 11; Thomas &amp; Hunt, Topic 8: The Essence of Good Design.</p>
 </section>
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
@@ -3963,6 +3969,31 @@ z-index: 1000;
 <li>Agent-driven task execution.</li>
 </ul>
 <p>The engineering problem remains: how do we trust the result?</p>
+</section>
+<section id="ai-across-the-lifecycle" class="slide level2">
+<h2>AI Across the Lifecycle</h2>
+<p>Osmani frames the future as AI moving through the whole software lifecycle.</p>
+<ul>
+<li>Test generation from code, requirements, and edge cases.</li>
+<li>Debugging from traces, logs, runtime state, and error reports.</li>
+<li>AI-assisted maintenance suggestions, dependency update triage, and refactoring candidates.</li>
+<li>Performance analysis from profiles and production signals.</li>
+<li>Design support for UI variants, accessibility, and UX research.</li>
+<li>Project support for planning, risk analysis, and status summaries.</li>
+</ul>
+<p>The risk is the same pattern repeating at larger scale: fast output without shared understanding.</p>
+</section>
+<section id="trend-evaluation-lens" class="slide level2">
+<h2>Trend Evaluation Lens</h2>
+<p>For any emerging AI engineering tool, ask:</p>
+<ul>
+<li>What task does it make cheaper?</li>
+<li>What new failure mode does it introduce?</li>
+<li>What evidence does it produce?</li>
+<li>What human decision does it still require?</li>
+<li>What organizational norm must change for it to be safe?</li>
+</ul>
+<p>Do not evaluate the demo. Evaluate the workflow around the demo.</p>
 </section>
 <section id="course-concept-map" class="slide level2">
 <h2>Course Concept Map</h2>
@@ -4001,17 +4032,44 @@ z-index: 1000;
 <li>Workflow design.</li>
 <li>Ethical decision-making.</li>
 </ul>
+<p>Osmani’s key claim is not that fundamentals disappear. Ambiguity, tradeoffs, review, testing, and user judgment become more important because AI can amplify unclear intent quickly.</p>
 </section>
 <section id="essence-of-good-design" class="slide level2">
 <h2>Essence of Good Design</h2>
-<p>Thomas and Hunt define good design around ease of change.</p>
+<p>Thomas and Hunt define good design around ETC: easier to change.</p>
 <p>AI-era interpretation:</p>
 <ul>
 <li>Good systems absorb generated changes safely.</li>
 <li>Good boundaries make AI suggestions reviewable.</li>
 <li>Good tests make iteration cheap.</li>
 <li>Good documentation makes context reusable.</li>
+<li>Good workflows make bad AI output cheap to discard.</li>
 </ul>
+<p>ETC is a value, not a rigid rule. In AI-assisted work, use it as a review question: did this prompt, code change, test, abstraction, or process make future change easier or harder?</p>
+</section>
+<section id="natural-language-development" class="slide level2">
+<h2>Natural-Language Development</h2>
+<p>Osmani predicts more software work will happen through intent and conversation.</p>
+<ul>
+<li>Natural language may become a higher-level specification layer.</li>
+<li>Traditional languages remain useful where precision matters.</li>
+<li>Hybrid workflows may combine prose, pseudocode, tests, and code.</li>
+<li>AI systems may ask clarifying questions before implementation.</li>
+<li>Professional value shifts toward precise thinking and verification.</li>
+</ul>
+<p>The future is not English replacing code. It is clearer intent becoming more actionable through better tooling, then verified through tests, schemas, types, reviews, and runtime checks.</p>
+</section>
+<section id="multiagent-engineering" class="slide level2">
+<h2>Multiagent Engineering</h2>
+<p>Autonomous agents may become a normal part of engineering teams.</p>
+<ul>
+<li>Specialized agents for testing, security, refactoring, documentation, and performance.</li>
+<li>Multi-branch exploration of different implementation paths.</li>
+<li>Agent inboxes for tracking work, review requests, and blocked tasks.</li>
+<li>Issue tracker and CI integration for automated maintenance.</li>
+<li>Human checkpointing when uncertainty or tradeoffs appear.</li>
+</ul>
+<p>This creates a new design problem: orchestrating work so the system remains understandable.</p>
 </section>
 <section id="personal-ai-workflow" class="slide level2">
 <h2>Personal AI Workflow</h2>
@@ -4023,6 +4081,19 @@ z-index: 1000;
 <li>What do I never delegate?</li>
 <li>How do I improve after each interaction?</li>
 </ul>
+<p>Your workflow should be explicit enough that another person can inspect it and understand how you control risk.</p>
+</section>
+<section id="personal-engineering-position" class="slide level2">
+<h2>Personal Engineering Position</h2>
+<p>By this point in the course, you should be able to state a position such as:</p>
+<ul>
+<li>I use AI for exploration, scaffolding, testing, and critique.</li>
+<li>I do not use AI as a substitute for requirements ownership.</li>
+<li>I require runnable evidence before accepting generated code.</li>
+<li>I keep architecture, security, ethics, and merge decisions human-owned.</li>
+<li>I improve prompts and checklists based on failures I observe.</li>
+</ul>
+<p>The goal is not to have the same policy as everyone else. The goal is to have a defensible policy.</p>
 </section>
 <section id="course-framework" class="slide level2">
 <h2>Course Framework</h2>
@@ -4063,6 +4134,27 @@ z-index: 1000;
 <li>Which tests found real issues?</li>
 <li>Which review practices improved quality?</li>
 <li>Which risks are still unmanaged?</li>
+</ul>
+<p>Then propose one concrete improvement:</p>
+<ul>
+<li>A better prompt template.</li>
+<li>A stronger acceptance checklist.</li>
+<li>A new automated test or CI gate.</li>
+<li>A clearer team norm for AI disclosure.</li>
+<li>A smaller task boundary for agent delegation.</li>
+</ul>
+</section>
+<section id="future-proofing-practice" class="slide level2">
+<h2>Future-Proofing Practice</h2>
+<p>Osmani’s call to action is pragmatic:</p>
+<ul>
+<li>Experiment with new tools.</li>
+<li>Share useful findings and pitfalls.</li>
+<li>Contribute feedback or improvements to tools.</li>
+<li>Advocate for secure and responsible adoption.</li>
+<li>Keep learning from juniors, peers, and changing practice.</li>
+<li>Balance enthusiasm with prudence.</li>
+<li>Mentor others in fundamentals, not just tool use.</li>
 </ul>
 </section>
 <section id="practice-activity" class="slide level2">

@@ -3930,7 +3930,9 @@ z-index: 1000;
 <li><a href="#/prompt-components" id="/toc-prompt-components">Prompt Components</a></li>
 <li><a href="#/iterative-refinement" id="/toc-iterative-refinement">Iterative Refinement</a></li>
 <li><a href="#/pragmatic-paranoia" id="/toc-pragmatic-paranoia">Pragmatic Paranoia</a></li>
+<li><a href="#/defensive-prompting" id="/toc-defensive-prompting">Defensive Prompting</a></li>
 <li><a href="#/tool-fluency" id="/toc-tool-fluency">Tool Fluency</a></li>
+<li><a href="#/tools-shape-communication" id="/toc-tools-shape-communication">Tools Shape Communication</a></li>
 <li><a href="#/lab-1-connection" id="/toc-lab-1-connection">Lab 1 Connection</a></li>
 <li><a href="#/practice-activity" id="/toc-practice-activity">Practice Activity</a></li>
 <li><a href="#/takeaways" id="/toc-takeaways">Takeaways</a></li>
@@ -3941,7 +3943,7 @@ z-index: 1000;
 <section>
 <section id="module-2-prompting-as-communication" class="title-slide slide level1 center">
 <h1>Module 2: Prompting as Communication</h1>
-<p>Primary sources: Osmani, Chapter 2; Thomas &amp; Hunt, Basic Tools and Pragmatic Paranoia.</p>
+<p>Primary sources: Osmani, Chapter 2; Thomas &amp; Hunt, Chapters 3-4 (Topics 16-27).</p>
 </section>
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
@@ -4036,6 +4038,17 @@ z-index: 1000;
 <li>Do not accept code without a verification path.</li>
 </ul>
 </section>
+<section id="defensive-prompting" class="slide level2">
+<h2>Defensive Prompting</h2>
+<p>Thomas and Hunt’s defensive habits translate directly into better prompts.</p>
+<ul>
+<li>Design by contract: state preconditions, postconditions, and invariants.</li>
+<li>Crash early: define failure behavior instead of hiding errors.</li>
+<li>Assertive programming: ask for checks that expose impossible states.</li>
+<li>Resource balance: specify cleanup, ownership, and lifecycle rules.</li>
+<li>Small steps: do not outrun your headlights with oversized prompts.</li>
+</ul>
+</section>
 <section id="tool-fluency" class="slide level2">
 <h2>Tool Fluency</h2>
 <p>The Basic Tools matter more with AI, not less.</p>
@@ -4044,6 +4057,17 @@ z-index: 1000;
 <li>Shell commands make verification repeatable.</li>
 <li>IDEs provide context and refactoring support.</li>
 <li>Logs and diffs reveal what the assistant actually changed.</li>
+</ul>
+</section>
+<section id="tools-shape-communication" class="slide level2">
+<h2>Tools Shape Communication</h2>
+<p>Prompting happens inside a toolchain, not outside it.</p>
+<ul>
+<li>Plain text keeps prompts, specs, and logs inspectable.</li>
+<li>Shell fluency turns model claims into repeatable evidence.</li>
+<li>Power editing helps you review and reshape generated code.</li>
+<li>Version control preserves the conversation between intent and change.</li>
+<li>Debugging and daybooks capture what you learned from each iteration.</li>
 </ul>
 </section>
 <section id="lab-1-connection" class="slide level2">

@@ -3924,9 +3924,13 @@ z-index: 1000;
 <ul>
 <li><a href="#/learning-outcomes" id="/toc-learning-outcomes">Learning Outcomes</a></li>
 <li><a href="#/prototype-value" id="/toc-prototype-value">Prototype Value</a></li>
+<li><a href="#/prototype-tool-tradeoffs" id="/toc-prototype-tool-tradeoffs">Prototype Tool Tradeoffs</a></li>
+<li><a href="#/iterative-refinement" id="/toc-iterative-refinement">Iterative Refinement</a></li>
 <li><a href="#/prototype-to-production-path" id="/toc-prototype-to-production-path">Prototype to Production Path</a></li>
 <li><a href="#/production-means-constraints" id="/toc-production-means-constraints">Production Means Constraints</a></li>
 <li><a href="#/prototype-to-production-gap" id="/toc-prototype-to-production-gap">Prototype to Production Gap</a></li>
+<li><a href="#/evolving-toward-production" id="/toc-evolving-toward-production">Evolving Toward Production</a></li>
+<li><a href="#/prototype-traps" id="/toc-prototype-traps">Prototype Traps</a></li>
 <li><a href="#/orthogonality" id="/toc-orthogonality">Orthogonality</a></li>
 <li><a href="#/reversibility" id="/toc-reversibility">Reversibility</a></li>
 <li><a href="#/production-readiness-questions" id="/toc-production-readiness-questions">Production Readiness Questions</a></li>
@@ -3940,7 +3944,7 @@ z-index: 1000;
 <section>
 <section id="module-6-prototyping-vs-production" class="title-slide slide level1 center">
 <h1>Module 6: Prototyping vs Production</h1>
-<p>Primary sources: Osmani, Chapter 6; Thomas &amp; Hunt, Orthogonality and Reversibility.</p>
+<p>Primary sources: Osmani, Chapter 6; Thomas &amp; Hunt, Topics 10-11 and Topic 13: Prototypes and Post-it Notes.</p>
 </section>
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
@@ -3962,6 +3966,27 @@ z-index: 1000;
 <li>Get feedback early.</li>
 </ul>
 <p>Prototype risk: mistaking a learning artifact for a production system.</p>
+</section>
+<section id="prototype-tool-tradeoffs" class="slide level2">
+<h2>Prototype Tool Tradeoffs</h2>
+<p>Osmani frames AI prototyping tools around two tensions.</p>
+<ul>
+<li>Fidelity: how closely the output matches the idea, mockup, or prompt.</li>
+<li>Control: how much you can guide architecture, code structure, and changes.</li>
+</ul>
+<p>High-speed tools can validate ideas quickly, but low control can leave code that is hard to inspect, integrate, or harden.</p>
+</section>
+<section id="iterative-refinement" class="slide level2">
+<h2>Iterative Refinement</h2>
+<p>AI prototyping works best as a fast feedback loop.</p>
+<ol type="1">
+<li>Generate a baseline.</li>
+<li>Run or inspect it.</li>
+<li>Refine the prompt with specific changes.</li>
+<li>Check whether the new version still supports the prototype goal.</li>
+<li>Stop when you have learned enough.</li>
+</ol>
+<p>Iteration is useful only if it answers the prototype question instead of drifting into accidental product scope.</p>
 </section>
 <section id="prototype-to-production-path" class="slide level2">
 <h2>Prototype to Production Path</h2>
@@ -4012,9 +4037,30 @@ z-index: 1000;
 <li>Data migration concerns.</li>
 </ul>
 </section>
+<section id="evolving-toward-production" class="slide level2">
+<h2>Evolving Toward Production</h2>
+<p>Osmani’s production transition is a mindset shift from speed to discipline.</p>
+<ul>
+<li>Review architecture and split prototype code into maintainable modules.</li>
+<li>Add error handling and edge cases beyond the sunny-day path.</li>
+<li>Check performance, security, and dependency choices.</li>
+<li>Add documentation for future maintainers.</li>
+<li>Build tests before and during refactoring.</li>
+<li>Replace temporary shortcuts with real integrations.</li>
+</ul>
+</section>
+<section id="prototype-traps" class="slide level2">
+<h2>Prototype Traps</h2>
+<p>Two common traps:</p>
+<ul>
+<li>Scope creep: AI makes adding “one more feature” too cheap.</li>
+<li>Fake integration: mock data, local files, or console logs hide real production work.</li>
+</ul>
+<p>Keep a visible list of temporary choices and production TODOs so the prototype does not accidentally become the architecture.</p>
+</section>
 <section id="orthogonality" class="slide level2">
 <h2>Orthogonality</h2>
-<p>Orthogonal components can change independently.</p>
+<p>Orthogonal components can change independently. Thomas and Hunt’s test: if a requirement changes, how many modules are affected?</p>
 <p>For the Java agent project:</p>
 <ul>
 <li>Prompt construction should not depend on CLI parsing.</li>
@@ -4026,6 +4072,7 @@ z-index: 1000;
 <section id="reversibility" class="slide level2">
 <h2>Reversibility</h2>
 <p>Decisions should be easy to change when uncertainty is high.</p>
+<p>Thomas and Hunt’s warning: critical decisions shrink the target over time. Treat uncertain choices as written in sand, not carved in stone.</p>
 <p>Use AI to explore reversible options:</p>
 <ul>
 <li>Interfaces before implementations.</li>

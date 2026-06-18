@@ -3926,9 +3926,12 @@ z-index: 1000;
 <li><a href="#/ai-specific-risk-pattern" id="/toc-ai-specific-risk-pattern">AI-Specific Risk Pattern</a></li>
 <li><a href="#/risk-matrix" id="/toc-risk-matrix">Risk Matrix</a></li>
 <li><a href="#/security-review-areas" id="/toc-security-review-areas">Security Review Areas</a></li>
+<li><a href="#/ai-security-audit-loop" id="/toc-ai-security-audit-loop">AI Security Audit Loop</a></li>
 <li><a href="#/reliability-review-areas" id="/toc-reliability-review-areas">Reliability Review Areas</a></li>
+<li><a href="#/reliability-needs-evidence" id="/toc-reliability-needs-evidence">Reliability Needs Evidence</a></li>
 <li><a href="#/refactoring-ai-code" id="/toc-refactoring-ai-code">Refactoring AI Code</a></li>
 <li><a href="#/estimating-risk" id="/toc-estimating-risk">Estimating Risk</a></li>
+<li><a href="#/safety-tradeoffs" id="/toc-safety-tradeoffs">Safety Tradeoffs</a></li>
 <li><a href="#/safeguard-examples" id="/toc-safeguard-examples">Safeguard Examples</a></li>
 <li><a href="#/lab-4-final-connection" id="/toc-lab-4-final-connection">Lab 4 Final Connection</a></li>
 <li><a href="#/practice-activity" id="/toc-practice-activity">Practice Activity</a></li>
@@ -3940,7 +3943,7 @@ z-index: 1000;
 <section>
 <section id="module-8-security-and-reliability" class="title-slide slide level1 center">
 <h1>Module 8: Security and Reliability</h1>
-<p>Primary sources: Osmani, Chapter 8; Thomas &amp; Hunt, Estimating, Refactoring, and Stay Safe Out There.</p>
+<p>Primary sources: Osmani, Chapter 8; Thomas &amp; Hunt, Topics 15, 40, and 43.</p>
 </section>
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
@@ -4004,6 +4007,18 @@ z-index: 1000;
 <li>Audit logs.</li>
 </ul>
 </section>
+<section id="ai-security-audit-loop" class="slide level2">
+<h2>AI Security Audit Loop</h2>
+<p>Osmani recommends layering review rather than trusting a single pass.</p>
+<ul>
+<li>Run automated scanners and dependency audits.</li>
+<li>Optionally ask a separate AI or review mode to critique security assumptions.</li>
+<li>Use a human checklist for sensitive flows.</li>
+<li>Add security-focused tests for malicious inputs and unauthorized access.</li>
+<li>Slow down when generated code touches credentials, files, commands, or user data.</li>
+</ul>
+<p>AI critique is not a security control by itself. It can supplement, not replace, threat modeling, code review, tests, and scanners.</p>
+</section>
 <section id="reliability-review-areas" class="slide level2">
 <h2>Reliability Review Areas</h2>
 <ul>
@@ -4014,6 +4029,17 @@ z-index: 1000;
 <li>Idempotent operations.</li>
 <li>Recoverable artifacts.</li>
 <li>Observability.</li>
+</ul>
+</section>
+<section id="reliability-needs-evidence" class="slide level2">
+<h2>Reliability Needs Evidence</h2>
+<p>AI assistance does not lower reliability requirements.</p>
+<ul>
+<li>Put tests and security scans in CI.</li>
+<li>Include failure-path tests, not just happy paths.</li>
+<li>Check performance with measurement before optimizing.</li>
+<li>Use logging that helps diagnosis without leaking sensitive data.</li>
+<li>Monitor production behavior so reliability claims can be checked.</li>
 </ul>
 </section>
 <section id="refactoring-ai-code" class="slide level2">
@@ -4027,17 +4053,31 @@ z-index: 1000;
 <li>Error handling.</li>
 <li>Configuration.</li>
 </ul>
+<p>Thomas and Hunt’s guardrails: do not refactor and add functionality at the same time, keep steps small, and run tests after each step.</p>
 </section>
 <section id="estimating-risk" class="slide level2">
 <h2>Estimating Risk</h2>
-<p>Risk ratings should be concrete.</p>
-<p>Use a simple scale:</p>
+<p>Estimating is about building a model of uncertainty, not guessing a single number.</p>
+<p>For AI-assisted reliability work, estimate:</p>
 <ul>
-<li>Likelihood: low, medium, high.</li>
-<li>Impact: low, medium, high.</li>
-<li>Mitigation: specific action.</li>
-<li>Evidence: test, review, log, or policy.</li>
+<li>Scope: what security or reliability question is being asked?</li>
+<li>Drivers: which inputs, dependencies, or usage patterns dominate risk?</li>
+<li>Range: optimistic, likely, and pessimistic outcomes.</li>
+<li>Mitigation: what concrete action reduces uncertainty?</li>
+<li>Evidence: what test, review, log, or policy supports the estimate?</li>
 </ul>
+</section>
+<section id="safety-tradeoffs" class="slide level2">
+<h2>Safety Tradeoffs</h2>
+<p>Robustness is not free.</p>
+<ul>
+<li>More validation can improve safety but add complexity.</li>
+<li>More logging can improve diagnosis but risk secret exposure.</li>
+<li>More retries can improve reliability but amplify load.</li>
+<li>More abstraction can improve maintainability but obscure behavior.</li>
+<li>More security checks can slow development but prevent expensive failures.</li>
+</ul>
+<p>Make the tradeoff explicit and document the reason.</p>
 </section>
 <section id="safeguard-examples" class="slide level2">
 <h2>Safeguard Examples</h2>
@@ -4071,6 +4111,7 @@ z-index: 1000;
 <li>What output could mislead a user?</li>
 <li>What safeguard would fail safely?</li>
 </ul>
+<p>Produce a four-row risk matrix with likelihood, impact, mitigation, and evidence for each risk.</p>
 </section>
 <section id="takeaways" class="slide level2">
 <h2>Takeaways</h2>
