@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lecture Downloads – COMP 331: AI-Assisted Software Engineering</title>
+<title>Tool Setup Guide: Java, Git, and GitHub Copilot – COMP 331: AI-Assisted Software Engineering</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,16 +107,16 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">COMP 331: AI-Assisted Software Engineering</span>
     </a>
   </div>
@@ -92,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -101,23 +136,23 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
         <li>
-    <a class="dropdown-item" href="./assignments/lab01_structured_ai_workflow.html">
+    <a class="dropdown-item" href="../assignments/lab01_structured_ai_workflow.html">
  <span class="dropdown-text">Lab 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./assignments/lab02_eval_driven_development.html">
+    <a class="dropdown-item" href="../assignments/lab02_eval_driven_development.html">
  <span class="dropdown-text">Lab 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./assignments/lab03_ai_system_implementation.html">
+    <a class="dropdown-item" href="../assignments/lab03_ai_system_implementation.html">
  <span class="dropdown-text">Lab 3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./assignments/lab04_risk_analysis_production_readiness.html">
+    <a class="dropdown-item" href="../assignments/lab04_risk_analysis_production_readiness.html">
  <span class="dropdown-text">Lab 4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./assignments/lab05_coding_agents_controlled_workflows.html">
+    <a class="dropdown-item" href="../assignments/lab05_coding_agents_controlled_workflows.html">
  <span class="dropdown-text">Lab 5</span></a>
   </li>  
     </ul>
@@ -128,15 +163,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
         <li>
-    <a class="dropdown-item" href="./docs/tool_setup.html">
+    <a class="dropdown-item" href="../docs/tool_setup.html">
  <span class="dropdown-text">Tool Setup Guide</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./docs/gemini_api_setup.html">
+    <a class="dropdown-item" href="../docs/gemini_api_setup.html">
  <span class="dropdown-text">Gemini API Setup Guide</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./docs/maven_setup.html">
+    <a class="dropdown-item" href="../docs/maven_setup.html">
  <span class="dropdown-text">Maven Setup Guide</span></a>
   </li>  
     </ul>
@@ -147,55 +182,55 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="./lecture_downloads.html">
+    <a class="dropdown-item" href="../lecture_downloads.html">
  <span class="dropdown-text">Downloads</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module01.html">
+    <a class="dropdown-item" href="../lectures/module01.html">
  <span class="dropdown-text">Module 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module02.html">
+    <a class="dropdown-item" href="../lectures/module02.html">
  <span class="dropdown-text">Module 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module03.html">
+    <a class="dropdown-item" href="../lectures/module03.html">
  <span class="dropdown-text">Module 3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module04.html">
+    <a class="dropdown-item" href="../lectures/module04.html">
  <span class="dropdown-text">Module 4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module05.html">
+    <a class="dropdown-item" href="../lectures/module05.html">
  <span class="dropdown-text">Module 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module06.html">
+    <a class="dropdown-item" href="../lectures/module06.html">
  <span class="dropdown-text">Module 6</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module07.html">
+    <a class="dropdown-item" href="../lectures/module07.html">
  <span class="dropdown-text">Module 7</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module08.html">
+    <a class="dropdown-item" href="../lectures/module08.html">
  <span class="dropdown-text">Module 8</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module09.html">
+    <a class="dropdown-item" href="../lectures/module09.html">
  <span class="dropdown-text">Module 9</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module10.html">
+    <a class="dropdown-item" href="../lectures/module10.html">
  <span class="dropdown-text">Module 10</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module11.html">
+    <a class="dropdown-item" href="../lectures/module11.html">
  <span class="dropdown-text">Module 11</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lectures/module12.html">
+    <a class="dropdown-item" href="../lectures/module12.html">
  <span class="dropdown-text">Module 12</span></a>
   </li>  
     </ul>
@@ -218,13 +253,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#install-jdk-17" id="toc-install-jdk-17" class="nav-link active" data-scroll-target="#install-jdk-17">1. Install JDK 17+</a></li>
+  <li><a href="#install-one-ide" id="toc-install-one-ide" class="nav-link" data-scroll-target="#install-one-ide">2. Install One IDE</a></li>
+  <li><a href="#set-up-git-and-github" id="toc-set-up-git-and-github" class="nav-link" data-scroll-target="#set-up-git-and-github">3. Set Up Git and GitHub</a></li>
+  <li><a href="#enable-github-copilot" id="toc-enable-github-copilot" class="nav-link" data-scroll-target="#enable-github-copilot">4. Enable GitHub Copilot</a></li>
+  <li><a href="#create-a-simple-java-project" id="toc-create-a-simple-java-project" class="nav-link" data-scroll-target="#create-a-simple-java-project">5. Create a Simple Java Project</a></li>
+  <li><a href="#confirm-copilot-suggestions-appear" id="toc-confirm-copilot-suggestions-appear" class="nav-link" data-scroll-target="#confirm-copilot-suggestions-appear">6. Confirm Copilot Suggestions Appear</a></li>
+  <li><a href="#continue-in-assignment-1" id="toc-continue-in-assignment-1" class="nav-link" data-scroll-target="#continue-in-assignment-1">7. Continue in Assignment 1</a></li>
+  <li><a href="#need-help" id="toc-need-help" class="nav-link" data-scroll-target="#need-help">Need Help?</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture Downloads</h1>
+<h1 class="title">Tool Setup Guide: Java, Git, and GitHub Copilot</h1>
 </div>
 
 
@@ -241,160 +291,111 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Each lecture deck is available as a PDF handout and a rendered HTML slide deck.</p>
-<p>PDFs are the easiest format for students to download, print, annotate, and keep offline. The HTML files preserve the interactive slide format for presenting in a browser.</p>
-<table>
-<thead>
-<tr>
-<th>
-Module
-</th>
-<th>
-Topic
-</th>
-<th>
-Downloads
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-1
-</td>
-<td>
-What AI Changes
-</td>
-<td>
-<a href="lectures/module01.pdf" download="">PDF</a> | <a href="lectures/module01.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-Prompting as Communication
-</td>
-<td>
-<a href="lectures/module02.pdf" download="">PDF</a> | <a href="lectures/module02.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-<td>
-The 70 Percent Problem
-</td>
-<td>
-<a href="lectures/module03.pdf" download="">PDF</a> | <a href="lectures/module03.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-Human Contribution Beyond AI
-</td>
-<td>
-<a href="lectures/module04.pdf" download="">PDF</a> | <a href="lectures/module04.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-Reviewing and Testing AI Code
-</td>
-<td>
-<a href="lectures/module05.pdf" download="">PDF</a> | <a href="lectures/module05.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-Prototyping vs Production
-</td>
-<td>
-<a href="lectures/module06.pdf" download="">PDF</a> | <a href="lectures/module06.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-7
-</td>
-<td>
-Building AI Systems
-</td>
-<td>
-<a href="lectures/module07.pdf" download="">PDF</a> | <a href="lectures/module07.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-Security and Reliability
-</td>
-<td>
-<a href="lectures/module08.pdf" download="">PDF</a> | <a href="lectures/module08.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-9
-</td>
-<td>
-Ethics and Responsibility
-</td>
-<td>
-<a href="lectures/module09.pdf" download="">PDF</a> | <a href="lectures/module09.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-10
-</td>
-<td>
-Autonomous Agents
-</td>
-<td>
-<a href="lectures/module10.pdf" download="">PDF</a> | <a href="lectures/module10.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-11
-</td>
-<td>
-The Future of AI Engineering
-</td>
-<td>
-<a href="lectures/module11.pdf" download="">PDF</a> | <a href="lectures/module11.html" download="">HTML slides</a>
-</td>
-</tr>
-<tr>
-<td>
-12
-</td>
-<td>
-Final Project - AI Engineering Workbench
-</td>
-<td>
-<a href="lectures/module12.pdf" download="">PDF</a> | <a href="lectures/module12.html" download="">HTML slides</a>
-</td>
-</tr>
-</tbody>
-</table>
-<section id="offline-use" class="level2">
-<h2 class="anchored" data-anchor-id="offline-use">Offline Use</h2>
-<p>Download the PDF for the module you need, then open it in any PDF reader. The HTML version is best for presenting in a browser.</p>
+<p>This guide helps you get the required tools installed and opened for Week 1. After completing these checks, use <a href="../assignments/assignment01.ipynb">Assignment 1</a> to practice with the tools, create your repository, capture screenshots, and complete the reflection.</p>
+<p>The tool order below matches <a href="../assignments/assignment01.ipynb">Assignment 1</a>: JDK, IDE, Git/GitHub, Copilot, then a simple Java project.</p>
+<section id="install-jdk-17" class="level2">
+<h2 class="anchored" data-anchor-id="install-jdk-17">1. Install JDK 17+</h2>
+<p>Install a JDK from one of these sources:</p>
+<ul>
+<li><a href="https://adoptium.net/">Adoptium Temurin</a></li>
+<li><a href="https://www.oracle.com/java/technologies/downloads/">Oracle Java Downloads</a></li>
+</ul>
+<p>Confirm Java is available from a terminal:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">java</span> <span class="at">-version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You should see version 17 or newer.</p>
+</section>
+<section id="install-one-ide" class="level2">
+<h2 class="anchored" data-anchor-id="install-one-ide">2. Install One IDE</h2>
+<p>Choose one development environment for the course. You do not need both.</p>
+<p><strong>Option A: IntelliJ IDEA</strong></p>
+<ul>
+<li>Download IntelliJ IDEA from <a href="https://www.jetbrains.com/idea/download/">JetBrains</a>.</li>
+<li>JetBrains recently merged the Community Edition into the main IntelliJ IDEA product offering. Students can also check the <a href="https://www.jetbrains.com/academy/student-pack/">JetBrains Student Pack</a> for access options.</li>
+<li>Open IntelliJ and confirm it can create or open a Java project.</li>
+</ul>
+<p><strong>Option B: Visual Studio Code</strong></p>
+<ul>
+<li>Download VS Code from <a href="https://code.visualstudio.com/">code.visualstudio.com</a>.</li>
+<li>Open Extensions (<code>Cmd+Shift+X</code> on macOS or <code>Ctrl+Shift+X</code> on Windows/Linux).</li>
+<li>Install <strong>Extension Pack for Java</strong>.</li>
+</ul>
+<p>Maven, Gradle, and JUnit are useful later in the course, but they are not required for the basic Assignment 1 setup check.</p>
+</section>
+<section id="set-up-git-and-github" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-git-and-github">3. Set Up Git and GitHub</h2>
+<p>Assignment 1 asks you to submit a Git repository link, so make sure Git and GitHub are ready before you start the assignment work.</p>
+<ol type="1">
+<li>Install Git from <a href="https://git-scm.com/downloads">git-scm.com</a> if it is not already installed.</li>
+<li>Confirm Git is available:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="3" type="1">
+<li>Sign in to <a href="https://github.com/">GitHub</a> or create an account.</li>
+<li>Set up GitHub Education using your university email address at <a href="https://github.com/settings/education/benefits">github.com/settings/education/benefits</a>. This is how students access GitHub Education benefits, including Copilot access when approved.</li>
+<li>Confirm you know how you will connect to GitHub: HTTPS or SSH. GitHub’s docs explain both options in <a href="https://docs.github.com/en/get-started/git-basics/set-up-git">Set up Git</a>.</li>
+</ol>
+</section>
+<section id="enable-github-copilot" class="level2">
+<h2 class="anchored" data-anchor-id="enable-github-copilot">4. Enable GitHub Copilot</h2>
+<p>GitHub Copilot is the only AI assistant approved for Assignment 1. Before installing the IDE plugin, request or confirm GitHub Education benefits with your university email address at <a href="https://github.com/settings/education/benefits">github.com/settings/education/benefits</a>.</p>
+<p><strong>In IntelliJ IDEA</strong></p>
+<ul>
+<li>Open Settings/Preferences &gt; Plugins.</li>
+<li>Search for <strong>GitHub Copilot</strong> in the Marketplace and install it.</li>
+<li>Restart IntelliJ if prompted.</li>
+<li>Sign in with your GitHub account when prompted.</li>
+</ul>
+<p><strong>In VS Code</strong></p>
+<ul>
+<li>Open Extensions.</li>
+<li>Install <strong>GitHub Copilot</strong>.</li>
+<li>Sign in with your GitHub account when prompted.</li>
+</ul>
+<p>If you need access help, see <a href="https://docs.github.com/en/copilot">GitHub Copilot documentation</a>.</p>
+</section>
+<section id="create-a-simple-java-project" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-simple-java-project">5. Create a Simple Java Project</h2>
+<p>Create or open a small Java project in your IDE. For Assignment 1, name the project:</p>
+<pre class="text"><code>ai-swe-course</code></pre>
+<p>Add a basic <code>Main.java</code> file and confirm it runs. A minimal starting point is:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> Main <span class="op">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">main</span><span class="op">(</span><span class="bu">String</span><span class="op">[]</span> args<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span><span class="st">"Java setup is working."</span><span class="op">);</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Use your IDE’s Run button or run from the terminal if your file is in the current directory:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">javac</span> Main.java</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">java</span> Main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="confirm-copilot-suggestions-appear" class="level2">
+<h2 class="anchored" data-anchor-id="confirm-copilot-suggestions-appear">6. Confirm Copilot Suggestions Appear</h2>
+<p>In <code>Main.java</code>, type a short comment such as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">// method to add two numbers</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Pause briefly and look for Copilot ghost text. If a suggestion appears, accept it with <code>Tab</code> or your IDE’s configured accept-suggestion shortcut.</p>
+<p>Do not spend time making this code complex. The goal is only to confirm that Java, your IDE, GitHub Copilot, and GitHub are ready.</p>
+</section>
+<section id="continue-in-assignment-1" class="level2">
+<h2 class="anchored" data-anchor-id="continue-in-assignment-1">7. Continue in Assignment 1</h2>
+<p>This setup guide stops once the tools are working. Complete the actual Week 1 deliverables in <a href="../assignments/assignment01.ipynb">Assignment 1: Environment Setup &amp; AI-Assisted SWE Foundations</a>.</p>
+<p>Assignment 1 is where you will:</p>
+<ul>
+<li>Create the Git repository.</li>
+<li>Commit the minimal Java project.</li>
+<li>Add one Copilot-generated method.</li>
+<li>Add a <code>README.md</code> with setup confirmation.</li>
+<li>Capture screenshots.</li>
+<li>Complete the conceptual reflection.</li>
+</ul>
+</section>
+<section id="need-help" class="level2">
+<h2 class="anchored" data-anchor-id="need-help">Need Help?</h2>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/java/java-overview">Java in VS Code</a></li>
+<li><a href="https://www.jetbrains.com/help/idea/">IntelliJ IDEA documentation</a></li>
+<li><a href="https://docs.github.com/en/get-started/git-basics/set-up-git">GitHub Docs: Set up Git</a></li>
+<li><a href="https://docs.github.com/en/copilot">GitHub Copilot documentation</a></li>
+<li>Ask questions in your course forum or contact your instructor.</li>
+</ul>
 
 
 </section>
