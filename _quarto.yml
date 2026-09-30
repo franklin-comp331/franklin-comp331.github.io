@@ -23,6 +23,7 @@ project:
     - assignments/lab05_coding_agents_controlled_workflows.ipynb
     - docs/gemini_api_setup.ipynb
     - docs/maven_setup.ipynb
+    - docs/tool_setup.ipynb
 
 website:
   title: "COMP 331: AI-Assisted Software Engineering"
@@ -46,6 +47,8 @@ website:
             href: assignments/lab05_coding_agents_controlled_workflows.ipynb
       - text: Resources
         menu:
+          - text: Tool Setup Guide
+            href: docs/tool_setup.ipynb
           - text: Gemini API Setup Guide
             href: docs/gemini_api_setup.ipynb
           - text: Maven Setup Guide
