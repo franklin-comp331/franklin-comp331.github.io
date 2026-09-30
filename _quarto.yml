@@ -21,6 +21,8 @@ project:
     - assignments/lab03_ai_system_implementation.ipynb
     - assignments/lab04_risk_analysis_production_readiness.ipynb
     - assignments/lab05_coding_agents_controlled_workflows.ipynb
+    - docs/gemini_api_setup.ipynb
+    - docs/maven_setup.ipynb
 
 website:
   title: "COMP 331: AI-Assisted Software Engineering"
@@ -42,6 +44,12 @@ website:
             href: assignments/lab04_risk_analysis_production_readiness.ipynb
           - text: Lab 5
             href: assignments/lab05_coding_agents_controlled_workflows.ipynb
+      - text: Resources
+        menu:
+          - text: Gemini API Setup Guide
+            href: docs/gemini_api_setup.ipynb
+          - text: Maven Setup Guide
+            href: docs/maven_setup.ipynb
       - text: Lectures
         menu:
           - text: Downloads
