@@ -102,7 +102,7 @@
     "href": "assignments/lab04_risk_analysis_production_readiness.html#action-items",
     "title": "Lab 4: AI Risk Analysis and Production Readiness",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 4: AI Risk Analysis and Production Readiness.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review each Lab 3 tool implementation. Continue in that repository instead of creating a new one.\nComplete the risk analysis, safeguard implementation, and safety-test work described in the linked instructions.\nDocument the risk table, production-readiness checklist, prioritized improvement plan, Copilot-assisted analysis notes, and verification results in the repository.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and risk-analysis document through Canvas."
+    "text": "3 Action Items\n\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review each Lab 3 tool implementation. Continue in that repository instead of creating a new one.\nComplete the risk analysis, safeguard implementation, and safety-test work described in the linked instructions.\nDocument the risk table, production-readiness checklist, prioritized improvement plan, Copilot-assisted analysis notes, and verification results in the repository.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and risk-analysis document through Canvas."
   },
   {
     "objectID": "assignments/lab04_risk_analysis_production_readiness.html#using-github-copilot",
@@ -158,7 +158,7 @@
     "href": "assignments/lab02_eval_driven_development.html#action-items",
     "title": "Lab 2: Eval-Driven Development",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 2: Eval-Driven Development.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository from Lab 1. Continue in that repository instead of creating a new one.\nCreate the sandbox project, JUnit evaluation, and Copilot-assisted iterations described in the linked instructions.\nDocument acceptance criteria, test commands, iteration results, Copilot-assisted test or code changes, and verification results in README.md.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and required evaluation evidence through Canvas."
+    "text": "3 Action Items\n\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository from Lab 1. Continue in that repository instead of creating a new one.\nCreate the sandbox project, JUnit evaluation, and Copilot-assisted iterations described in the linked instructions.\nDocument acceptance criteria, test commands, iteration results, Copilot-assisted test or code changes, and verification results in README.md.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and required evaluation evidence through Canvas."
   },
   {
     "objectID": "assignments/lab02_eval_driven_development.html#using-github-copilot",
@@ -1530,7 +1530,7 @@
     "href": "assignments/lab03_ai_system_implementation.html#action-items",
     "title": "Lab 3: AI System Implementation",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 3: AI System Implementation.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review the Lab 2 sandbox directory. Continue in that repository instead of creating a new one.\nImplement the Java tool layer, sandbox restrictions, tool tests, and demo described in the linked instructions.\nDocument the tool architecture, sample run, accepted/rejected Copilot suggestions, and verification results in README.md.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and required tool demo or test evidence through Canvas."
+    "text": "3 Action Items\n\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review the Lab 2 sandbox directory. Continue in that repository instead of creating a new one.\nImplement the Java tool layer, sandbox restrictions, tool tests, and demo described in the linked instructions.\nDocument the tool architecture, sample run, accepted/rejected Copilot suggestions, and verification results in README.md.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and required tool demo or test evidence through Canvas."
   },
   {
     "objectID": "assignments/lab03_ai_system_implementation.html#using-github-copilot",
@@ -1586,7 +1586,7 @@
     "href": "assignments/lab05_coding_agents_controlled_workflows.html#action-items",
     "title": "Lab 5: Coding Agents and Controlled Workflows",
     "section": "3 Action Items",
-    "text": "3 Action Items\n\nClick the link to the full hosted lab instructions: Lab 5: Coding Agents and Controlled Workflows.\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review the tool layer and risk mitigations from Labs 3-4. Continue in that repository instead of creating a new one.\nImplement the controlled agent loop, tool registry connection, approval checkpoint, and example workflow described in the linked instructions.\nPreserve the required workflow artifacts, including prompt, tool calls, approvals, changed files, evaluation result, and final response.\nDocument reproducible setup, Copilot-assisted workflow decisions, and verification results in the repository.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and reproduction notes through Canvas."
+    "text": "3 Action Items\n\nFollow the instructions in the lab page.\nOpen your existing comp331-java-agent repository and review the tool layer and risk mitigations from Labs 3-4. Continue in that repository instead of creating a new one.\nImplement the controlled agent loop, tool registry connection, approval checkpoint, and example workflow described in the linked instructions.\nPreserve the required workflow artifacts, including prompt, tool calls, approvals, changed files, evaluation result, and final response.\nDocument reproducible setup, Copilot-assisted workflow decisions, and verification results in the repository.\nCommit your completed work and obtain the Git commit hash for the submitted version.\nSubmit the repository link, commit hash, and reproduction notes through Canvas."
   },
   {
     "objectID": "assignments/lab05_coding_agents_controlled_workflows.html#using-github-copilot",
