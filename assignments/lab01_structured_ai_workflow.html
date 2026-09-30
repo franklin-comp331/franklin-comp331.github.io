@@ -158,6 +158,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
   </li>
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../docs/gemini_api_setup.html">
+ <span class="dropdown-text">Gemini API Setup Guide</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lectures" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Lectures</span>
     </a>
@@ -292,7 +303,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li>Create a fresh GitHub repository named <code>comp331-java-agent</code>. You will continue developing in this same repository for Labs 2-5; do not create a new <code>comp331-java-agent</code> repository for each lab.</li>
 <li>Create a Java project using Maven in that repository. A simple structure such as <code>src/main/java/.../Main.java</code> is enough.</li>
-<li>Configure your Gemini API key using the <a href="../docs/gemini_api_setup.ipynb">Gemini API Setup Guide</a>. Do not commit API keys, <code>.env</code> files, or other secrets.</li>
+<li>Configure your Gemini API key using the <a href="../docs/gemini_api_setup.html">Gemini API Setup Guide</a>. Do not commit API keys, <code>.env</code> files, or other secrets.</li>
 <li>Write a <code>Main</code> class that first sends one hard-coded prompt to the model and prints the response. This verifies that your Java project can connect to the API.</li>
 <li>Revise the program so it accepts the user prompt from command-line arguments, for example <code>mvn exec:java -Dexec.args="Explain this Java method"</code>.</li>
 <li>Add a simple message representation for later labs. This may be a small <code>Message</code> class or record with fields such as <code>role</code> and <code>content</code>.</li>
@@ -310,7 +321,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="action-items" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="action-items"><span class="header-section-number">3</span> Action Items</h2>
 <ul>
-<li>Click the link to the full hosted lab instructions: <a href="https://t-morgan.github.io/ai-assisted-software-engineering/assignments/lab01_structured_ai_workflow.html">Lab 1: Structured AI Workflow</a>.</li>
 <li>Follow the instructions in the lab page.</li>
 <li>Go to <a href="https://github.com/">github.com</a> and create a fresh repository named <code>comp331-java-agent</code>. This is the one lab repository you will continue using for Labs 1-5.</li>
 <li>Build the Java LLM command-line client and naive vs structured Copilot comparison described in the linked instructions.</li>
