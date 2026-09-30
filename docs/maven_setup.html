@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 3: AI System Implementation – COMP 331: AI-Assisted Software Engineering</title>
+<title>Maven Setup Guide – COMP 331: AI-Assisted Software Engineering</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -254,13 +254,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#purpose-of-assignment" id="toc-purpose-of-assignment" class="nav-link active" data-scroll-target="#purpose-of-assignment"><span class="header-section-number">1</span> Purpose of Assignment</a></li>
-  <li><a href="#steps-requirements-of-assignment" id="toc-steps-requirements-of-assignment" class="nav-link" data-scroll-target="#steps-requirements-of-assignment"><span class="header-section-number">2</span> Steps / Requirements of Assignment</a></li>
-  <li><a href="#action-items" id="toc-action-items" class="nav-link" data-scroll-target="#action-items"><span class="header-section-number">3</span> Action Items</a></li>
-  <li><a href="#using-github-copilot" id="toc-using-github-copilot" class="nav-link" data-scroll-target="#using-github-copilot"><span class="header-section-number">4</span> Using GitHub Copilot</a></li>
-  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">5</span> Deliverables</a></li>
-  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading"><span class="header-section-number">6</span> Grading</a></li>
-  <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions"><span class="header-section-number">7</span> Submission Instructions</a></li>
+  <li><a href="#confirm-java-is-installed" id="toc-confirm-java-is-installed" class="nav-link active" data-scroll-target="#confirm-java-is-installed">1. Confirm Java Is Installed</a></li>
+  <li><a href="#install-maven" id="toc-install-maven" class="nav-link" data-scroll-target="#install-maven">2. Install Maven</a>
+  <ul class="collapse">
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">macOS</a></li>
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
+  <li><a href="#linux" id="toc-linux" class="nav-link" data-scroll-target="#linux">Linux</a></li>
+  </ul></li>
+  <li><a href="#verify-the-installation" id="toc-verify-the-installation" class="nav-link" data-scroll-target="#verify-the-installation">3. Verify the Installation</a></li>
+  <li><a href="#confirm-maven-can-reach-maven-central" id="toc-confirm-maven-can-reach-maven-central" class="nav-link" data-scroll-target="#confirm-maven-can-reach-maven-central">4. Confirm Maven Can Reach Maven Central</a></li>
+  <li><a href="#create-the-lab-project" id="toc-create-the-lab-project" class="nav-link" data-scroll-target="#create-the-lab-project">5. Create the Lab Project</a></li>
+  <li><a href="#common-commands" id="toc-common-commands" class="nav-link" data-scroll-target="#common-commands">6. Common Commands</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
   </ul>
 </nav>
     </div>
@@ -269,7 +274,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 3: AI System Implementation</h1>
+<h1 class="title">Maven Setup Guide</h1>
 </div>
 
 
@@ -286,91 +291,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><strong>Course Name/Number:</strong> COMP 331: AI-Assisted Software Engineering<br>
-<strong>Week:</strong> 7<br>
-<strong>Points:</strong> 100</p>
-<p>This lab extends <a href="../assignments/lab02_eval_driven_development.html">Lab 2: Eval-Driven Development</a>. Continue working in the same <code>comp331-java-agent</code> repository you used for Labs 1-2; do not create a new repository for this lab.</p>
-<section id="purpose-of-assignment" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="purpose-of-assignment"><span class="header-section-number">1</span> Purpose of Assignment</h2>
-<p>This assignment is intended to help you:</p>
+<p>Maven builds Java projects, downloads libraries, and runs tests. You will use it throughout Labs 1-5 for the <code>comp331-java-agent</code> repository.</p>
+<p>For the authoritative installation instructions and current downloads, use the <a href="https://maven.apache.org/install.html">official Apache Maven installation page</a>.</p>
+<section id="confirm-java-is-installed" class="level2">
+<h2 class="anchored" data-anchor-id="confirm-java-is-installed">1. Confirm Java Is Installed</h2>
+<p>Maven requires a JDK. Install JDK 17 or later using the <a href="tool_setup.ipynb">Tool Setup Guide</a>, then confirm it is available:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">java</span> <span class="at">-version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If this command fails, install or configure Java before installing Maven.</p>
+</section>
+<section id="install-maven" class="level2">
+<h2 class="anchored" data-anchor-id="install-maven">2. Install Maven</h2>
+<p>Choose the instructions for your operating system. If your institution or development environment provides Maven already, skip to the verification step.</p>
+<section id="macos" class="level3">
+<h3 class="anchored" data-anchor-id="macos">macOS</h3>
+<p>With <a href="https://brew.sh/">Homebrew</a>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install maven</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="windows" class="level3">
+<h3 class="anchored" data-anchor-id="windows">Windows</h3>
+<p>With <a href="https://learn.microsoft.com/windows/package-manager/winget/">winget</a>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>winget install Apache<span class="op">.</span><span class="fu">Maven</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Close and reopen PowerShell after installation. If <code>winget</code> is unavailable, follow the manual Windows instructions on the <a href="https://maven.apache.org/install.html">official installation page</a>.</p>
+</section>
+<section id="linux" class="level3">
+<h3 class="anchored" data-anchor-id="linux">Linux</h3>
+<p>On Debian or Ubuntu:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install maven</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For other distributions or to install a specific version, use the <a href="https://maven.apache.org/install.html">official installation page</a>.</p>
+</section>
+</section>
+<section id="verify-the-installation" class="level2">
+<h2 class="anchored" data-anchor-id="verify-the-installation">3. Verify the Installation</h2>
+<p>Open a new terminal and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> <span class="at">-version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The output should report an Apache Maven version and the Java version Maven will use. If the command is not found, reopen the terminal. Manual installations may also require adding Maven’s <code>bin</code> directory to your <code>PATH</code>; use the official instructions for your operating system.</p>
+</section>
+<section id="confirm-maven-can-reach-maven-central" class="level2">
+<h2 class="anchored" data-anchor-id="confirm-maven-can-reach-maven-central">4. Confirm Maven Can Reach Maven Central</h2>
+<p>Maven downloads project dependencies from remote repositories, usually <a href="https://central.sonatype.com/">Maven Central</a>. From a Maven project directory containing <code>pom.xml</code>, run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> clean test</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>On the first run, Maven may print <code>Downloading from central</code> messages while it stores dependencies in <code>~/.m2/repository</code> (macOS/Linux) or <code>%USERPROFILE%\.m2\repository</code> (Windows). A final <code>BUILD SUCCESS</code> confirms that Maven, Java, and repository access are working. Later runs are usually faster because dependencies are cached locally.</p>
+<p>If a course project does not yet have tests, use this command to test dependency resolution directly:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> dependency:resolve</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Connection errors such as <code>Unknown host</code>, <code>Connection timed out</code>, or <code>PKIX path building failed</code> usually indicate a network, proxy, firewall, or institutional certificate issue. Check whether you can open <a href="https://central.sonatype.com/">Maven Central</a> in a browser, then ask campus IT for the Maven proxy or certificate settings if the problem persists. Do not disable TLS certificate verification.</p>
+</section>
+<section id="create-the-lab-project" class="level2">
+<h2 class="anchored" data-anchor-id="create-the-lab-project">5. Create the Lab Project</h2>
+<p>From the parent directory where you keep course repositories, create a minimal project:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> archetype:generate <span class="at">-DgroupId</span><span class="op">=</span>edu.comp331 <span class="at">-DartifactId</span><span class="op">=</span>comp331-java-agent <span class="at">-DarchetypeArtifactId</span><span class="op">=</span>maven-archetype-quickstart <span class="at">-DinteractiveMode</span><span class="op">=</span>false</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> comp331-java-agent</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This creates <code>pom.xml</code>, <code>src/main/java</code>, and <code>src/test/java</code>. You may instead create the Maven project through IntelliJ IDEA or VS Code if it produces the same standard structure.</p>
+</section>
+<section id="common-commands" class="level2">
+<h2 class="anchored" data-anchor-id="common-commands">6. Common Commands</h2>
+<p>Run these commands from the directory containing <code>pom.xml</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> compile       <span class="co"># compile the application</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> test          <span class="co"># run automated tests</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> clean         <span class="co"># remove generated files</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> package       <span class="co"># create a JAR in target/</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Lab 1 also uses <code>mvn exec:java</code>. Before using it, configure the Maven Exec Plugin and your main class in <code>pom.xml</code>; the <a href="../docs/gemini_api_setup.html">Gemini API Setup Guide</a> shows an example.</p>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
 <ul>
-<li>Integrate components into a working coding agent workflow</li>
-<li>Connect structured input, AI generation, and evaluation</li>
-<li>Transition from isolated tasks to a cohesive system</li>
-<li>Implement safe Java tools that allow an agent to inspect and work inside a sandbox</li>
+<li><code>mvn: command not found</code> or <code>mvn is not recognized</code>: reopen the terminal. If it persists, Maven is not on <code>PATH</code>; follow the manual setup steps on the <a href="https://maven.apache.org/install.html">official installation page</a>.</li>
+<li><code>JAVA_HOME is not defined correctly</code>: install a JDK rather than a JRE, then configure <code>JAVA_HOME</code> to the JDK directory.</li>
+<li>Dependency download failures: confirm that Maven Central opens in your browser and ask campus IT for proxy or certificate guidance if you are on a restricted network. Do not commit the generated <code>target/</code> directory.</li>
+<li>Maven uses an unexpected Java version: run <code>mvn -version</code> to inspect the selected Java installation and correct <code>JAVA_HOME</code> if necessary.</li>
 </ul>
-</section>
-<section id="steps-requirements-of-assignment" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="steps-requirements-of-assignment"><span class="header-section-number">2</span> Steps / Requirements of Assignment</h2>
-<p>Integrate your structured input and evaluation work in your existing <code>comp331-java-agent</code> repository by adding Java tool implementations. These tools are the controlled operations your coding agent will later expose to the LLM. At this stage, you may test the tools directly from Java code or JUnit; the model does not need to call them automatically yet.</p>
-<ol type="1">
-<li>Define a common tool interface or base pattern. For example, you might create an <code>AgentTool</code> interface with methods such as <code>name()</code>, <code>description()</code>, and <code>execute(...)</code>.</li>
-<li>Define one sandbox working directory. This should point to the Java sandbox project from Lab 2, such as <code>workspace/calculator</code>.</li>
-<li>Implement a file listing tool similar to <code>get_files_info</code>. It should list files and directories plus basic metadata such as size and whether each entry is a directory.</li>
-<li>Implement a file reading tool similar to <code>get_file_content</code>. It should read text files from the sandbox and cap output at a reasonable length, such as 10,000 characters.</li>
-<li>Implement a file writing tool similar to <code>write_file</code>. It should create or overwrite files only inside the sandbox.</li>
-<li>Implement a command execution tool similar to <code>run_python_file</code>, adapted for Java. Recommended: <code>RunJavaTestsTool</code> that runs <code>mvn test</code> or <code>gradle test</code> in the sandbox. Avoid arbitrary shell access unless you have a strict allowlist.</li>
-<li>Use Java <code>Path</code> APIs to prevent path traversal. Paths such as <code>../README.md</code> or absolute paths outside the sandbox must be rejected.</li>
-<li>Add JUnit tests for each tool. Include successful cases and blocked cases for missing files, invalid directories, path traversal, and command restrictions.</li>
-<li>Add a small manual driver or test command that demonstrates the tools working together: list files, read a Java file, write a harmless file, and run the sandbox tests.</li>
-<li>Document the architecture and current limitations in your README.</li>
-</ol>
-<p>Suggested Java path-safety approach:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Path sandbox <span class="op">=</span> Path<span class="op">.</span><span class="fu">of</span><span class="op">(</span><span class="st">"workspace/calculator"</span><span class="op">).</span><span class="fu">toAbsolutePath</span><span class="op">().</span><span class="fu">normalize</span><span class="op">();</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Path target <span class="op">=</span> sandbox<span class="op">.</span><span class="fu">resolve</span><span class="op">(</span>userProvidedPath<span class="op">).</span><span class="fu">normalize</span><span class="op">();</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(!</span>target<span class="op">.</span><span class="fu">startsWith</span><span class="op">(</span>sandbox<span class="op">))</span> <span class="op">{</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">throw</span> <span class="kw">new</span> <span class="bu">IllegalArgumentException</span><span class="op">(</span><span class="st">"Path is outside the sandbox"</span><span class="op">);</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Suggested checkpoint commands:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> test</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">mvn</span> exec:java <span class="at">-Dexec.args</span><span class="op">=</span><span class="st">"--tool-demo"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="action-items" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="action-items"><span class="header-section-number">3</span> Action Items</h2>
-<ul>
-<li>Follow the instructions in the lab page.</li>
-<li>Open your existing <code>comp331-java-agent</code> repository and review the Lab 2 sandbox directory. Continue in that repository instead of creating a new one.</li>
-<li>Implement the Java tool layer, sandbox restrictions, tool tests, and demo described in the linked instructions.</li>
-<li>Document the tool architecture, sample run, accepted/rejected Copilot suggestions, and verification results in <code>README.md</code>.</li>
-<li>Commit your completed work and obtain the Git commit hash for the submitted version.</li>
-<li>Submit the repository link, commit hash, and required tool demo or test evidence through Canvas.</li>
-</ul>
-</section>
-<section id="using-github-copilot" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="using-github-copilot"><span class="header-section-number">4</span> Using GitHub Copilot</h2>
-<p>Use GitHub Copilot as a design and review assistant for the tool layer. Be especially cautious with file and command tools; Copilot may suggest implementations that are too permissive.</p>
-<p>Recommended Copilot workflow:</p>
-<ul>
-<li>Ask Copilot Chat to brainstorm a small Java interface for tools before coding.</li>
-<li>Use Copilot to draft tests for path traversal, missing files, blocked absolute paths, and command allowlists.</li>
-<li>Ask Copilot to review your implementation for sandbox escape risks.</li>
-<li>Document at least one Copilot suggestion you rejected because it was unsafe, overbroad, or insufficiently tested.</li>
-<li>Verify accepted suggestions with JUnit tests and the suggested checkpoint commands.</li>
-</ul>
-</section>
-<section id="deliverables" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">5</span> Deliverables</h2>
-<p>Your repository should include:</p>
-<ul>
-<li>Working Java source code for the agent tool layer.</li>
-<li>Tools for listing files, reading files, writing files, and running Java evaluation commands.</li>
-<li>Sandbox path validation that blocks access outside the permitted working directory.</li>
-<li>JUnit tests for successful and blocked tool behavior.</li>
-<li>Architecture documentation in the README or a separate design document.</li>
-<li>A sample tool demo or transcript showing at least one successful workflow.</li>
-<li>Evaluation results from at least one sandbox test run.</li>
-<li>Copilot notes describing one accepted suggestion, one rejected or revised suggestion, and the verification used.</li>
-</ul>
-</section>
-<section id="grading" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="grading"><span class="header-section-number">6</span> Grading</h2>
-<p>Refer to the assignment rubric in Canvas.</p>
-</section>
-<section id="submission-instructions" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="submission-instructions"><span class="header-section-number">7</span> Submission Instructions</h2>
-<p>Submit your repository link through Canvas. Include any notes your professor needs to run the tool tests or demo workflow. Submit the Git commit hash for the exact version you want graded. After committing your final work, run:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rev-parse HEAD</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Next lab: <a href="../assignments/lab04_risk_analysis_production_readiness.html">Lab 4: AI Risk Analysis and Production Readiness</a>.</p>
 
 
 </section>
